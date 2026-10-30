@@ -1,11 +1,11 @@
 {
- "version": "ef785a9ec472",
+ "version": "a01c1ccebef8",
  "updated": "2026-10-30",
- "cards": 41,
+ "cards": 42,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "people": {
   "path": "people.md",
-  "hash": "3bbbca4b7a41"
+  "hash": "353d7b0b1881"
  },
  "papers": [
   {
@@ -313,6 +313,15 @@
    "keywords": "farmer-generated yield, yield estimation, volumetric measurement, sado tins, data accuracy, genetic gain, moisture content, tricot, absolute yield",
    "path": "papers/nabateregga-2025-eja.md",
    "hash": "a7f86eef3dbc"
+  },
+  {
+   "id": "selby-2025-database",
+   "year": "2025",
+   "type": "software paper",
+   "gist": "Overview of BrAPI v2, the open API standard for breeding data, with a showcase of compatible tools including ClimMob, which pulls germplasm from breeding databases and pushes tricot data back",
+   "keywords": "BrAPI, interoperability, data standards, API, breeding databases, ClimMob, germplasm, FAIR data, data integration, genebanks",
+   "path": "papers/selby-2025-database.md",
+   "hash": "d49de535c824"
   },
   {
    "id": "sharma-2025-jafr",

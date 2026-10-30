@@ -27,10 +27,10 @@ This is the literature layer of [AI-ready documentation for tricot](https://gith
 
 | | Count |
 |---|---|
-| Source documents in `papers-pdf/` | 41 |
-| Cards in `papers/` | 41 |
+| Source documents in `papers-pdf/` | 42 |
+| Cards in `papers/` | 42 |
 | Cards still waiting for a handle or DOI | 11 |
-| People in `people.md` | 17 (3 contacts confirmed, 14 pending) |
+| People in `people.md` | 16 (3 contacts confirmed, 13 pending) |
 
 Every source document has a long-format card. `python scripts/build_index.py` lists the cards that still need a handle, and `index.json` records the current version.
 
@@ -41,7 +41,7 @@ Every source document has a long-format card. `python scripts/build_index.py` li
 | Origins, guides and the handbook | vanetten-2019-expagric, steinke-2016-guide, vanetten-2020-guide, vanetten-2020-rtbwp, desousa-2024-asd, chase-2026-book |
 | Data quality, motivation and impact | steinke-2017-asd, beza-2017-plosone, occelli-2024-agecon, nabateregga-2025-eja |
 | Climate, genomics and analysis methods | vanetten-2019-pnas, desousa-2021-commsbio, brown-2022-cropsci, dorado-2026-tag, vanetten-2023-pnas, cairns-2026-jxb |
-| Software (R packages and ClimMob) | turner-2020-compstat, desousa-2023-softwarex, desousa-2020-joss, desousa-2023-joss, quiros-2024-compag |
+| Software and data standards (R packages, ClimMob, BrAPI) | turner-2020-compstat, desousa-2023-softwarex, desousa-2020-joss, desousa-2023-joss, quiros-2024-compag, selby-2025-database |
 | Crop applications | angudubo-2024-cropsci (cassava), daudi-2026-fes (groundnut), kang-2025-expagric and sharma-2025-jafr (potato), voss-2025-ppp (amaranth), mulatu-2024-slides and jorgensen-2026-gse (forages, Ethiopia and Norway) |
 | Consumer and product concept testing | moyo-2021-fsufs, alamu-2023-jsfa, olaosebikan-2023-jsfa, donovan-2025-expagric, rutsaert-2023-mib, mbugua-2024-mib |
 | Gender, inclusion and farmer feedback | teeken-2021-fsufs, voss-2023-fsoc, teeken-2023-slides, schumann-2024-ux, muller-2025-ux, steinke-2019-plosone |
@@ -74,7 +74,7 @@ tricot-knowledge-base/
 
 ## People behind the papers
 
-[`people.md`](people.md) lists the core team and the authors who agreed to be part of the knowledge base, with their preferred names, affiliations at the time of their latest paper, topics, the cards they led or co-authored, and two consent fields. The skill uses it to credit people the way a colleague would ("Jill Cairns and colleagues argue..."), never to speak for them. It suggests a person as a contact only when they agreed, and only through an institutional email or profile page. Personal emails and phone numbers are never shared.
+[`people.md`](people.md) lists the core team and the authors who agreed to be part of the knowledge base, with their preferred names, affiliations at the time of their latest paper, topics, the cards they led (as first author, senior author or the researcher responsible) and the cards they co-authored, and two consent fields. The skill uses it to credit people the way a colleague would ("Jill Cairns and colleagues argue..." or "in work led by Joost van Heerwaarden"), never to speak for them. It suggests a person as a contact only when they agreed, and only through an institutional email or profile page. Personal emails and phone numbers are never shared.
 
 All consent fields start as `pending`. Update a row only after the person replies.
 
@@ -94,7 +94,7 @@ Every card follows the long format in [`TEMPLATE.md`](TEMPLATE.md). It has YAML 
 
 Four rules make the cards trustworthy.
 
-- **Every number is checked against the PDF.** All numbers in all 41 cards were matched against the full text of their source by script. Mismatches between text and tables, or between papers, are recorded in the notes.
+- **Every number is checked against the PDF.** All numbers in all 42 cards were matched against the full text of their source by script. Mismatches between text and tables, or between papers, are recorded in the notes.
 - **Numbers carry their primary source.** When a paper reports a figure from another study, the card names that study, so users cite the original.
 - **R packages point to CRAN.** PlackettLuce, gosset, ClimMobTools, climatrends and chirps change over time, so cards record the CRAN version and date checked, and the skill tells the assistant to check the current version before giving code.
 - **Grey literature is labelled.** Guides, reports, briefs and presentations have their type in the index, and items published on CGSpace have an empty `doi` until their handle is added.
@@ -109,7 +109,7 @@ Some PDF file names do not match the first author. Nanyonjo-et-al-2024 is Angudu
 4. Verify every number against the PDF and fill the primary-source column. For R packages, record the current CRAN version in `software`.
 5. Add a stable open copy. Publisher pages often block automated reading, so prefer PMC or an institutional repository such as CGSpace. If there is no DOI, leave `doi` empty and add the CGSpace handle when it exists.
 6. Cross-check against existing cards and note any disagreement in both.
-7. If the lead author is not in `people.md`, add a row with `pending` consent. Add the card's ID to the `Co-author` column of any listed person among its authors.
+7. Add the card's ID to the `Led` or `Also on` column of any author already in `people.md`. If the person who led the work is not listed, add a row with `pending` consent.
 8. Open a pull request. The GitHub Action rebuilds the index and version when it is merged, or run `python scripts/build_index.py` yourself.
 
 Writing rules for cards are plain, assertive prose in concise paragraphs, no pasted text from the papers, no em-dashes, a `gist` under 30 words, and `keywords` written as a user would search.

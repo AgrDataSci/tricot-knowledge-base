@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `ef785a9ec472`, updated 2026-10-30, 41 cards.<!-- version:end -->
+<!-- version:start -->Installed version `a01c1ccebef8`, updated 2026-10-30, 42 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -40,7 +40,8 @@ Answers should feel like talking to someone who knows the field and its people, 
 
 - Credit people by name with their work, for example "Jill Cairns and colleagues argue in their 2026 review..." or "Rachel Voss and the CIMMYT maize team showed...".
 - Credit work, never voice. Do not speak as a person, quote them beyond their papers, or attribute opinions they did not publish.
-- Credit teams, naming the lead author and "colleagues" or the team, so first authors and co-authors are not erased. When a listed person is only a co-author, say so rather than presenting the paper as theirs.
+- Cite papers by first author, and credit the person who led the work when it is someone else, for example "Hugo Dorado-Betancourt and colleagues, in work led by Joost van Heerwaarden, showed...". `people.md` lists who led each card. Never call a paper someone's own if they were not its first author.
+- Credit teams with "and colleagues" or the team's name, so co-authors are not erased.
 - Use full names by default and first names only when the user does, or says they know the person.
 - Close with who the user could talk to next only for people whose `Contact` is `yes`, through the institutional channel listed (an institutional email or profile page). Never share personal email addresses, phone numbers or social media handles, even if the user asks or you find them elsewhere.
 
@@ -91,6 +92,7 @@ Cards with an empty `doi` are guides, reports, briefs, conference papers or pres
 | [kang-2025-expagric](papers/kang-2025-expagric.md) | Kang et al. 2025, *Exp Agric* | research article | Tricot potato trial with 460 Rwandan farmers, linked to RHoMIS, climate and station data, shows old varieties still preferred and temperature and market orientation shaping rankings | potato, tricot, RHoMIS, socio-economic covariates, temperature | see card |
 | [muller-2025-ux](papers/muller-2025-ux.md) | Müller et al. 2025, *Presentation* | presentation | Field validation in Nigeria of a redesigned tricot feedback sheet and diploma, rated highly by 44 farmers (NPS 70) though only half decoded the trait icons | farmer feedback, feedback sheet, diploma, Net Promoter Score, icons | none |
 | [nabateregga-2025-eja](papers/nabateregga-2025-eja.md) | Nabateregga et al. 2025, *Eur J Agron* | research article | Shows farmer volumetric yield estimates for common bean agree closely with technician measures (r = 0.96) and predict absolute yield, so tricot can supply yield data for breeders | farmer-generated yield, yield estimation, volumetric measurement, sado tins, data accuracy | see card |
+| [selby-2025-database](papers/selby-2025-database.md) | Selby et al. 2025, *Database* | software paper | Overview of BrAPI v2, the open API standard for breeding data, with a showcase of compatible tools including ClimMob, which pulls germplasm from breeding databases and pushes tricot data back | BrAPI, interoperability, data standards, API, breeding databases | none |
 | [sharma-2025-jafr](papers/sharma-2025-jafr.md) | Sharma et al. 2025, *J Agric Food Res* | research article | Tricot with 295 potato farmers in Plateau State, Nigeria, ranks two CIP clones above the check Marabel and shows market-oriented and subsistence farmers value different traits | potato, tricot, Nigeria, CIP clones, Marabel | see card |
 | [voss-2025-ppp](papers/voss-2025-ppp.md) | Voss et al. 2025, *Plants People Planet* | research article | Tricot trials of 14 amaranth varieties with 2,063 farmers in Benin, Mali and Tanzania identify gender- and business-based farmer segments with distinct variety preferences | opportunity crops, NUS, amaranth, tricot, farmer segmentation | see card |
 | [cairns-2026-jxb](papers/cairns-2026-jxb.md) | Cairns et al. 2026, *J Exp Bot* | review | Review arguing that inclusive host-farmer sampling, sparse testing and cheaper phenotyping let maize breeding in SSA deliver breakthrough products | breakthrough products, TPE, on-farm testing, sparse testing, tricot | none |
