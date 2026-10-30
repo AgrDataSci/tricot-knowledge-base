@@ -15,7 +15,7 @@ authors:
   - family-names: de Sousa
     given-names: Kauê
     orcid: https://orcid.org/0000-0002-7571-7845
-    affiliation: "Bioversity International; University of Inland Norway"
+    affiliation: "Bioversity International"
   - family-names: Youngberg
     given-names: Brayden
     affiliation: "Bioversity International"
@@ -23,6 +23,10 @@ authors:
   - family-names: Chase
     given-names: Rachel
     orcid: https://orcid.org/0000-0002-5859-6455
+    affiliation: "Bioversity International"
+  - family-names: Laporte
+    given-names: Marie-Angélique
+    orcid: https://orcid.org/0000-0002-8461-9745
     affiliation: "Bioversity International"
 repository-code: https://github.com/AgrDataSci/tricot-knowledge-base
 license: CC-BY-4.0
