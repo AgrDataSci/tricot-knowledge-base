@@ -65,4 +65,4 @@ The validation combined quantitative and qualitative methods to answer several r
 
 ## Notes
 
-- The deck lists Kauê de Sousa in the steering team.
+- This work was implemented under the BOLD WP7 project supported by Crop Trust with the goal to increase adoption of opportunity crops in Africa.
