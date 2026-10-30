@@ -33,12 +33,11 @@ Use this file to credit the people behind the work and, where they agreed, to su
 | Stephen Angudubo | pending | Bioversity International | cassava tricot, trial costing | angudubo-2024-cropsci | desousa-2024-asd, chase-2026-book | pending | pending |
 | Jill Cairns | pending | CIMMYT | inclusive host-farmer sampling, farm typologies, gender, maize breeding | cairns-2026-jxb | voss-2023-fsoc, vanetten-2023-pnas, desousa-2024-asd, chase-2026-book | pending | pending |
 | Happy Daudi | pending | CIMMYT | groundnut breeding, GxE, tricot champion in East Africa | daudi-2026-fes | desousa-2024-asd, cairns-2026-jxb, dorado-2026-tag | pending | pending |
-| Marit Jørgensen | pending | NIBIO | forage mixtures, tricot in Norway | jorgensen-2026-gse | mulatu-2024-slides | pending | pending |
+| Marit Jørgensen | pending | NIBIO | forage mixtures, Norway, Ethiopia | jorgensen-2026-gse, mulatu-2024-slides | none | pending | pending |
 | Marie-Angélique Laporte | pending | Bioversity International | ontologies, data standards, ClimMob | none | vanetten-2020-rtbwp, quiros-2024-compag, voss-2025-ppp, chase-2026-book | pending | pending |
 | Mukani Moyo | pending | CIP | consumer testing, sweetpotato | moyo-2021-fsufs | desousa-2024-asd | pending | pending |
-| Kalkidan Mulatu | pending | to confirm | forage mixtures in Ethiopia | mulatu-2024-slides | none | pending | pending |
 | Anna Müller | pending | Bioversity International | farmer feedback, inclusive design, UX | muller-2025-ux | vanetten-2023-pnas, desousa-2024-asd, quiros-2024-compag, schumann-2024-ux, chase-2026-book | pending | pending |
-| Martina Occelli | pending | Cornell University | impact of tricot vs group PVS | occelli-2024-agecon | desousa-2024-asd | pending | pending |
+| Martina Occelli | pending | ETH Zurich | impact of tricot vs group PVS | occelli-2024-agecon | desousa-2024-asd | pending | pending |
 | Pieter Rutsaert | pending | CIMMYT | video-based product concept testing, product testing | rutsaert-2023-mib | desousa-2024-asd, mbugua-2024-mib, donovan-2025-expagric | pending | pending |
 | Thiago Mendes | pending | CIP | potato, sweetpotato, tricot, RTB | none | desousa-2024-asd, kang-2025-expagric, dorado-2026-tag | pending | pending |
 | Béla Teeken | pending | IITA | RTB, gender and social difference, trait preferences, cassava, consumer testing, farmer feedback | teeken-2021-fsufs, teeken-2023-slides | vanetten-2020-rtbwp, alamu-2023-jsfa, olaosebikan-2023-jsfa, vanetten-2023-pnas, desousa-2024-asd, chase-2026-book | pending | pending |
