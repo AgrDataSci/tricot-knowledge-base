@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `922865356893`, updated 2026-10-30, 47 cards.<!-- version:end -->
+<!-- version:start -->Installed version `2c97a9478e47`, updated 2026-10-30, 47 cards.<!-- version:end -->
 
 ## Check for updates first
 
