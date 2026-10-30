@@ -17,6 +17,13 @@ keywords: tricot, citizen science, Plackett-Luce trees, climate adaptation, vari
 gist: First large tricot test (12,409 plots, 3 countries) showing farmer rankings capture climate effects and improve variety recommendations
 ---
 
+## Questions this paper answers
+
+- Can farmer rankings from tricot reveal how varieties respond to climate?
+- Which climate variables drive variety performance for bean and wheat?
+- How can seasonal forecasts and risk (worst regret) improve recommendations?
+- How do tricot-based recommendations compare with official ones?
+
 ## Summary
 
 The paper asks whether crowdsourced citizen science can generate data good enough to characterize how crop varieties respond to climate, and to improve variety recommendations in marginal environments where conventional trials scale poorly. It is the first large-scale test of tricot. Each farmer received three randomly assigned varieties and ranked them, a format low-literacy farmers can handle and mobile phones can capture.
@@ -29,7 +36,20 @@ The authors show four ways climate analysis improves recommendations. Averaging 
 
 The resulting recommendations departed from official ones. In Nicaragua, catalogue varieties performed worse than local ones, and heat-tolerant lines recommended only for warmer zones fit the study area. In Ethiopia, tricot gave location-specific choices where the CIMMYT Wheat Atlas treated the highlands as one mega-environment, and two farmer varieties went on to official release. In India, the older K 9107 matched or beat the promoted HD 2967.
 
-The paper positions tricot as a scalable, demand-led way to track climate on farms, feed seasonal forecast services and variety portfolios, and support decentralized breeding, provided institutions and partners commit to it.
+The paper positions tricot as a scalable, demand-led way to track climate on farms, feed seasonal forecast services and variety portfolios, and support decentralized breeding, provided institutions and partners commit to it. These results laid the basis for climate-informed recommendations from tricot.
+
+## Methods in brief
+
+- **Trials.** Tricot in Nicaragua (842 plots), Ethiopia (1,090) and India (10,477), 2012–2016, three varieties per farm (four in Ethiopia).
+- **Covariates.** Climate (land-surface temperature, rainfall) and soil variables linked by coordinates and planting date.
+- **Model.** Plackett-Luce trees, with 10-fold cross-validated pseudo-R² to compare covariate sets.
+- **Recommendations.** Predictions over a 15-year base period, perfect-forecast scenario, probability of winning and worst regret, maps of top varieties.
+
+## Stated limitations
+
+- Perfect-forecast gains are an upper bound, as real forecast skill was not tested.
+- Fit was low in India, where the variety set was narrow and modern.
+- Land-surface temperature was used rather than air temperature, which shifts thresholds.
 
 ## Key numbers
 
@@ -39,7 +59,7 @@ The paper positions tricot as a scalable, demand-led way to track climate on far
 | 842 / 1,090 / 10,477 | Plots in Nicaragua (bean) / Ethiopia (durum wheat) / India (bread wheat) | This paper |
 | 2012–2016 | Trial period (5 seasons Nicaragua, 3 Ethiopia, 4 India) | This paper |
 | 3 (4 in Ethiopia) | Varieties per farm | This paper |
-| 0.198 / 0.487 / 0.088 | Cross-validated pseudo-R² of best (climate) model, Nicaragua / Ethiopia / India | This paper |
+| 0.1978 / 0.4870 / 0.0882 | Cross-validated pseudo-R² of best (climate) model, Nicaragua / Ethiopia / India | This paper |
 | 18.7 °C | Max night temperature threshold shifting bean rankings (vs 20 °C air-temperature threshold) | This paper; Rainey and Griffiths 2005 |
 | 8.4 °C | Min night temperature threshold for durum wheat, consistent with vernalization | This paper; Fowler 2008 |
 | 2,483 ± 113 m vs 2,101 ± 485 m | Origin elevation of cold-adapted vs cold-sensitive durum varieties | This paper |

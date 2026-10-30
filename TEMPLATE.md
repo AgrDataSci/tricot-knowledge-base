@@ -6,11 +6,12 @@ year: 2024
 journal: Full journal name
 journal_short: Short journal name            # used in the index, e.g. PNAS, J Exp Bot
 article: volume(issue), pages or article number
-type: research article | review | perspective | dataset paper | software paper
-doi: https://doi.org/...
-open_copy: stable open full-text URL (PMC, institutional repository, or our GitHub markdown)
-license: CC BY 4.0
+type: research article | review | perspective | software paper | preprint | book | guide | working paper | report | policy brief | presentation
+doi: https://doi.org/...                     # leave empty for CGSpace items; fill with the handle link later
+open_copy: stable open full-text URL (PMC, institutional repository, or our GitHub markdown); may be empty
+license: CC BY 4.0                            # as stated in the PDF; otherwise "see CGSpace record"
 data: dataset DOI or repository, and where the code lives; "none" if not applicable
+software: R package, https://CRAN.R-project.org/package=<name> (vX.Y on CRAN, published YYYY-MM-DD, checked YYYY-MM-DD)   # optional; always check the current CRAN version
 crops: crops covered
 region: countries or regions
 keywords: 8 to 12 comma-separated terms a user would search for

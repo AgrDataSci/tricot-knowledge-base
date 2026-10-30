@@ -18,6 +18,13 @@ funding: UK-CGIAR TEAM-AI
 gist: Review arguing that inclusive host-farmer sampling, sparse testing and cheaper phenotyping let maize breeding in SSA deliver breakthrough products
 ---
 
+## Questions this paper answers
+
+- What are breakthrough products, and why do they need on-farm testing?
+- How should host farmers be sampled to represent the target population of environments?
+- What is sparse testing, at early and late stages of the breeding pipeline?
+- How can on-farm phenotyping be made cheaper (farmer measurement, smartphones, satellites)?
+
 ## Summary
 
 The review argues that public breeding programmes in sub-Saharan Africa cannot deliver breakthrough products, defined as varieties with at least 25% higher productivity or value in farmers' fields, without moving more selection onto farms. Climate change is shifting the maize target population of environments (TPE) faster than managed-stress trials can track, with drought and heat increasingly co-occurring. Smallholder management is also highly diverse, so station trials represent the TPE poorly and realized genetic gain suffers.
@@ -28,9 +35,19 @@ The first argument concerns who hosts trials. Extension agents or community lead
 
 The second argument concerns trial design. Sparse testing evaluates only a subset of candidates per farm, so programmes cover far more of the TPE on the same budget and include land-poor farmers. At late stages, tricot drives most of this expansion, raising maize testing from fewer than 20 to almost 300 farms per pipeline and reaching over 150,000 farmers across crops. At early stages, genomic relationship matrices link unreplicated genotypes across farms, a logic borrowed from animal breeding, so performance can be predicted across the whole TPE. The trade-offs are real. Farmers see only part of the diversity, and researchers learn less about the reasons behind preferences.
 
-The third argument concerns phenotyping, now the main bottleneck. Researcher-led yield measurement is expensive, mostly because of travel. Trained farmers and extension agents using simple volumetric measures produce accurate yields, and smartphone images support disease and yield-component scoring. Very-high-resolution satellites offer scale but face mixed pixels, calibration problems and licensing costs that call for joint CGIAR-NARES acquisition.
+The third argument concerns phenotyping, now the main bottleneck. Researcher-led yield measurement is expensive, mostly because of travel. Trained farmers and extension agents using simple volumetric measures produce accurate yields, and smartphone images support disease and yield-component scoring. Very-high-resolution satellites offer scale but face mixed pixels, calibration problems and licensing costs that call for joint CGIAR-NARES acquisition. The paper closes by noting that on-farm networks can also capture genotype-by-management interactions, especially nitrogen response, and produce fertilizer recommendations that track volatile prices.
 
-The paper closes by noting that on-farm networks can also capture genotype-by-management interactions, especially nitrogen response, and produce fertilizer recommendations that track volatile prices.
+## Methods in brief
+
+- **Type.** Narrative review of CGIAR and NARES maize breeding and on-farm testing literature.
+- **Evidence.** Zimbabwe survey of about 2,000 maize farmers on management diversity, and published trials and reviews.
+- **Proposals.** Farm-typology stratified sampling, late-stage tricot sparse testing, early-stage genomic sparse testing, low-cost phenotyping.
+
+## Stated limitations
+
+- Typology surveys are costly and long, and the minimum variable set is not yet known.
+- Sparse testing shows farmers only part of the diversity and gives less insight into the reasons behind preferences.
+- Satellite phenotyping faces mixed pixels, calibration and licensing costs.
 
 ## Key numbers
 

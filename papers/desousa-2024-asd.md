@@ -73,7 +73,7 @@ Recent work extends tricot to consumer testing and product concepts, including v
 | 27% | Lower cost per equivalent experimental unit, tricot vs RCBD, Rwanda maize (USD 4.45 vs 6.10) | This paper |
 | ~17% | Lower total cost, same comparison (USD 1,517 vs 1,829) | This paper |
 | 155 vs 50 trials | Tricot (11 varieties, 465 units, 341 equivalent units) vs RCBD (6 varieties, 300 units), Rwanda | This paper |
-| USD 283 vs 523 | Seed cost, tricot vs RCBD, Rwanda, the largest saving | This paper |
+| USD 283.04 vs 522.72 | Seed cost, tricot vs RCBD, Rwanda, the largest saving | This paper |
 | 0.73 | Relative efficiency of the incomplete block design | Bailey and Cameron 2009 |
 | ~40% | Lower cost of tricot vs PVS in Central America | Occelli et al. 2024 |
 | 20% vs 18% | Adoption after tricot (146/739) vs group PVS (74/394), Trifinio region | Occelli et al. 2024 |
