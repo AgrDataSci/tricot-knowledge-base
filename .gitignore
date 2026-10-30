@@ -22,3 +22,7 @@
 
 # R Environment Variables
 .Renviron
+
+# Skill packaging
+build/
+*.zip

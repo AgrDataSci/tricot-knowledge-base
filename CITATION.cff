@@ -1,21 +1,37 @@
 cff-version: 1.2.0
-message: "If you use this dataset or software, please cite it as below."
-title: "A FAIR and project-oriented template for open science data workflows"
-version: "v1.2"
-date-released: 2025-06-09
+message: "If you use this knowledge base, please cite it as below. Cite the original papers for any finding you use."
+type: dataset
+title: "Tricot knowledge base. An AI-ready synthesis of the literature on decentralized on-farm testing"
+abstract: >-
+  A knowledge base of the open-access literature on tricot, on-farm testing
+  and product testing with farmers and consumers. Each paper is distilled into
+  a verified markdown card with its main argument, methods, stated limitations,
+  key numbers with their primary sources, and links to the underlying data and
+  code. The repository works as a Claude skill and is readable by people and
+  other AI tools.
+version: "0.1.0"
+date-released: 2026-10-30
 authors:
   - family-names: de Sousa
     given-names: Kauê
     orcid: https://orcid.org/0000-0002-7571-7845
     affiliation: "Bioversity International; University of Inland Norway"
-  - family-names: Laporte
-    given-names: Marie-Angélique
-    orcid: https://orcid.org/0000-0002-8461-9745
+  - family-names: Youngberg
+    given-names: Brayden
     affiliation: "Bioversity International"
-repository-code: https://github.com/AgrDataSci/template-repo-data-analysis
+    orcid: https://orcid.org/0009-0008-0103-0208
+  - family-names: Chase
+    given-names: Rachel
+    orcid: https://orcid.org/0000-0002-5859-6455
+    affiliation: "Bioversity International"
+repository-code: https://github.com/AgrDataSci/tricot-knowledge-base
 license: CC-BY-4.0
 keywords:
-  - data-driven research
+  - tricot
+  - citizen science
+  - on-farm testing
+  - participatory variety selection
+  - plant breeding
+  - AI-ready documentation
+  - knowledge base
   - FAIR principles
-  - data management
-  - open science
