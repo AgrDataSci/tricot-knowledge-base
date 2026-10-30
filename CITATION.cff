@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this knowledge base, please cite it as below. Cite the original papers for any finding you use."
 type: dataset
-title: "Tricot knowledge base. An AI-ready synthesis of the literature on decentralized on-farm testing"
+title: "Evidence base on product testing with users in agriculture. An AI-ready synthesis of the literature"
 abstract: >-
   A knowledge base of the open-access literature on tricot, on-farm testing
   and product testing with farmers and consumers. Each paper is distilled into

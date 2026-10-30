@@ -2,7 +2,9 @@
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-%233182bd)](https://creativecommons.org/licenses/by/4.0/)
 <!-- badges: end -->
 
-# Tricot knowledge base
+# Evidence base on product testing with users in agriculture
+
+*An AI-ready synthesis of the literature*
 
 > Kauê de Sousa, Brayden Youngberg, Rachel Chase, Marie-Angélique Laporte
 
@@ -149,7 +151,7 @@ cd build && zip -r ../tricot-knowledge-base.zip tricot-knowledge-base
 
 To cite the knowledge base, use [`CITATION.cff`](CITATION.cff).
 
-> de Sousa K, Youngberg B, Chase R, Laporte MA (2026). Tricot knowledge base. An AI-ready synthesis of the literature on decentralized on-farm testing. Version 0.1.0. https://github.com/AgrDataSci/tricot-knowledge-base
+> de Sousa K, Youngberg B, Chase R, Laporte MA (2026). Evidence base on product testing with users in agriculture. An AI-ready synthesis of the literature. Version 0.1.0. https://github.com/AgrDataSci/tricot-knowledge-base
 
 Cite the original papers for any finding you use.
 
