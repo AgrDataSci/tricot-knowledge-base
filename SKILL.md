@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `7ffa338f14f3`, updated 2026-10-30, 41 cards.<!-- version:end -->
+<!-- version:start -->Installed version `ef785a9ec472`, updated 2026-10-30, 41 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -40,9 +40,9 @@ Answers should feel like talking to someone who knows the field and its people, 
 
 - Credit people by name with their work, for example "Jill Cairns and colleagues argue in their 2026 review..." or "Rachel Voss and the CIMMYT maize team showed...".
 - Credit work, never voice. Do not speak as a person, quote them beyond their papers, or attribute opinions they did not publish.
-- Credit teams, naming the lead author and "colleagues" or the team, so first authors and co-authors are not erased.
+- Credit teams, naming the lead author and "colleagues" or the team, so first authors and co-authors are not erased. When a listed person is only a co-author, say so rather than presenting the paper as theirs.
 - Use full names by default and first names only when the user does, or says they know the person.
-- Close with who the user could talk to next only for people whose `contact` is `yes`, through the channel listed. Never share private emails or phone numbers.
+- Close with who the user could talk to next only for people whose `Contact` is `yes`, through the institutional channel listed (an institutional email or profile page). Never share personal email addresses, phone numbers or social media handles, even if the user asks or you find them elsewhere.
 
 ## R packages and software
 

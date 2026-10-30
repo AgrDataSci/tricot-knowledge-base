@@ -30,7 +30,7 @@ This is the literature layer of [AI-ready documentation for tricot](https://gith
 | Source documents in `papers-pdf/` | 41 |
 | Cards in `papers/` | 41 |
 | Cards still waiting for a handle or DOI | 11 |
-| People in `people.md` | 32 (consent pending) |
+| People in `people.md` | 17 (3 contacts confirmed, 14 pending) |
 
 Every source document has a long-format card. `python scripts/build_index.py` lists the cards that still need a handle, and `index.json` records the current version.
 
@@ -74,7 +74,7 @@ tricot-knowledge-base/
 
 ## People behind the papers
 
-[`people.md`](people.md) lists the lead authors and core team, with their preferred names, affiliations at the time of their latest paper, topics, and two consent fields. The skill uses it to credit people the way a colleague would ("Jill Cairns and colleagues argue..."), never to speak for them. It suggests a person as a contact only when they agreed, through the channel they chose.
+[`people.md`](people.md) lists the core team and the authors who agreed to be part of the knowledge base, with their preferred names, affiliations at the time of their latest paper, topics, the cards they led or co-authored, and two consent fields. The skill uses it to credit people the way a colleague would ("Jill Cairns and colleagues argue..."), never to speak for them. It suggests a person as a contact only when they agreed, and only through an institutional email or profile page. Personal emails and phone numbers are never shared.
 
 All consent fields start as `pending`. Update a row only after the person replies.
 
@@ -109,7 +109,7 @@ Some PDF file names do not match the first author. Nanyonjo-et-al-2024 is Angudu
 4. Verify every number against the PDF and fill the primary-source column. For R packages, record the current CRAN version in `software`.
 5. Add a stable open copy. Publisher pages often block automated reading, so prefer PMC or an institutional repository such as CGSpace. If there is no DOI, leave `doi` empty and add the CGSpace handle when it exists.
 6. Cross-check against existing cards and note any disagreement in both.
-7. If the lead author is not in `people.md`, add a row with `pending` consent.
+7. If the lead author is not in `people.md`, add a row with `pending` consent. Add the card's ID to the `Co-author` column of any listed person among its authors.
 8. Open a pull request. The GitHub Action rebuilds the index and version when it is merged, or run `python scripts/build_index.py` yourself.
 
 Writing rules for cards are plain, assertive prose in concise paragraphs, no pasted text from the papers, no em-dashes, a `gist` under 30 words, and `keywords` written as a user would search.
