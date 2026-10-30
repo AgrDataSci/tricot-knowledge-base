@@ -1,5 +1,5 @@
 {
- "version": "d1287829ace4",
+ "version": "d5405e3ed4b8",
  "updated": "2026-10-30",
  "cards": 47,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
@@ -544,7 +544,7 @@
    "gist": "Field validation in Nigeria of a redesigned tricot feedback sheet and diploma, rated highly by 44 farmers (NPS 70) though only half decoded the trait icons",
    "keywords": "farmer feedback, feedback sheet, diploma, Net Promoter Score, icons, usability, field validation, implementers, variety release evidence, NRCRI",
    "path": "papers/muller-2025-ux.md",
-   "hash": "ac7b7b7a3d52",
+   "hash": "5ef5b559b8ee",
    "relations": [
     {
      "relation": "extends",
