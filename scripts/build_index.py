@@ -8,8 +8,18 @@ Only standard-library Python is needed.
 
 Rules checked for every card
 - required fields are present and filled
-- the doi field is present; it may be empty for CGSpace items still waiting for their handle
+- the doi field is present; it may be empty for items still waiting for their handle
 - the id matches the file name
+- every relation uses a known CiTO term and points to an existing card
+
+Relations are declared in the card front matter as a YAML list, one per line:
+
+relations:
+  - extends: mancini-2017-scirep
+  - citesAsDataSource: desousa-2024-asd  # optional note after a hash
+
+The script adds the inverse links, writes the graph to index.json and relations.jsonld
+(JSON-LD with the CiTO vocabulary), and lists every link in SKILL.md.
 """
 import datetime
 import hashlib
@@ -21,6 +31,19 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 START, END = "<!-- index:start -->", "<!-- index:end -->"
 VSTART, VEND = "<!-- version:start -->", "<!-- version:end -->"
 RAW = "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/"
+RSTART, REND = "<!-- relations:start -->", "<!-- relations:end -->"
+# CiTO terms (http://purl.org/spar/cito/) and their inverses
+RELATIONS = {
+    "extends": "isExtendedBy",
+    "reviews": "isReviewedBy",
+    "updates": "isUpdatedBy",
+    "usesDataFrom": "providesDataFor",
+    "usesMethodIn": "providesMethodFor",
+    "citesAsDataSource": "isCitedAsDataSourceBy",
+    "agreesWith": "isAgreedWithBy",
+    "disagreesWith": "isDisagreedWithBy",
+    "discusses": "isDiscussedBy",
+}
 REQUIRED = ["id", "title", "authors", "year", "journal", "type", "gist", "keywords", "data"]
 PRESENT = ["doi", "open_copy", "license"]  # must exist, may be empty
 
@@ -30,8 +53,18 @@ def front_matter(path):
     m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
     if not m:
         raise SystemExit(f"{path.name}: no front matter")
-    meta = {}
+    meta = {"relations": []}
+    in_rel = False
     for line in m.group(1).splitlines():
+        if in_rel and line.lstrip().startswith("- "):
+            item, _, note = line.lstrip()[2:].partition("#")
+            rel, _, target = item.partition(":")
+            meta["relations"].append({"type": rel.strip(), "target": target.strip(), "note": note.strip()})
+            continue
+        in_rel = False
+        if line.startswith("relations:"):
+            in_rel = True
+            continue
         if ":" in line:
             k, v = line.split(":", 1)
             meta[k.strip()] = v.strip()
@@ -85,9 +118,24 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()[:12]
 
 
+ids = {m["id"] for m, _ in metas}
+links = []  # (source, relation, target, note)
+for m, p in metas:
+    for r in m["relations"]:
+        if r["type"] not in RELATIONS:
+            raise SystemExit(f"{p.name}: unknown relation '{r['type']}'. Use one of {', '.join(RELATIONS)}")
+        if r["target"] not in ids:
+            raise SystemExit(f"{p.name}: relation target '{r['target']}' is not a card")
+        links.append((m["id"], r["type"], r["target"], r["note"]))
+graph = {i: [] for i in ids}
+for a, rel, b, note in links:
+    graph[a].append({"relation": rel, "card": b, "note": note})
+    graph[b].append({"relation": RELATIONS[rel], "card": a, "note": note})
+
 people = ROOT / "people.md"
 entries = [{"id": m["id"], "year": m["year"], "type": m["type"], "gist": m["gist"],
-            "keywords": m["keywords"], "path": f"papers/{p.name}", "hash": digest(p)} for m, p in metas]
+            "keywords": m["keywords"], "path": f"papers/{p.name}", "hash": digest(p),
+            "relations": graph[m["id"]]} for m, p in metas]
 people_hash = digest(people) if people.exists() else ""
 version = hashlib.sha256(("".join(e["hash"] for e in entries) + people_hash).encode()).hexdigest()[:12]
 
@@ -101,16 +149,35 @@ index = {"version": version, "updated": updated, "cards": len(entries), "raw_bas
          "people": {"path": "people.md", "hash": people_hash}, "papers": entries}
 index_path.write_text(json.dumps(index, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
+# JSON-LD export of the citation graph with the CiTO vocabulary
+def node_id(meta):
+    return meta["doi"] or f"{RAW}papers/{meta['id']}.md"
+by_id = {m["id"]: m for m, _ in metas}
+nodes = []
+for m, _ in metas:
+    node = {"@id": node_id(m), "dcterms:identifier": m["id"], "dcterms:title": m["title"],
+            "dcterms:date": m["year"], "fabio:hasURL": f"{RAW}papers/{m['id']}.md"}
+    for a, rel, b, note in links:
+        if a == m["id"]:
+            node.setdefault(f"cito:{rel}", []).append({"@id": node_id(by_id[b])})
+    nodes.append(node)
+jsonld = {"@context": {"cito": "http://purl.org/spar/cito/", "dcterms": "http://purl.org/dc/terms/",
+                       "fabio": "http://purl.org/spar/fabio/"}, "@graph": nodes}
+(ROOT / "relations.jsonld").write_text(json.dumps(jsonld, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+
 skill = ROOT / "SKILL.md"
 text = skill.read_text(encoding="utf-8")
-for a, b in [(START, END), (VSTART, VEND)]:
+for a, b in [(START, END), (VSTART, VEND), (RSTART, REND)]:
     if a not in text or b not in text:
         raise SystemExit(f"SKILL.md needs the {a} and {b} markers")
 new = re.sub(re.escape(START) + r".*?" + re.escape(END), START + "\n" + "\n".join(rows) + "\n" + END, text, flags=re.S)
 stamp = f"Installed version `{version}`, updated {updated}, {len(entries)} cards."
 new = re.sub(re.escape(VSTART) + r".*?" + re.escape(VEND), VSTART + stamp + VEND, new, flags=re.S)
+rel_lines = [f"- {a} **{rel}** {b}" + (f" ({note})" if note else "") for a, rel, b, note in links]
+new = re.sub(re.escape(RSTART) + r".*?" + re.escape(REND), RSTART + "\n" + "\n".join(rel_lines) + "\n" + REND, new, flags=re.S)
 skill.write_text(new, encoding="utf-8")
 no_doi = [m["id"] for m, _ in metas if not m["doi"]]
+print(f"{len(links)} relations between cards.")
 print(f"Index rebuilt with {len(cards)} papers. Version {version} ({updated}). SKILL.md is {len(new.encode())} bytes.")
 if no_doi:
     print(f"{len(no_doi)} cards still need a handle or DOI: {', '.join(no_doi)}")

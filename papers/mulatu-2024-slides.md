@@ -7,8 +7,8 @@ journal: Presentation, Tropentag conference, 12 September 2024
 journal_short: Presentation
 article: conference slides
 type: presentation
-doi:
-open_copy:
+doi: https://hdl.handle.net/10568/163542
+open_copy: https://hdl.handle.net/10568/163542
 license: see repository record
 data: none
 software: ClimMob, PlackettLuce
@@ -60,5 +60,5 @@ The lessons point to scaling mixtures to similar suitable environments, and to t
 
 ## Notes
 
-- Grey literature (conference slides) without a DOI. Add a repository link if one exists.
+- Grey literature (conference slides) archived on CGSpace.
 - Shares the forage-mixture focus and a co-author (Marit Jørgensen) with jorgensen-2026-gse.

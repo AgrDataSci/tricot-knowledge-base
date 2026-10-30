@@ -7,7 +7,7 @@ journal: Full journal name
 journal_short: Short journal name            # used in the index, e.g. PNAS, J Exp Bot
 article: volume(issue), pages or article number
 type: research article | review | perspective | software paper | preprint | book | guide | working paper | report | policy brief | presentation
-doi: https://doi.org/...                     # leave empty for CGSpace items; fill with the handle link later
+doi: https://doi.org/...                     # or the repository handle (https://hdl.handle.net/...) for grey literature
 open_copy: stable open full-text URL (PMC, institutional repository, or our GitHub markdown); may be empty
 license: CC BY 4.0                            # as stated in the PDF; otherwise "see CGSpace record"
 data: dataset DOI or repository, and where the code lives; "none" if not applicable
@@ -16,6 +16,9 @@ crops: crops covered
 region: countries or regions
 keywords: 8 to 12 comma-separated terms a user would search for
 gist: One sentence, under 30 words, saying what the paper shows
+relations:                                   # optional; one per line, CiTO terms, target is a card id
+  - extends: other-card-id                   # extends | reviews | updates | usesDataFrom | usesMethodIn | citesAsDataSource | agreesWith | disagreesWith | discusses
+  - citesAsDataSource: other-card-id  # a short note after a hash, e.g. when the number is reported differently
 ---
 
 ## Questions this paper answers

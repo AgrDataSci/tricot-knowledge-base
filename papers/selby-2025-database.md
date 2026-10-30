@@ -16,6 +16,8 @@ crops: any
 region: global
 keywords: BrAPI, interoperability, data standards, API, breeding databases, ClimMob, germplasm, FAIR data, data integration, genebanks
 gist: Overview of BrAPI v2, the open API standard for breeding data, with a showcase of compatible tools including ClimMob, which pulls germplasm from breeding databases and pushes tricot data back
+relations:
+  - discusses: quiros-2024-compag  # ClimMob as a BrAPI-compatible tool
 ---
 
 ## Questions this paper answers

@@ -16,6 +16,9 @@ crops: durum wheat
 region: Ethiopia (Amhara and Tigray highlands)
 keywords: 3D-breeding, genomic prediction, tricot, durum wheat, landraces, overall appreciation, G×E, decentralized breeding, prediction accuracy, reliability
 gist: Combining genomics with tricot rankings from 1,165 Ethiopian farms (3D-breeding) predicted on-farm durum wheat performance far better than station-based genomic selection
+relations:
+  - extends: mancini-2017-scirep
+  - extends: vanetten-2019-pnas
 ---
 
 ## Questions this paper answers

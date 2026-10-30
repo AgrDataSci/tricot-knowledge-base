@@ -7,8 +7,8 @@ journal: Grassland Science in Europe, Vol. 31 (Challenges and innovations for gr
 journal_short: Grassl Sci Eur
 article: 31, 516-518
 type: conference paper
-doi:
-open_copy:
+doi: https://hdl.handle.net/11250/5574875
+open_copy: https://hdl.handle.net/11250/5574875
 license: see proceedings
 data: none yet (trials ongoing)
 software: ClimMob, PlackettLuce
@@ -65,4 +65,3 @@ Interest exceeded expectations, with more than the planned 100 farmers wanting t
 
 - The abstract describes ten options, while the methods and table list twelve mixtures. Use twelve.
 - A short conference paper describing a trial in progress. Check for later results before citing outcomes.
-- Grey literature without a DOI. Add the proceedings or repository link.

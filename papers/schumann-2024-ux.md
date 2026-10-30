@@ -7,8 +7,8 @@ journal: Alliance of Bioversity International and CIAT, UX Research and Inclusiv
 journal_short: Presentation
 article: review slides
 type: presentation
-doi:
-open_copy:
+doi: https://hdl.handle.net/10568/169094
+open_copy: https://hdl.handle.net/10568/169094
 license: see repository record
 data: none
 crops: any
@@ -56,5 +56,4 @@ The review sets the stage for treating farmer feedback as a designed product wit
 
 ## Notes
 
-- Grey literature without a DOI. Add the CGSpace handle if one exists.
 - Field validation of these prototypes is reported in muller-2025-ux.

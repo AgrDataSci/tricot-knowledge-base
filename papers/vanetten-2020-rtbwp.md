@@ -7,8 +7,8 @@ journal: CGIAR Research Program on Roots, Tubers and Bananas (RTB Working Paper)
 journal_short: RTB Working Paper
 article: December 2020
 type: working paper
-doi:
-open_copy:
+doi: https://hdl.handle.net/10568/111044
+open_copy: https://hdl.handle.net/10568/111044
 license: CC BY 4.0
 data: none
 crops: roots, tubers and bananas (cassava, sweetpotato, potato) and others
@@ -66,5 +66,5 @@ The paper also covers documentation and publication of trial data, digital devel
 
 ## Notes
 
-- Grey literature. The DOI found in the PDF belongs to another work, so `doi` is left empty for the CGSpace handle.
+- Grey literature. The DOI found in the PDF belongs to another work, so `doi` holds the CGSpace handle.
 - The ~40% cost saving matches the later Central America estimate in desousa-2024-asd (Occelli et al. 2024), but the two are separate estimates.

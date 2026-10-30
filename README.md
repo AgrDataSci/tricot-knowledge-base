@@ -27,10 +27,11 @@ This is the literature layer of [AI-ready documentation for tricot](https://gith
 
 | | Count |
 |---|---|
-| Source documents in `papers-pdf/` | 42 |
-| Cards in `papers/` | 42 |
-| Cards still waiting for a handle or DOI | 11 |
+| Source documents in `papers-pdf/` | 47 |
+| Cards in `papers/` | 47 |
+| Cards still waiting for a handle or DOI | 0 |
 | People in `people.md` | 16 (3 contacts confirmed, 13 pending) |
+| Links between cards | 17 |
 
 Every source document has a long-format card. `python scripts/build_index.py` lists the cards that still need a handle, and `index.json` records the current version.
 
@@ -38,11 +39,12 @@ Every source document has a long-format card. `python scripts/build_index.py` li
 
 | Topic | Cards |
 |---|---|
+| Pre-breeding with genebanks (Seeds for Needs) | mancini-2017-scirep, fadda-2020-fps, gesesse-2023-pnas |
 | Origins, guides and the handbook | vanetten-2019-expagric, steinke-2016-guide, vanetten-2020-guide, vanetten-2020-rtbwp, desousa-2024-asd, chase-2026-book |
-| Data quality, motivation and impact | steinke-2017-asd, beza-2017-plosone, occelli-2024-agecon, nabateregga-2025-eja |
+| Data quality, motivation and impact | steinke-2017-asd, beza-2017-plosone, gotor-2021-fsufs, occelli-2024-agecon, nabateregga-2025-eja, ulzen-2025-agrirxiv |
 | Climate, genomics and analysis methods | vanetten-2019-pnas, desousa-2021-commsbio, brown-2022-cropsci, dorado-2026-tag, vanetten-2023-pnas, cairns-2026-jxb |
 | Software and data standards (R packages, ClimMob, BrAPI) | turner-2020-compstat, desousa-2023-softwarex, desousa-2020-joss, desousa-2023-joss, quiros-2024-compag, selby-2025-database |
-| Crop applications | angudubo-2024-cropsci (cassava), daudi-2026-fes (groundnut), kang-2025-expagric and sharma-2025-jafr (potato), voss-2025-ppp (amaranth), mulatu-2024-slides and jorgensen-2026-gse (forages, Ethiopia and Norway) |
+| Crop applications | nanyonjo-2024-cropsci (cassava), daudi-2026-fes (groundnut), kang-2025-expagric and sharma-2025-jafr (potato), voss-2025-ppp (amaranth), mulatu-2024-slides and jorgensen-2026-gse (forages, Ethiopia and Norway) |
 | Consumer and product concept testing | moyo-2021-fsufs, alamu-2023-jsfa, olaosebikan-2023-jsfa, donovan-2025-expagric, rutsaert-2023-mib, mbugua-2024-mib |
 | Gender, inclusion and farmer feedback | teeken-2021-fsufs, voss-2023-fsoc, teeken-2023-slides, schumann-2024-ux, muller-2025-ux, steinke-2019-plosone |
 | Mainstreaming in breeding | 1000farms-2025-report |
@@ -61,9 +63,11 @@ Every source document has a long-format card. `python scripts/build_index.py` li
 tricot-knowledge-base/
 ├── SKILL.md               # skill instructions, version and paper index (generated)
 ├── people.md              # who is behind the papers, naming and contact consent
-├── index.json             # machine-readable index with version and card hashes (generated)
+├── index.json             # machine-readable index with version, card hashes and links (generated)
+├── relations.jsonld       # links between cards as JSON-LD with the CiTO vocabulary (generated)
 ├── papers/                # one card per paper, named <id>.md
 ├── papers-pdf/            # source PDFs used to build the cards (not part of the skill)
+│   └── LICENSES.md        # licence and source of every PDF
 ├── TEMPLATE.md            # template for new cards
 ├── scripts/build_index.py # rebuilds the index, version and index.json from the cards
 ├── .github/workflows/     # rebuilds the index automatically on every push to main
@@ -71,6 +75,20 @@ tricot-knowledge-base/
 ├── CITATION.cff
 └── LICENSE
 ```
+
+## How papers connect
+
+Papers build on each other. A card can declare its links in a `relations` list in its front matter, using terms from the [Citation Typing Ontology (CiTO)](http://purl.org/spar/cito/), for example:
+
+```yaml
+relations:
+  - extends: mancini-2017-scirep
+  - citesAsDataSource: desousa-2024-asd  # cites over 150,000 farmers; the source reports about 150,000 plots
+```
+
+The terms in use are `extends`, `reviews`, `discusses`, `updates`, `usesDataFrom`, `usesMethodIn`, `citesAsDataSource`, `agreesWith` and `disagreesWith`. `scripts/build_index.py` checks that every term and target is valid, adds the inverse links (for example `isExtendedBy`), lists every link in `SKILL.md`, and writes the graph to `index.json` and to [`relations.jsonld`](relations.jsonld) for ontology tools. The assistant follows these links to tell a line of work in order, for example from genebank evaluation with farmers (mancini-2017-scirep) to crowdsourced testing (vanetten-2019-pnas), 3D-breeding (desousa-2021-commsbio) and genomic selection with farmer scores (gesesse-2023-pnas), and to flag numbers that a later paper reports differently from the original.
+
+Tagging keywords with AGROVOC terms and traits with Crop Ontology identifiers is a possible next step.
 
 ## People behind the papers
 
@@ -99,7 +117,7 @@ Four rules make the cards trustworthy.
 - **R packages point to CRAN.** PlackettLuce, gosset, ClimMobTools, climatrends and chirps change over time, so cards record the CRAN version and date checked, and the skill tells the assistant to check the current version before giving code.
 - **Grey literature is labelled.** Guides, reports, briefs and presentations have their type in the index, and items published on CGSpace have an empty `doi` until their handle is added.
 
-Some PDF file names do not match the first author. Nanyonjo-et-al-2024 is Angudubo et al. 2024, van-Etten-et-al-2016 is Steinke and van Etten 2016, and Moyo-et-al-2020 was published in 2021. Each card notes this.
+PDF file names follow the first author and year of each source, and card IDs follow the same pattern.
 
 ## Contribute a card
 
@@ -108,7 +126,7 @@ Some PDF file names do not match the first author. Nanyonjo-et-al-2024 is Angudu
 3. Draft the card. Giving Claude the extracted text and the template works well. Ask for the summary in its own words.
 4. Verify every number against the PDF and fill the primary-source column. For R packages, record the current CRAN version in `software`.
 5. Add a stable open copy. Publisher pages often block automated reading, so prefer PMC or an institutional repository such as CGSpace. If there is no DOI, leave `doi` empty and add the CGSpace handle when it exists.
-6. Cross-check against existing cards and note any disagreement in both.
+6. Cross-check against existing cards, note any disagreement in both, and add `relations` to the cards this one builds on, reviews, reuses or cites for a number.
 7. Add the card's ID to the `Led` or `Also on` column of any author already in `people.md`. If the person who led the work is not listed, add a row with `pending` consent.
 8. Open a pull request. The GitHub Action rebuilds the index and version when it is merged, or run `python scripts/build_index.py` yourself.
 
@@ -137,4 +155,4 @@ Cite the original papers for any finding you use.
 
 ## License
 
-Paper cards and documentation are released under [CC BY 4.0](LICENSE). The PDFs in `papers-pdf/` keep their original licenses, listed in each paper's card.
+Paper cards and documentation are released under [CC BY 4.0](LICENSE). The PDFs in `papers-pdf/` keep their original licenses, listed in [`papers-pdf/LICENSES.md`](papers-pdf/LICENSES.md). Three papers are CC BY-NC-ND and are shared unmodified for non-commercial use.

@@ -1,0 +1,415 @@
+{
+ "@context": {
+  "cito": "http://purl.org/spar/cito/",
+  "dcterms": "http://purl.org/dc/terms/",
+  "fabio": "http://purl.org/spar/fabio/"
+ },
+ "@graph": [
+  {
+   "@id": "https://hdl.handle.net/10568/78782",
+   "dcterms:identifier": "steinke-2016-guide",
+   "dcterms:title": "Farmer experimentation for climate adaptation with triadic comparisons of technologies (tricot). A methodological guide",
+   "dcterms:date": "2016",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/steinke-2016-guide.md"
+  },
+  {
+   "@id": "https://doi.org/10.1371/journal.pone.0175700",
+   "dcterms:identifier": "beza-2017-plosone",
+   "dcterms:title": "What are the prospects for citizen science in agriculture? Evidence from three continents on motivation and mobile telephone use of resource-poor farmers",
+   "dcterms:date": "2017",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/beza-2017-plosone.md"
+  },
+  {
+   "@id": "https://doi.org/10.1038/s41598-017-07628-4",
+   "dcterms:identifier": "mancini-2017-scirep",
+   "dcterms:title": "Joining smallholder farmers' traditional knowledge with metric traits to select better varieties of Ethiopian wheat",
+   "dcterms:date": "2017",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/mancini-2017-scirep.md"
+  },
+  {
+   "@id": "https://doi.org/10.1007/s13593-017-0441-y",
+   "dcterms:identifier": "steinke-2017-asd",
+   "dcterms:title": "The accuracy of farmer-generated data in an agricultural citizen science methodology",
+   "dcterms:date": "2017",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/steinke-2017-asd.md"
+  },
+  {
+   "@id": "https://doi.org/10.1371/journal.pone.0212926",
+   "dcterms:identifier": "steinke-2019-plosone",
+   "dcterms:title": "Prioritizing options for multi-objective agricultural development through the Positive Deviance approach",
+   "dcterms:date": "2019",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/steinke-2019-plosone.md"
+  },
+  {
+   "@id": "https://doi.org/10.1017/S0014479716000739",
+   "dcterms:identifier": "vanetten-2019-expagric",
+   "dcterms:title": "First experiences with a novel farmer citizen science approach. Crowdsourcing participatory variety selection through on-farm triadic comparisons of technologies (tricot)",
+   "dcterms:date": "2019",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/vanetten-2019-expagric.md"
+  },
+  {
+   "@id": "https://doi.org/10.1073/pnas.1813720116",
+   "dcterms:identifier": "vanetten-2019-pnas",
+   "dcterms:title": "Crop variety management for climate adaptation supported by citizen science",
+   "dcterms:date": "2019",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/vanetten-2019-pnas.md",
+   "cito:extends": [
+    {
+     "@id": "https://doi.org/10.1038/s41598-017-07628-4"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.21105/joss.02419",
+   "dcterms:identifier": "desousa-2020-joss",
+   "dcterms:title": "chirps. API client for the CHIRPS precipitation data in R",
+   "dcterms:date": "2020",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/desousa-2020-joss.md"
+  },
+  {
+   "@id": "https://doi.org/10.3389/fpls.2020.559515",
+   "dcterms:identifier": "fadda-2020-fps",
+   "dcterms:title": "Integrating conventional and participatory crop improvement for smallholder agriculture using the Seeds for Needs approach. A review",
+   "dcterms:date": "2020",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/fadda-2020-fps.md",
+   "cito:reviews": [
+    {
+     "@id": "https://doi.org/10.1038/s41598-017-07628-4"
+    },
+    {
+     "@id": "https://doi.org/10.1073/pnas.1813720116"
+    },
+    {
+     "@id": "https://doi.org/10.1007/s13593-017-0441-y"
+    },
+    {
+     "@id": "https://doi.org/10.1371/journal.pone.0175700"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.1007/s00180-020-00959-3",
+   "dcterms:identifier": "turner-2020-compstat",
+   "dcterms:title": "Modelling rankings in R. The PlackettLuce package",
+   "dcterms:date": "2020",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/turner-2020-compstat.md"
+  },
+  {
+   "@id": "https://hdl.handle.net/10568/109942",
+   "dcterms:identifier": "vanetten-2020-guide",
+   "dcterms:title": "The tricot approach. Guide for large-scale participatory experiments",
+   "dcterms:date": "2020",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/vanetten-2020-guide.md"
+  },
+  {
+   "@id": "https://hdl.handle.net/10568/111044",
+   "dcterms:identifier": "vanetten-2020-rtbwp",
+   "dcterms:title": "The tricot citizen science approach applied to on-farm variety evaluation. Methodological progress and perspectives",
+   "dcterms:date": "2020",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/vanetten-2020-rtbwp.md"
+  },
+  {
+   "@id": "https://doi.org/10.1038/s42003-021-02463-w",
+   "dcterms:identifier": "desousa-2021-commsbio",
+   "dcterms:title": "Data-driven decentralized breeding increases prediction accuracy in a challenging crop production environment",
+   "dcterms:date": "2021",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/desousa-2021-commsbio.md",
+   "cito:extends": [
+    {
+     "@id": "https://doi.org/10.1038/s41598-017-07628-4"
+    },
+    {
+     "@id": "https://doi.org/10.1073/pnas.1813720116"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.3389/fsufs.2021.726725",
+   "dcterms:identifier": "gotor-2021-fsufs",
+   "dcterms:title": "Smallholder farmer engagement in citizen science for varietal diversification enhances adaptive capacity and productivity in Bihar, India",
+   "dcterms:date": "2021",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/gotor-2021-fsufs.md",
+   "cito:extends": [
+    {
+     "@id": "https://doi.org/10.1073/pnas.1813720116"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.3389/fsufs.2021.620363",
+   "dcterms:identifier": "moyo-2021-fsufs",
+   "dcterms:title": "Consumer preference testing of boiled sweetpotato using crowdsourced citizen science in Ghana and Uganda",
+   "dcterms:date": "2021",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/moyo-2021-fsufs.md"
+  },
+  {
+   "@id": "https://doi.org/10.3389/fsufs.2021.740926",
+   "dcterms:identifier": "teeken-2021-fsufs",
+   "dcterms:title": "Beyond \"women's traits\". Exploring how gender, social difference, and household characteristics influence trait preferences",
+   "dcterms:date": "2021",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/teeken-2021-fsufs.md"
+  },
+  {
+   "@id": "https://doi.org/10.1002/csc2.20817",
+   "dcterms:identifier": "brown-2022-cropsci",
+   "dcterms:title": "Rank-based data synthesis of common bean on-farm trials across four Central American countries",
+   "dcterms:date": "2022",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/brown-2022-cropsci.md"
+  },
+  {
+   "@id": "https://doi.org/10.1002/jsfa.12518",
+   "dcterms:identifier": "alamu-2023-jsfa",
+   "dcterms:title": "Establishing the linkage between eba's instrumental and sensory descriptive profiles and their correlation with consumer preferences. Implications for cassava breeding",
+   "dcterms:date": "2023",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/alamu-2023-jsfa.md"
+  },
+  {
+   "@id": "https://doi.org/10.21105/joss.04405",
+   "dcterms:identifier": "desousa-2023-joss",
+   "dcterms:title": "Climate variability indices for ecological and crop models in R. The climatrends package",
+   "dcterms:date": "2023",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/desousa-2023-joss.md"
+  },
+  {
+   "@id": "https://doi.org/10.1016/j.softx.2023.101402",
+   "dcterms:identifier": "desousa-2023-softwarex",
+   "dcterms:title": "gosset. An R package for analysis and synthesis of ranking data in agricultural experimentation",
+   "dcterms:date": "2023",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/desousa-2023-softwarex.md"
+  },
+  {
+   "@id": "https://doi.org/10.1073/pnas.2205774119",
+   "dcterms:identifier": "gesesse-2023-pnas",
+   "dcterms:title": "Genomics-driven breeding for local adaptation of durum wheat is enhanced by farmers' traditional knowledge",
+   "dcterms:date": "2023",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/gesesse-2023-pnas.md",
+   "cito:usesDataFrom": [
+    {
+     "@id": "https://doi.org/10.1038/s41598-017-07628-4"
+    }
+   ],
+   "cito:agreesWith": [
+    {
+     "@id": "https://doi.org/10.1038/s42003-021-02463-w"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.1002/jsfa.12867",
+   "dcterms:identifier": "olaosebikan-2023-jsfa",
+   "dcterms:title": "Drivers of consumer acceptability of cassava gari-eba food products across cultural and environmental settings using the triadic comparison of technologies approach (tricot)",
+   "dcterms:date": "2023",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/olaosebikan-2023-jsfa.md"
+  },
+  {
+   "@id": "https://hdl.handle.net/10883/22467",
+   "dcterms:identifier": "rutsaert-2023-mib",
+   "dcterms:title": "Future market segments for hybrid maize in East Africa",
+   "dcterms:date": "2023",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/rutsaert-2023-mib.md"
+  },
+  {
+   "@id": "https://hdl.handle.net/10568/137005",
+   "dcterms:identifier": "teeken-2023-slides",
+   "dcterms:title": "Scaled citizen science participatory variety selection provides socially inclusive feedback to the cassava breeding in Nigeria and opens the way to empower women and men crop users within the breeding process",
+   "dcterms:date": "2023",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/teeken-2023-slides.md"
+  },
+  {
+   "@id": "https://doi.org/10.1073/pnas.2205771120",
+   "dcterms:identifier": "vanetten-2023-pnas",
+   "dcterms:title": "Data-driven approaches can harness crop diversity to address heterogeneous needs for breeding products",
+   "dcterms:date": "2023",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/vanetten-2023-pnas.md"
+  },
+  {
+   "@id": "https://doi.org/10.3389/fsoc.2023.1254595",
+   "dcterms:identifier": "voss-2023-fsoc",
+   "dcterms:title": "Innovative approaches to integrating gender into conventional maize breeding. Lessons from the Seed Production Technology for Africa project",
+   "dcterms:date": "2023",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/voss-2023-fsoc.md"
+  },
+  {
+   "@id": "https://doi.org/10.1007/s13593-023-00937-1",
+   "dcterms:identifier": "desousa-2024-asd",
+   "dcterms:title": "The tricot approach. An agile framework for decentralized on-farm testing supported by citizen science. A retrospective",
+   "dcterms:date": "2024",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/desousa-2024-asd.md",
+   "cito:citesAsDataSource": [
+    {
+     "@id": "https://doi.org/10.1111/agec.12819"
+    }
+   ]
+  },
+  {
+   "@id": "https://hdl.handle.net/10883/34683",
+   "dcterms:identifier": "mbugua-2024-mib",
+   "dcterms:title": "Farmers' requirements for sorghum seed products in Tanzania",
+   "dcterms:date": "2024",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/mbugua-2024-mib.md",
+   "cito:usesMethodIn": [
+    {
+     "@id": "https://hdl.handle.net/10883/22467"
+    }
+   ]
+  },
+  {
+   "@id": "https://hdl.handle.net/10568/163542",
+   "dcterms:identifier": "mulatu-2024-slides",
+   "dcterms:title": "Unlocking farmer-preferred multipurpose forage mixtures. A tricot approach in Ethiopia",
+   "dcterms:date": "2024",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/mulatu-2024-slides.md"
+  },
+  {
+   "@id": "https://doi.org/10.1002/csc2.21293",
+   "dcterms:identifier": "nanyonjo-2024-cropsci",
+   "dcterms:title": "On-farm evaluation of cassava clones using the triadic comparison of technology options approach",
+   "dcterms:date": "2024",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/nanyonjo-2024-cropsci.md"
+  },
+  {
+   "@id": "https://doi.org/10.1111/agec.12819",
+   "dcterms:identifier": "occelli-2024-agecon",
+   "dcterms:title": "Group-based and citizen science on-farm variety selection approaches for bean growers in Central America",
+   "dcterms:date": "2024",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/occelli-2024-agecon.md"
+  },
+  {
+   "@id": "https://doi.org/10.1016/j.compag.2023.108539",
+   "dcterms:identifier": "quiros-2024-compag",
+   "dcterms:title": "ClimMob. Software to support experimental citizen science in agriculture",
+   "dcterms:date": "2024",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/quiros-2024-compag.md"
+  },
+  {
+   "@id": "https://hdl.handle.net/10568/169094",
+   "dcterms:identifier": "schumann-2024-ux",
+   "dcterms:title": "Farmer feedback in tricot. 2024 review",
+   "dcterms:date": "2024",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/schumann-2024-ux.md"
+  },
+  {
+   "@id": "https://hdl.handle.net/10568/175957",
+   "dcterms:identifier": "1000farms-2025-report",
+   "dcterms:title": "Mainstreaming the tricot approach into the CGIAR-NARES Breeding Initiative. Insights from the meeting held in Nairobi, 3–5 December 2024",
+   "dcterms:date": "2025",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/1000farms-2025-report.md"
+  },
+  {
+   "@id": "https://doi.org/10.1017/S001447972500002X",
+   "dcterms:identifier": "donovan-2025-expagric",
+   "dcterms:title": "Farmers' preferences for the next generation of maize hybrids. Application of product concept testing in Kenya and Uganda",
+   "dcterms:date": "2025",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/donovan-2025-expagric.md",
+   "cito:extends": [
+    {
+     "@id": "https://hdl.handle.net/10883/22467"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.1017/S0014479725100100",
+   "dcterms:identifier": "kang-2025-expagric",
+   "dcterms:title": "Integrating environmental, socio-economic, and biological data in a farmer-led potato trial for enhanced varietal assessment in Rwanda",
+   "dcterms:date": "2025",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/kang-2025-expagric.md"
+  },
+  {
+   "@id": "https://hdl.handle.net/10568/179807",
+   "dcterms:identifier": "muller-2025-ux",
+   "dcterms:title": "Farmer feedback in tricot. Redesigning the tricot feedback process and field validation 2024–2025",
+   "dcterms:date": "2025",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/muller-2025-ux.md",
+   "cito:extends": [
+    {
+     "@id": "https://hdl.handle.net/10568/169094"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.1016/j.eja.2025.127730",
+   "dcterms:identifier": "nabateregga-2025-eja",
+   "dcterms:title": "Accuracy of farmer-generated yield estimations of common bean in decentralised on-farm trials in sub-Saharan Africa",
+   "dcterms:date": "2025",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/nabateregga-2025-eja.md"
+  },
+  {
+   "@id": "https://doi.org/10.1093/database/baaf048",
+   "dcterms:identifier": "selby-2025-database",
+   "dcterms:title": "BrAPI v2. Real-world applications for data integration and collaboration in the breeding and genetics community",
+   "dcterms:date": "2025",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/selby-2025-database.md",
+   "cito:discusses": [
+    {
+     "@id": "https://doi.org/10.1016/j.compag.2023.108539"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.1016/j.jafr.2025.102135",
+   "dcterms:identifier": "sharma-2025-jafr",
+   "dcterms:title": "Understanding farmer preferences through citizen science. Insights on potato varieties in Nigeria",
+   "dcterms:date": "2025",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/sharma-2025-jafr.md"
+  },
+  {
+   "@id": "https://doi.org/10.31220/agriRxiv.2025.00295",
+   "dcterms:identifier": "ulzen-2025-agrirxiv",
+   "dcterms:title": "Accuracy in agricultural citizen science. Farmers' assessment of harvest output in Ghana",
+   "dcterms:date": "2025",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/ulzen-2025-agrirxiv.md",
+   "cito:agreesWith": [
+    {
+     "@id": "https://doi.org/10.1016/j.eja.2025.127730"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.1002/ppp3.70035",
+   "dcterms:identifier": "voss-2025-ppp",
+   "dcterms:title": "Citizen science informs demand-driven breeding of opportunity crops",
+   "dcterms:date": "2025",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/voss-2025-ppp.md"
+  },
+  {
+   "@id": "https://doi.org/10.1093/jxb/erag431",
+   "dcterms:identifier": "cairns-2026-jxb",
+   "dcterms:title": "Advancing inclusive on-farm testing approaches to facilitate maize breakthrough product development in sub-Saharan Africa",
+   "dcterms:date": "2026",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/cairns-2026-jxb.md",
+   "cito:citesAsDataSource": [
+    {
+     "@id": "https://doi.org/10.1007/s13593-023-00937-1"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.20042955",
+   "dcterms:identifier": "chase-2026-book",
+   "dcterms:title": "Product testing with users in agriculture and food. Decentralized on-farm evaluation, breeding product validation, consumer testing and other applications using the tricot approach",
+   "dcterms:date": "2026",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/chase-2026-book.md"
+  },
+  {
+   "@id": "https://doi.org/10.1002/fes3.70228",
+   "dcterms:identifier": "daudi-2026-fes",
+   "dcterms:title": "Analysis of genotype-by-environment interaction, farmers' preferences, and gender response in groundnut breeding in Tanzania using triadic comparison of technologies",
+   "dcterms:date": "2026",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/daudi-2026-fes.md"
+  },
+  {
+   "@id": "https://doi.org/10.1007/s00122-026-05319-1",
+   "dcterms:identifier": "dorado-2026-tag",
+   "dcterms:title": "Estimating on-farm genotypic performance and variability using ranking data",
+   "dcterms:date": "2026",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/dorado-2026-tag.md"
+  },
+  {
+   "@id": "https://hdl.handle.net/11250/5574875",
+   "dcterms:identifier": "jorgensen-2026-gse",
+   "dcterms:title": "Improving forage production in Norway. Participatory evaluation of climate-adapted seed mixtures",
+   "dcterms:date": "2026",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/jorgensen-2026-gse.md"
+  }
+ ]
+}

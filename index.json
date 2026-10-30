@@ -1,11 +1,11 @@
 {
- "version": "a01c1ccebef8",
+ "version": "0f2d4e9356df",
  "updated": "2026-10-30",
- "cards": 42,
+ "cards": 47,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "people": {
   "path": "people.md",
-  "hash": "353d7b0b1881"
+  "hash": "e5d391f4366f"
  },
  "papers": [
   {
@@ -15,7 +15,8 @@
    "gist": "The first practical guide to running a tricot project in ten steps, from problem analysis and seed calculations to workshops, observation cards, analysis and evaluation",
    "keywords": "tricot guide, ten steps, project design, seed quantities, observation card, workshops, ClimMob, field facilitators, evaluation indicators",
    "path": "papers/steinke-2016-guide.md",
-   "hash": "6a54014a6c20"
+   "hash": "58d963a1f9ac",
+   "relations": []
   },
   {
    "id": "beza-2017-plosone",
@@ -24,7 +25,45 @@
    "gist": "Survey of 426 tricot farmers in India, Ethiopia and Honduras showing they join mainly to share information and contribute to science, and expect advice, training or seed rather than cash",
    "keywords": "farmer motivation, citizen science, incentives, rewards, mobile phones, Seeds for Needs, participation, retention",
    "path": "papers/beza-2017-plosone.md",
-   "hash": "911792f3ff20"
+   "hash": "911792f3ff20",
+   "relations": [
+    {
+     "relation": "isReviewedBy",
+     "card": "fadda-2020-fps",
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "mancini-2017-scirep",
+   "year": "2017",
+   "type": "research article",
+   "gist": "60 Ethiopian farmers scored 400 genebank wheat accessions, giving 192,000 data points that link farmer preferences to metric traits and rank landraces for local breeding",
+   "keywords": "participatory evaluation, traditional knowledge, durum wheat, landraces, genebank accessions, farmer preference, gender, metric traits, canonical correlation, Seeds for Needs, pre-breeding",
+   "path": "papers/mancini-2017-scirep.md",
+   "hash": "61c24cd09c85",
+   "relations": [
+    {
+     "relation": "isExtendedBy",
+     "card": "vanetten-2019-pnas",
+     "note": "Ethiopian case builds on the genebank-to-farm work, per the team"
+    },
+    {
+     "relation": "isReviewedBy",
+     "card": "fadda-2020-fps",
+     "note": ""
+    },
+    {
+     "relation": "isExtendedBy",
+     "card": "desousa-2021-commsbio",
+     "note": ""
+    },
+    {
+     "relation": "providesDataFor",
+     "card": "gesesse-2023-pnas",
+     "note": "diversity panel and farmer scores"
+    }
+   ]
   },
   {
    "id": "steinke-2017-asd",
@@ -33,7 +72,14 @@
    "gist": "First test of tricot data quality, showing individual farmer rankings are unreliable but valid in aggregate, so 150 to 200 farmers suffice for 10 to 12 varieties",
    "keywords": "data quality, validity, reliability, wisdom of crowds, farmer observations, sample size, Kendall's tau, Kendall's W, Mallows-Bradley-Terry, tricot",
    "path": "papers/steinke-2017-asd.md",
-   "hash": "6418673bab2d"
+   "hash": "6418673bab2d",
+   "relations": [
+    {
+     "relation": "isReviewedBy",
+     "card": "fadda-2020-fps",
+     "note": ""
+    }
+   ]
   },
   {
    "id": "steinke-2019-plosone",
@@ -42,7 +88,8 @@
    "gist": "Adapts Positive Deviance to agriculture, using Pareto-optimal performance across five objectives to find 54 outlier households and 14 locally proven practices",
    "keywords": "positive deviance, Pareto optimality, household heterogeneity, trade-offs, RHoMIS, livelihood practices, targeting, multi-objective development",
    "path": "papers/steinke-2019-plosone.md",
-   "hash": "3ac4ae30ced1"
+   "hash": "3ac4ae30ced1",
+   "relations": []
   },
   {
    "id": "vanetten-2019-expagric",
@@ -51,7 +98,8 @@
    "gist": "The founding tricot paper, describing the design rationale and lessons from the first pilots on data formats, statistical design, farmer motivation, gender and cost",
    "keywords": "tricot origin, crowdsourcing, participatory variety selection, pilot lessons, data collection formats, gender inclusion, ClimMob, cost",
    "path": "papers/vanetten-2019-expagric.md",
-   "hash": "72f6c5aee022"
+   "hash": "72f6c5aee022",
+   "relations": []
   },
   {
    "id": "vanetten-2019-pnas",
@@ -60,7 +108,29 @@
    "gist": "First large tricot test (12,409 plots, 3 countries) showing farmer rankings capture climate effects and improve variety recommendations",
    "keywords": "tricot, citizen science, Plackett-Luce trees, climate adaptation, variety recommendation, seasonal forecast, worst regret, ClimMob",
    "path": "papers/vanetten-2019-pnas.md",
-   "hash": "1d606d533280"
+   "hash": "11c114eb7607",
+   "relations": [
+    {
+     "relation": "extends",
+     "card": "mancini-2017-scirep",
+     "note": "Ethiopian case builds on the genebank-to-farm work, per the team"
+    },
+    {
+     "relation": "isReviewedBy",
+     "card": "fadda-2020-fps",
+     "note": ""
+    },
+    {
+     "relation": "isExtendedBy",
+     "card": "desousa-2021-commsbio",
+     "note": ""
+    },
+    {
+     "relation": "isExtendedBy",
+     "card": "gotor-2021-fsufs",
+     "note": "household impact of the Bihar Seeds for Needs intervention"
+    }
+   ]
   },
   {
    "id": "desousa-2020-joss",
@@ -69,7 +139,39 @@
    "gist": "R client for CHIRPS daily rainfall (plus IMERG and ESI) that computes precipitation indices for trial locations and dates, a standard source of rainfall covariates for tricot",
    "keywords": "CHIRPS, rainfall, precipitation indices, IMERG, ESI, climate covariates, API client, R package, dry spell, environmental data for trials",
    "path": "papers/desousa-2020-joss.md",
-   "hash": "99697a6542e8"
+   "hash": "99697a6542e8",
+   "relations": []
+  },
+  {
+   "id": "fadda-2020-fps",
+   "year": "2020",
+   "type": "review",
+   "gist": "Review arguing that Seeds for Needs bridges genomics-based and participatory breeding, from genebank screening with farmers to the EtNAM population and crowdsourced on-farm testing",
+   "keywords": "Seeds for Needs, participatory breeding, genebanks, genomics, EtNAM, crowdsourcing, citizen science, climate adaptation, farmer varieties, durum wheat",
+   "path": "papers/fadda-2020-fps.md",
+   "hash": "5d58ded9437d",
+   "relations": [
+    {
+     "relation": "reviews",
+     "card": "mancini-2017-scirep",
+     "note": ""
+    },
+    {
+     "relation": "reviews",
+     "card": "vanetten-2019-pnas",
+     "note": ""
+    },
+    {
+     "relation": "reviews",
+     "card": "steinke-2017-asd",
+     "note": ""
+    },
+    {
+     "relation": "reviews",
+     "card": "beza-2017-plosone",
+     "note": ""
+    }
+   ]
   },
   {
    "id": "turner-2020-compstat",
@@ -78,7 +180,8 @@
    "gist": "The R package behind tricot analysis, fitting Plackett-Luce models to partial and tied rankings, with pseudo-rankings for stable estimates and model trees for covariates",
    "keywords": "Plackett-Luce model, rankings, partial rankings, ties, pseudo-rankings, worth, quasi-variance, Plackett-Luce trees, R package, tricot analysis",
    "path": "papers/turner-2020-compstat.md",
-   "hash": "b57e8a2699c2"
+   "hash": "b57e8a2699c2",
+   "relations": []
   },
   {
    "id": "vanetten-2020-guide",
@@ -87,7 +190,8 @@
    "gist": "Illustrated step-by-step guide for running large tricot experiments, covering roles, packages, observation timing, ODK data collection, ClimMob analysis and farmer feedback",
    "keywords": "tricot guide, ten steps, implementers, local facilitators, observation card, ODK, ClimMob, field agents, feedback workshop, FAQ",
    "path": "papers/vanetten-2020-guide.md",
-   "hash": "9a5c62478cb3"
+   "hash": "07fce8c085b9",
+   "relations": []
   },
   {
    "id": "vanetten-2020-rtbwp",
@@ -96,7 +200,8 @@
    "gist": "Methodological synthesis of tricot for on-farm variety evaluation, covering plot size, number of farms, inclusion, ethics, yield, data standards, analysis tools and cost",
    "keywords": "trial dimensions, plot size, number of farms, gender, ethics, traditional knowledge, yield estimation, genetic gain, data standards, ontologies, R packages, cost, business models",
    "path": "papers/vanetten-2020-rtbwp.md",
-   "hash": "04f187d38e53"
+   "hash": "9e03ecc6696b",
+   "relations": []
   },
   {
    "id": "desousa-2021-commsbio",
@@ -105,7 +210,40 @@
    "gist": "Combining genomics with tricot rankings from 1,165 Ethiopian farms (3D-breeding) predicted on-farm durum wheat performance far better than station-based genomic selection",
    "keywords": "3D-breeding, genomic prediction, tricot, durum wheat, landraces, overall appreciation, G×E, decentralized breeding, prediction accuracy, reliability",
    "path": "papers/desousa-2021-commsbio.md",
-   "hash": "1363c83b37af"
+   "hash": "4865ce5d0783",
+   "relations": [
+    {
+     "relation": "extends",
+     "card": "mancini-2017-scirep",
+     "note": ""
+    },
+    {
+     "relation": "extends",
+     "card": "vanetten-2019-pnas",
+     "note": ""
+    },
+    {
+     "relation": "isAgreedWithBy",
+     "card": "gesesse-2023-pnas",
+     "note": "farmer appreciation improves prediction accuracy"
+    }
+   ]
+  },
+  {
+   "id": "gotor-2021-fsufs",
+   "year": "2021",
+   "type": "research article",
+   "gist": "Survey of 600 households in Bihar finds that the Seeds for Needs crowdsourced intervention increased rice and wheat varietal diversity, perceived yields and recovery from shocks",
+   "keywords": "impact assessment, varietal diversification, Seeds for Needs, citizen science, livelihoods, resilience, RHoMIS, doubly robust estimator, Simpson diversity, Bihar, adaptive capacity",
+   "path": "papers/gotor-2021-fsufs.md",
+   "hash": "c1ac839bedb4",
+   "relations": [
+    {
+     "relation": "extends",
+     "card": "vanetten-2019-pnas",
+     "note": "household impact of the Bihar Seeds for Needs intervention"
+    }
+   ]
   },
   {
    "id": "moyo-2021-fsufs",
@@ -114,7 +252,8 @@
    "gist": "First tricot consumer test, with 1,433 participants ranking boiled sweetpotato in Ghana and Uganda, showing consistent top genotypes across central and home tasting and taste as the main driver",
    "keywords": "consumer testing, tricot, sweetpotato, boiled roots, taste, centralized tasting, home tasting, Plackett-Luce trees, user segments, orange-fleshed sweetpotato",
    "path": "papers/moyo-2021-fsufs.md",
-   "hash": "5144fffb7703"
+   "hash": "6d5a9bef6dcf",
+   "relations": []
   },
   {
    "id": "teeken-2021-fsufs",
@@ -123,7 +262,8 @@
    "gist": "Survey of 792 Nigerian cassava users shows women favor gari quality traits and men productivity traits, with gaps widening among food-insecure households and varying by region",
    "keywords": "gender, trait preferences, intersectionality, food insecurity, poverty, household type, 1000minds, RHoMIS, gari, cassava breeding, customer profiles",
    "path": "papers/teeken-2021-fsufs.md",
-   "hash": "e86cf4272db8"
+   "hash": "e86cf4272db8",
+   "relations": []
   },
   {
    "id": "brown-2022-cropsci",
@@ -132,7 +272,8 @@
    "gist": "Pools 14 tricot common bean trials from four Central American countries into one Plackett-Luce analysis, finding heat the main driver and mapping variety performance by season",
    "keywords": "data synthesis, rank aggregation, meta-analysis, Plackett-Luce trees, environmental covariates, WSDI, heat, planting date, survival analysis, area of applicability, variety maps",
    "path": "papers/brown-2022-cropsci.md",
-   "hash": "b504b76fd787"
+   "hash": "b504b76fd787",
+   "relations": []
   },
   {
    "id": "alamu-2023-jsfa",
@@ -141,7 +282,8 @@
    "gist": "Links instrumental and sensory texture and color of eba to tricot consumer preferences from 600 Nigerians, identifying cohesiveness, hardness and color as breeding targets",
    "keywords": "eba, gari, texture profile analysis, sensory panel, color, heritability, NIRS, high-throughput phenotyping, consumer preference, tricot, RTBfoods, cassava breeding",
    "path": "papers/alamu-2023-jsfa.md",
-   "hash": "4f836d36f68a"
+   "hash": "4f836d36f68a",
+   "relations": []
   },
   {
    "id": "desousa-2023-joss",
@@ -150,7 +292,8 @@
    "gist": "R package computing temperature, rainfall, degree-day, evapotranspiration and frost indices for trial sites, used to explain tricot rankings with climate",
    "keywords": "climatrends, temperature indices, precipitation indices, growing degree-days, evapotranspiration, late spring frost, crop-sensitive indices, R package, climate covariates",
    "path": "papers/desousa-2023-joss.md",
-   "hash": "a54016a9efc2"
+   "hash": "a54016a9efc2",
+   "relations": []
   },
   {
    "id": "desousa-2023-softwarex",
@@ -159,7 +302,29 @@
    "gist": "R package covering the tricot analysis workflow, from converting tricot data to rankings through model selection to reliability, regret and worth plots",
    "keywords": "gosset, R package, ranking data, rank_tricot, Plackett-Luce, Bradley-Terry, reliability, regret, worth map, cross-validation, tricot workflow",
    "path": "papers/desousa-2023-softwarex.md",
-   "hash": "f002a10d8d02"
+   "hash": "f002a10d8d02",
+   "relations": []
+  },
+  {
+   "id": "gesesse-2023-pnas",
+   "year": "2023",
+   "type": "research article",
+   "gist": "Farmer appreciation of 1,200 EtNAM wheat lines is heritable and, used in genomic selection, predicts grain yield in new environments better than models trained on yield itself",
+   "keywords": "genomic selection, EtNAM, nested association mapping, farmer appreciation, participatory variety selection, heritability, QTL, GWAS, durum wheat, traditional knowledge, Plackett-Luce, local adaptation",
+   "path": "papers/gesesse-2023-pnas.md",
+   "hash": "5c4cb002d77e",
+   "relations": [
+    {
+     "relation": "usesDataFrom",
+     "card": "mancini-2017-scirep",
+     "note": "diversity panel and farmer scores"
+    },
+    {
+     "relation": "agreesWith",
+     "card": "desousa-2021-commsbio",
+     "note": "farmer appreciation improves prediction accuracy"
+    }
+   ]
   },
   {
    "id": "olaosebikan-2023-jsfa",
@@ -168,7 +333,8 @@
    "gist": "Tricot consumer tests of eba in Nigeria and Cameroon linked to lab measures show preferences for cohesive, bright eba are surprisingly similar across cultures, with a few country differences",
    "keywords": "consumer testing, cassava, gari, eba, food quality, texture, color, cohesiveness, cross-country, Plackett-Luce trees, reliability, RTBfoods",
    "path": "papers/olaosebikan-2023-jsfa.md",
-   "hash": "b37c81ee51e9"
+   "hash": "b37c81ee51e9",
+   "relations": []
   },
   {
    "id": "rutsaert-2023-mib",
@@ -177,7 +343,19 @@
    "gist": "Brief explaining video-based product concept testing and applying it with 2,400 farmers to propose future hybrid maize market segments in East Africa",
    "keywords": "VPCT, video-based product concept testing, market segmentation, hybrid maize, future segments, target product profiles, drought avoidance, intercropping",
    "path": "papers/rutsaert-2023-mib.md",
-   "hash": "8379dc0985d4"
+   "hash": "f35b1394e688",
+   "relations": [
+    {
+     "relation": "providesMethodFor",
+     "card": "mbugua-2024-mib",
+     "note": "video-based product concept testing"
+    },
+    {
+     "relation": "isExtendedBy",
+     "card": "donovan-2025-expagric",
+     "note": "full analysis of the maize concept testing in the brief"
+    }
+   ]
   },
   {
    "id": "teeken-2023-slides",
@@ -186,7 +364,8 @@
    "gist": "Conference slides on scaling cassava PVS in Nigeria with tricot (320 farmers, 30 varieties, 4 states), showing how socially inclusive feedback, especially from women processors, informs breeding",
    "keywords": "cassava, gender, social inclusion, processors, gari, fufu, tricot in Nigeria, mother-baby trials, demand-led breeding, product profile",
    "path": "papers/teeken-2023-slides.md",
-   "hash": "95a3fad32f18"
+   "hash": "3f6eeda574af",
+   "relations": []
   },
   {
    "id": "vanetten-2023-pnas",
@@ -195,7 +374,8 @@
    "gist": "Perspective arguing that data-driven methods let genebanks and breeders serve heterogeneous environments and users, and setting out five investment priorities",
    "keywords": "data-driven breeding, crop diversity management, genebanks, 3D breeding, GxExM, socioeconomic heterogeneity, gender, demand-led breeding, breeding metrics",
    "path": "papers/vanetten-2023-pnas.md",
-   "hash": "63df53930467"
+   "hash": "63df53930467",
+   "relations": []
   },
   {
    "id": "voss-2023-fsoc",
@@ -204,16 +384,8 @@
    "gist": "Case study of how a CIMMYT maize breeding project integrated gender, including tricot trials that grew from 112 to 1,380 Kenyan farmers with over half women",
    "keywords": "gender, maize breeding, women farmers, tricot, intrahousehold, participatory variety selection, SPTA, Ms44, innovation history, 1000FARMS",
    "path": "papers/voss-2023-fsoc.md",
-   "hash": "c83745cb9260"
-  },
-  {
-   "id": "angudubo-2024-cropsci",
-   "year": "2024",
-   "type": "research article",
-   "gist": "Tricot evaluation of 20 elite cassava clones with 614 farmers in Uganda, merging two cycles by rank aggregation and finding geography and heavy-rain days drove performance more than farmer traits",
-   "keywords": "cassava, elite clones, tricot, participatory variety selection, rank aggregation, sociodemographic covariates, climate covariates, reliability, food quality traits, variety release, NaCRRI",
-   "path": "papers/angudubo-2024-cropsci.md",
-   "hash": "d91107f2615a"
+   "hash": "c83745cb9260",
+   "relations": []
   },
   {
    "id": "desousa-2024-asd",
@@ -222,7 +394,19 @@
    "gist": "Retrospective on tricot's development, validity, cost, mainstreaming in breeding and open challenges",
    "keywords": "tricot, citizen science, incomplete block design, ClimMob, Plackett-Luce, validity, reliability, cost, adoption, mainstreaming, product design, gender",
    "path": "papers/desousa-2024-asd.md",
-   "hash": "a28a67625bb5"
+   "hash": "c9233b987d57",
+   "relations": [
+    {
+     "relation": "citesAsDataSource",
+     "card": "occelli-2024-agecon",
+     "note": "cites about 40% cheaper than RCBD; the source reports 28% cheaper than group PVS"
+    },
+    {
+     "relation": "isCitedAsDataSourceBy",
+     "card": "cairns-2026-jxb",
+     "note": "cites over 150,000 farmers; the source reports about 150,000 plots"
+    }
+   ]
   },
   {
    "id": "mbugua-2024-mib",
@@ -231,7 +415,14 @@
    "gist": "Video-based concept testing with 1,100 Tanzanian farmers finds hybrid and home-use sorghum concepts most preferred, and proposes revised market segments and product profiles",
    "keywords": "VPCT, sorghum, seed product concepts, hybrid, home use, malting, market segmentation, target product profiles, Tanzania",
    "path": "papers/mbugua-2024-mib.md",
-   "hash": "d781fb502539"
+   "hash": "cff02ca2704b",
+   "relations": [
+    {
+     "relation": "usesMethodIn",
+     "card": "rutsaert-2023-mib",
+     "note": "video-based product concept testing"
+    }
+   ]
   },
   {
    "id": "mulatu-2024-slides",
@@ -240,7 +431,18 @@
    "gist": "Slides on tricot trials of forage grasses, legumes and mixtures with about 740 Ethiopian farmers, comparing them with the local reference Desho across many farmer-assessed traits",
    "keywords": "forages, grass-legume mixtures, livestock feed, tricot, Ethiopia, Desho, land restoration, trait preferences, Plackett-Luce, multipurpose forages",
    "path": "papers/mulatu-2024-slides.md",
-   "hash": "0b3a5c3d2b57"
+   "hash": "5ecbd4d6a3ce",
+   "relations": []
+  },
+  {
+   "id": "nanyonjo-2024-cropsci",
+   "year": "2024",
+   "type": "research article",
+   "gist": "Tricot evaluation of 20 elite cassava clones with 614 farmers in Uganda, merging two cycles by rank aggregation and finding geography and heavy-rain days drove performance more than farmer traits",
+   "keywords": "cassava, elite clones, tricot, participatory variety selection, rank aggregation, sociodemographic covariates, climate covariates, reliability, food quality traits, variety release, NaCRRI",
+   "path": "papers/nanyonjo-2024-cropsci.md",
+   "hash": "309a827a4e91",
+   "relations": []
   },
   {
    "id": "occelli-2024-agecon",
@@ -249,7 +451,14 @@
    "gist": "Randomized comparison of tricot and group PVS with 1,978 bean farmers finds similar varietal diversification and adoption, better food security from group PVS, and tricot 28% cheaper",
    "keywords": "impact evaluation, tricot vs group PVS, difference-in-difference, food security, varietal diversification, adoption, cost comparison, randomized assignment",
    "path": "papers/occelli-2024-agecon.md",
-   "hash": "d0408ca259ba"
+   "hash": "d0408ca259ba",
+   "relations": [
+    {
+     "relation": "isCitedAsDataSourceBy",
+     "card": "desousa-2024-asd",
+     "note": "cites about 40% cheaper than RCBD; the source reports 28% cheaper than group PVS"
+    }
+   ]
   },
   {
    "id": "quiros-2024-compag",
@@ -258,7 +467,14 @@
    "gist": "Describes ClimMob, the open-source platform that runs tricot trials end to end, its design choices, architecture, Crop Ontology links and usability scores",
    "keywords": "ClimMob, software design, ODK, Crop Ontology, trial design, participant registration, data collection, reports, usability, component-based software engineering",
    "path": "papers/quiros-2024-compag.md",
-   "hash": "a69654de0d3a"
+   "hash": "a69654de0d3a",
+   "relations": [
+    {
+     "relation": "isDiscussedBy",
+     "card": "selby-2025-database",
+     "note": "ClimMob as a BrAPI-compatible tool"
+    }
+   ]
   },
   {
    "id": "schumann-2024-ux",
@@ -267,7 +483,14 @@
    "gist": "UX review finding tricot implementers rarely run farmer feedback, mapping why along their journey, and proposing redesigned feedback sheets, diplomas and ClimMob support",
    "keywords": "farmer feedback, feedback sessions, user experience, implementers, ClimMob, feedback sheet, diploma, co-design, inclusive design, reciprocity",
    "path": "papers/schumann-2024-ux.md",
-   "hash": "d2540151ddbe"
+   "hash": "f6edd63b3d6b",
+   "relations": [
+    {
+     "relation": "isExtendedBy",
+     "card": "muller-2025-ux",
+     "note": "field validation of the feedback prototypes"
+    }
+   ]
   },
   {
    "id": "1000farms-2025-report",
@@ -276,7 +499,8 @@
    "gist": "Report of a 26-person CGIAR-NARES meeting setting recommendations and 12-month action plans to mainstream tricot in breeding, from sampling and SOPs to analysis, cost and coordination",
    "keywords": "mainstreaming, 1000FARMS, CGIAR-NARES, sampling, SOPs, trial design, genetic gain on-farm, variety advancement, cost, coordination, digital ecosystem, market segments",
    "path": "papers/1000farms-2025-report.md",
-   "hash": "612c2967736b"
+   "hash": "6524fa3010f9",
+   "relations": []
   },
   {
    "id": "donovan-2025-expagric",
@@ -285,7 +509,14 @@
    "gist": "Video-based concept testing with 2,400 farmers in Kenya and Uganda finds resilience, drought escape and intercropping concepts most preferred among eight future maize hybrid concepts",
    "keywords": "product concept testing, VPCT, videos, hybrid maize, market segments, product design, seed products, intercropping, drought escape, resilience, demand-led breeding",
    "path": "papers/donovan-2025-expagric.md",
-   "hash": "84ce982fdb9f"
+   "hash": "fe248f7fe388",
+   "relations": [
+    {
+     "relation": "extends",
+     "card": "rutsaert-2023-mib",
+     "note": "full analysis of the maize concept testing in the brief"
+    }
+   ]
   },
   {
    "id": "kang-2025-expagric",
@@ -294,7 +525,8 @@
    "gist": "Tricot potato trial with 460 Rwandan farmers, linked to RHoMIS, climate and station data, shows old varieties still preferred and temperature and market orientation shaping rankings",
    "keywords": "potato, tricot, RHoMIS, socio-economic covariates, temperature, on-station vs on-farm, variety preference, market orientation, gender, Plackett-Luce trees",
    "path": "papers/kang-2025-expagric.md",
-   "hash": "0eb983fd90f3"
+   "hash": "0eb983fd90f3",
+   "relations": []
   },
   {
    "id": "muller-2025-ux",
@@ -303,7 +535,14 @@
    "gist": "Field validation in Nigeria of a redesigned tricot feedback sheet and diploma, rated highly by 44 farmers (NPS 70) though only half decoded the trait icons",
    "keywords": "farmer feedback, feedback sheet, diploma, Net Promoter Score, icons, usability, field validation, implementers, variety release evidence, NRCRI",
    "path": "papers/muller-2025-ux.md",
-   "hash": "2447af333781"
+   "hash": "ac7b7b7a3d52",
+   "relations": [
+    {
+     "relation": "extends",
+     "card": "schumann-2024-ux",
+     "note": "field validation of the feedback prototypes"
+    }
+   ]
   },
   {
    "id": "nabateregga-2025-eja",
@@ -312,7 +551,14 @@
    "gist": "Shows farmer volumetric yield estimates for common bean agree closely with technician measures (r = 0.96) and predict absolute yield, so tricot can supply yield data for breeders",
    "keywords": "farmer-generated yield, yield estimation, volumetric measurement, sado tins, data accuracy, genetic gain, moisture content, tricot, absolute yield",
    "path": "papers/nabateregga-2025-eja.md",
-   "hash": "a7f86eef3dbc"
+   "hash": "a7f86eef3dbc",
+   "relations": [
+    {
+     "relation": "isAgreedWithBy",
+     "card": "ulzen-2025-agrirxiv",
+     "note": "farmer volumetric yield measurement is accurate"
+    }
+   ]
   },
   {
    "id": "selby-2025-database",
@@ -321,7 +567,14 @@
    "gist": "Overview of BrAPI v2, the open API standard for breeding data, with a showcase of compatible tools including ClimMob, which pulls germplasm from breeding databases and pushes tricot data back",
    "keywords": "BrAPI, interoperability, data standards, API, breeding databases, ClimMob, germplasm, FAIR data, data integration, genebanks",
    "path": "papers/selby-2025-database.md",
-   "hash": "d49de535c824"
+   "hash": "3b8d482d365c",
+   "relations": [
+    {
+     "relation": "discusses",
+     "card": "quiros-2024-compag",
+     "note": "ClimMob as a BrAPI-compatible tool"
+    }
+   ]
   },
   {
    "id": "sharma-2025-jafr",
@@ -330,7 +583,24 @@
    "gist": "Tricot with 295 potato farmers in Plateau State, Nigeria, ranks two CIP clones above the check Marabel and shows market-oriented and subsistence farmers value different traits",
    "keywords": "potato, tricot, Nigeria, CIP clones, Marabel, market orientation, subsistence farmers, bootstrap, farmer segments, decentralized variety testing",
    "path": "papers/sharma-2025-jafr.md",
-   "hash": "69e4f1a65e03"
+   "hash": "69e4f1a65e03",
+   "relations": []
+  },
+  {
+   "id": "ulzen-2025-agrirxiv",
+   "year": "2025",
+   "type": "preprint",
+   "gist": "With 40 Ghanaian farmers, measuring harvest with a tin of known volume was the most accurate and robust method, while weighing with scales was error-prone even after training",
+   "keywords": "farmer-generated yield, harvest measurement, volumetric measurement, tin can, weighing scale, taring, training, accuracy, citizen science, tricot, decentralized trials, Kookoo Pa",
+   "path": "papers/ulzen-2025-agrirxiv.md",
+   "hash": "7a1dee7f36d3",
+   "relations": [
+    {
+     "relation": "agreesWith",
+     "card": "nabateregga-2025-eja",
+     "note": "farmer volumetric yield measurement is accurate"
+    }
+   ]
   },
   {
    "id": "voss-2025-ppp",
@@ -339,7 +609,8 @@
    "gist": "Tricot trials of 14 amaranth varieties with 2,063 farmers in Benin, Mali and Tanzania identify gender- and business-based farmer segments with distinct variety preferences",
    "keywords": "opportunity crops, NUS, amaranth, tricot, farmer segmentation, cluster analysis, gender, market segments, demand-driven breeding, seed systems, World Vegetable Center",
    "path": "papers/voss-2025-ppp.md",
-   "hash": "6a7c67275494"
+   "hash": "6a7c67275494",
+   "relations": []
   },
   {
    "id": "cairns-2026-jxb",
@@ -348,7 +619,14 @@
    "gist": "Review arguing that inclusive host-farmer sampling, sparse testing and cheaper phenotyping let maize breeding in SSA deliver breakthrough products",
    "keywords": "breakthrough products, TPE, on-farm testing, sparse testing, tricot, farm typology, host farmer sampling, GxExM, genomic relationship matrix, phenotyping, satellite imagery",
    "path": "papers/cairns-2026-jxb.md",
-   "hash": "a1a6329f7f82"
+   "hash": "bf69f0d76e86",
+   "relations": [
+    {
+     "relation": "citesAsDataSource",
+     "card": "desousa-2024-asd",
+     "note": "cites over 150,000 farmers; the source reports about 150,000 plots"
+    }
+   ]
   },
   {
    "id": "chase-2026-book",
@@ -357,7 +635,8 @@
    "gist": "The current tricot handbook, covering every step from objectives, sampling and trial size to ClimMob, SOPs, metadata, statistics, farmer feedback and African case studies",
    "keywords": "tricot handbook, ten steps, objective setting, product management, sampling, trial size, sample-size calculator, seed calculator, costing, ClimMob, SOPs, metadata, statistical models, feedback, case studies",
    "path": "papers/chase-2026-book.md",
-   "hash": "91374d556824"
+   "hash": "91374d556824",
+   "relations": []
   },
   {
    "id": "daudi-2026-fes",
@@ -366,7 +645,8 @@
    "gist": "Combines 18-environment station trials with tricot on-farm trials in Tanzania to select stable groundnut genotypes and show women and men prioritize different traits",
    "keywords": "groundnut, GEI, GGE biplot, tricot, gender, trait preferences, kernel yield, stability, target product profile, variety release, TARI",
    "path": "papers/daudi-2026-fes.md",
-   "hash": "ea520d0d30e5"
+   "hash": "ea520d0d30e5",
+   "relations": []
   },
   {
    "id": "dorado-2026-tag",
@@ -375,7 +655,8 @@
    "gist": "Shows that genotype means and variances from Plackett-Luce or Thurstonian models can feed standard two-step mixed models to estimate heritability from tricot rankings",
    "keywords": "genetic parameters, heritability, variance components, Thurstonian model, Plackett-Luce, two-step analysis, mixed models, ranking data, genetic gain, simulation",
    "path": "papers/dorado-2026-tag.md",
-   "hash": "87767f5759c6"
+   "hash": "87767f5759c6",
+   "relations": []
   },
   {
    "id": "jorgensen-2026-gse",
@@ -384,7 +665,8 @@
    "gist": "Describes INNOFORAGE, the first tricot application in Norway, testing climate-adapted forage seed mixtures in 100 on-farm mini-trials alongside station RCBD trials",
    "keywords": "tricot in Europe, forage, seed mixtures, grassland, Norway, INNOFORAGE, winter survival, advisers, participatory research, RCBD combination",
    "path": "papers/jorgensen-2026-gse.md",
-   "hash": "3b356d0e977b"
+   "hash": "e52efa8f728d",
+   "relations": []
   }
  ]
 }

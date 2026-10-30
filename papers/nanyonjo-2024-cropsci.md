@@ -1,7 +1,7 @@
 ---
-id: angudubo-2024-cropsci
+id: nanyonjo-2024-cropsci
 title: On-farm evaluation of cassava clones using the triadic comparison of technology options approach
-authors: Angudubo S, Esuma W, Nanyonjo AR, Nuwamanya E, Wembabazi E, Bayiyana I, Brown D, Iragaba P, Ozimati A, Muhumuza N, Kanaabi M, and co-authors
+authors: Nanyonjo AR, Angudubo S, Iragaba P, Brown D, Nuwamanya E, Esuma W, Ozimati A, Wembabazi E, Kanaabi M, Muhumuza N, Bayiyana I, van Etten J, de Sousa K, Tufan H, Kawuki RS
 year: 2024
 journal: Crop Science
 journal_short: Crop Sci
@@ -68,5 +68,5 @@ The authors explain why location outweighed farmer characteristics. Overall perf
 
 ## Notes
 
-- The PDF is filed as Nanyonjo-et-al-2024, but the first author is Stephen Angudubo. Ann Ritah Nanyonjo is the corresponding author.
+- Ann Ritah Nanyonjo is first and corresponding author. Stephen Angudubo contributed equally (joint first author, per the team), and Robert Kawuki is senior author. Cite as Nanyonjo et al. 2024.
 - The abstract reports 10 districts, while the methods list eight districts by name. Check the PDF before citing the district count.

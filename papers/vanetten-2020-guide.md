@@ -7,8 +7,8 @@ journal: Alliance of Bioversity International and CIAT (guide)
 journal_short: Guide
 article: Rome, Alliance of Bioversity International and CIAT
 type: guide
-doi:
-open_copy:
+doi: https://hdl.handle.net/10568/109942
+open_copy: https://hdl.handle.net/10568/109942
 license: see CGSpace record
 data: none
 crops: any
@@ -63,5 +63,4 @@ The FAQ notes that tricot has mostly evaluated varieties of annual crops such as
 
 ## Notes
 
-- Grey literature without a DOI. Add the CGSpace handle to `doi` and `open_copy`.
 - A more practical, illustrated successor to steinke-2016-guide.

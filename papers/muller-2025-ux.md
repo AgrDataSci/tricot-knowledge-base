@@ -7,14 +7,16 @@ journal: Alliance of Bioversity International and CIAT, UX Research and Inclusiv
 journal_short: Presentation
 article: validation slides
 type: presentation
-doi:
-open_copy:
+doi: https://hdl.handle.net/10568/179807
+open_copy: https://hdl.handle.net/10568/179807
 license: see repository record
 data: none
 crops: cassava (validation)
 region: Nigeria (Oyo, Osun, Abia, Imo, Akwa Ibom)
 keywords: farmer feedback, feedback sheet, diploma, Net Promoter Score, icons, usability, field validation, implementers, variety release evidence, NRCRI
 gist: Field validation in Nigeria of a redesigned tricot feedback sheet and diploma, rated highly by 44 farmers (NPS 70) though only half decoded the trait icons
+relations:
+  - extends: schumann-2024-ux  # field validation of the feedback prototypes
 ---
 
 ## Questions this paper answers
@@ -63,5 +65,4 @@ The validation combined quantitative and qualitative methods to answer several r
 
 ## Notes
 
-- Grey literature without a DOI. Add the CGSpace handle if one exists.
 - The deck lists Kauê de Sousa in the steering team.

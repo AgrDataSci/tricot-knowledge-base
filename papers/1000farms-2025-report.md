@@ -7,8 +7,8 @@ journal: Meeting report
 journal_short: Report
 article: meeting report
 type: report
-doi:
-open_copy:
+doi: https://hdl.handle.net/10568/175957
+open_copy: https://hdl.handle.net/10568/175957
 license: see CGSpace record
 data: none
 crops: dryland crops and others in the CGIAR-NARES network
@@ -62,5 +62,4 @@ The advancement group set six principles for using tricot in variety advancement
 
 ## Notes
 
-- Grey literature without a DOI. The DOI found in the PDF belongs to desousa-2024-asd, which the report cites.
 - Context for the 1000FARMS network discussed in desousa-2024-asd and quiros-2024-compag.

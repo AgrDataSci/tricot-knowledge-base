@@ -15,6 +15,8 @@ crops: maize, potato, sweetpotato, cowpea, cassava, common bean, durum wheat, br
 region: Global (India, Ethiopia, Central America, Eastern, Southern and West Africa)
 keywords: tricot, citizen science, incomplete block design, ClimMob, Plackett-Luce, validity, reliability, cost, adoption, mainstreaming, product design, gender
 gist: Retrospective on tricot's development, validity, cost, mainstreaming in breeding and open challenges
+relations:
+  - citesAsDataSource: occelli-2024-agecon  # cites about 40% cheaper than RCBD; the source reports 28% cheaper than group PVS
 ---
 
 ## Questions this paper answers

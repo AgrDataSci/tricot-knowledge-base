@@ -7,8 +7,8 @@ journal: Presentation, Gender conference, New Delhi, 9–12 October 2023 (IITA)
 journal_short: Presentation
 article: conference slides
 type: presentation
-doi:
-open_copy:
+doi: https://hdl.handle.net/10568/137005
+open_copy: https://hdl.handle.net/10568/137005
 license: see CGSpace record
 data: none
 crops: cassava
@@ -61,5 +61,5 @@ The slides place tricot within a longer research sequence that informed IITA's c
 
 ## Notes
 
-- Grey literature (conference slides) without a DOI. Add the CGSpace handle if one exists.
+- Grey literature (conference slides) archived on CGSpace.
 - For peer-reviewed cassava food-quality evidence, see olaosebikan-2023-jsfa and alamu-2023-jsfa.

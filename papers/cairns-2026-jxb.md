@@ -16,6 +16,8 @@ region: sub-Saharan Africa (Eastern and Southern Africa, Zimbabwe case data)
 keywords: breakthrough products, TPE, on-farm testing, sparse testing, tricot, farm typology, host farmer sampling, GxExM, genomic relationship matrix, phenotyping, satellite imagery
 funding: UK-CGIAR TEAM-AI
 gist: Review arguing that inclusive host-farmer sampling, sparse testing and cheaper phenotyping let maize breeding in SSA deliver breakthrough products
+relations:
+  - citesAsDataSource: desousa-2024-asd  # cites over 150,000 farmers; the source reports about 150,000 plots
 ---
 
 ## Questions this paper answers

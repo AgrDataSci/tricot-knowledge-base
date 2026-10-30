@@ -62,5 +62,4 @@ In Ghana, PG17136-N1 is a white-fleshed, high-dry-matter clone at the advanced s
 
 ## Notes
 
-- The PDF file is named Moyo-et-al-2020, but the article was published in February 2021.
 - Cited in desousa-2024-asd and vanetten-2020-rtbwp as the sweetpotato consumer testing example.

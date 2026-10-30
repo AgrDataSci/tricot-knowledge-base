@@ -7,14 +7,16 @@ journal: CGIAR Market Intelligence Brief 15
 journal_short: Market Intell Brief
 article: Market Intelligence Brief 15
 type: policy brief
-doi:
-open_copy:
+doi: https://hdl.handle.net/10883/34683
+open_copy: https://hdl.handle.net/10883/34683
 license: see repository record
 data: none
 crops: sorghum
 region: Tanzania (Dodoma, Shinyanga)
 keywords: VPCT, sorghum, seed product concepts, hybrid, home use, malting, market segmentation, target product profiles, Tanzania
 gist: Video-based concept testing with 1,100 Tanzanian farmers finds hybrid and home-use sorghum concepts most preferred, and proposes revised market segments and product profiles
+relations:
+  - usesMethodIn: rutsaert-2023-mib  # video-based product concept testing
 ---
 
 ## Questions this paper answers
@@ -58,5 +60,4 @@ The video scripts show how trade-offs were made explicit. The feed and food conc
 
 ## Notes
 
-- Grey literature without a DOI. Add the repository handle.
 - Same method as rutsaert-2023-mib and donovan-2025-expagric, applied to sorghum.

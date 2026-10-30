@@ -7,8 +7,8 @@ journal: CGIAR Market Intelligence Brief 2
 journal_short: Market Intell Brief
 article: Market Intelligence Brief 2
 type: policy brief
-doi:
-open_copy:
+doi: https://hdl.handle.net/10883/22467
+open_copy: https://hdl.handle.net/10883/22467
 license: see repository record
 data: none
 crops: maize (hybrids)
@@ -57,5 +57,4 @@ Once future segments are identified, the authors note, programmes need estimates
 
 ## Notes
 
-- Grey literature without a DOI (CIMMYT repository handle hdl.handle.net/10883/22467 appears in the PDF). Confirm and add the handle.
 - Concept labels differ slightly from donovan-2025-expagric (for example drought avoidance vs drought escape, nutritious vs family nutrition).

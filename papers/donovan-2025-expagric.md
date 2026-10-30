@@ -16,6 +16,8 @@ crops: maize (hybrids)
 region: Kenya, Uganda
 keywords: product concept testing, VPCT, videos, hybrid maize, market segments, product design, seed products, intercropping, drought escape, resilience, demand-led breeding
 gist: Video-based concept testing with 2,400 farmers in Kenya and Uganda finds resilience, drought escape and intercropping concepts most preferred among eight future maize hybrid concepts
+relations:
+  - extends: rutsaert-2023-mib  # full analysis of the maize concept testing in the brief
 ---
 
 ## Questions this paper answers

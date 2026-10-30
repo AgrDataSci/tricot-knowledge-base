@@ -7,8 +7,8 @@ journal: Bioversity International (methodological guide, version 1)
 journal_short: Guide
 article: version 1, May 2016
 type: guide
-doi:
-open_copy:
+doi: https://hdl.handle.net/10568/78782
+open_copy: https://hdl.handle.net/10568/78782
 license: see CGSpace record
 data: none
 crops: any (examples in common bean)
@@ -67,6 +67,4 @@ The guide also models the farmer's experience. A participant receives a package 
 
 ## Notes
 
-- Grey literature without a DOI. Add the CGSpace handle to `doi` and `open_copy`.
-- The PDF file is named van-Etten-et-al-2016, but the guide lists Jonathan Steinke as first author.
 - Superseded in parts by vanetten-2020-guide and the tricot book (chase-2026-book). Check those for current practice.
