@@ -1,5 +1,5 @@
 {
- "version": "2e6b1034eb89",
+ "version": "d1287829ace4",
  "updated": "2026-10-30",
  "cards": 47,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
@@ -508,7 +508,7 @@
    "gist": "Report of a 26-person CGIAR-NARES meeting setting recommendations and 12-month action plans to mainstream tricot in breeding, from sampling and SOPs to analysis, cost and coordination",
    "keywords": "mainstreaming, 1000FARMS, CGIAR-NARES, sampling, SOPs, trial design, genetic gain on-farm, variety advancement, cost, coordination, digital ecosystem, market segments",
    "path": "papers/1000farms-2025-report.md",
-   "hash": "6524fa3010f9",
+   "hash": "d1adeb47aed6",
    "relations": []
   },
   {
