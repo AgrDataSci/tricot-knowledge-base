@@ -1,7 +1,7 @@
 ---
 id: 1000farms-2025-report
 title: Mainstreaming the tricot approach into the CGIAR-NARES Breeding Initiative. Insights from the meeting held in Nairobi, 3–5 December 2024
-authors: CGIAR Dryland Crops Program and 1000FARMS
+authors: CIMMYT (CGIAR Dryland Crops Program) and Bioversity International (1000FARMS)
 year: 2025
 journal: Meeting report
 journal_short: Report
@@ -58,8 +58,8 @@ The advancement group set six principles for using tricot in variety advancement
 | 3–5 Dec 2024 | Meeting dates | This report |
 | 6–12 months | Recommended preparation time before trials | This report |
 | 2–3 years | Recommended frequency of market research | This report |
-| 12 months | Horizon of the action plans | This report |
 
 ## Notes
 
 - Context for the 1000FARMS network discussed in desousa-2024-asd and quiros-2024-compag.
+- The meeting was organized and the report prepared by Ganga Rao Nadigatla, Kauê de Sousa, Jacob van Etten and Harish Gandhi. The authors choose to publish the report under the institutional names as it was an institutionalization effort.
