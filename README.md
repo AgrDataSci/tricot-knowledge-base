@@ -55,9 +55,11 @@ Every source document has a long-format card. `python scripts/build_index.py` li
 
 ## Use it
 
-**In Claude.** Package the skill without the source PDFs (see [Packaging](#packaging)) and upload the zip as a skill. Claude loads the index in `SKILL.md` whenever a question touches tricot or on-farm testing, and opens only the cards it needs.
+**In Claude.** Download the [latest skill package](https://github.com/AgrDataSci/tricot-knowledge-base/releases/latest/download/tricot-knowledge-base.zip) and upload it under Customize > Skills. Code execution must be on, and on Team or Enterprise plans an owner may need to allow skills. Claude loads the index in `SKILL.md` whenever a question touches tricot or on-farm testing, and opens only the cards it needs.
 
 **In Claude Code.** Clone the repository into your skills directory, or install it from the [AI-ready documentation](https://github.com/AgrDataSci/ai-ready-documentation) repository once its plugin marketplace is published.
+
+**By sharing the link.** Paste the repository link into an assistant with web access. It reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md), answers from the live files, and offers to install the skill so the link is not needed next time. It installs nothing without the user's agreement.
 
 **With other AI tools or by hand.** Start from the index table in [`SKILL.md`](SKILL.md), then open the relevant cards in [`papers/`](papers/). Each card names an open full-text copy and, where available, the dataset behind the paper.
 
@@ -140,12 +142,12 @@ Writing rules for cards are plain, assertive prose in concise paragraphs, no pas
 
 ## Packaging
 
-The skill must stay light because it travels between users. Package only what Claude needs.
+The skill must stay light because it travels between users. The GitHub Action builds the package on every change and publishes it as the [latest release](https://github.com/AgrDataSci/tricot-knowledge-base/releases/latest), so there is usually no need to package it by hand. To build it locally, package only what Claude needs.
 
 ```bash
 python scripts/build_index.py
 mkdir -p build/tricot-knowledge-base
-cp -r SKILL.md people.md index.json papers build/tricot-knowledge-base/
+cp -r SKILL.md people.md index.json AGENTS.md papers build/tricot-knowledge-base/
 cd build && zip -r ../tricot-knowledge-base.zip tricot-knowledge-base
 ```
 

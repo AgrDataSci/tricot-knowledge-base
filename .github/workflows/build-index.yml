@@ -1,5 +1,8 @@
-# Rebuilds SKILL.md, index.json and relations.jsonld whenever cards or people.md change on main,
+# Rebuilds SKILL.md, index.json and relations.jsonld whenever cards, people.md or SKILL.md change on main,
 # so the live repository always advertises its current version to assistants.
+# Then publishes the packaged skill as the asset of the release tagged skill-latest, so
+# https://github.com/AgrDataSci/tricot-knowledge-base/releases/latest/download/tricot-knowledge-base.zip
+# always serves the current version.
 name: Build index
 
 on:
@@ -35,4 +38,20 @@ jobs:
             git add SKILL.md index.json relations.jsonld
             git commit -m "Rebuild index"
             git push
+          fi
+      - name: Package the skill
+        run: |
+          mkdir -p build/tricot-knowledge-base
+          cp -r SKILL.md people.md index.json AGENTS.md papers build/tricot-knowledge-base/
+          cd build && zip -qr ../tricot-knowledge-base.zip tricot-knowledge-base
+      - name: Publish the package as the latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION=$(python -c "import json; print(json.load(open('index.json'))['version'])")
+          if gh release view skill-latest > /dev/null 2>&1; then
+            gh release upload skill-latest tricot-knowledge-base.zip --clobber
+            gh release edit skill-latest --title "Skill package, version $VERSION" --latest
+          else
+            gh release create skill-latest tricot-knowledge-base.zip --title "Skill package, version $VERSION" --notes "Latest packaged skill. Upload this zip in Claude under Customize > Skills. It is rebuilt on every change to the knowledge base." --latest
           fi

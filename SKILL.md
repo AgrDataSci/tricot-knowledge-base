@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `6d12c90d1d5e`, updated 2026-10-30, 47 cards.<!-- version:end -->
+<!-- version:start -->Installed version `092de5d9acd2`, updated 2026-10-30, 47 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -19,9 +19,24 @@ The repository grows as papers are added, and an installed copy can fall behind.
 4. If you fetched a new `SKILL.md`, follow its instructions instead of these for the rest of the conversation.
 5. Tell the user in one short line that you are using the latest knowledge base and its `updated` date.
 6. If that address is blocked, try `https://github.com/AgrDataSci/tricot-knowledge-base/blob/main/index.json`. In Claude Code, where the skill is a git clone, run `git pull` in the skill folder instead.
-7. If every route fails or web access is off, use the installed files without comment, unless the user asks how current they are, in which case give the installed version date.
+7. If you could not update, say so once, in one short line, and carry on with the installed files.
+   - **A newer version exists but you could not load it** (you read the live `index.json` but fetching the changed files failed): say that a newer version from its `updated` date is available, that you are answering from the installed version of its date, and why, for example that the files could not be fetched. Suggest turning on web access or installing the latest package (see "Installing the skill").
+   - **You could not reach the repository at all**, or web access is off: say that you could not check for updates and are answering from the installed version of its date. If web access is off, mention that turning it on lets you check.
 
-Do not re-check on every turn. One check per conversation is enough.
+Do not re-check or repeat these notices on every turn. One check per conversation is enough.
+
+## Installing the skill
+
+Many users of this knowledge base are not familiar with AI tools. Assume the user may not know what a skill, a zip file or a setting is, and keep the offer simple.
+
+If the user shares the repository link and you are reading the files from the web rather than from an installed copy, answer their question from the live files first. Then, once per conversation, offer in plain words to set it up, for example: "Would you like me to help set this up so you can ask about tricot any time, without sharing the link again?"
+
+- **If you have a tool that saves or installs skills for the user**, use it with the latest package, but only after they say yes. Tell them in one sentence what you did and how to switch it off.
+- **Otherwise, walk them through it one step at a time.** Give one short step, wait for them to say it worked, then give the next. Use the names of the buttons they will see, explain any term the first time you use it, and do not mention files, folders or settings they do not need to touch. The package is always at https://github.com/AgrDataSci/tricot-knowledge-base/releases/latest/download/tricot-knowledge-base.zip.
+  - In Claude, the steps are to download that file, open Customize, then Skills, choose to create a skill, upload the file, and switch it on. Skills need the setting for running code and creating files to be on. If the upload option is missing, their organization may need to allow it, so suggest they ask their IT contact.
+  - In other assistants, help them add `SKILL.md` and the `papers/` folder to a project or to custom instructions, or suggest simply sharing the link at the start of each conversation.
+- **If a step fails**, say what probably went wrong in plain words and offer the simplest fallback, which is to keep sharing the link.
+- **Never install anything or change the user's settings without their agreement.** If they say no, keep answering from the live files and do not ask again.
 
 ## How to answer
 
