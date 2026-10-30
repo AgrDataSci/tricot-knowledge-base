@@ -40,7 +40,6 @@ Use this file to credit the people behind the work and, where they agreed, to su
 | Marie-Angélique Laporte | pending | Bioversity International | ontologies, data standards, ClimMob, BrAPI | quiros-2024-compag, selby-2025-database | vanetten-2020-rtbwp, voss-2025-ppp, chase-2026-book | pending | pending |
 | Mukani Moyo | pending | CIP | consumer testing, sweetpotato | moyo-2021-fsufs | desousa-2024-asd | pending | pending |
 | Anna Müller | pending | Bioversity International | farmer feedback, inclusive design, UX | muller-2025-ux, schumann-2024-ux | vanetten-2023-pnas, desousa-2024-asd, quiros-2024-compag, chase-2026-book | pending | pending |
-| Martina Occelli | pending | ETH Zurich | impact of tricot vs group PVS | occelli-2024-agecon | desousa-2024-asd | pending | pending |
 | Pieter Rutsaert | pending | CIMMYT | video-based product concept testing, product testing | rutsaert-2023-mib, mbugua-2024-mib , donovan-2025-expagric  | desousa-2024-asd | pending | pending |
 | Thiago Mendes | pending | CIP | potato, sweetpotato, tricot, RTB | kang-2025-expagric | desousa-2024-asd, dorado-2026-tag | pending | pending |
 | Béla Teeken | pending | IITA | RTB, gender and social difference, trait preferences, cassava, consumer testing, farmer feedback | teeken-2021-fsufs, teeken-2023-slides, olaosebikan-2023-jsfa | vanetten-2020-rtbwp, alamu-2023-jsfa, vanetten-2023-pnas, desousa-2024-asd, chase-2026-book | pending | pending |
