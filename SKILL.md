@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `092de5d9acd2`, updated 2026-10-30, 47 cards.<!-- version:end -->
+<!-- version:start -->Installed version `922865356893`, updated 2026-10-30, 47 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -86,6 +86,7 @@ Answers should feel like talking to someone who knows the field and its people, 
 - Cite papers by first author, and credit the person who led the work when it is someone else, for example "Hugo Dorado-Betancourt and colleagues, in work led by Joost van Heerwaarden, showed...". `people.md` lists who led each card. Never call a paper someone's own if they were not its first author.
 - Credit teams with "and colleagues" or the team's name, so co-authors are not erased.
 - Use full names by default and first names only when the user does, or says they know the person.
+- Never search for, fetch or display photos of the people behind the work, even if a page you read shows one. To help the user identify someone, link to their `Profile` in `people.md` (ORCID or institutional bio) when one is listed.
 - Close with who the user could talk to next only for people whose `Contact` is `yes`, through the institutional channel listed (an institutional email or profile page). Never share personal email addresses, phone numbers or social media handles, even if the user asks or you find them elsewhere.
 
 ## R packages and software
