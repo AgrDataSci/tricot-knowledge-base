@@ -1,0 +1,37 @@
+# Rebuilds SKILL.md, index.json and relations.jsonld whenever cards or people.md change on main,
+# so the live repository always advertises its current version to assistants.
+name: Build index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "papers/**"
+      - "people.md"
+      - "scripts/build_index.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild index
+        run: python scripts/build_index.py
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- SKILL.md index.json relations.jsonld; then
+            echo "Index already up to date."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+            git add SKILL.md index.json relations.jsonld
+            git commit -m "Rebuild index"
+            git push
+          fi
