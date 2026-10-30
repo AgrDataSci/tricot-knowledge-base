@@ -4,7 +4,7 @@
 
 # Tricot knowledge base
 
-> Kauê de Sousa, Brayden Youngberg, Rachel Chase
+> Kauê de Sousa, Brayden Youngberg, Rachel Chase, Marie-Angélique Laporte
 
 An AI-ready knowledge base of the open-access literature on tricot, on-farm testing and product testing with farmers and consumers. Each paper, report or guide is distilled into a verified markdown card with the questions it answers, its main argument, methods, stated limitations, key numbers with their primary sources, and links to the underlying data and code.
 
@@ -149,7 +149,7 @@ cd build && zip -r ../tricot-knowledge-base.zip tricot-knowledge-base
 
 To cite the knowledge base, use [`CITATION.cff`](CITATION.cff).
 
-> de Sousa K, Youngberg B, Chase R (2026). Tricot knowledge base. An AI-ready synthesis of the literature on decentralized on-farm testing. Version 0.1.0. https://github.com/AgrDataSci/tricot-knowledge-base
+> de Sousa K, Youngberg B, Chase R, Laporte MA (2026). Tricot knowledge base. An AI-ready synthesis of the literature on decentralized on-farm testing. Version 0.1.0. https://github.com/AgrDataSci/tricot-knowledge-base
 
 Cite the original papers for any finding you use.
 
