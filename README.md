@@ -1,115 +1,53 @@
-<!-- badges: start -->
-[![License](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/deed.en) 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15224389.svg)](https://doi.org/10.5281/zenodo.15224389)
-<!-- badges: end --> 
+# Building the tricot knowledge base
 
-## A FAIR and project-oriented template for open science data workflows
-> Kauê de Sousa, Marie-Angélique Laporte
+This folder is a Claude skill. It lets any user ask questions about tricot and on-farm testing and get answers grounded in the team's open-access papers, as if talking to someone who knows that literature well. It is the literature layer of our AI-ready documentation, next to the data (tricot, EBS, CHIRPS).
 
-Here we introduce a reusable, project-oriented data analysis template designed to align with the FAIR principles (Findable, Accessible, Interoperable, and Reusable). The template offers a structured and scalable approach for managing scientific data and code, particularly suited for collaborative and open science environments. It integrates good practices from R-based workflows, GitHub–Zenodo integration, and metadata standards including DataCite and CFF.
+The skill must stay light because it travels between users. Only `SKILL.md` loads every time. Paper cards load one by one, only when a question needs them.
 
----
+## Folder structure
 
-## Objectives
-
-The template aims to:
-
-- Improve consistency and reproducibility across research projects.
-- Ensure research outputs are FAIR and ready for long-term archiving.
-- Provide a ready-to-use metadata structure for data and code publication.
-- Support automated workflows and interoperability with platforms like Zenodo, GitHub, and institutional repositories.
-
----
-
-## Repository structure
-
-The project follows a project-oriented layout inspired by best practices in the R community.
-
-```text
-template-repo-data-analysis/
-├── data/                                       # Anonimized raw and cleaned datasets
-├── docs/                                       # Reports or additional documentation
-├── metadata/                                   # Metadata files and templates
-│   ├── project-metadata.xlsx                   # Excel file with project metadata
-│   ├── project-metadata.json                   # JSON file with project metadata for DataCite
-│   ├── example-metadata-data-mip-uganda.csv    # Description of the dataset used as example
-│   └── README.md    
-├── output/                                     # Model results, figures, tables 
-├── script/                                     # Scripts for validation, metadata generation, etc.
-├── .gitignore                                  # Indicates which files or folders to exclude from version control
-├── LICENSE                                     # A valid license file stablishing the rights to use the data
-├── CITATION.cff                                # Used by GitHub and Zenodo to generate citation metadata
-├── template-repo-data-analysis.Rproj           # RStudio file to set up the environment (must be renamed)
-└── README.md                                   # Project overview
 ```
----
+tricot-knowledge-base/
+├── SKILL.md              # instructions + index (generated, do not edit the table by hand)
+├── TEMPLATE.md           # copy this to start a new card
+├── README.md             # this file (not needed by Claude, safe to keep)
+├── papers/               # one card per paper, named <id>.md
+├── scripts/build_index.py
+└── tests/                # format comparison; remove before packaging
+```
 
-## Best practices incorporated
+## Short or long card
 
-- **Project-oriented** structure.
-- **FAIR-compliant metadata** with Zenodo and DataCite standards.
-- **Automation** via R scripts for JSON conversion and validation.
-- **Citation support** with `CITATION.cff` file.
-- **Clear separation** of raw data, outputs, scripts, and documentation.
-- **GitHub–Zenodo integration** for DOI minting.
+Every card has the metadata, a 400 to 500 word summary, key numbers and notes.
 
----
+Use the **long format** for method-heavy and landmark papers. It adds three sections, "Questions this paper answers", "Methods in brief" and "Stated limitations". In our test (`tests/comparison-short-vs-long.md`) the long card answered all five expert questions better, mostly on the practical "how" side.
 
-## Metadata management
+Use the **short format** for perspectives, commentaries and narrow case studies.
 
-The `metadata/` folder contains:
+Target size is about 6 KB for a short card and about 10 KB for a long one.
 
-- `metadata.xlsx`: Main spreadsheet with sheets for general metadata, authors, funders, dates, and communities.
-- `metadata.json`: DataCite-compliant metadata for institutional or repository submission.
-- `CITATION.cff`: Used by GitHub and Zenodo to generate citation metadata (it must be placed on the main root).
-- `README.md`: Guide to using the metadata tools.
+## Workflow for each paper
 
----
+1. **Extract the text from the PDF.** `pdftotext -layout paper.pdf paper.txt`. Cut everything after the reference list starts. Keep figure and table captions.
+2. **Draft the card.** Copy `TEMPLATE.md` to `papers/<id>.md`. Giving Claude the PDF text and the template works well. Ask for the card in the template format, summary in its own words.
+3. **Verify every number against the PDF.** This is the step that matters most. Check each value in the key-numbers table and in the summary. Record any text vs table mismatch in Notes.
+4. **Fill the primary-source column.** If the paper reports a number from another study, name that study. Users must cite the original, not the paper that repeats it.
+5. **Find a stable open copy.** Publisher pages often block automated reading (Springer and PNAS both did in our test). Prefer PMC, an institutional repository (CGSpace, HU Berlin edoc), or our GitHub markdown.
+6. **Cross-check against other cards.** If two papers report the same fact differently, note it in both cards. Example, Cairns et al. 2026 cites ">150,000 farmers" where de Sousa et al. 2024 reports ~150,000 plots.
+7. **Rebuild the index.** `python scripts/build_index.py`. It reads the front matter of every card, checks required fields, and rewrites the table in `SKILL.md`.
 
-## How to use this template
+## Writing rules
 
-1. **Clone or fork the repository** and open it in RStudio.
-2. **Complete `metadata.xlsx`** using the provided structure.
-3. **Add your data**
-4. **Run your analysis**
-5. **Run the R scripts** from the `script/` folder to:
-   - Validate metadata 
-   - Convert to JSON
-6. **Publish to Zenodo**:
-   - Enable the GitHub repo in your [Zenodo GitHub settings](https://zenodo.org/account/settings/github/).
-   - Create a GitHub release. Zenodo will use the `CITATION.cff` to generate the DOI metadata.
+- Summaries in your own words. Do not paste paragraphs from the paper, even for open-access articles.
+- Plain, assertive prose. Concise paragraphs. No em-dashes.
+- `gist` under 30 words. It is the only text from the card that loads every time, so make it count.
+- `keywords` are the terms a user would type, not the paper's formal keyword list.
+- Never add a number you cannot find in the PDF.
 
----
+## Packaging
 
-## Reusability and extensions
+1. Delete `tests/` (and optionally `README.md` and `TEMPLATE.md`).
+2. Run `python scripts/build_index.py` one last time.
+3. Zip the folder and upload it as a skill.
 
-This template is suitable for:
-- Research projects requiring data publication.
-- Collaborative projects across CGIAR and university partners.
-- Students and researchers new to reproducible data workflows.
-
-The structure is extensible and can support:
-- Additional metadata schemas and controled vocabularies (e.g., Dublin Core, DCAT)
-- Workflow automation using GitHub Actions or R scripts
-- Integration with institutional data catalogs
-
----
-
-## Contribute
-
-This template is open for improvement! You can:
-- Suggest edits via GitHub Issues
-- Fork the repository for your own project
-- Contribute back improvements via pull request
-
----
-
-## References
-
-- [FAIR Principles](https://www.go-fair.org/fair-principles/)
-- [DataCite Metadata Schema](https://schema.datacite.org/)
-- [GitHub–Zenodo Integration](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
-- [Project-Oriented Workflows in R](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
-
-
-
+At 50 papers expect `SKILL.md` around 15 KB and the whole folder around 400 KB unzipped.
