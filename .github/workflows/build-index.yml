@@ -8,6 +8,7 @@ on:
     paths:
       - "papers/**"
       - "people.md"
+      - "SKILL.md"
       - "scripts/build_index.py"
   workflow_dispatch:
 

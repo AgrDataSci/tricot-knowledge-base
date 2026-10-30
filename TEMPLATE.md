@@ -16,6 +16,7 @@ crops: crops covered
 region: countries or regions
 keywords: 8 to 12 comma-separated terms a user would search for
 gist: One sentence, under 30 words, saying what the paper shows
+not_established: Optional. Claims this paper is likely to be stretched to but does not support, separated by semicolons
 relations:                                   # optional; one per line, CiTO terms, target is a card id
   - extends: other-card-id                   # extends | reviews | updates | usesDataFrom | usesMethodIn | citesAsDataSource | agreesWith | disagreesWith | discusses
   - citesAsDataSource: other-card-id  # a short note after a hash, e.g. when the number is reported differently

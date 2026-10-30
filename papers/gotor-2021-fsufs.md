@@ -15,6 +15,7 @@ crops: rice, wheat
 region: India (Bihar; Saran, Samastipur and Vaishali districts)
 keywords: impact assessment, varietal diversification, Seeds for Needs, citizen science, livelihoods, resilience, RHoMIS, doubly robust estimator, Simpson diversity, Bihar, adaptive capacity
 gist: Survey of 600 households in Bihar finds that the Seeds for Needs crowdsourced intervention increased rice and wheat varietal diversity, perceived yields and recovery from shocks
+not_established: measured yield gains (yield change is self-reported); randomized causal effects; effects beyond rice and wheat in Bihar
 relations:
   - extends: vanetten-2019-pnas  # household impact of the Bihar Seeds for Needs intervention
 ---

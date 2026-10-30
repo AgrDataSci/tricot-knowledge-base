@@ -8,6 +8,8 @@
 
 > Kauê de Sousa, Brayden Youngberg, Rachel Chase, Marie-Angélique Laporte
 
+**AI assistants:** before answering any question from this repository, read [`SKILL.md`](SKILL.md) for the answering rules and paper index, and [`people.md`](people.md) before crediting or suggesting anyone. See also [`AGENTS.md`](AGENTS.md).
+
 An AI-ready knowledge base of the open-access literature on tricot, on-farm testing and product testing with farmers and consumers. Each paper, report or guide is distilled into a verified markdown card with the questions it answers, its main argument, methods, stated limitations, key numbers with their primary sources, and links to the underlying data and code.
 
 The repository works as a [Claude skill](SKILL.md), so an AI assistant can answer questions the way a colleague who knows this literature, and the people behind it, would. It credits the authors by name, reports numbers with their primary sources, says where the evidence is thin and, where authors agree, suggests who to talk to next. The cards are plain markdown, so people and other AI tools can read them directly.
@@ -65,6 +67,8 @@ Every source document has a long-format card. `python scripts/build_index.py` li
 tricot-knowledge-base/
 ├── SKILL.md               # skill instructions, version and paper index (generated)
 ├── people.md              # who is behind the papers, naming and contact consent
+├── AGENTS.md              # entry point for AI agents reading the repository
+├── llms.txt               # short machine-readable map of the repository
 ├── index.json             # machine-readable index with version, card hashes and links (generated)
 ├── relations.jsonld       # links between cards as JSON-LD with the CiTO vocabulary (generated)
 ├── papers/                # one card per paper, named <id>.md
@@ -102,9 +106,9 @@ All consent fields start as `pending`. Update a row only after the person replie
 
 The repository is organic, so the installed skill can fall behind. Three pieces keep it current.
 
-- **A version.** `scripts/build_index.py` computes a version from the content of every card and `people.md`, and writes it to `SKILL.md` and `index.json`. Unchanged content keeps the same version and date.
-- **An automatic rebuild.** A GitHub Action reruns the script on every push to `main` that touches cards or `people.md`, so the live repository always advertises its current version.
-- **A check in the skill.** Once per conversation, the assistant fetches the live `index.json`, compares versions, and fetches only new or changed cards. If web access is off, it uses the installed copy.
+- **A version.** `scripts/build_index.py` computes a version from the content of every card, `people.md` and the instructions in `SKILL.md`, and writes it to `SKILL.md` and `index.json`. Unchanged content keeps the same version and date.
+- **An automatic rebuild.** A GitHub Action reruns the script on every push to `main` that touches cards, `people.md` or `SKILL.md`, so the live repository always advertises its current version.
+- **A check in the skill.** Once per conversation, the assistant fetches the live `index.json`, compares versions, and fetches only what changed, including the instructions in `SKILL.md`. If web access is off, it uses the installed copy.
 
 The check needs the assistant to be able to fetch from `raw.githubusercontent.com` or `github.com`. Where that is blocked, reinstall the skill after major updates, or install it in Claude Code as a git clone and pull.
 

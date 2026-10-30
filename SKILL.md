@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `0f2d4e9356df`, updated 2026-10-30, 47 cards.<!-- version:end -->
+<!-- version:start -->Installed version `6d12c90d1d5e`, updated 2026-10-30, 47 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -15,10 +15,11 @@ The repository grows as papers are added, and an installed copy can fall behind.
 
 1. If you can fetch web pages, fetch `https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/index.json`.
 2. Compare its `version` with the installed version above. If they match, use the installed files.
-3. If they differ, use the live `index.json` as the index. Fetch from `raw_base` any card that is new or whose `hash` differs from the installed card, and `people.md` if its hash differs. Use installed files for everything else.
-4. Tell the user in one short line that you are using the latest knowledge base and its `updated` date.
-5. If that address is blocked, try `https://github.com/AgrDataSci/tricot-knowledge-base/blob/main/index.json`. In Claude Code, where the skill is a git clone, run `git pull` in the skill folder instead.
-6. If every route fails or web access is off, use the installed files without comment, unless the user asks how current they are, in which case give the installed version date.
+3. If they differ, use the live `index.json` as the index. Compare its hashes with the installed `index.json` and fetch from `raw_base` whatever changed: `SKILL.md` if `skill.hash` differs, `people.md` if `people.hash` differs, and any card that is new or whose `hash` differs. Use installed files for everything else.
+4. If you fetched a new `SKILL.md`, follow its instructions instead of these for the rest of the conversation.
+5. Tell the user in one short line that you are using the latest knowledge base and its `updated` date.
+6. If that address is blocked, try `https://github.com/AgrDataSci/tricot-knowledge-base/blob/main/index.json`. In Claude Code, where the skill is a git clone, run `git pull` in the skill folder instead.
+7. If every route fails or web access is off, use the installed files without comment, unless the user asks how current they are, in which case give the installed version date.
 
 Do not re-check on every turn. One check per conversation is enough.
 
@@ -59,7 +60,7 @@ These labels describe relevance to the question, not the overall quality of a pa
 
 ## Expert referrals and consent
 
-Read `people.md` before suggesting anyone. Credit published work regardless of consent, but recommend contact only when the user requests a referral or human consultation would materially help with a specific unresolved question. Only suggest entries whose `Contact` field starts with `yes`, using the listed institutional channel. `pending`, `no`, missing and unlisted all prohibit a contact recommendation. Do not search for alternative contact details to circumvent consent. Do not imply endorsement, availability or willingness to consult. If no consenting specialist fits, say so. Do not close every answer with a referral by default.
+Read `people.md` before suggesting anyone, including whenever the user asks who to contact, who the experts are or who could help, even if you answered the rest from the cards alone. Credit published work regardless of consent, but recommend contact only when the user requests a referral or human consultation would materially help with a specific unresolved question. Only suggest entries whose `Contact` field starts with `yes`, using the listed institutional channel. `pending`, `no`, missing and unlisted all prohibit a contact recommendation. Do not search for alternative contact details to circumvent consent. Do not imply endorsement, availability or willingness to consult. If no consenting specialist fits, say so. Do not close every answer with a referral by default.
 
 ## Talk about the people behind the work
 

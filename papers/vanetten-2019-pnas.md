@@ -15,6 +15,7 @@ crops: common bean, durum wheat, bread wheat
 region: Nicaragua, Ethiopia, India
 keywords: tricot, citizen science, Plackett-Luce trees, climate adaptation, variety recommendation, seasonal forecast, worst regret, ClimMob
 gist: First large tricot test (12,409 plots, 3 countries) showing farmer rankings capture climate effects and improve variety recommendations
+not_established: effects on farmer income, food security or adoption; acceptance of tricot data in official variety release
 relations:
   - extends: mancini-2017-scirep  # Ethiopian case builds on the genebank-to-farm work, per the team
 ---

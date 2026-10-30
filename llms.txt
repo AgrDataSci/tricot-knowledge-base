@@ -1,0 +1,17 @@
+# Evidence base on product testing with users in agriculture
+
+> An AI-ready synthesis of the open-access literature on tricot, decentralized on-farm testing and consumer and product concept testing. Each paper is a verified markdown card with its argument, methods, limitations, key numbers with primary sources, and links to related papers.
+
+Read SKILL.md before answering. It holds the rules for evidence, attribution and contact consent.
+
+## Core files
+
+- [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/SKILL.md): answering rules, evidence boundaries and the paper index
+- [people.md](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/people.md): how to credit authors and who agreed to be suggested as a contact
+- [index.json](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/index.json): version, card list with hashes and links between papers
+- [AGENTS.md](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/AGENTS.md): short instructions for AI agents
+
+## Optional
+
+- [relations.jsonld](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/relations.jsonld): links between papers as JSON-LD with the CiTO vocabulary
+- [papers-pdf/LICENSES.md](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers-pdf/LICENSES.md): licences of the source PDFs

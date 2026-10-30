@@ -18,6 +18,9 @@ relations:
   - extends: mancini-2017-scirep
   - citesAsDataSource: desousa-2024-asd  # optional note after a hash
 
+The version combines the hashes of every card, people.md and the instructions in SKILL.md
+(without its generated blocks), so editing any of them produces a new version.
+
 The script adds the inverse links, writes the graph to index.json and relations.jsonld
 (JSON-LD with the CiTO vocabulary), and lists every link in SKILL.md.
 """
@@ -135,9 +138,20 @@ for a, rel, b, note in links:
 people = ROOT / "people.md"
 entries = [{"id": m["id"], "year": m["year"], "type": m["type"], "gist": m["gist"],
             "keywords": m["keywords"], "path": f"papers/{p.name}", "hash": digest(p),
-            "relations": graph[m["id"]]} for m, p in metas]
+            "relations": graph[m["id"]],
+            **({"not_established": m["not_established"]} if m.get("not_established") else {})} for m, p in metas]
 people_hash = digest(people) if people.exists() else ""
-version = hashlib.sha256(("".join(e["hash"] for e in entries) + people_hash).encode()).hexdigest()[:12]
+
+
+def instructions_hash(text):
+    # hash SKILL.md without its generated blocks, so only instruction edits change it
+    for a, b in [(START, END), (VSTART, VEND), (RSTART, REND)]:
+        text = re.sub(re.escape(a) + r".*?" + re.escape(b), a + b, text, flags=re.S)
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()[:12]
+
+
+skill_hash = instructions_hash((ROOT / "SKILL.md").read_text(encoding="utf-8"))
+version = hashlib.sha256(("".join(e["hash"] for e in entries) + people_hash + skill_hash).encode()).hexdigest()[:12]
 
 index_path = ROOT / "index.json"
 updated = datetime.date.today().isoformat()
@@ -146,6 +160,7 @@ if index_path.exists():
     if old.get("version") == version:
         updated = old.get("updated", updated)  # unchanged content keeps its date
 index = {"version": version, "updated": updated, "cards": len(entries), "raw_base": RAW,
+         "skill": {"path": "SKILL.md", "hash": skill_hash},
          "people": {"path": "people.md", "hash": people_hash}, "papers": entries}
 index_path.write_text(json.dumps(index, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 

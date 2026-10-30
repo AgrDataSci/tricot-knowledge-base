@@ -15,6 +15,7 @@ crops: cassava (gari)
 region: Nigeria (South West, South East, South South, North Central)
 keywords: gender, trait preferences, intersectionality, food insecurity, poverty, household type, 1000minds, RHoMIS, gari, cassava breeding, customer profiles
 gist: Survey of 792 Nigerian cassava users shows women favor gari quality traits and men productivity traits, with gaps widening among food-insecure households and varying by region
+not_established: results of a tricot trial (it is a 1000minds and RHoMIS survey); trait preferences for crops other than cassava or places outside Nigeria
 ---
 
 ## Questions this paper answers

@@ -15,6 +15,7 @@ crops: common bean
 region: Tanzania (Kilindi, Karatu)
 keywords: farmer-generated yield, yield estimation, volumetric measurement, sado tins, data accuracy, genetic gain, moisture content, tricot, absolute yield
 gist: Shows farmer volumetric yield estimates for common bean agree closely with technician measures (r = 0.96) and predict absolute yield, so tricot can supply yield data for breeders
+not_established: a universal sample size for yield measurement; accuracy for crops with repeated or piecemeal harvests; acceptance of farmer-measured yield by a release committee
 ---
 
 ## Questions this paper answers

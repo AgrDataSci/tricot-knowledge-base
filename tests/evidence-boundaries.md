@@ -49,4 +49,4 @@ A consent score of 0, fabricated source, or unsupported assertion of official re
 
 ## Maintenance note
 
-The repository's `scripts/build_index.py` regenerates only the marked index, relations and version blocks of `SKILL.md`. These evidence-boundary instructions must remain outside generated markers. The version hash currently covers cards and `people.md`, not changes to standalone instructions in `SKILL.md`; consider including the skill instruction content in the version scheme separately to detect instruction-only changes.
+The repository's `scripts/build_index.py` regenerates only the marked index, relations and version blocks of `SKILL.md`. These evidence-boundary instructions must remain outside generated markers. The version hash covers the cards, `people.md` and the instructions in `SKILL.md` outside the generated blocks, so any change to the rules produces a new version that installed copies pick up.

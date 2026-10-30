@@ -15,6 +15,7 @@ crops: common bean
 region: Trifinio area (Guatemala, Honduras, El Salvador)
 keywords: impact evaluation, tricot vs group PVS, difference-in-difference, food security, varietal diversification, adoption, cost comparison, randomized assignment
 gist: Randomized comparison of tricot and group PVS with 1,978 bean farmers finds similar varietal diversification and adoption, better food security from group PVS, and tricot 28% cheaper
+not_established: cost savings against RCBD or researcher-managed trials (the 28% is against group PVS); better food security from tricot (group PVS did better); effects outside bean in Central America
 ---
 
 ## Questions this paper answers

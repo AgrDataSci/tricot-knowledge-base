@@ -1,11 +1,15 @@
 {
- "version": "0f2d4e9356df",
+ "version": "6d12c90d1d5e",
  "updated": "2026-10-30",
  "cards": 47,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
+ "skill": {
+  "path": "SKILL.md",
+  "hash": "383186430216"
+ },
  "people": {
   "path": "people.md",
-  "hash": "e5d391f4366f"
+  "hash": "db08ee8c7ed7"
  },
  "papers": [
   {
@@ -108,7 +112,7 @@
    "gist": "First large tricot test (12,409 plots, 3 countries) showing farmer rankings capture climate effects and improve variety recommendations",
    "keywords": "tricot, citizen science, Plackett-Luce trees, climate adaptation, variety recommendation, seasonal forecast, worst regret, ClimMob",
    "path": "papers/vanetten-2019-pnas.md",
-   "hash": "11c114eb7607",
+   "hash": "c23718c0711d",
    "relations": [
     {
      "relation": "extends",
@@ -130,7 +134,8 @@
      "card": "gotor-2021-fsufs",
      "note": "household impact of the Bihar Seeds for Needs intervention"
     }
-   ]
+   ],
+   "not_established": "effects on farmer income, food security or adoption; acceptance of tricot data in official variety release"
   },
   {
    "id": "desousa-2020-joss",
@@ -236,14 +241,15 @@
    "gist": "Survey of 600 households in Bihar finds that the Seeds for Needs crowdsourced intervention increased rice and wheat varietal diversity, perceived yields and recovery from shocks",
    "keywords": "impact assessment, varietal diversification, Seeds for Needs, citizen science, livelihoods, resilience, RHoMIS, doubly robust estimator, Simpson diversity, Bihar, adaptive capacity",
    "path": "papers/gotor-2021-fsufs.md",
-   "hash": "c1ac839bedb4",
+   "hash": "2a11055d5505",
    "relations": [
     {
      "relation": "extends",
      "card": "vanetten-2019-pnas",
      "note": "household impact of the Bihar Seeds for Needs intervention"
     }
-   ]
+   ],
+   "not_established": "measured yield gains (yield change is self-reported); randomized causal effects; effects beyond rice and wheat in Bihar"
   },
   {
    "id": "moyo-2021-fsufs",
@@ -262,8 +268,9 @@
    "gist": "Survey of 792 Nigerian cassava users shows women favor gari quality traits and men productivity traits, with gaps widening among food-insecure households and varying by region",
    "keywords": "gender, trait preferences, intersectionality, food insecurity, poverty, household type, 1000minds, RHoMIS, gari, cassava breeding, customer profiles",
    "path": "papers/teeken-2021-fsufs.md",
-   "hash": "e86cf4272db8",
-   "relations": []
+   "hash": "72b016563dd5",
+   "relations": [],
+   "not_established": "results of a tricot trial (it is a 1000minds and RHoMIS survey); trait preferences for crops other than cassava or places outside Nigeria"
   },
   {
    "id": "brown-2022-cropsci",
@@ -394,7 +401,7 @@
    "gist": "Retrospective on tricot's development, validity, cost, mainstreaming in breeding and open challenges",
    "keywords": "tricot, citizen science, incomplete block design, ClimMob, Plackett-Luce, validity, reliability, cost, adoption, mainstreaming, product design, gender",
    "path": "papers/desousa-2024-asd.md",
-   "hash": "c9233b987d57",
+   "hash": "d838633a1613",
    "relations": [
     {
      "relation": "citesAsDataSource",
@@ -406,7 +413,8 @@
      "card": "cairns-2026-jxb",
      "note": "cites over 150,000 farmers; the source reports about 150,000 plots"
     }
-   ]
+   ],
+   "not_established": "over 150,000 farmers (it reports about 150,000 plots); a 40% saving against RCBD (it attributes this to Occelli et al. 2024, which reports 28% against group PVS)"
   },
   {
    "id": "mbugua-2024-mib",
@@ -451,14 +459,15 @@
    "gist": "Randomized comparison of tricot and group PVS with 1,978 bean farmers finds similar varietal diversification and adoption, better food security from group PVS, and tricot 28% cheaper",
    "keywords": "impact evaluation, tricot vs group PVS, difference-in-difference, food security, varietal diversification, adoption, cost comparison, randomized assignment",
    "path": "papers/occelli-2024-agecon.md",
-   "hash": "d0408ca259ba",
+   "hash": "fe68c70f1ae4",
    "relations": [
     {
      "relation": "isCitedAsDataSourceBy",
      "card": "desousa-2024-asd",
      "note": "cites about 40% cheaper than RCBD; the source reports 28% cheaper than group PVS"
     }
-   ]
+   ],
+   "not_established": "cost savings against RCBD or researcher-managed trials (the 28% is against group PVS); better food security from tricot (group PVS did better); effects outside bean in Central America"
   },
   {
    "id": "quiros-2024-compag",
@@ -551,14 +560,15 @@
    "gist": "Shows farmer volumetric yield estimates for common bean agree closely with technician measures (r = 0.96) and predict absolute yield, so tricot can supply yield data for breeders",
    "keywords": "farmer-generated yield, yield estimation, volumetric measurement, sado tins, data accuracy, genetic gain, moisture content, tricot, absolute yield",
    "path": "papers/nabateregga-2025-eja.md",
-   "hash": "a7f86eef3dbc",
+   "hash": "6812726dc9b4",
    "relations": [
     {
      "relation": "isAgreedWithBy",
      "card": "ulzen-2025-agrirxiv",
      "note": "farmer volumetric yield measurement is accurate"
     }
-   ]
+   ],
+   "not_established": "a universal sample size for yield measurement; accuracy for crops with repeated or piecemeal harvests; acceptance of farmer-measured yield by a release committee"
   },
   {
    "id": "selby-2025-database",
