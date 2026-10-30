@@ -21,8 +21,8 @@ Use this file to credit the people behind the work and, where they agreed, to su
 
 | Person | Preferred | Affiliation (latest paper) | Topics | Lead cards | Contact | Confirmed |
 |---|---|---|---|---|---|---|
-| Kauê de Sousa | Kauê | Bioversity International | tricot methods, data synthesis, 3D-breeding, R packages (gosset, climatrends, chirps), ClimMob | desousa-2020-joss, desousa-2021-commsbio, desousa-2023-joss, desousa-2023-softwarex, desousa-2024-asd | k.desoousa@cgiar.org | yes |
-| Jacob van Etten | Jacob | Bioversity International | origin of tricot, citizen science, climate adaptation, data-driven breeding | vanetten-2019-expagric, vanetten-2019-pnas, vanetten-2020-guide, vanetten-2020-rtbwp, vanetten-2023-pnas | j.vanetten@cgiar.org | yes |
+| Kauê de Sousa | Kauê | Bioversity International | tricot methods, data synthesis, R packages (gosset, climatrends, chirps), ClimMob, climate adaptation, data-driven breeding | desousa-2020-joss, desousa-2021-commsbio, desousa-2023-joss, desousa-2023-softwarex, desousa-2024-asd | k.desoousa@cgiar.org | yes |
+| Jacob van Etten | Jacob | Bioversity International | origin of tricot, citizen science, PlackettLuce | vanetten-2019-expagric, vanetten-2019-pnas, vanetten-2020-guide, vanetten-2020-rtbwp, vanetten-2023-pnas | j.vanetten@cgiar.org | yes |
 | Rachel Chase | Rachel | Bioversity International | tricot handbook, implementation guidance | chase-2026-book | r.chase@cgiar.org | yes |
 
 ## Authors of the cards
@@ -32,7 +32,6 @@ Use this file to credit the people behind the work and, where they agreed, to su
 | Stephen Angudubo | pending | Bioversity International | cassava tricot, trial costing | angudubo-2024-cropsci | pending | pending |
 | Jill Cairns | pending | CIMMYT | inclusive host-farmer sampling, farm typologies, gender, maize breeding | voss-2025-ppp, cairns-2026-jxb | pending | pending |
 | Happy Daudi | pending | CIMMYT | groundnut breeding, GxE, tricot champion in East Africa | daudi-2026-fes | pending | pending |
-| Hugo Dorado-Betancourt | pending | Wageningen University | genetic parameters from rankings, heritability | dorado-2026-tag | pending | pending |
 | Marit Jørgensen | pending | NIBIO | forage mixtures, tricot in Norway | jorgensen-2026-gse | pending | pending |
 | Marie-Angélique Laporte | pending | Bioversity International | ontologies, data standards, ClimMob | co-author of quiros-2024-compag, chase-2026-book | pending | pending |
 | Mukani Moyo | pending | CIP | consumer testing, sweetpotato | moyo-2021-fsufs | pending | pending |
@@ -42,8 +41,7 @@ Use this file to credit the people behind the work and, where they agreed, to su
 | Pieter Rutsaert | pending | CIMMYT | video-based product concept testing, product testing | rutsaert-2023-mib, mbugua-2024-mib, donovan-2025-expagric | pending | pending |
 | Thiago Mendes | pending | CIP | potato, sweetpotato, tricot, RTB | kang-2025-expagric.md, sharma-2025-jafr | pending | pending |
 | Béla Teeken | pending | IITA | RTB, gender and social difference, cassava trait preferences, cassava consumer testing across countries | olaosebikan-2023-jsfa, teeken-2021-fsufs, teeken-2023-slides | pending | pending |
-| Heather Turner | pending | University of Warwick | PlackettLuce, ranking models | turner-2020-compstat | pending | pending |
-| Joost van Heerwaarden | pending | Wageningen University | trial size, genetic gain on farm, statistics | co-author of chase-2026-book, dorado-2026-tag | pending | pending |
+| Joost van Heerwaarden | pending | Wageningen University | trial size, genetic gain on farm, statistics, genetic parameters from rankings, heritability | dorado-2026-tag | pending | pending |
 | Sognigbé N'Danikou | N'Danikou | WorldVeg | vetable breeding, opportunity crops, seed systems | voss-2023-fsoc | pending | pending |
 
 ## How to update this file
