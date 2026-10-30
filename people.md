@@ -25,8 +25,8 @@ Use this file to credit the people behind the work and, where they agreed, to su
 
 | Person | Preferred | Affiliation (latest paper) | Topics | Led | Also on | Contact | Confirmed |
 |---|---|---|---|---|---|---|---|
-| Kauê de Sousa | Kauê | Bioversity International | tricot methods, data synthesis, R packages (gosset, climatrends, chirps), ClimMob, climate adaptation, data-driven breeding | desousa-2020-joss, desousa-2021-commsbio, desousa-2023-joss, desousa-2023-softwarex, desousa-2024-asd, vanetten-2020-guide, nabateregga-2025-eja | most other cards, see each card's authors | yes, k.desousa@cgiar.org | yes |
-| Jacob van Etten | Jacob | Bioversity International | origin of tricot, citizen science, PlackettLuce | vanetten-2019-expagric, vanetten-2019-pnas, vanetten-2020-guide, vanetten-2020-rtbwp, vanetten-2023-pnas, steinke-2016-guide, steinke-2019-plosone, occelli-2024-agecon, quiros-2024-compag, chase-2026-book | most other cards, see each card's authors | yes, j.vanetten@cgiar.org | yes |
+| Kauê de Sousa | Kauê | Bioversity International | tricot methods, data synthesis, R packages (gosset, climatrends, chirps), ClimMob, climate adaptation, data-driven breeding | desousa-2020-joss, desousa-2021-commsbio, desousa-2023-joss, desousa-2023-softwarex, desousa-2024-asd, nabateregga-2025-eja | most other cards, see each card's authors | yes, k.desousa@cgiar.org | yes |
+| Jacob van Etten | Jacob | Bioversity International | origin of tricot, citizen science, PlackettLuce | vanetten-2019-expagric, vanetten-2019-pnas, vanetten-2020-guide, vanetten-2020-rtbwp, vanetten-2023-pnas, steinke-2016-guide, steinke-2019-plosone, vanetten-2020-guide, occelli-2024-agecon, quiros-2024-compag, chase-2026-book | most other cards, see each card's authors | yes, j.vanetten@cgiar.org | yes |
 | Rachel Chase | Rachel | Bioversity International | tricot handbook, implementation guidance | chase-2026-book | none yet | yes, r.chase@cgiar.org | yes |
 
 ## Authors of the cards
