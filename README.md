@@ -8,7 +8,7 @@
 
 An AI-ready knowledge base of the open-access literature on tricot, on-farm testing and product testing with farmers and consumers. Each paper, report or guide is distilled into a verified markdown card with the questions it answers, its main argument, methods, stated limitations, key numbers with their primary sources, and links to the underlying data and code.
 
-The repository works as a [Claude skill](SKILL.md), so an AI assistant can answer questions the way a colleague who knows this literature would. It cites the papers, reports numbers with their primary sources, and says where the evidence is thin. The cards are plain markdown, so people and other AI tools can read them directly.
+The repository works as a [Claude skill](SKILL.md), so an AI assistant can answer questions the way a colleague who knows this literature, and the people behind it, would. It credits the authors by name, reports numbers with their primary sources, says where the evidence is thin and, where authors agree, suggests who to talk to next. The cards are plain markdown, so people and other AI tools can read them directly.
 
 This is the literature layer of [AI-ready documentation for tricot](https://github.com/AgrDataSci/ai-ready-documentation), alongside [tricot-protocols](https://github.com/AgrDataSci/tricot-protocols) and [tricot-data](https://github.com/AgrDataSci/tricot-data).
 
@@ -21,16 +21,18 @@ This is the literature layer of [AI-ready documentation for tricot](https://gith
 - What does the evidence say about climate effects on variety performance?
 - How do I analyze tricot rankings in R, and with which packages?
 - How can tricot test consumer preferences or new product concepts?
+- How can I work with women in tricot trials?
 
 ## Status
 
 | | Count |
 |---|---|
-| Source documents in `papers-pdf/` | 38 |
-| Cards in `papers/` | 38 |
-| Cards still waiting for a CGSpace handle | 9 |
+| Source documents in `papers-pdf/` | 41 |
+| Cards in `papers/` | 41 |
+| Cards still waiting for a handle or DOI | 11 |
+| People in `people.md` | 32 (consent pending) |
 
-Every source document has a long-format card. `python scripts/build_index.py` lists the cards that still need a handle.
+Every source document has a long-format card. `python scripts/build_index.py` lists the cards that still need a handle, and `index.json` records the current version.
 
 ### What the cards cover
 
@@ -38,11 +40,11 @@ Every source document has a long-format card. `python scripts/build_index.py` li
 |---|---|
 | Origins, guides and the handbook | vanetten-2019-expagric, steinke-2016-guide, vanetten-2020-guide, vanetten-2020-rtbwp, desousa-2024-asd, chase-2026-book |
 | Data quality, motivation and impact | steinke-2017-asd, beza-2017-plosone, occelli-2024-agecon, nabateregga-2025-eja |
-| Climate, genomics and analysis methods | vanetten-2019-pnas, desousa-2021-commsbio, brown-2022-cropsci, dorado-2026-verixiv, vanetten-2023-pnas, cairns-2026-jxb |
+| Climate, genomics and analysis methods | vanetten-2019-pnas, desousa-2021-commsbio, brown-2022-cropsci, dorado-2026-tag, vanetten-2023-pnas, cairns-2026-jxb |
 | Software (R packages and ClimMob) | turner-2020-compstat, desousa-2023-softwarex, desousa-2020-joss, desousa-2023-joss, quiros-2024-compag |
-| Crop applications | angudubo-2024-cropsci (cassava), daudi-2026-fes (groundnut), kang-2025-expagric and sharma-2025-jafr (potato), voss-2025-ppp (amaranth) |
+| Crop applications | angudubo-2024-cropsci (cassava), daudi-2026-fes (groundnut), kang-2025-expagric and sharma-2025-jafr (potato), voss-2025-ppp (amaranth), mulatu-2024-slides and jorgensen-2026-gse (forages, Ethiopia and Norway) |
 | Consumer and product concept testing | moyo-2021-fsufs, alamu-2023-jsfa, olaosebikan-2023-jsfa, donovan-2025-expagric, rutsaert-2023-mib, mbugua-2024-mib |
-| Gender, inclusion and farmer feedback | voss-2023-fsoc, teeken-2023-slides, schumann-2024-ux, muller-2025-ux, steinke-2019-plosone |
+| Gender, inclusion and farmer feedback | teeken-2021-fsufs, voss-2023-fsoc, teeken-2023-slides, schumann-2024-ux, muller-2025-ux, steinke-2019-plosone |
 | Mainstreaming in breeding | 1000farms-2025-report |
 
 ## Use it
@@ -57,23 +59,42 @@ Every source document has a long-format card. `python scripts/build_index.py` li
 
 ```
 tricot-knowledge-base/
-├── SKILL.md               # skill instructions and paper index (index is generated)
+├── SKILL.md               # skill instructions, version and paper index (generated)
+├── people.md              # who is behind the papers, naming and contact consent
+├── index.json             # machine-readable index with version and card hashes (generated)
 ├── papers/                # one card per paper, named <id>.md
 ├── papers-pdf/            # source PDFs used to build the cards (not part of the skill)
 ├── TEMPLATE.md            # template for new cards
-├── scripts/build_index.py # rebuilds the index in SKILL.md from the cards
+├── scripts/build_index.py # rebuilds the index, version and index.json from the cards
+├── .github/workflows/     # rebuilds the index automatically on every push to main
 ├── tests/                 # evaluation of card formats
 ├── CITATION.cff
 └── LICENSE
 ```
 
+## People behind the papers
+
+[`people.md`](people.md) lists the lead authors and core team, with their preferred names, affiliations at the time of their latest paper, topics, and two consent fields. The skill uses it to credit people the way a colleague would ("Jill Cairns and colleagues argue..."), never to speak for them. It suggests a person as a contact only when they agreed, through the channel they chose.
+
+All consent fields start as `pending`. Update a row only after the person replies.
+
+## Staying current
+
+The repository is organic, so the installed skill can fall behind. Three pieces keep it current.
+
+- **A version.** `scripts/build_index.py` computes a version from the content of every card and `people.md`, and writes it to `SKILL.md` and `index.json`. Unchanged content keeps the same version and date.
+- **An automatic rebuild.** A GitHub Action reruns the script on every push to `main` that touches cards or `people.md`, so the live repository always advertises its current version.
+- **A check in the skill.** Once per conversation, the assistant fetches the live `index.json`, compares versions, and fetches only new or changed cards. If web access is off, it uses the installed copy.
+
+The check needs the assistant to be able to fetch from `raw.githubusercontent.com` or `github.com`. Where that is blocked, reinstall the skill after major updates, or install it in Claude Code as a git clone and pull.
+
 ## Paper cards
 
-Every card follows the long format in [`TEMPLATE.md`](TEMPLATE.md). It has YAML metadata (DOI, open copy, license, data, software, keywords, a one-line gist), questions the paper answers, a summary of about 450 words in our own words, methods in brief, stated limitations, a key-numbers table and notes. In our test the long format answered expert questions better than a summary alone (see [`tests/comparison-short-vs-long.md`](tests/comparison-short-vs-long.md)).
+Every card follows the long format in [`TEMPLATE.md`](TEMPLATE.md). It has YAML metadata (DOI, open copy, license, data, software, keywords, a one-line gist), questions the paper answers, a summary of 400 to 500 words in our own words (shorter for short sources such as slides and conference papers), methods in brief, stated limitations, a key-numbers table and notes. In our test the long format answered expert questions better than a summary alone (see [`tests/comparison-short-vs-long.md`](tests/comparison-short-vs-long.md)).
 
 Four rules make the cards trustworthy.
 
-- **Every number is checked against the PDF.** All numbers in all 38 cards were matched against the full text of their source by script. Mismatches between text and tables, or between papers, are recorded in the notes.
+- **Every number is checked against the PDF.** All numbers in all 41 cards were matched against the full text of their source by script. Mismatches between text and tables, or between papers, are recorded in the notes.
 - **Numbers carry their primary source.** When a paper reports a figure from another study, the card names that study, so users cite the original.
 - **R packages point to CRAN.** PlackettLuce, gosset, ClimMobTools, climatrends and chirps change over time, so cards record the CRAN version and date checked, and the skill tells the assistant to check the current version before giving code.
 - **Grey literature is labelled.** Guides, reports, briefs and presentations have their type in the index, and items published on CGSpace have an empty `doi` until their handle is added.
@@ -88,7 +109,8 @@ Some PDF file names do not match the first author. Nanyonjo-et-al-2024 is Angudu
 4. Verify every number against the PDF and fill the primary-source column. For R packages, record the current CRAN version in `software`.
 5. Add a stable open copy. Publisher pages often block automated reading, so prefer PMC or an institutional repository such as CGSpace. If there is no DOI, leave `doi` empty and add the CGSpace handle when it exists.
 6. Cross-check against existing cards and note any disagreement in both.
-7. Run `python scripts/build_index.py` to rebuild the index, then open a pull request.
+7. If the lead author is not in `people.md`, add a row with `pending` consent.
+8. Open a pull request. The GitHub Action rebuilds the index and version when it is merged, or run `python scripts/build_index.py` yourself.
 
 Writing rules for cards are plain, assertive prose in concise paragraphs, no pasted text from the papers, no em-dashes, a `gist` under 30 words, and `keywords` written as a user would search.
 
@@ -99,11 +121,11 @@ The skill must stay light because it travels between users. Package only what Cl
 ```bash
 python scripts/build_index.py
 mkdir -p build/tricot-knowledge-base
-cp -r SKILL.md papers build/tricot-knowledge-base/
+cp -r SKILL.md people.md index.json papers build/tricot-knowledge-base/
 cd build && zip -r ../tricot-knowledge-base.zip tricot-knowledge-base
 ```
 
-`papers-pdf/`, `tests/` and `scripts/` stay in the repository and out of the skill. The packaged skill is about 340 KB unzipped and 110 KB zipped.
+`papers-pdf/`, `tests/` and `scripts/` stay in the repository and out of the skill. The packaged skill is about 400 KB unzipped and 130 KB zipped.
 
 ## Cite
 
