@@ -44,6 +44,8 @@ linenumbers: false
 numbersections: false
 bibliography: paper.bib
 classoption: 3p, authoryear
+header-includes:
+  - \usepackage{framed}
 output:
   rticles::elsevier_article:
     keep_tex: false
@@ -59,13 +61,30 @@ The most recent version of the knowledge base and this paper is always available
 
 # Statement of need
 
-Agricultural research and development is shifting from supply to demand. A new variety, seed product or food succeeds only if farmers, processors and consumers want it, and the way to know that is to test products with the people who will use them, in the conditions where they will use them. The tricot approach was designed for this purpose. First proposed as a way to crowdsource crop improvement with farmers [@vanEtten2011], it asks participants to test three products out of a larger set, assigned at random, and to rank them in their own fields or homes [@vanEtten2019]. Over fifteen years, the approach has been applied to more than 30 crops in more than 25 countries, and extended to consumer testing and to product concepts that do not yet exist [@deSousa2024]. Combined with genomic, socio-economic and climate data, tricot rankings have improved the prediction of on-farm performance [@deSousa2021] and revealed user segments with distinct preferences [@Voss2025].
+Agricultural research and development is shifting from supply to demand. A new variety, seed product or food succeeds only if farmers, processors and consumers want it, and the way to know is to test products with the people who will use them, where they will use them. The tricot approach was designed for this purpose [@vanEtten2011; @vanEtten2019]. It has been applied to more than 30 crops in more than 25 countries and extended to consumer testing and product concept testing [@deSousa2024]. Combined with genomic, socio-economic and climate data, tricot rankings have improved the prediction of on-farm performance [@deSousa2021] and revealed user segments with distinct preferences [@Voss2025].
 
-This evidence informs every stage of a product's development. It helps to define what a product should be, to choose among candidates, to decide which ones to advance and release, and to understand who will adopt them. It answers practical questions. How many participants does a trial need? Do farmer rankings agree with measured yield? Which traits drive preference, and do women and men, or different market segments, value different products? Yet the answers sit in dozens of documents of different types, written for readers who already know where to look.
+This evidence is spread across dozens of documents written for readers who already know where to look. The people who need it, from breeders and product managers to seed companies, social scientists, development organizations, funders and students, increasingly ask AI assistants instead. Without curated sources, an assistant can invent a paper, quote a number from the wrong study, or turn a result from one crop and country into a general rule. Box 1 shows what changes when the assistant answers from the knowledge base.
 
-The people who need these answers are many. They include breeders and product managers in CGIAR and national programs, seed companies, social scientists and gender specialists, extension and development organizations, funders and students. AI assistants can bring the evidence to all of them at the moment they need it, but only if they answer from verified sources. An assistant working from general training data can invent a paper, quote a number from the wrong study, or present a result from one crop and country as a general rule. When findings shape which products are developed and released, these errors carry real costs.
+# The knowledge base in practice
 
-We built the knowledge base so that anyone working on demand-led products, and the AI assistants they work with, can consult this evidence the way they would consult a colleague who knows the work and the people behind it.
+\begin{framed}
+\small
+\noindent\textbf{Box 1.} A question answered through the knowledge base.
+
+\medskip
+\noindent\textbf{User.} https://github.com/AgrDataSci/ai-ready-documentation. We will test four new bean varieties with farmers in Tanzania next season. How many farmers do we need, and can their rankings support a release decision?
+
+\medskip
+\noindent\textbf{Assistant.} This answer comes from the tricot knowledge base layer, which holds the published evidence. The handbook by Rachel Chase and colleagues (Chase et al. 2026) sets the rule. Every variety needs at least 30 replicates. Each farmer tests three options. With four varieties that means 120 plots, or 40 farmers. I worked that figure out from the handbook's rule. No paper tests your exact design. The handbook also asks for at least 10 replicates per location and 10 to 20 per geographic area if you want to see location effects. Steinke et al. (2017) assumed up to 20\% attrition in their bean work in Honduras. So plan for about 50 farmers per area you want to report on, and more if you will compare women and men. The 150 to 200 farmers you often see quoted are for 10 to 12 varieties. They are not a universal minimum.
+
+\smallskip
+Rankings alone will not carry a release decision. De Sousa et al. (2024) report that release authorities want absolute yields, not ranks. Teams therefore combine rankings with yield measured on some plots or by the farmers themselves. Nabateregga et al. (2025) tested this with common bean in northern Tanzania. Farmer measurements with sado tins matched technician measurements closely (r = 0.96), and 25 farmers were already enough for accurate estimates. That study did not show that a release committee accepts farmer-measured yield, so do not claim that. Two precedents exist. Daudi et al. (2026) combined station trials in 18 environments with tricot to support groundnut release decisions in Tanzania. IITA released a cowpea variety in Nigeria on tricot evidence. Neither one shows that Tanzanian authorities formally accept tricot data for beans. Confirm that with the release committee before you design the trial.
+
+\medskip
+\noindent\footnotesize The user shared the link of ai-ready-documentation and asked the question. The assistant (Claude Opus 5.5, 31 October 2026) read the routing skill, which sent it to the knowledge base, then opened six cards and the people file. The answer is reproduced unedited. Every number in it was checked against the cards.
+\end{framed}
+
+Box 1 shows the behaviours the knowledge base is designed to produce. The assistant answers the question directly and grounds each number in a named source. It says when a figure is its own calculation rather than a published result, and it keeps each study's crop, country and design. It separates farmer rankings from measured yield, and a precedent from formal acceptance, so the user does not overstate what the evidence supports. It credits the people behind the work by name. The same answer, given from general training data, could look just as fluent while resting on none of this.
 
 # Place in the AI-ready suite
 
@@ -126,11 +145,11 @@ The rules in the skill also serve as practical guidance for responsible use. The
 
 # Implementation and usage
 
-Users reach the knowledge base in four ways.
+Users reach the knowledge base in four ways. The simplest is to share one link.
 
 1.  **In Claude.** Download the latest skill package from the repository releases and upload it as a skill. The assistant then consults the index whenever a question touches tricot or on-farm testing.
 2.  **In Claude Code.** Clone the repository into the skills directory.
-3.  **By sharing the link.** Paste the repository link into an AI assistant with web access. It reads the agent instructions and the skill, answers from the live files, and offers to install the skill.
+3.  **By sharing a link.** Paste the link of ai-ready-documentation (<https://github.com/AgrDataSci/ai-ready-documentation>) into an AI assistant with web access, as in Box 1. Its routing skill sends each question to the right layer, here the knowledge base, and the assistant answers from the live files. The link of the knowledge base itself works the same way for evidence questions.
 4.  **By hand or with other tools.** Start from the index table in `SKILL.md` and open the relevant cards in `papers/`.
 
 Contributors add a source by extracting its text, drafting a card from the template, checking every number against the source, adding links to related cards and authors, and opening a pull request. The index and version update automatically when the change is merged.
