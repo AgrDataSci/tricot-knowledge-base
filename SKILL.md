@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `18c16bf5a3b5`, updated 2026-10-31, 47 cards.<!-- version:end -->
+<!-- version:start -->Installed version `3130195cb43c`, updated 2026-10-31, 48 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -116,6 +116,7 @@ Lines of work worth knowing:
 - **Farmer feedback.** schumann-2024-ux → muller-2025-ux.
 
 <!-- relations:start -->
+- vanetten-2019-expagric **extends** vanetten-2011-idsbull (implements and tests the 2011 proposal)
 - vanetten-2019-pnas **extends** mancini-2017-scirep (Ethiopian case builds on the genebank-to-farm work, per the team)
 - fadda-2020-fps **reviews** mancini-2017-scirep
 - fadda-2020-fps **reviews** vanetten-2019-pnas
@@ -140,12 +141,13 @@ Lines of work worth knowing:
 <!-- index:start -->
 | ID | Paper | Type | Gist | Keywords | Data |
 |---|---|---|---|---|---|
+| [vanetten-2011-idsbull](papers/vanetten-2011-idsbull.md) | van Etten 2011, *IDS Bull* | perspective | The first proposal of what became tricot, arguing that farmers could evaluate small blind seed packages in triads and report by mobile phone to scale up participatory crop improvement | tricot origin, crowdsourcing, citizen science, seed systems, farmer varieties | none |
 | [steinke-2016-guide](papers/steinke-2016-guide.md) | Steinke and van Etten 2016, *Guide* | guide | The first practical guide to running a tricot project in ten steps, from problem analysis and seed calculations to workshops, observation cards, analysis and evaluation | tricot guide, ten steps, project design, seed quantities, observation card | none |
 | [beza-2017-plosone](papers/beza-2017-plosone.md) | Beza et al. 2017, *PLOS ONE* | research article | Survey of 426 tricot farmers in India, Ethiopia and Honduras showing they join mainly to share information and contribute to science, and expect advice, training or seed rather than cash | farmer motivation, citizen science, incentives, rewards, mobile phones | Dryad |
 | [mancini-2017-scirep](papers/mancini-2017-scirep.md) | Mancini et al. 2017, *Sci Rep* | research article | 60 Ethiopian farmers scored 400 genebank wheat accessions, giving 192,000 data points that link farmer preferences to metric traits and rank landraces for local breeding | participatory evaluation, traditional knowledge, durum wheat, landraces, genebank accessions | see card |
 | [steinke-2017-asd](papers/steinke-2017-asd.md) | Steinke et al. 2017, *Agron Sustain Dev* | research article | First test of tricot data quality, showing individual farmer rankings are unreliable but valid in aggregate, so 150 to 200 farmers suffice for 10 to 12 varieties | data quality, validity, reliability, wisdom of crowds, farmer observations | see card |
 | [steinke-2019-plosone](papers/steinke-2019-plosone.md) | Steinke et al. 2019, *PLOS ONE* | research article | Adapts Positive Deviance to agriculture, using Pareto-optimal performance across five objectives to find 54 outlier households and 14 locally proven practices | positive deviance, Pareto optimality, household heterogeneity, trade-offs, RHoMIS | see card |
-| [vanetten-2019-expagric](papers/vanetten-2019-expagric.md) | van Etten et al. 2019, *Exp Agric* | research article | The founding tricot paper, describing the design rationale and lessons from the first pilots on data formats, statistical design, farmer motivation, gender and cost | tricot origin, crowdsourcing, participatory variety selection, pilot lessons, data collection formats | none |
+| [vanetten-2019-expagric](papers/vanetten-2019-expagric.md) | van Etten et al. 2019, *Exp Agric* | research article | The first full description of tricot as a method, with the design rationale and lessons from the first pilots on data formats, statistical design, farmer motivation, gender and cost | tricot origin, crowdsourcing, participatory variety selection, pilot lessons, data collection formats | none |
 | [vanetten-2019-pnas](papers/vanetten-2019-pnas.md) | van Etten et al. 2019, *PNAS* | research article | First large tricot test (12,409 plots, 3 countries) showing farmer rankings capture climate effects and improve variety recommendations | tricot, citizen science, Plackett-Luce trees, climate adaptation, variety recommendation | Dataverse |
 | [desousa-2020-joss](papers/desousa-2020-joss.md) | de Sousa et al. 2020, *JOSS* | software paper | R client for CHIRPS daily rainfall (plus IMERG and ESI) that computes precipitation indices for trial locations and dates, a standard source of rainfall covariates for tricot | CHIRPS, rainfall, precipitation indices, IMERG, ESI | see card |
 | [fadda-2020-fps](papers/fadda-2020-fps.md) | Fadda et al. 2020, *Front Plant Sci* | review | Review arguing that Seeds for Needs bridges genomics-based and participatory breeding, from genebank screening with farmers to the EtNAM population and crowdsourced on-farm testing | Seeds for Needs, participatory breeding, genebanks, genomics, EtNAM | none |

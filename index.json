@@ -1,7 +1,7 @@
 {
- "version": "18c16bf5a3b5",
+ "version": "3130195cb43c",
  "updated": "2026-10-31",
- "cards": 47,
+ "cards": 48,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
   "path": "SKILL.md",
@@ -9,9 +9,26 @@
  },
  "people": {
   "path": "people.md",
-  "hash": "73f2fc98fb8a"
+  "hash": "c66fd09e23f4"
  },
  "papers": [
+  {
+   "id": "vanetten-2011-idsbull",
+   "year": "2011",
+   "type": "perspective",
+   "gist": "The first proposal of what became tricot, arguing that farmers could evaluate small blind seed packages in triads and report by mobile phone to scale up participatory crop improvement",
+   "keywords": "tricot origin, crowdsourcing, citizen science, seed systems, farmer varieties, triadic comparisons, preference learning, mobile phones, crop diversity, food security, open source, genetic commons",
+   "path": "papers/vanetten-2011-idsbull.md",
+   "hash": "f4db5f7f36e5",
+   "relations": [
+    {
+     "relation": "isExtendedBy",
+     "card": "vanetten-2019-expagric",
+     "note": "implements and tests the 2011 proposal"
+    }
+   ],
+   "not_established": "that crowdsourced variety evaluation works in practice, since the paper is a proposal with no data; that farmer rankings are accurate or reliable; any required number of farmers, varieties or seasons; any measured effect on yields, adoption or food security"
+  },
   {
    "id": "steinke-2016-guide",
    "year": "2016",
@@ -99,11 +116,17 @@
    "id": "vanetten-2019-expagric",
    "year": "2019",
    "type": "research article",
-   "gist": "The founding tricot paper, describing the design rationale and lessons from the first pilots on data formats, statistical design, farmer motivation, gender and cost",
+   "gist": "The first full description of tricot as a method, with the design rationale and lessons from the first pilots on data formats, statistical design, farmer motivation, gender and cost",
    "keywords": "tricot origin, crowdsourcing, participatory variety selection, pilot lessons, data collection formats, gender inclusion, ClimMob, cost",
    "path": "papers/vanetten-2019-expagric.md",
-   "hash": "72f6c5aee022",
-   "relations": []
+   "hash": "192fca78f7cf",
+   "relations": [
+    {
+     "relation": "extends",
+     "card": "vanetten-2011-idsbull",
+     "note": "implements and tests the 2011 proposal"
+    }
+   ]
   },
   {
    "id": "vanetten-2019-pnas",
