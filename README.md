@@ -31,11 +31,11 @@ This is the literature layer of [AI-ready documentation for tricot](https://gith
 
 | | Count |
 |---|---|
-| Source documents in `papers-pdf/` | 47 |
-| Cards in `papers/` | 47 |
+| Source documents in `papers-pdf/` | 48 |
+| Cards in `papers/` | 48 |
 | Cards still waiting for a handle or DOI | 0 |
 | People in `people.md` | 16 (3 contacts confirmed, 13 pending) |
-| Links between cards | 17 |
+| Links between cards | 18 |
 
 Every source document has a long-format card. `python scripts/build_index.py` lists the cards that still need a handle, and `index.json` records the current version.
 
@@ -44,7 +44,7 @@ Every source document has a long-format card. `python scripts/build_index.py` li
 | Topic | Cards |
 |---|---|
 | Pre-breeding with genebanks (Seeds for Needs) | mancini-2017-scirep, fadda-2020-fps, gesesse-2023-pnas |
-| Origins, guides and the handbook | vanetten-2019-expagric, steinke-2016-guide, vanetten-2020-guide, vanetten-2020-rtbwp, desousa-2024-asd, chase-2026-book |
+| Origins, guides and the handbook | vanetten-2011-idsbull, vanetten-2019-expagric, steinke-2016-guide, vanetten-2020-guide, vanetten-2020-rtbwp, desousa-2024-asd, chase-2026-book |
 | Data quality, motivation and impact | steinke-2017-asd, beza-2017-plosone, gotor-2021-fsufs, occelli-2024-agecon, nabateregga-2025-eja, ulzen-2025-agrirxiv |
 | Climate, genomics and analysis methods | vanetten-2019-pnas, desousa-2021-commsbio, brown-2022-cropsci, dorado-2026-tag, vanetten-2023-pnas, cairns-2026-jxb |
 | Software and data standards (R packages, ClimMob, BrAPI) | turner-2020-compstat, desousa-2023-softwarex, desousa-2020-joss, desousa-2023-joss, quiros-2024-compag, selby-2025-database |

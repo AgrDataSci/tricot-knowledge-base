@@ -6,6 +6,13 @@
  },
  "@graph": [
   {
+   "@id": "https://doi.org/10.1111/j.1759-5436.2011.00240.x",
+   "dcterms:identifier": "vanetten-2011-idsbull",
+   "dcterms:title": "Crowdsourcing crop improvement in sub-Saharan Africa. A proposal for a scalable and inclusive approach to food security",
+   "dcterms:date": "2011",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/vanetten-2011-idsbull.md"
+  },
+  {
    "@id": "https://hdl.handle.net/10568/78782",
    "dcterms:identifier": "steinke-2016-guide",
    "dcterms:title": "Farmer experimentation for climate adaptation with triadic comparisons of technologies (tricot). A methodological guide",
@@ -45,7 +52,12 @@
    "dcterms:identifier": "vanetten-2019-expagric",
    "dcterms:title": "First experiences with a novel farmer citizen science approach. Crowdsourcing participatory variety selection through on-farm triadic comparisons of technologies (tricot)",
    "dcterms:date": "2019",
-   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/vanetten-2019-expagric.md"
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/vanetten-2019-expagric.md",
+   "cito:extends": [
+    {
+     "@id": "https://doi.org/10.1111/j.1759-5436.2011.00240.x"
+    }
+   ]
   },
   {
    "@id": "https://doi.org/10.1073/pnas.1813720116",
