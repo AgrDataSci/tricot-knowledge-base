@@ -88,9 +88,9 @@ Box 1 shows the behaviours the knowledge base is designed to produce. The assist
 
 # Place in the AI-ready suite
 
-The knowledge base is the evidence layer of ai-ready-documentation (<https://github.com/AgrDataSci/ai-ready-documentation>), a set of linked repositories in which each layer carries its own skill. The other layers hold the field protocols, the harmonized on-farm trial data and the team's analytical approaches, and a planned layer will link the trial data with climate, soil and other environmental data. A shared template supports reproducible analyses across them [@deSousaLaporte2026]. The suite and its design are described in the ai-ready-documentation repository.
+The knowledge base is the evidence layer of ai-ready-documentation (<https://github.com/AgrDataSci/ai-ready-documentation>), a set of linked repositories in which each layer carries its own skill. The other layers hold the field protocols, the harmonized on-farm trial data and the team's analytical approaches, including how trial data link with climate, soil and other environmental data. A shared template supports reproducible analyses across them [@deSousaLaporte2026]. The suite and its design are described in the ai-ready-documentation repository.
 
-The layers connect through shared identifiers. A card names the dataset its findings rest on, a dataset names the protocol that produced it, and protocols and data share trait definitions from the Crop Ontology. An assistant can follow these links from a published finding to the trials behind it and, once the integration layer is in place, to the climate data that help explain it.
+The layers connect through shared identifiers. A card names the dataset its findings rest on, a dataset names the protocol that produced it, and protocols and data share trait definitions from the Crop Ontology. An assistant can follow these links from a published finding to the trials behind it, and to the analytical approaches that relate trial results to climate.
 
 # Content
 
@@ -139,7 +139,7 @@ A second evaluation probes whether an assistant keeps evidence boundaries, regul
 
 The knowledge base answers evidence questions across the life of a product. Before a product exists, users can ask how concept testing has helped define product profiles and market segments. While designing a trial, they can ask how many participants and entries are needed, how to combine rankings with yield measured on a subset of plots, or how to sample so that women and different user segments are represented. When reading results, they can ask how to interpret rankings across environments, how climate shapes performance, or which traits drive consumer acceptance. When deciding which candidates to advance or release, they can ask what evidence release committees have accepted. Each answer comes from verified cards, cites the primary source, keeps the context of the original study, and says where the evidence stops.
 
-Through the data layer, the same skills let an assistant move from published evidence to the trial data of a specific crop and region, and the planned integration layer will add agroclimatic information. Together, these resources form the foundation for AI-supported recommendations that match candidate products with user and market demand and with climate risk.
+Through the data and analysis layers, the same skills let an assistant move from published evidence to the trial data of a specific crop and region, and to the approaches that link those data with agroclimatic information. Together, these resources form the foundation for AI-supported recommendations that match candidate products with user and market demand and with climate risk.
 
 The rules in the skill also serve as practical guidance for responsible use. They separate measured yield from rankings, candidate advancement from official release, and direct evidence from extrapolation. They also protect the people behind the work. The same cards can support training in demand-led product testing for researchers, technicians and students.
 
