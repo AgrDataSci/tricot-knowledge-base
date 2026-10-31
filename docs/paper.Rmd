@@ -1,0 +1,140 @@
+---
+title: An AI-ready evidence base on product testing with users in agriculture
+author:
+  - name: Rachel Chase
+    affiliation: a
+  - name: Brayden Youngberg
+    affiliation: a
+  - name: Marie-Angélique Laporte
+    affiliation: c
+  - name: Kauê de Sousa
+    email: k.desousa@cgiar.org
+    affiliation: b,d
+    correspondingauthor: true
+address:
+  - code: a
+    organization: Bioversity International
+    country: France
+  - code: b
+    organization: Digital Inclusion, Bioversity International
+    city: Montpellier
+    country: France
+  - code: c
+    organization: Performance Innovation and Strategic Analysis for Impact (PISA4), Bioversity International
+    city: Montpellier
+    country: France
+  - code: d
+    organization: Department of Agricultural Sciences, University of Inland Norway
+    city: Hamar
+    country: Norway
+abstract: |
+  Since 2011, the tricot approach to decentralized on-farm testing has produced a growing body of evidence on how farmers and consumers evaluate crop varieties and other technologies [@vanEtten2019; @deSousa2024]. This evidence is spread across journal articles, guides, reports, briefs and presentations, and much of it is hard to find for the breeders, extension staff and students who need it. Researchers also increasingly ask AI assistants for answers, and an assistant without curated sources may invent results, misreport numbers or stretch findings beyond what they show. We present an AI-ready evidence base that distils 47 open-access sources into verified markdown cards. Each card records the questions a source answers, a summary, its methods, stated limitations, key numbers with their primary sources, and links to related cards, data and code. The repository works as a skill for AI assistants, with explicit rules for evidence boundaries, attribution and contact consent, and remains plain text that people and other tools can read directly. Every change is versioned, and an installed skill checks for updates once per conversation.
+keywords:
+ - tricot
+ - on-farm testing
+ - citizen science
+ - knowledge base
+ - AI-ready documentation
+ - FAIR principles
+journal: "Zenodo"
+date: "`r Sys.Date()`"
+linenumbers: false
+numbersections: false
+bibliography: paper.bib
+classoption: 3p, authoryear
+output:
+  rticles::elsevier_article:
+    keep_tex: false
+---
+
+# Suggested citation
+
+> Chase, R.; Youngberg, B.; Laporte, M.-A.; de Sousa, K. (2026) An AI-ready evidence base on product testing with users in agriculture. Version 0.1.0. <https://github.com/AgrDataSci/tricot-knowledge-base>.
+
+The most recent version of the knowledge base and this paper is always available at the repository link above.
+
+\pagebreak
+
+# Statement of need
+
+The tricot approach asks farmers to test three technologies out of a larger set, assigned at random, and to rank them in their own fields [@vanEtten2019]. Over fifteen years, the approach has been applied to more than 30 crops in more than 25 countries, and to new uses such as consumer testing and product concept testing [@deSousa2024]. The resulting evidence answers practical questions, for example how many farmers a trial needs, whether farmer rankings agree with researcher measurements, and how tricot compares in cost with other trial designs. Yet the answers sit in dozens of documents of different types, written for readers who already know where to look.
+
+At the same time, people increasingly ask AI assistants instead of reading the literature. An assistant answering from general training data can invent a paper, quote a number from the wrong study, or present a result from one crop and country as a general rule. For a field whose findings feed into variety release and breeding investment, these errors matter.
+
+We built the knowledge base to address both problems. It gives people one organized, verified entry point to the literature, and it gives AI assistants the curated sources and the rules they need to answer like a colleague who knows this work, and the people behind it, well.
+
+# Repository structure
+
+```text
+tricot-knowledge-base/
+|-- SKILL.md            # Skill instructions, version and paper index
+|-- people.md           # People behind the papers, naming and consent
+|-- AGENTS.md           # Entry point for AI agents
+|-- llms.txt            # Short map of the repository for AI tools
+|-- index.json          # Version, card hashes and links (generated)
+|-- relations.jsonld    # Links between cards as JSON-LD (generated)
+|-- papers/             # One card per source
+|-- papers-pdf/         # Source documents and their licenses
+|-- TEMPLATE.md         # Template for new cards
+|-- scripts/            # Rebuilds the index and version
+|-- tests/              # Evaluations of card format and answers
+|-- docs/               # This paper
+|-- CITATION.cff
+|-- LICENSE
+```
+
+# Content
+
+The knowledge base holds 47 cards, one for each source document, published between 2016 and 2026. Twenty-three are research articles. The rest are six software papers, four presentations, three reviews, two guides, two policy briefs, a report, a working paper, a preprint, a conference paper, a perspective, a community case study and the current tricot handbook [@Chase2026]. The cards cover pre-breeding with genebanks, the origins and guides of the approach, data quality and impact, climate and genomic analysis, software and data standards, applications to specific crops, consumer and product concept testing, gender and inclusion, and the mainstreaming of tricot in breeding programs.
+
+Each card follows one template. Its metadata give the DOI or repository handle, a stable open copy, the license, the dataset and code behind the paper, the crops and regions covered, search keywords and a one-sentence gist. Its body lists the questions the source answers, a summary of 400 to 500 words written in our own words, the methods in brief, the limitations stated by the authors, a table of key numbers with their primary sources, and notes on discrepancies with other cards. An optional field records claims the source is likely to be stretched to but does not support.
+
+# Key features
+
+-   **Verified numbers.** Every number in a card is checked against the full text of its source. Disagreements between a paper's text and tables, or between papers, are recorded in the card notes rather than smoothed over.
+-   **Primary sources.** When a paper reports a figure from another study, the card names that study, so users cite the original.
+-   **Linked papers.** Cards declare how they build on each other with terms from the Citation Typing Ontology [@Peroni2012], such as `extends`, `usesDataFrom` and `disagreesWith`. A script checks every link, adds the inverse links and exports the graph as JSON-LD, so an assistant can follow a line of work from one paper to the next.
+-   **Evidence boundaries.** The skill asks the assistant to separate direct evidence, indirect evidence, methodological inference and evidence gaps. It must keep each study's crop, country, sample and design when it transfers a finding, and never present a study-specific sample size as a universal rule.
+-   **People and consent.** A people file records how to credit the researchers behind each card and whether they agreed to be suggested as contacts. The assistant credits work by name but never speaks for a person, suggests a contact only with recorded consent and through an institutional channel, and never shares personal contact details or photos.
+-   **Versioning and updates.** A script computes a version from the content of every card and writes it to the index. A GitHub Action rebuilds the index and publishes the packaged skill on every change. Once per conversation, an installed skill compares its version with the live repository and fetches only what changed.
+-   **Light skill.** The assistant loads a short index first and opens only the cards a question needs, usually two to five. The packaged skill is about 130 KB zipped.
+-   **Open and readable.** Cards are plain markdown under a CC BY 4.0 license. Source documents keep their original licenses, which are listed for every file.
+
+# Verification and evaluation
+
+We tested two card formats on the same source. A short card held a summary and key numbers. A long card added the questions the paper answers, the methods and the stated limitations. Answering expert questions from one card at a time, the long format gave more complete and better-grounded answers, for example the reasoning behind a recommended trial size rather than the number alone. All cards now use the long format.
+
+A second evaluation probes whether an assistant keeps evidence boundaries, regulatory distinctions, primary-source provenance and contact consent. It poses adversarial questions, such as whether tricot is approved for releasing a crop in a country without a primary record, or whether a researcher's email can be found online when consent is pending. Answers are scored on factual accuracy, provenance, scope, uncertainty and consent. Any fabricated source, unsupported claim of regulatory approval or breach of consent counts as an automatic failure. The evaluation is meant to be rerun after every change to the skill.
+
+# Implementation and usage
+
+Users reach the knowledge base in four ways.
+
+1.  **In Claude.** Download the latest skill package from the repository releases and upload it as a skill. The assistant then consults the index whenever a question touches tricot or on-farm testing.
+2.  **In Claude Code.** Clone the repository into the skills directory.
+3.  **By sharing the link.** Paste the repository link into an AI assistant with web access. It reads the agent instructions and the skill, answers from the live files, and offers to install the skill.
+4.  **By hand or with other tools.** Start from the index table in `SKILL.md` and open the relevant cards in `papers/`.
+
+Contributors add a source by extracting its text, drafting a card from the template, checking every number against the source, adding links to related cards and authors, and opening a pull request. The index and version update automatically when the change is merged.
+
+# Place in AI-ready documentation
+
+The knowledge base is the evidence layer of ai-ready-documentation (<https://github.com/AgrDataSci/ai-ready-documentation>), a family of linked repositories that make the tricot approach usable by people and AI assistants. The other layers hold the field protocols, the harmonized trial data and the team's analytical approaches, and a shared template supports reproducible analyses across them [@deSousaLaporte2026]. Cards point to the datasets and code behind each paper, so an assistant can move from a published finding to the data that support it.
+
+# Limitations
+
+The knowledge base covers open-access sources produced by or with the tricot team, so it reflects the perspective of the people who developed the approach. It is a curated synthesis, not a systematic review, and the absence of a topic means it is absent from these sources, not from the literature. Summaries are written by the team and checked against the sources, but they remain interpretations, and users should cite and consult the original papers. Answers depend on the assistant following the rules in the skill, which the evaluations test but cannot guarantee. Most people listed in the people file have not yet confirmed their consent, so the assistant suggests few contacts for now.
+
+# Conclusion
+
+Curated, verified and openly licensed evidence lets AI assistants answer questions about tricot accurately, credit the people behind the work and say where the evidence stops. The same cards serve people who read them directly. As new papers are added, the knowledge base grows without losing its version history, and installed skills stay current.
+
+# Code and data availability
+
+The knowledge base, its source documents and this paper are openly available on GitHub at <https://github.com/AgrDataSci/tricot-knowledge-base>. The cards and documentation are released under a CC BY 4.0 license. Source documents keep their original licenses, listed in `papers-pdf/LICENSES.md`.
+
+# Acknowledgments
+
+We thank the authors of the papers in the knowledge base. [Funders and grant numbers to be added.]
+
+# References

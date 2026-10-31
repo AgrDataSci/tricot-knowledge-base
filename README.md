@@ -161,6 +161,8 @@ To cite the knowledge base, use [`CITATION.cff`](CITATION.cff).
 
 Cite the original papers for any finding you use.
 
+A short paper describing the knowledge base, its verification and its use with AI assistants is in [`docs/paper.pdf`](docs/paper.pdf).
+
 ## License
 
 Paper cards and documentation are released under [CC BY 4.0](LICENSE). The PDFs in `papers-pdf/` keep their original licenses, listed in [`papers-pdf/LICENSES.md`](papers-pdf/LICENSES.md). Three papers are CC BY-NC-ND and are shared unmodified for non-commercial use.
