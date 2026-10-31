@@ -31,7 +31,7 @@ This is the literature layer of [AI-ready documentation for tricot](https://gith
 
 | | Count |
 |---|---|
-| Source documents in `papers-pdf/` | 47 |
+| Source documents in `papers-pdf/` | 48 |
 | Cards in `papers/` | 48 |
 | Cards still waiting for a handle or DOI | 0 |
 | People in `people.md` | 16 (3 contacts confirmed, 13 pending) |
