@@ -14,7 +14,9 @@ data: none
 crops: common bean, durum wheat, bread wheat, rice and others in pilots
 region: Central America (Honduras, Nicaragua), Ethiopia, India, East Africa
 keywords: tricot origin, crowdsourcing, participatory variety selection, pilot lessons, data collection formats, gender inclusion, ClimMob, cost
-gist: The founding tricot paper, describing the design rationale and lessons from the first pilots on data formats, statistical design, farmer motivation, gender and cost
+gist: The first full description of tricot as a method, with the design rationale and lessons from the first pilots on data formats, statistical design, farmer motivation, gender and cost
+relations:
+  - extends: vanetten-2011-idsbull  # implements and tests the 2011 proposal
 ---
 
 ## Questions this paper answers
