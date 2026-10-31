@@ -1,5 +1,5 @@
 {
- "version": "2c8f5abc6c43",
+ "version": "4f772b95d799",
  "updated": "2026-10-31",
  "cards": 48,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
@@ -19,7 +19,7 @@
    "gist": "The first proposal of what became tricot, arguing that farmers could evaluate small blind seed packages in triads and report by mobile phone to scale up participatory crop improvement",
    "keywords": "tricot origin, crowdsourcing, citizen science, seed systems, farmer varieties, triadic comparisons, preference learning, mobile phones, crop diversity, food security, open source, genetic commons",
    "path": "papers/vanetten-2011-idsbull.md",
-   "hash": "1fae9f4d2c83",
+   "hash": "93b5a1667aaa",
    "relations": [
     {
      "relation": "isExtendedBy",

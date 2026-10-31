@@ -50,7 +50,7 @@ Licences were read from each PDF on 2026-10-30.
 | Teeken-et-al-2023.pdf | [teeken-2023-slides](../papers/teeken-2023-slides.md) | https://hdl.handle.net/10568/137005 | none stated (grey literature) |
 | Turner-et-al-2020.pdf | [turner-2020-compstat](../papers/turner-2020-compstat.md) | https://doi.org/10.1007/s00180-020-00959-3 | CC BY 4.0 |
 | Ulzen-et-al-2024.pdf | [ulzen-2025-agrirxiv](../papers/ulzen-2025-agrirxiv.md) | https://doi.org/10.31220/agriRxiv.2025.00295 | see preprint record (agriRxiv) |
-| van-Etten-2011.pdf | [vanetten-2011-idsbull](../papers/vanetten-2011-idsbull.md) | https://doi.org/10.1111/j.1759-5436.2011.00240.x | none stated; author's manuscript, shared with the author's agreement (published version © 2011 The Author and IDS) |
+| van-Etten-2011.pdf | [vanetten-2011-idsbull](../papers/vanetten-2011-idsbull.md) | https://doi.org/10.1111/j.1759-5436.2011.00240.x | one-page pointer, not the article; the article has no open licence (© 2011 The Author and IDS) and is free to read at IDS OpenDocs |
 | van-Etten-et-al-2019a.pdf | [vanetten-2019-expagric](../papers/vanetten-2019-expagric.md) | https://doi.org/10.1017/S0014479716000739 | CC BY 4.0 |
 | van-Etten-et-al-2019b.pdf | [vanetten-2019-pnas](../papers/vanetten-2019-pnas.md) | https://doi.org/10.1073/pnas.1813720116 | CC BY-NC-ND 4.0 |
 | van-Etten-et-al-2020a.pdf | [vanetten-2020-guide](../papers/vanetten-2020-guide.md) | https://hdl.handle.net/10568/109942 | none stated (grey literature) |
