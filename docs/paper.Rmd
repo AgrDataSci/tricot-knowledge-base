@@ -28,7 +28,7 @@ address:
     city: Hamar
     country: Norway
 abstract: |
-  Breeding programs decide each season which varieties to advance, and those decisions increasingly depend on whether a variety performs well in farmers' fields, meets the demand of farmers, processors and consumers, and copes with climate risk. Since 2011, the tricot approach to decentralized on-farm testing has produced a large body of evidence on exactly these questions [@vanEtten2019; @deSousa2024], but it is spread across journal articles, guides, reports, briefs and presentations that breeders rarely have time to search. AI assistants could close this gap, yet an assistant without curated sources may invent results, misreport numbers or stretch a finding from one crop and country into a general rule. We present an AI-ready evidence base that distils 47 open-access sources into verified markdown cards, each recording the questions a source answers, its methods and stated limitations, key numbers with their primary sources, and links to the related data and code. The repository works as a skill for any AI assistant, with explicit rules for evidence boundaries, attribution and contact consent. It is the evidence layer of a modular suite of AI-ready resources, developed within the CGIAR Digital Transformation Accelerator, that links published evidence, field protocols, on-farm trial data and analytical approaches to support demand-led variety advancement decisions.
+  Breeding programs decide each season which varieties to advance, and those decisions increasingly depend on whether a variety performs well in farmers' fields, meets the demand of farmers, processors and consumers, and copes with climate risk. Since 2011, the tricot approach to decentralized on-farm testing has produced a large body of evidence on exactly these questions [@vanEtten2019; @deSousa2024], but it is spread across journal articles, guides, reports, briefs and presentations that breeders rarely have time to search. AI assistants could close this gap, yet an assistant without curated sources may invent results, misreport numbers or stretch a finding from one crop and country into a general rule. We present an AI-ready evidence base that distils 47 open-access sources into verified markdown cards, each recording the questions a source answers, its methods and stated limitations, key numbers with their primary sources, and links to the related data and code. The repository works as a skill for any AI assistant, with explicit rules for evidence boundaries, attribution and contact consent. It is the evidence layer of a set of linked AI-ready resources, developed within the CGIAR Digital Transformation Accelerator, on published evidence, field protocols, on-farm trial data and analytical approaches for demand-led variety advancement.
 keywords:
  - demand-led breeding
  - variety advancement
@@ -67,16 +67,9 @@ AI assistants can bring this evidence to breeders in the moment they need it, bu
 
 We built the knowledge base so that breeders, technicians and students, and the AI assistants they work with, can consult this evidence the way they would consult a colleague who knows the work and the people behind it.
 
-# From a chatbot to an AI-ready suite
+# Place in the AI-ready suite
 
-Our first plan was a dedicated chatbot that breeders would consult on tricot evidence and data. We chose a different design. Instead of one application, we built a suite of AI-ready resources, ai-ready-documentation (<https://github.com/AgrDataSci/ai-ready-documentation>), in which each layer is a repository that carries its own skill. The knowledge base is the evidence layer. The other layers hold the field protocols, the harmonized on-farm trial data and the team's analytical approaches, and a planned layer will link the trial data with climate, soil and other environmental data. A shared template supports reproducible analyses across all of them [@deSousaLaporte2026].
-
-The suite has four advantages over a chatbot.
-
--   **It works where users already are.** Breeders load the skills into the AI assistant they already use, rather than learning a new platform.
--   **It is cheaper to sustain.** There is no server to host and no model to maintain. When assistants improve, the suite improves with them.
--   **It is modular.** Each layer is versioned, citable and maintained by the people who know it best, and new layers join without changing the others.
--   **It stays open.** The content is plain text under open licenses, readable by people and by any AI tool, so the evidence remains a public good rather than the property of one platform.
+The knowledge base is the evidence layer of ai-ready-documentation (<https://github.com/AgrDataSci/ai-ready-documentation>), a set of linked repositories in which each layer carries its own skill. The other layers hold the field protocols, the harmonized on-farm trial data and the team's analytical approaches, and a planned layer will link the trial data with climate, soil and other environmental data. A shared template supports reproducible analyses across them [@deSousaLaporte2026]. The suite and its design are described in the ai-ready-documentation repository.
 
 The layers connect through shared identifiers. A card names the dataset its findings rest on, a dataset names the protocol that produced it, and protocols and data share trait definitions from the Crop Ontology. An assistant can follow these links from a published finding to the trials behind it and, once the integration layer is in place, to the climate data that help explain it.
 
@@ -148,7 +141,7 @@ The knowledge base covers open-access sources produced by or with the tricot tea
 
 # Conclusion
 
-Breeders need evidence on farmer and market demand and on climate risk at the moment they decide which varieties to advance. Curated, verified and openly licensed evidence lets AI assistants deliver it accurately, credit the people behind the work and say where the evidence stops. Built as one layer of a modular, open suite rather than as a standalone chatbot, the knowledge base grows with the literature, stays current in every installed copy, and connects published findings to the data and analyses that support demand-led breeding.
+Breeders need evidence on farmer and market demand and on climate risk at the moment they decide which varieties to advance. Curated, verified and openly licensed evidence lets AI assistants deliver it accurately, credit the people behind the work and say where the evidence stops. The knowledge base grows with the literature, stays current in every installed copy, and connects published findings to the data and analyses that support demand-led breeding.
 
 # Code and data availability
 
