@@ -28,8 +28,10 @@ address:
     city: Hamar
     country: Norway
 abstract: |
-  Since 2011, the tricot approach to decentralized on-farm testing has produced a growing body of evidence on how farmers and consumers evaluate crop varieties and other technologies [@vanEtten2019; @deSousa2024]. This evidence is spread across journal articles, guides, reports, briefs and presentations, and much of it is hard to find for the breeders, extension staff and students who need it. Researchers also increasingly ask AI assistants for answers, and an assistant without curated sources may invent results, misreport numbers or stretch findings beyond what they show. We present an AI-ready evidence base that distils 47 open-access sources into verified markdown cards. Each card records the questions a source answers, a summary, its methods, stated limitations, key numbers with their primary sources, and links to related cards, data and code. The repository works as a skill for AI assistants, with explicit rules for evidence boundaries, attribution and contact consent, and remains plain text that people and other tools can read directly. Every change is versioned, and an installed skill checks for updates once per conversation.
+  Breeding programs decide each season which varieties to advance, and those decisions increasingly depend on whether a variety performs well in farmers' fields, meets the demand of farmers, processors and consumers, and copes with climate risk. Since 2011, the tricot approach to decentralized on-farm testing has produced a large body of evidence on exactly these questions [@vanEtten2019; @deSousa2024], but it is spread across journal articles, guides, reports, briefs and presentations that breeders rarely have time to search. AI assistants could close this gap, yet an assistant without curated sources may invent results, misreport numbers or stretch a finding from one crop and country into a general rule. We present an AI-ready evidence base that distils 47 open-access sources into verified markdown cards, each recording the questions a source answers, its methods and stated limitations, key numbers with their primary sources, and links to the related data and code. The repository works as a skill for any AI assistant, with explicit rules for evidence boundaries, attribution and contact consent. It is the evidence layer of a modular suite of AI-ready resources, developed within the CGIAR Digital Transformation Accelerator, that links published evidence, field protocols, on-farm trial data and analytical approaches to support demand-led variety advancement decisions.
 keywords:
+ - demand-led breeding
+ - variety advancement
  - tricot
  - on-farm testing
  - citizen science
@@ -57,11 +59,32 @@ The most recent version of the knowledge base and this paper is always available
 
 # Statement of need
 
-The tricot approach asks farmers to test three technologies out of a larger set, assigned at random, and to rank them in their own fields [@vanEtten2019]. Over fifteen years, the approach has been applied to more than 30 crops in more than 25 countries, and to new uses such as consumer testing and product concept testing [@deSousa2024]. The resulting evidence answers practical questions, for example how many farmers a trial needs, whether farmer rankings agree with researcher measurements, and how tricot compares in cost with other trial designs. Yet the answers sit in dozens of documents of different types, written for readers who already know where to look.
+Late-stage variety testing is where breeding programs decide which candidates move toward release. Those decisions now ask more than whether a variety yields well on station. Breeders need evidence that a variety performs in the environments where farmers grow it, matches what farmers, processors and consumers value, and holds up under the climate risks of the target region. The tricot approach was designed to produce this evidence. Farmers test three technologies out of a larger set, assigned at random, and rank them in their own fields [@vanEtten2019]. Over fifteen years, the approach has been applied to more than 30 crops in more than 25 countries, and extended to consumer testing and product concept testing [@deSousa2024]. Combined with genomic, socio-economic and climate data, tricot rankings have improved the prediction of on-farm performance [@deSousa2021] and revealed farmer segments with distinct variety preferences [@Voss2025].
 
-At the same time, people increasingly ask AI assistants instead of reading the literature. An assistant answering from general training data can invent a paper, quote a number from the wrong study, or present a result from one crop and country as a general rule. For a field whose findings feed into variety release and breeding investment, these errors matter.
+This evidence answers questions breeders face every season. How many farms does a late-stage trial need? Do farmer rankings agree with measured yield, and will a release committee accept them? Which traits drive preference, and do women and men, or different market segments, prefer different varieties? Yet the answers sit in dozens of documents of different types, written for readers who already know where to look.
 
-We built the knowledge base to address both problems. It gives people one organized, verified entry point to the literature, and it gives AI assistants the curated sources and the rules they need to answer like a colleague who knows this work, and the people behind it, well.
+AI assistants can bring this evidence to breeders in the moment they need it, but only if they answer from verified sources. An assistant working from general training data can invent a paper, quote a number from the wrong study, or present a result from one crop and country as a general rule. When findings feed into advancement and release decisions, these errors carry real costs.
+
+We built the knowledge base so that breeders, technicians and students, and the AI assistants they work with, can consult this evidence the way they would consult a colleague who knows the work and the people behind it.
+
+# From a chatbot to an AI-ready suite
+
+Our first plan was a dedicated chatbot that breeders would consult on tricot evidence and data. We chose a different design. Instead of one application, we built a suite of AI-ready resources, ai-ready-documentation (<https://github.com/AgrDataSci/ai-ready-documentation>), in which each layer is a repository that carries its own skill. The knowledge base is the evidence layer. The other layers hold the field protocols, the harmonized on-farm trial data and the team's analytical approaches, and a planned layer will link the trial data with climate, soil and other environmental data. A shared template supports reproducible analyses across all of them [@deSousaLaporte2026].
+
+The suite has four advantages over a chatbot.
+
+-   **It works where users already are.** Breeders load the skills into the AI assistant they already use, rather than learning a new platform.
+-   **It is cheaper to sustain.** There is no server to host and no model to maintain. When assistants improve, the suite improves with them.
+-   **It is modular.** Each layer is versioned, citable and maintained by the people who know it best, and new layers join without changing the others.
+-   **It stays open.** The content is plain text under open licenses, readable by people and by any AI tool, so the evidence remains a public good rather than the property of one platform.
+
+The layers connect through shared identifiers. A card names the dataset its findings rest on, a dataset names the protocol that produced it, and protocols and data share trait definitions from the Crop Ontology. An assistant can follow these links from a published finding to the trials behind it and, once the integration layer is in place, to the climate data that help explain it.
+
+# Content
+
+The knowledge base holds 47 cards, one for each source document, published between 2016 and 2026. Twenty-three are research articles. The rest are six software papers, four presentations, three reviews, two guides, two policy briefs, a report, a working paper, a preprint, a conference paper, a perspective, a community case study and the current tricot handbook [@Chase2026]. The cards cover pre-breeding with genebanks, the origins and guides of the approach, data quality and impact, climate and genomic analysis, software and data standards, applications to specific crops, consumer and product concept testing, gender and inclusion, and the mainstreaming of tricot in breeding programs.
+
+Each card follows one template. Its metadata give the DOI or repository handle, a stable open copy, the license, the dataset and code behind the paper, the crops and regions covered, search keywords and a one-sentence gist. Its body lists the questions the source answers, a summary of 400 to 500 words written in our own words, the methods in brief, the limitations stated by the authors, a table of key numbers with their primary sources, and notes on discrepancies with other cards. An optional field records claims the source is likely to be stretched to but does not support.
 
 # Repository structure
 
@@ -83,12 +106,6 @@ tricot-knowledge-base/
 |-- LICENSE
 ```
 
-# Content
-
-The knowledge base holds 47 cards, one for each source document, published between 2016 and 2026. Twenty-three are research articles. The rest are six software papers, four presentations, three reviews, two guides, two policy briefs, a report, a working paper, a preprint, a conference paper, a perspective, a community case study and the current tricot handbook [@Chase2026]. The cards cover pre-breeding with genebanks, the origins and guides of the approach, data quality and impact, climate and genomic analysis, software and data standards, applications to specific crops, consumer and product concept testing, gender and inclusion, and the mainstreaming of tricot in breeding programs.
-
-Each card follows one template. Its metadata give the DOI or repository handle, a stable open copy, the license, the dataset and code behind the paper, the crops and regions covered, search keywords and a one-sentence gist. Its body lists the questions the source answers, a summary of 400 to 500 words written in our own words, the methods in brief, the limitations stated by the authors, a table of key numbers with their primary sources, and notes on discrepancies with other cards. An optional field records claims the source is likely to be stretched to but does not support.
-
 # Key features
 
 -   **Verified numbers.** Every number in a card is checked against the full text of its source. Disagreements between a paper's text and tables, or between papers, are recorded in the card notes rather than smoothed over.
@@ -106,6 +123,14 @@ We tested two card formats on the same source. A short card held a summary and k
 
 A second evaluation probes whether an assistant keeps evidence boundaries, regulatory distinctions, primary-source provenance and contact consent. It poses adversarial questions, such as whether tricot is approved for releasing a crop in a country without a primary record, or whether a researcher's email can be found online when consent is pending. Answers are scored on factual accuracy, provenance, scope, uncertainty and consent. Any fabricated source, unsupported claim of regulatory approval or breach of consent counts as an automatic failure. The evaluation is meant to be rerun after every change to the skill.
 
+# Supporting variety advancement decisions
+
+The knowledge base answers the evidence questions that come before and after an advancement decision. A breeder planning a late-stage trial can ask how many farmers and entries are needed, how to combine farmer rankings with yield measured on a subset of plots, or how to sample participants so that women and different user segments are represented. A breeder reading results can ask how to interpret rankings across environments, how climate shapes variety performance, or how concept testing has been used to define product profiles. Each answer comes from verified cards, cites the primary source, keeps the context of the original study, and says where the evidence stops.
+
+Through the data layer, the same skills let an assistant move from published evidence to the trial data of a specific crop and region, and the planned integration layer will add agroclimatic information. Together, these resources form the foundation for AI-supported recommendations that match candidate varieties with farmer and market demand and with climate risk.
+
+The rules in the skill also serve as practical guidance for responsible use. They separate measured yield from rankings, candidate advancement from official release, and direct evidence from extrapolation. They also protect the people behind the work. The same cards can support the training of breeders and technicians in demand-led on-farm testing.
+
 # Implementation and usage
 
 Users reach the knowledge base in four ways.
@@ -117,17 +142,13 @@ Users reach the knowledge base in four ways.
 
 Contributors add a source by extracting its text, drafting a card from the template, checking every number against the source, adding links to related cards and authors, and opening a pull request. The index and version update automatically when the change is merged.
 
-# Place in AI-ready documentation
-
-The knowledge base is the evidence layer of ai-ready-documentation (<https://github.com/AgrDataSci/ai-ready-documentation>), a family of linked repositories that make the tricot approach usable by people and AI assistants. The other layers hold the field protocols, the harmonized trial data and the team's analytical approaches, and a shared template supports reproducible analyses across them [@deSousaLaporte2026]. Cards point to the datasets and code behind each paper, so an assistant can move from a published finding to the data that support it.
-
 # Limitations
 
-The knowledge base covers open-access sources produced by or with the tricot team, so it reflects the perspective of the people who developed the approach. It is a curated synthesis, not a systematic review, and the absence of a topic means it is absent from these sources, not from the literature. Summaries are written by the team and checked against the sources, but they remain interpretations, and users should cite and consult the original papers. Answers depend on the assistant following the rules in the skill, which the evaluations test but cannot guarantee. Most people listed in the people file have not yet confirmed their consent, so the assistant suggests few contacts for now.
+The knowledge base covers open-access sources produced by or with the tricot team, so it reflects the perspective of the people who developed the approach. It is a curated synthesis, not a systematic review, and the absence of a topic means it is absent from these sources, not from the literature. Summaries are written by the team and checked against the sources, but they remain interpretations, and users should cite and consult the original papers. The knowledge base informs advancement decisions but does not make them. Recommendations for specific candidates require the trial data, environmental data and analyses of the other layers, several of which are still under development. Answers depend on the assistant following the rules in the skill, which the evaluations test but cannot guarantee. Most people listed in the people file have not yet confirmed their consent, so the assistant suggests few contacts for now.
 
 # Conclusion
 
-Curated, verified and openly licensed evidence lets AI assistants answer questions about tricot accurately, credit the people behind the work and say where the evidence stops. The same cards serve people who read them directly. As new papers are added, the knowledge base grows without losing its version history, and installed skills stay current.
+Breeders need evidence on farmer and market demand and on climate risk at the moment they decide which varieties to advance. Curated, verified and openly licensed evidence lets AI assistants deliver it accurately, credit the people behind the work and say where the evidence stops. Built as one layer of a modular, open suite rather than as a standalone chatbot, the knowledge base grows with the literature, stays current in every installed copy, and connects published findings to the data and analyses that support demand-led breeding.
 
 # Code and data availability
 
@@ -135,6 +156,6 @@ The knowledge base, its source documents and this paper are openly available on 
 
 # Acknowledgments
 
-We thank the authors of the papers in the knowledge base. [Funders and grant numbers to be added.]
+This work is part of the CGIAR Digital Transformation Accelerator. We thank all funders who supported this research through their contributions to the CGIAR Trust Fund (<https://www.cgiar.org/funders/>). [Additional grants to be confirmed.] We thank the authors of the papers in the knowledge base.
 
 # References
