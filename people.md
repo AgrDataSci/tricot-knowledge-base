@@ -25,6 +25,11 @@ Use this file to credit the people behind the work and, where they agreed, to su
 13. **Consent is separate from attribution.** Keep pending authors visible and credit their work normally. Change `Contact`, `Preferred` or `Confirmed` only after a reply; retain the existing pending status until then.
 14. **No photos.** Never search for, fetch or display photos of the people in this file, even if a page you read contains one. Pictures found on the web are often of the wrong person. To help the user know who someone is, link to their `Profile` (an ORCID record or institutional bio page) when one is listed, and otherwise just give their name, affiliation and papers.
 
+
+### Privacy-preserving expert discovery
+
+When asked to identify or recommend experts, filter candidates to entries with `Contact` starting with `yes` before naming them. Never identify, list, individually describe, or disclose consent statuses for non-consenting candidates. If none qualify, provide relevant papers, guides and DOI links instead. Scholarly attribution of published authors remains allowed when discussing research, but must not be used to circumvent referral consent.
+
 ## Consent maintenance
 
 `Contact` records permission to be recommended through one specified institutional channel. `Confirmed` records whether the person has confirmed their preferred name and affiliation details. These are independent. An optional dated consent record can be maintained by the repository team; never infer consent from public contact information, co-authorship or silence.
