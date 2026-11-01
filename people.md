@@ -44,7 +44,7 @@ Use this file to credit the people behind the work and, where they agreed, to su
 | Stephen Angudubo | pending | Bioversity International | cassava tricot, trial costing | nanyonjo-2024-cropsci (joint first author) | desousa-2024-asd, chase-2026-book | | pending | yes |
 | Marie-Angélique Laporte | pending | Bioversity International | ontologies, data standards, ClimMob, BrAPI | quiros-2024-compag, selby-2025-database | vanetten-2020-rtbwp, voss-2025-ppp, chase-2026-book | https://orcid.org/0000-0002-8461-9745 | pending | yes |
 | Jill Cairns | Jill | CIMMYT | inclusive host-farmer sampling, farm typologies, gender, maize breeding, sorghum breeding | cairns-2026-jxb | vanetten-2023-pnas, desousa-2024-asd, chase-2026-book, voss-2023-fsoc | https://orcid.org/0000-0002-2735-3485 | yes, j.cairns@cgiar.org | yes |
-| Happy Daudi | pending | CIMMYT | groundnut breeding, GxE, tricot champion in East Africa | daudi-2026-fes | desousa-2024-asd, cairns-2026-jxb, dorado-2026-tag | | pending | yes |
+| Happy Daudi | Happy | CIMMYT | groundnut breeding, GxE, tricot champion in East Africa, Tanzania, on-farm and on-station correlation genetic gain | daudi-2026-fes | desousa-2024-asd, cairns-2026-jxb, dorado-2026-tag | http://orcid.org//0000-0001-5107-6564 | yes, h.daudi@cgiar.org | yes |
 | Marit Jørgensen | pending | NIBIO | forage mixtures, Norway, Ethiopia | jorgensen-2026-gse, mulatu-2024-slides | none | | pending | yes |
 | Mukani Moyo | pending | CIP | consumer testing, sweetpotato | moyo-2021-fsufs | desousa-2024-asd | | pending | yes |
 | Anna Müller | pending | Bioversity International | farmer feedback, inclusive design, UX | muller-2025-ux, schumann-2024-ux | vanetten-2023-pnas, desousa-2024-asd, quiros-2024-compag, chase-2026-book | | pending | yes |
