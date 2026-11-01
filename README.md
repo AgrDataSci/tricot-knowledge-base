@@ -2,7 +2,7 @@
 [![Build index](https://github.com/AgrDataSci/tricot-knowledge-base/actions/workflows/build-index.yml/badge.svg)](https://github.com/AgrDataSci/tricot-knowledge-base/actions/workflows/build-index.yml)
 [![ProjStatus](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/AgrDataSci/tricot-knowledge-base/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 <!-- badges: end -->
 
 # Evidence base on product testing with users in agriculture
@@ -168,4 +168,4 @@ A short paper describing the knowledge base, its verification and its use with A
 
 ## License
 
-Paper cards, code and documentation are released under the [MIT License](LICENSE). The PDFs in `papers-pdf/` keep their original licenses, listed in [`papers-pdf/LICENSES.md`](papers-pdf/LICENSES.md). Three papers are CC BY-NC-ND and are shared unmodified for non-commercial use.
+Paper cards and documentation are released under [CC BY 4.0](LICENSE), with rights held by the International Plant Genetic Resources Institute (Bioversity International). The PDFs in `papers-pdf/` keep their original licenses, listed in [`papers-pdf/LICENSES.md`](papers-pdf/LICENSES.md). Three papers are CC BY-NC-ND and are shared unmodified for non-commercial use.

@@ -29,7 +29,7 @@ authors:
     orcid: https://orcid.org/0000-0002-8461-9745
     affiliation: "Bioversity International"
 repository-code: https://github.com/AgrDataSci/tricot-knowledge-base
-license: MIT
+license: CC-BY-4.0
 keywords:
   - tricot
   - citizen science

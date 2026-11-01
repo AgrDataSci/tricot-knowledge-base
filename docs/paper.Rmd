@@ -108,7 +108,7 @@ tricot-knowledge-base/
 -   **People and consent.** A people file records how to credit the researchers behind each card and whether they agreed to be suggested as contacts. The assistant credits work by name but never speaks for a person, suggests a contact only with recorded consent and through an institutional channel, and never shares personal contact details or photos.
 -   **Versioning and updates.** A script computes a version from the content of every card and writes it to the index. A GitHub Action rebuilds the index and publishes the packaged skill on every change. Once per conversation, an installed skill compares its version with the live repository and fetches only what changed.
 -   **Light skill.** The assistant loads a short index first and opens only the cards a question needs, usually two to five. The packaged skill stays small, so it travels easily between users.
--   **Open and readable.** Cards are plain markdown under the MIT License. Source documents keep their original licenses, which are listed for every file.
+-   **Open and readable.** Cards are plain markdown under a CC BY 4.0 license. Source documents keep their original licenses, which are listed for every file.
 
 # Verification and evaluation
 
@@ -145,7 +145,7 @@ Demand-led products need evidence on what users value, how products perform in t
 
 # Code and data availability
 
-The knowledge base, its source documents and this paper are openly available on GitHub at <https://github.com/AgrDataSci/tricot-knowledge-base>. The cards, code and documentation are released under the MIT License. Source documents keep their original licenses, listed in `papers-pdf/LICENSES.md`.
+The knowledge base, its source documents and this paper are openly available on GitHub at <https://github.com/AgrDataSci/tricot-knowledge-base>. The cards and documentation are released under a CC BY 4.0 license. Source documents keep their original licenses, listed in `papers-pdf/LICENSES.md`.
 
 # Acknowledgments
 
