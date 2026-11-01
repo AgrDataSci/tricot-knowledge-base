@@ -1,5 +1,8 @@
 <!-- badges: start -->
-[![License](https://img.shields.io/badge/license-CC%20BY%204.0-%233182bd)](https://creativecommons.org/licenses/by/4.0/)
+[![Build index](https://github.com/AgrDataSci/tricot-knowledge-base/actions/workflows/build-index.yml/badge.svg)](https://github.com/AgrDataSci/tricot-knowledge-base/actions/workflows/build-index.yml)
+[![ProjStatus](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 <!-- badges: end -->
 
 # Evidence base on product testing with users in agriculture
