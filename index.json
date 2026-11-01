@@ -1,6 +1,6 @@
 {
- "version": "4f772b95d799",
- "updated": "2026-10-31",
+ "version": "9ad548c31e73",
+ "updated": "2026-11-01",
  "cards": 48,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
@@ -9,7 +9,7 @@
  },
  "people": {
   "path": "people.md",
-  "hash": "c66fd09e23f4"
+  "hash": "ff9542967dfa"
  },
  "papers": [
   {
