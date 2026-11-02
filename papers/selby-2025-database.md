@@ -8,6 +8,8 @@ journal_short: Database
 article: 2025, baaf048
 type: software paper
 source: team
+peer_reviewed: yes
+curated_card: no
 doi: https://doi.org/10.1093/database/baaf048
 open_copy: https://doi.org/10.1093/database/baaf048
 license: CC BY

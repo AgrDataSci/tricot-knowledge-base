@@ -8,6 +8,8 @@ journal_short: Presentation
 article: validation slides
 type: presentation
 source: team
+peer_reviewed: no
+curated_card: no
 doi: https://hdl.handle.net/10568/179807
 open_copy: https://hdl.handle.net/10568/179807
 license: see repository record

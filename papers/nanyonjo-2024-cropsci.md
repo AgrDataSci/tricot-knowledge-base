@@ -8,6 +8,8 @@ journal_short: Crop Sci
 article: 64(5) (published online July 2024)
 type: research article
 source: team
+peer_reviewed: yes
+curated_card: no
 doi: https://doi.org/10.1002/csc2.21293
 open_copy: https://doi.org/10.1002/csc2.21293
 license: CC BY

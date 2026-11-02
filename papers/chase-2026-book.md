@@ -8,6 +8,8 @@ journal_short: Book
 article: 1st ed., Montpellier, France
 type: book
 source: team
+peer_reviewed: no
+curated_card: no
 doi: https://doi.org/10.5281/zenodo.20042955
 open_copy: https://learn.climmob.net
 license: see Zenodo record

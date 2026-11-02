@@ -8,6 +8,8 @@ journal_short: Theor Appl Genet
 article: 139, 231
 type: research article
 source: team
+peer_reviewed: yes
+curated_card: no
 doi: https://doi.org/10.1007/s00122-026-05319-1
 open_copy: https://doi.org/10.1007/s00122-026-05319-1
 license: CC BY 4.0

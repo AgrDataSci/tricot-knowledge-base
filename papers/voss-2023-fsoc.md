@@ -8,6 +8,8 @@ journal_short: Front Sociol
 article: 8, 1254595
 type: community case study
 source: team
+peer_reviewed: yes
+curated_card: no
 doi: https://doi.org/10.3389/fsoc.2023.1254595
 open_copy: https://doi.org/10.3389/fsoc.2023.1254595
 license: CC BY 4.0

@@ -8,6 +8,8 @@ journal_short: SoftwareX
 article: 22, 101402
 type: software paper
 source: team
+peer_reviewed: yes
+curated_card: no
 doi: https://doi.org/10.1016/j.softx.2023.101402
 open_copy: https://pmc.ncbi.nlm.nih.gov/articles/PMC10212778/
 license: CC BY

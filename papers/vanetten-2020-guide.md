@@ -8,6 +8,8 @@ journal_short: Guide
 article: Rome, Alliance of Bioversity International and CIAT
 type: guide
 source: team
+peer_reviewed: no
+curated_card: no
 doi: https://hdl.handle.net/10568/109942
 open_copy: https://hdl.handle.net/10568/109942
 license: see CGSpace record

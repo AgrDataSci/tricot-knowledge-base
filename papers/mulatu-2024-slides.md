@@ -8,6 +8,8 @@ journal_short: Presentation
 article: conference slides
 type: presentation
 source: team
+peer_reviewed: no
+curated_card: no
 doi: https://hdl.handle.net/10568/163542
 open_copy: https://hdl.handle.net/10568/163542
 license: see repository record
