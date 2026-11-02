@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `596268bb761e`, updated 2026-11-02, 48 cards.<!-- version:end -->
+<!-- version:start -->Installed version `28ed19ec0c8e`, updated 2026-11-02, 49 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -145,6 +145,8 @@ Lines of work worth knowing:
 - chase-2026-book **discusses** quiros-2024-compag (ClimMob chapters)
 - chase-2026-book **discusses** daudi-2026-fes (groundnut case study interview)
 - chase-2026-book **discusses** moyo-2021-fsufs (sweetpotato case study interview)
+- chase-2026-book **discusses** kadege-2026-fsufs (common bean case study interview)
+- kadege-2026-fsufs **agreesWith** daudi-2026-fes (women and men prioritize different traits in tricot trials of Tanzanian legumes)
 <!-- relations:end -->
 
 ## Index
@@ -200,4 +202,5 @@ Lines of work worth knowing:
 | [daudi-2026-fes](papers/daudi-2026-fes.md) | Daudi et al. 2026, *Food Energy Secur* | research article | Combines 18-environment station trials with tricot on-farm trials in Tanzania to select stable groundnut genotypes and show women and men prioritize different traits | groundnut, GEI, GGE biplot, tricot, gender | see card |
 | [dorado-2026-tag](papers/dorado-2026-tag.md) | Dorado-Betancourt et al. 2026, *Theor Appl Genet* | research article | Shows that genotype means and variances from Plackett-Luce or Thurstonian models can feed standard two-step mixed models to estimate heritability from tricot rankings | genetic parameters, heritability, variance components, Thurstonian model, Plackett-Luce | Zenodo |
 | [jorgensen-2026-gse](papers/jorgensen-2026-gse.md) | Jørgensen et al. 2026, *Grassl Sci Eur* | conference paper | Describes INNOFORAGE, the first tricot application in Norway, testing climate-adapted forage seed mixtures in 100 on-farm mini-trials alongside station RCBD trials | tricot in Europe, forage, seed mixtures, grassland, Norway | none |
+| [kadege-2026-fsufs](papers/kadege-2026-fsufs.md) | Kadege et al. 2026, *Front Sustain Food Syst* | research article | A single-season tricot trial with 372 Tanzanian farmers finds yield, market preference and disease resistance drive bean choice, with zone-, gender- and youth-specific trait priorities | common bean, Tanzania, tricot, trait preferences, gender | see card |
 <!-- index:end -->

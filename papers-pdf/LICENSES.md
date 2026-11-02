@@ -28,6 +28,7 @@ Licences were read from each PDF on 2026-10-30.
 | Gesesse-et-al-2023.pdf | [gesesse-2023-pnas](../papers/gesesse-2023-pnas.md) | https://doi.org/10.1073/pnas.2205774119 | CC BY 4.0 |
 | Gotor-et-al-2021.pdf | [gotor-2021-fsufs](../papers/gotor-2021-fsufs.md) | https://doi.org/10.3389/fsufs.2021.726725 | CC BY 4.0 |
 | Jorgensen-et-al-2026.pdf | [jorgensen-2026-gse](../papers/jorgensen-2026-gse.md) | https://hdl.handle.net/11250/5574875 | none stated (conference proceedings) |
+| Kadege-et-al-2026.pdf | [kadege-2026-fsufs](../papers/kadege-2026-fsufs.md) | https://doi.org/10.3389/fsufs.2025.1639680 | CC BY 4.0 |
 | Kang-et-al-2025.pdf | [kang-2025-expagric](../papers/kang-2025-expagric.md) | https://doi.org/10.1017/S0014479725100100 | CC BY 4.0 |
 | Mancini-et-al-2017.pdf | [mancini-2017-scirep](../papers/mancini-2017-scirep.md) | https://doi.org/10.1038/s41598-017-07628-4 | CC BY 4.0 |
 | Mbugua-et-al-2024.pdf | [mbugua-2024-mib](../papers/mbugua-2024-mib.md) | https://hdl.handle.net/10883/34683 | none stated (grey literature) |

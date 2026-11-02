@@ -24,6 +24,7 @@ relations:
   - discusses: quiros-2024-compag  # ClimMob chapters
   - discusses: daudi-2026-fes  # groundnut case study interview
   - discusses: moyo-2021-fsufs  # sweetpotato case study interview
+  - discusses: kadege-2026-fsufs  # common bean case study interview
 ---
 
 ## Questions this book answers
@@ -255,7 +256,7 @@ The chapter consists of interviews, so its evidence is practitioner experience, 
 
 - **Groundnut, Kenya and Tanzania (Happy Daudi, CIMMYT).** Tricot data supported a variety release proposal and a groundnut product profile, allowed on-farm genetic gain estimates and showed that selection traits differ by zone. Constraints were seed for many farmers, English-only software and weak handling of quantitative data. Linked paper daudi-2026-fes.
 - **Maize, Rwanda (Elysé Tuyishime, One Acre Fund).** Up to 15 varieties tested in one season with fewer farm visits, blind testing raised curiosity, rankings exposed grain size as a driver, and zone maps narrowed the list to one to three candidates. Testing farming practices proved harder than testing varieties.
-- **Common bean, Tanzania (Edith Kadege, TARI).** Farmers prioritized yield, market acceptance and disease resistance, anthracnose varied by agro-ecological zone, women stressed post-harvest traits, men agronomic traits and youth marketability. Real-time ODK data allowed in-season corrections. Associated paper Kadege et al. 2026, not yet a card.
+- **Common bean, Tanzania (Edith Kadege, TARI).** Farmers prioritized yield, market acceptance and disease resistance, anthracnose varied by agro-ecological zone, women stressed post-harvest traits, men agronomic traits and youth marketability. Real-time ODK data allowed in-season corrections. Linked paper kadege-2026-fsufs.
 - **Maize, Kenya (Jamlick Mwathi, Bayer).** Farmers valued grain size and colour beyond yield and preferred a hybrid the breeders had ranked lower, which entered the programme, and two areas assumed similar proved different.
 - **Sweetpotato, Uganda (Reuben Ssali, CIP).** Tricot reached more farmers regardless of education, validated survey-based trait priorities and showed some farmers accept mealiness when other traits are strong. Varieties must be multiplied before the trial, and rankings do not reveal trade-offs. Linked paper moyo-2021-fsufs.
 - **Groundnut, Ghana (Richard Oteng-Frimpong, SARI).** Fifteen lines reached previously inaccessible farmers, female farmers preferred early maturity, and seed size, colour and fast maturity fed into product profiles. Seed had to be multiplied off-season and field agents translated across languages.
@@ -326,4 +327,4 @@ The chapter consists of interviews, so its evidence is practitioner experience, 
 - The plot-size section calls the Ghana sweetpotato plots (6 m²) two thirds of the recommended on-station size, while the recommendation it cites is 30 m² for on-farm trials. Use the m² figures, not the fraction.
 - ClimMob cost differs between FAQs (free for CGIAR and NARES with a fee for private companies, versus free for anyone). The groundnut case study calls ClimMob English-only, while the setup chapter allows up to four languages for participant forms, so multilingual support likely postdates that trial.
 - The FAQ's cost comparison with PVS cites occelli-2024-agecon, which reports 28% lower cost than group PVS. Cite the source figure.
-- Related cards include vanetten-2020-guide and steinke-2016-guide (earlier guides), quiros-2024-compag (ClimMob), desousa-2024-asd (retrospective and scaling), occelli-2024-agecon (costs), cairns-2026-jxb (inclusive sampling), muller-2025-ux and schumann-2024-ux (feedback design), turner-2020-compstat (PlackettLuce), dorado-2026-tag (genetic parameters from rankings), nabateregga-2025-eja (farmer-measured yield), kang-2025-expagric and alamu-2023-jsfa (item covariates), daudi-2026-fes and moyo-2021-fsufs (case-study papers).
+- Related cards include vanetten-2020-guide and steinke-2016-guide (earlier guides), quiros-2024-compag (ClimMob), desousa-2024-asd (retrospective and scaling), occelli-2024-agecon (costs), cairns-2026-jxb (inclusive sampling), muller-2025-ux and schumann-2024-ux (feedback design), turner-2020-compstat (PlackettLuce), dorado-2026-tag (genetic parameters from rankings), nabateregga-2025-eja (farmer-measured yield), kang-2025-expagric and alamu-2023-jsfa (item covariates), daudi-2026-fes, kadege-2026-fsufs and moyo-2021-fsufs (case-study papers).

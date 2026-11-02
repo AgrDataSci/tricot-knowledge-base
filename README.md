@@ -35,10 +35,10 @@ This is the literature layer of [AI-ready documentation for tricot](https://gith
 | | Count |
 |---|---|
 | Source documents in `papers-pdf/` | 48 |
-| Cards in `papers/` | 48 |
+| Cards in `papers/` | 49 |
 | Cards still waiting for a handle or DOI | 0 |
 | People in `people.md` | 16 (3 contacts confirmed, 13 pending) |
-| Links between cards | 24 |
+| Links between cards | 26 |
 
 Every source document has a long-format card. `python scripts/build_index.py` lists the cards that still need a handle, and `index.json` records the current version.
 
@@ -51,9 +51,9 @@ Every source document has a long-format card. `python scripts/build_index.py` li
 | Data quality, motivation and impact | steinke-2017-asd, beza-2017-plosone, gotor-2021-fsufs, occelli-2024-agecon, nabateregga-2025-eja, ulzen-2025-agrirxiv |
 | Climate, genomics and analysis methods | vanetten-2019-pnas, desousa-2021-commsbio, brown-2022-cropsci, dorado-2026-tag, vanetten-2023-pnas, cairns-2026-jxb |
 | Software and data standards (R packages, ClimMob, BrAPI) | turner-2020-compstat, desousa-2023-softwarex, desousa-2020-joss, desousa-2023-joss, quiros-2024-compag, selby-2025-database |
-| Crop applications | nanyonjo-2024-cropsci (cassava), daudi-2026-fes (groundnut), kang-2025-expagric and sharma-2025-jafr (potato), voss-2025-ppp (amaranth), mulatu-2024-slides and jorgensen-2026-gse (forages, Ethiopia and Norway) |
+| Crop applications | nanyonjo-2024-cropsci (cassava), daudi-2026-fes (groundnut), kadege-2026-fsufs (common bean), kang-2025-expagric and sharma-2025-jafr (potato), voss-2025-ppp (amaranth), mulatu-2024-slides and jorgensen-2026-gse (forages, Ethiopia and Norway) |
 | Consumer and product concept testing | moyo-2021-fsufs, alamu-2023-jsfa, olaosebikan-2023-jsfa, donovan-2025-expagric, rutsaert-2023-mib, mbugua-2024-mib |
-| Gender, inclusion and farmer feedback | teeken-2021-fsufs, voss-2023-fsoc, teeken-2023-slides, schumann-2024-ux, muller-2025-ux, steinke-2019-plosone |
+| Gender, inclusion and farmer feedback | teeken-2021-fsufs, voss-2023-fsoc, teeken-2023-slides, kadege-2026-fsufs, schumann-2024-ux, muller-2025-ux, steinke-2019-plosone |
 | Mainstreaming in breeding | 1000farms-2025-report |
 
 ## Use it
