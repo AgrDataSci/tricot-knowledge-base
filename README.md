@@ -38,7 +38,7 @@ This is the literature layer of [AI-ready documentation for tricot](https://gith
 | Cards in `papers/` | 48 |
 | Cards still waiting for a handle or DOI | 0 |
 | People in `people.md` | 16 (3 contacts confirmed, 13 pending) |
-| Links between cards | 18 |
+| Links between cards | 24 |
 
 Every source document has a long-format card. `python scripts/build_index.py` lists the cards that still need a handle, and `index.json` records the current version.
 

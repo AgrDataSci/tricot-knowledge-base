@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `33d855b599b7`, updated 2026-11-01, 48 cards.<!-- version:end -->
+<!-- version:start -->Installed version `596268bb761e`, updated 2026-11-02, 48 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -139,6 +139,12 @@ Lines of work worth knowing:
 - selby-2025-database **discusses** quiros-2024-compag (ClimMob as a BrAPI-compatible tool)
 - ulzen-2025-agrirxiv **agreesWith** nabateregga-2025-eja (farmer volumetric yield measurement is accurate)
 - cairns-2026-jxb **citesAsDataSource** desousa-2024-asd (cites over 150,000 farmers; the source reports about 150,000 plots)
+- chase-2026-book **updates** vanetten-2020-guide (several chapters reuse the 2020 guide, updated and extended)
+- chase-2026-book **updates** steinke-2016-guide
+- chase-2026-book **citesAsDataSource** occelli-2024-agecon (the FAQ says about a quarter cheaper than PVS and nearly twice as many farmers reached; the source reports 28% cheaper)
+- chase-2026-book **discusses** quiros-2024-compag (ClimMob chapters)
+- chase-2026-book **discusses** daudi-2026-fes (groundnut case study interview)
+- chase-2026-book **discusses** moyo-2021-fsufs (sweetpotato case study interview)
 <!-- relations:end -->
 
 ## Index
@@ -190,7 +196,7 @@ Lines of work worth knowing:
 | [ulzen-2025-agrirxiv](papers/ulzen-2025-agrirxiv.md) | Ulzen et al. 2025, *agriRxiv* | preprint | With 40 Ghanaian farmers, measuring harvest with a tin of known volume was the most accurate and robust method, while weighing with scales was error-prone even after training | farmer-generated yield, harvest measurement, volumetric measurement, tin can, weighing scale | see card |
 | [voss-2025-ppp](papers/voss-2025-ppp.md) | Voss et al. 2025, *Plants People Planet* | research article | Tricot trials of 14 amaranth varieties with 2,063 farmers in Benin, Mali and Tanzania identify gender- and business-based farmer segments with distinct variety preferences | opportunity crops, NUS, amaranth, tricot, farmer segmentation | see card |
 | [cairns-2026-jxb](papers/cairns-2026-jxb.md) | Cairns et al. 2026, *J Exp Bot* | review | Review arguing that inclusive host-farmer sampling, sparse testing and cheaper phenotyping let maize breeding in SSA deliver breakthrough products | breakthrough products, TPE, on-farm testing, sparse testing, tricot | none |
-| [chase-2026-book](papers/chase-2026-book.md) | Chase et al. 2026, *Book* | book | The current tricot handbook, covering every step from objectives, sampling and trial size to ClimMob, SOPs, metadata, statistics, farmer feedback and African case studies | tricot handbook, ten steps, objective setting, product management, sampling | none |
+| [chase-2026-book](papers/chase-2026-book.md) | Chase et al. 2026, *Book* | book | The current tricot handbook, covering all ten steps from objectives, sampling, trial size and SOPs to ClimMob, statistics, farmer feedback, evaluation and African case studies | tricot handbook, ten steps, objective setting, budgeting, costing template | none |
 | [daudi-2026-fes](papers/daudi-2026-fes.md) | Daudi et al. 2026, *Food Energy Secur* | research article | Combines 18-environment station trials with tricot on-farm trials in Tanzania to select stable groundnut genotypes and show women and men prioritize different traits | groundnut, GEI, GGE biplot, tricot, gender | see card |
 | [dorado-2026-tag](papers/dorado-2026-tag.md) | Dorado-Betancourt et al. 2026, *Theor Appl Genet* | research article | Shows that genotype means and variances from Plackett-Luce or Thurstonian models can feed standard two-step mixed models to estimate heritability from tricot rankings | genetic parameters, heritability, variance components, Thurstonian model, Plackett-Luce | Zenodo |
 | [jorgensen-2026-gse](papers/jorgensen-2026-gse.md) | Jørgensen et al. 2026, *Grassl Sci Eur* | conference paper | Describes INNOFORAGE, the first tricot application in Norway, testing climate-adapted forage seed mixtures in 100 on-farm mini-trials alongside station RCBD trials | tricot in Europe, forage, seed mixtures, grassland, Norway | none |

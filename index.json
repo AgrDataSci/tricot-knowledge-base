@@ -1,6 +1,6 @@
 {
- "version": "33d855b599b7",
- "updated": "2026-11-01",
+ "version": "596268bb761e",
+ "updated": "2026-11-02",
  "cards": 48,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
@@ -37,7 +37,13 @@
    "keywords": "tricot guide, ten steps, project design, seed quantities, observation card, workshops, ClimMob, field facilitators, evaluation indicators",
    "path": "papers/steinke-2016-guide.md",
    "hash": "58d963a1f9ac",
-   "relations": []
+   "relations": [
+    {
+     "relation": "isUpdatedBy",
+     "card": "chase-2026-book",
+     "note": ""
+    }
+   ]
   },
   {
    "id": "beza-2017-plosone",
@@ -219,7 +225,13 @@
    "keywords": "tricot guide, ten steps, implementers, local facilitators, observation card, ODK, ClimMob, field agents, feedback workshop, FAQ",
    "path": "papers/vanetten-2020-guide.md",
    "hash": "07fce8c085b9",
-   "relations": []
+   "relations": [
+    {
+     "relation": "isUpdatedBy",
+     "card": "chase-2026-book",
+     "note": "several chapters reuse the 2020 guide, updated and extended"
+    }
+   ]
   },
   {
    "id": "vanetten-2020-rtbwp",
@@ -282,7 +294,13 @@
    "keywords": "consumer testing, tricot, sweetpotato, boiled roots, taste, centralized tasting, home tasting, Plackett-Luce trees, user segments, orange-fleshed sweetpotato",
    "path": "papers/moyo-2021-fsufs.md",
    "hash": "6d5a9bef6dcf",
-   "relations": []
+   "relations": [
+    {
+     "relation": "isDiscussedBy",
+     "card": "chase-2026-book",
+     "note": "sweetpotato case study interview"
+    }
+   ]
   },
   {
    "id": "teeken-2021-fsufs",
@@ -488,6 +506,11 @@
      "relation": "isCitedAsDataSourceBy",
      "card": "desousa-2024-asd",
      "note": "cites about 40% cheaper than RCBD; the source reports 28% cheaper than group PVS"
+    },
+    {
+     "relation": "isCitedAsDataSourceBy",
+     "card": "chase-2026-book",
+     "note": "the FAQ says about a quarter cheaper than PVS and nearly twice as many farmers reached; the source reports 28% cheaper"
     }
    ],
    "not_established": "cost savings against RCBD or researcher-managed trials (the 28% is against group PVS); better food security from tricot (group PVS did better); effects outside bean in Central America"
@@ -505,6 +528,11 @@
      "relation": "isDiscussedBy",
      "card": "selby-2025-database",
      "note": "ClimMob as a BrAPI-compatible tool"
+    },
+    {
+     "relation": "isDiscussedBy",
+     "card": "chase-2026-book",
+     "note": "ClimMob chapters"
     }
    ]
   },
@@ -665,11 +693,43 @@
    "id": "chase-2026-book",
    "year": "2026",
    "type": "book",
-   "gist": "The current tricot handbook, covering every step from objectives, sampling and trial size to ClimMob, SOPs, metadata, statistics, farmer feedback and African case studies",
-   "keywords": "tricot handbook, ten steps, objective setting, product management, sampling, trial size, sample-size calculator, seed calculator, costing, ClimMob, SOPs, metadata, statistical models, feedback, case studies",
+   "gist": "The current tricot handbook, covering all ten steps from objectives, sampling, trial size and SOPs to ClimMob, statistics, farmer feedback, evaluation and African case studies",
+   "keywords": "tricot handbook, ten steps, objective setting, budgeting, costing template, target product profile, task groups, gender, sampling, trial size, sample-size calculator, seed calculator, plot size, SOPs, trial documentation, metadata, ethics, access and benefit sharing, ClimMob, ODK, field agents, observation card, Plackett-Luce, feedback workshop, evaluation indicators, case studies",
    "path": "papers/chase-2026-book.md",
-   "hash": "91374d556824",
-   "relations": []
+   "hash": "6dd3d6365597",
+   "relations": [
+    {
+     "relation": "updates",
+     "card": "vanetten-2020-guide",
+     "note": "several chapters reuse the 2020 guide, updated and extended"
+    },
+    {
+     "relation": "updates",
+     "card": "steinke-2016-guide",
+     "note": ""
+    },
+    {
+     "relation": "citesAsDataSource",
+     "card": "occelli-2024-agecon",
+     "note": "the FAQ says about a quarter cheaper than PVS and nearly twice as many farmers reached; the source reports 28% cheaper"
+    },
+    {
+     "relation": "discusses",
+     "card": "quiros-2024-compag",
+     "note": "ClimMob chapters"
+    },
+    {
+     "relation": "discusses",
+     "card": "daudi-2026-fes",
+     "note": "groundnut case study interview"
+    },
+    {
+     "relation": "discusses",
+     "card": "moyo-2021-fsufs",
+     "note": "sweetpotato case study interview"
+    }
+   ],
+   "not_established": "a universal sample size for every tricot trial (the numbers are planning defaults); that tricot caused the variety releases described in the case studies (these are practitioner interviews, not impact evaluations); that gender differences in preferences are absent (analyses often fail to detect them, which the book attributes partly to unmeasured social variables); that tricot suits farming practices as well as varieties (one case study found practices harder to test)"
   },
   {
    "id": "daudi-2026-fes",
@@ -679,7 +739,13 @@
    "keywords": "groundnut, GEI, GGE biplot, tricot, gender, trait preferences, kernel yield, stability, target product profile, variety release, TARI",
    "path": "papers/daudi-2026-fes.md",
    "hash": "ea520d0d30e5",
-   "relations": []
+   "relations": [
+    {
+     "relation": "isDiscussedBy",
+     "card": "chase-2026-book",
+     "note": "groundnut case study interview"
+    }
+   ]
   },
   {
    "id": "dorado-2026-tag",

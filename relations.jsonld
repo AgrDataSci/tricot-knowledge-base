@@ -400,7 +400,31 @@
    "dcterms:identifier": "chase-2026-book",
    "dcterms:title": "Product testing with users in agriculture and food. Decentralized on-farm evaluation, breeding product validation, consumer testing and other applications using the tricot approach",
    "dcterms:date": "2026",
-   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/chase-2026-book.md"
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/chase-2026-book.md",
+   "cito:updates": [
+    {
+     "@id": "https://hdl.handle.net/10568/109942"
+    },
+    {
+     "@id": "https://hdl.handle.net/10568/78782"
+    }
+   ],
+   "cito:citesAsDataSource": [
+    {
+     "@id": "https://doi.org/10.1111/agec.12819"
+    }
+   ],
+   "cito:discusses": [
+    {
+     "@id": "https://doi.org/10.1016/j.compag.2023.108539"
+    },
+    {
+     "@id": "https://doi.org/10.1002/fes3.70228"
+    },
+    {
+     "@id": "https://doi.org/10.3389/fsufs.2021.620363"
+    }
+   ]
   },
   {
    "@id": "https://doi.org/10.1002/fes3.70228",
