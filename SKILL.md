@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, plus external literature curated by the core team, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `f5f5bd6038f9`, updated 2026-11-02, 49 cards.<!-- version:end -->
+<!-- version:start -->Installed version `625b1dd02026`, updated 2026-11-02, 50 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -169,6 +169,11 @@ Lines of work worth knowing:
 - desousa-2024-asd **citesAsDataSource** occelli-2024-agecon (cites about 40% cheaper than RCBD; the source reports 28% cheaper than group PVS)
 - mbugua-2024-mib **usesMethodIn** rutsaert-2023-mib (video-based product concept testing)
 - donovan-2025-expagric **extends** rutsaert-2023-mib (full analysis of the maize concept testing in the brief)
+- howland-2025-report **discusses** desousa-2024-asd (cited for cost efficiency and decisions; informants' accounts contest the cost-effectiveness and data-quality narrative)
+- howland-2025-report **discusses** vanetten-2019-expagric
+- howland-2025-report **discusses** vanetten-2011-idsbull
+- howland-2025-report **discusses** nabateregga-2025-eja (cited as Nabateregga et al. 2024 for the accuracy of farmer data)
+- howland-2025-report **discusses** ulzen-2025-agrirxiv (cited as Ulzen et al. 2024 for the accuracy of farmer data)
 - muller-2025-ux **extends** schumann-2024-ux (field validation of the feedback prototypes)
 - selby-2025-database **discusses** quiros-2024-compag (ClimMob as a BrAPI-compatible tool)
 - ulzen-2025-agrirxiv **agreesWith** nabateregga-2025-eja (farmer volumetric yield measurement is accurate)
@@ -224,6 +229,7 @@ Lines of work worth knowing:
 | [schumann-2024-ux](papers/schumann-2024-ux.md) | Schumann et al. 2024, *Presentation* | presentation | no | team | UX review finding tricot implementers rarely run farmer feedback, mapping why along their journey, and proposing redesigned feedback sheets, diplomas and ClimMob support | farmer feedback, feedback sessions, user experience, implementers, ClimMob | none |
 | [1000farms-2025-report](papers/1000farms-2025-report.md) | CIMMYT (CGIAR Dryland Crops Program) and Bioversity International (1000FARMS) 2025, *Report* | report | no | team | Report of a 26-person CGIAR-NARES meeting setting recommendations and 12-month action plans to mainstream tricot in breeding, from sampling and SOPs to analysis, cost and coordination | mainstreaming, 1000FARMS, CGIAR-NARES, sampling, SOPs | none |
 | [donovan-2025-expagric](papers/donovan-2025-expagric.md) | Donovan et al. 2025, *Exp Agric* | research article | yes | team | Video-based concept testing with 2,400 farmers in Kenya and Uganda finds resilience, drought escape and intercropping concepts most preferred among eight future maize hybrid concepts | product concept testing, VPCT, videos, hybrid maize, market segments | see card |
+| [howland-2025-report](papers/howland-2025-report.md) | Howland et al. 2025, *Report* | report | no | external, curated | Independent evaluation of 1000FARMS (195-person survey, 21 interviews, four countries) finding tricot widely used for variety decisions, with 1000FARMS's contribution commingled in Ghana and Uganda and weak in Ethiopia and Haiti | 1000FARMS, outcome study, contribution analysis, theory of change, scaling | none |
 | [kang-2025-expagric](papers/kang-2025-expagric.md) | Kang et al. 2025, *Exp Agric* | research article | yes | team | Tricot potato trial with 460 Rwandan farmers, linked to RHoMIS, climate and station data, shows old varieties still preferred and temperature and market orientation shaping rankings | potato, tricot, RHoMIS, socio-economic covariates, temperature | see card |
 | [muller-2025-ux](papers/muller-2025-ux.md) | Müller et al. 2025, *Presentation* | presentation | no | team | Field validation in Nigeria of a redesigned tricot feedback sheet and diploma, rated highly by 44 farmers (NPS 70) though only half decoded the trait icons | farmer feedback, feedback sheet, diploma, Net Promoter Score, icons | none |
 | [nabateregga-2025-eja](papers/nabateregga-2025-eja.md) | Nabateregga et al. 2025, *Eur J Agron* | research article | yes | team | Shows farmer volumetric yield estimates for common bean agree closely with technician measures (r = 0.96) and predict absolute yield, so tricot can supply yield data for breeders | farmer-generated yield, yield estimation, volumetric measurement, sado tins, data accuracy | see card |

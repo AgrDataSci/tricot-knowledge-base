@@ -27,6 +27,7 @@ Licences were read from each PDF on 2026-10-30.
 | Fadda-et-al-2020.pdf | [fadda-2020-fps](../papers/fadda-2020-fps.md) | https://doi.org/10.3389/fpls.2020.559515 | CC BY 4.0 |
 | Gesesse-et-al-2023.pdf | [gesesse-2023-pnas](../papers/gesesse-2023-pnas.md) | https://doi.org/10.1073/pnas.2205774119 | CC BY 4.0 |
 | Gotor-et-al-2021.pdf | [gotor-2021-fsufs](../papers/gotor-2021-fsufs.md) | https://doi.org/10.3389/fsufs.2021.726725 | CC BY 4.0 |
+| Howland-et-al-2025.pdf | [howland-2025-report](../papers/howland-2025-report.md) | https://hdl.handle.net/10568/181675 | one-page pointer, not the report; the full report is on CGSpace |
 | Jorgensen-et-al-2026.pdf | [jorgensen-2026-gse](../papers/jorgensen-2026-gse.md) | https://hdl.handle.net/11250/5574875 | none stated (conference proceedings) |
 | Kadege-et-al-2026.pdf | [kadege-2026-fsufs](../papers/kadege-2026-fsufs.md) | https://doi.org/10.3389/fsufs.2025.1639680 | CC BY 4.0 |
 | Kang-et-al-2025.pdf | [kang-2025-expagric](../papers/kang-2025-expagric.md) | https://doi.org/10.1017/S0014479725100100 | CC BY 4.0 |

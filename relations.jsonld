@@ -320,6 +320,30 @@
    ]
   },
   {
+   "@id": "https://hdl.handle.net/10568/181675",
+   "dcterms:identifier": "howland-2025-report",
+   "dcterms:title": "1000FARMS. Scaling the use of tricot data for breeding decisions. An outcome study",
+   "dcterms:date": "2025",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/howland-2025-report.md",
+   "cito:discusses": [
+    {
+     "@id": "https://doi.org/10.1007/s13593-023-00937-1"
+    },
+    {
+     "@id": "https://doi.org/10.1017/S0014479716000739"
+    },
+    {
+     "@id": "https://doi.org/10.1111/j.1759-5436.2011.00240.x"
+    },
+    {
+     "@id": "https://doi.org/10.1016/j.eja.2025.127730"
+    },
+    {
+     "@id": "https://doi.org/10.31220/agriRxiv.2025.00295"
+    }
+   ]
+  },
+  {
    "@id": "https://doi.org/10.1017/S0014479725100100",
    "dcterms:identifier": "kang-2025-expagric",
    "dcterms:title": "Integrating environmental, socio-economic, and biological data in a farmer-led potato trial for enhanced varietal assessment in Rwanda",
