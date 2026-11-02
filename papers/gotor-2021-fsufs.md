@@ -8,6 +8,8 @@ journal_short: Front Sustain Food Syst
 article: 5, 726725
 type: research article
 source: team
+peer_reviewed: yes
+curated_card: no
 doi: https://doi.org/10.3389/fsufs.2021.726725
 open_copy: https://doi.org/10.3389/fsufs.2021.726725
 license: CC BY

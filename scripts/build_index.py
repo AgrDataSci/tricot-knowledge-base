@@ -11,6 +11,7 @@ Rules checked for every card
 - the doi field is present; it may be empty for items still waiting for their handle
 - the id matches the file name
 - every relation uses a known CiTO term and points to an existing card
+- peer_reviewed and curated_card are yes or no
 - source is team or external; a team card should have at least one author listed in people.md
   (a warning only, since author lists may be shortened or name an institution)
 
@@ -49,7 +50,9 @@ RELATIONS = {
     "disagreesWith": "isDisagreedWithBy",
     "discusses": "isDiscussedBy",
 }
-REQUIRED = ["id", "title", "authors", "year", "journal", "type", "source", "gist", "keywords", "data"]
+REQUIRED = ["id", "title", "authors", "year", "journal", "type", "source", "peer_reviewed", "curated_card",
+            "gist", "keywords", "data"]
+YESNO = ["peer_reviewed", "curated_card"]  # must be yes or no
 SOURCES = {"team": "team", "external": "external, curated"}  # value -> label in the index
 PRESENT = ["doi", "open_copy", "license"]  # must exist, may be empty
 
@@ -82,6 +85,9 @@ def front_matter(path):
         raise SystemExit(f"{path.name}: id '{meta['id']}' must match the file name")
     if meta["source"] not in SOURCES:
         raise SystemExit(f"{path.name}: source '{meta['source']}' must be one of {', '.join(SOURCES)}")
+    for k in YESNO:
+        if meta[k] not in ("yes", "no"):
+            raise SystemExit(f"{path.name}: {k} '{meta[k]}' must be yes or no")
     return meta
 
 
@@ -131,10 +137,10 @@ def short_data(value):
 cards = sorted((ROOT / "papers").glob("*.md"))
 metas = [(front_matter(p), p) for p in cards]
 metas.sort(key=lambda x: (x[0]["year"], x[0]["id"]))
-rows = ["| ID | Paper | Type | Source | Gist | Keywords | Data |", "|---|---|---|---|---|---|---|"]
+rows = ["| ID | Paper | Type | Peer-reviewed | Source | Gist | Keywords | Data |", "|---|---|---|---|---|---|---|---|"]
 for m, p in metas:
     kw = ", ".join(k.strip() for k in m["keywords"].split(",")[:5])
-    rows.append(f"| [{m['id']}](papers/{p.name}) | {short_ref(m)} | {m['type']} | {SOURCES[m['source']]} | {m['gist']} | {kw} | {short_data(m['data'])} |")
+    rows.append(f"| [{m['id']}](papers/{p.name}) | {short_ref(m)} | {m['type']} | {m['peer_reviewed']} | {SOURCES[m['source']]} | {m['gist']} | {kw} | {short_data(m['data'])} |")
 
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()[:12]
@@ -155,7 +161,8 @@ for a, rel, b, note in links:
     graph[b].append({"relation": RELATIONS[rel], "card": a, "note": note})
 
 people = ROOT / "people.md"
-entries = [{"id": m["id"], "year": m["year"], "type": m["type"], "source": m["source"], "gist": m["gist"],
+entries = [{"id": m["id"], "year": m["year"], "type": m["type"], "source": m["source"],
+            "peer_reviewed": m["peer_reviewed"], "curated_card": m["curated_card"], "gist": m["gist"],
             "keywords": m["keywords"], "path": f"papers/{p.name}", "hash": digest(p),
             "relations": graph[m["id"]],
             **({"not_established": m["not_established"]} if m.get("not_established") else {})} for m, p in metas]
@@ -220,5 +227,9 @@ print(f"Index rebuilt with {len(cards)} papers. Version {version} ({updated}). S
 if no_doi:
     print(f"{len(no_doi)} cards still need a handle or DOI: {', '.join(no_doi)}")
 print(f"{len(metas) - len(external)} team cards, {len(external)} external cards curated by the core team.")
+not_pr = [m["id"] for m, _ in metas if m["peer_reviewed"] == "no"]
+print(f"{len(metas) - len(not_pr)} peer-reviewed cards, {len(not_pr)} not peer-reviewed.")
+to_curate = [m["id"] for m, _ in metas if m["curated_card"] == "no"]
+print(f"{len(metas) - len(to_curate)} cards checked by a person, {len(to_curate)} still to check.")
 if unmatched:
     print(f"Check source: team cards with no author found in people.md: {', '.join(unmatched)}")

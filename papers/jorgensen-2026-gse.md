@@ -8,6 +8,8 @@ journal_short: Grassl Sci Eur
 article: 31, 516-518
 type: conference paper
 source: team
+peer_reviewed: no
+curated_card: no
 doi: https://hdl.handle.net/11250/5574875
 open_copy: https://hdl.handle.net/11250/5574875
 license: see proceedings

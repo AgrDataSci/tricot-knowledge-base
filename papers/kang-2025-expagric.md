@@ -8,6 +8,8 @@ journal_short: Exp Agric
 article: 61, e18, 1-26
 type: research article
 source: team
+peer_reviewed: yes
+curated_card: no
 doi: https://doi.org/10.1017/S0014479725100100
 open_copy: https://doi.org/10.1017/S0014479725100100
 license: CC BY

@@ -8,6 +8,8 @@ journal_short: Agric Econ
 article: published 2024 (accepted November 2023)
 type: research article
 source: team
+peer_reviewed: yes
+curated_card: no
 doi: https://doi.org/10.1111/agec.12819
 open_copy: https://doi.org/10.1111/agec.12819
 license: CC BY-NC-ND

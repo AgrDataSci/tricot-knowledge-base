@@ -8,6 +8,8 @@ journal_short: PLOS ONE
 article: 12(5), e0175700
 type: research article
 source: team
+peer_reviewed: yes
+curated_card: no
 doi: https://doi.org/10.1371/journal.pone.0175700
 open_copy: https://doi.org/10.1371/journal.pone.0175700
 license: CC BY 4.0

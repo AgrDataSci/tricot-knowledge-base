@@ -8,6 +8,8 @@ journal_short: IDS Bull
 article: 42(4), 102-110
 type: perspective
 source: team
+peer_reviewed: yes
+curated_card: no
 doi: https://doi.org/10.1111/j.1759-5436.2011.00240.x
 open_copy: https://opendocs.ids.ac.uk/articles/journal_contribution/Crowdsourcing_Crop_Improvement_in_Sub_Saharan_Africa_A_Proposal_for_a_Scalable_and_Inclusive_Approach_to_Food_Security/26434453
 license: © 2011 The Author, IDS Bulletin © 2011 Institute of Development Studies; no open licence stated, free to read at IDS OpenDocs; papers-pdf holds only a one-page pointer to the open copy and the DOI

@@ -39,10 +39,12 @@ This is the literature layer of [AI-ready documentation for tricot](https://gith
 | Source documents in `papers-pdf/` | 48 |
 | Cards in `papers/` | 49 (47 team, 2 external) |
 | Cards still waiting for a handle or DOI | 0 |
+| Peer-reviewed cards | 36 (13 not peer-reviewed) |
+| Cards checked by a person (`curated_card: yes`) | 0 of 49 |
 | People in `people.md` | 16 (3 contacts confirmed, 13 pending) |
 | Links between cards | 26 |
 
-Every source document has a long-format card. `python scripts/build_index.py` lists the cards that still need a handle, and `index.json` records the current version.
+Every source document has a long-format card. `python scripts/build_index.py` lists the cards that still need a handle, counts peer-reviewed and person-checked cards, and `index.json` records the current version.
 
 ### What the cards cover
 
@@ -123,11 +125,12 @@ The check needs the assistant to be able to fetch from `raw.githubusercontent.co
 
 Every card follows the long format in [`TEMPLATE.md`](TEMPLATE.md). It has YAML metadata (DOI, open copy, license, data, software, keywords, a one-line gist), questions the paper answers, a summary of 400 to 500 words in our own words (shorter for short sources such as slides and conference papers), methods in brief, stated limitations, a key-numbers table and notes. In our test the long format answered expert questions better than a summary alone (see [`tests/comparison-short-vs-long.md`](tests/comparison-short-vs-long.md)).
 
-Four rules make the cards trustworthy.
+Five rules make the cards trustworthy.
 
 - **Every number is checked against the PDF.** All numbers in all 42 cards were matched against the full text of their source by script. Mismatches between text and tables, or between papers, are recorded in the notes.
 - **Numbers carry their primary source.** When a paper reports a figure from another study, the card names that study, so users cite the original.
 - **R packages point to CRAN.** PlackettLuce, gosset, ClimMobTools, climatrends and chirps change over time, so cards record the CRAN version and date checked, and the skill tells the assistant to check the current version before giving code.
+- **Peer review is recorded.** Every card has `peer_reviewed: yes` or `no`. Papers in scientific journals are `yes`, because the core team screens every paper before it enters the repository (no predatory journals, trustworthy authors). Preprints, books, reports, guides, briefs, working papers, conference papers and presentations are `no`, and the skill gives them lower weight. A second field, `curated_card`, starts as `no` and turns `yes` once a person has checked the card against its source.
 - **Grey literature is labelled.** Guides, reports, briefs and presentations have their type in the index, and items published on CGSpace have an empty `doi` until their handle is added.
 
 PDF file names follow the first author and year of each source, and card IDs follow the same pattern.

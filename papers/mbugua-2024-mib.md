@@ -8,6 +8,8 @@ journal_short: Market Intell Brief
 article: Market Intelligence Brief 15
 type: policy brief
 source: team
+peer_reviewed: no
+curated_card: no
 doi: https://hdl.handle.net/10883/34683
 open_copy: https://hdl.handle.net/10883/34683
 license: see repository record
