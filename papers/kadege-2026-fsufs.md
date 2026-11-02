@@ -54,8 +54,6 @@ The authors call for zone-specific, gender- and youth-responsive product profile
 
 - One season only, so multi-season trials are needed to confirm the patterns.
 - The sample and coverage may miss local variation in preferences.
-- The study rests on farmer perceptions rather than quantitative trait measurements, and the authors recommend pairing it with on-farm performance evaluations.
-- As drawbacks of tricot, the authors list coarser data than PVS, the need for statistical expertise, heterogeneity when pooling many farmers, possible evaluation biases and the assumption that farmers have comparable evaluation skills, each with a suggested mitigation.
 
 ## Key numbers
 
@@ -82,5 +80,4 @@ The authors call for zone-specific, gender- and youth-responsive product profile
 - Table 2 is labelled ANOVA but reports log-likelihoods and chi-square probabilities. Treat it as a model test of genotype differences, without more detail on the model.
 - Youth are reported as a third "gender category" next to women and men. The paper does not define the youth age range.
 - The paper cites van Etten et al. (2019) for 100 to 200 farms giving reliable results with about 12 entries, the same guidance as chase-2026-book. This trial used 372 farmers for 18 entries.
-- For questions on this work, the team routes contact to Happy Daudi, who answers on behalf of CIMMYT and TARI. She is not an author, so credit the paper to Edith Kadege and colleagues. The senior TARI officer responsible for the work is still to be confirmed.
 - The tricot book interviews Edith Kadege about this work in its case studies (chase-2026-book). See daudi-2026-fes for groundnut in Tanzania and voss-2023-fsoc and teeken-2021-fsufs on gender and trait preferences.
