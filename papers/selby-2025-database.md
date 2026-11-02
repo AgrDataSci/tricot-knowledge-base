@@ -7,6 +7,7 @@ journal: Database. The Journal of Biological Databases and Curation
 journal_short: Database
 article: 2025, baaf048
 type: software paper
+source: team
 doi: https://doi.org/10.1093/database/baaf048
 open_copy: https://doi.org/10.1093/database/baaf048
 license: CC BY

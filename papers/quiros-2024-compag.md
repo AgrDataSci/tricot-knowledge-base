@@ -7,6 +7,7 @@ journal: Computers and Electronics in Agriculture
 journal_short: Comput Electron Agric
 article: 217, 108539
 type: software paper
+source: team
 doi: https://doi.org/10.1016/j.compag.2023.108539
 open_copy: https://doi.org/10.1016/j.compag.2023.108539
 license: CC BY

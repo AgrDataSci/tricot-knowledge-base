@@ -7,6 +7,7 @@ journal: agriRxiv (preprint)
 journal_short: agriRxiv
 article: preprint 2025.00295
 type: preprint
+source: team
 doi: https://doi.org/10.31220/agriRxiv.2025.00295
 open_copy: https://doi.org/10.31220/agriRxiv.2025.00295
 license: see preprint record

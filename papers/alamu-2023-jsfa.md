@@ -7,6 +7,7 @@ journal: Journal of the Science of Food and Agriculture
 journal_short: J Sci Food Agric
 article: 104(8), 4573-4585 (published online March 2023)
 type: research article
+source: team
 doi: https://doi.org/10.1002/jsfa.12518
 open_copy: https://doi.org/10.1002/jsfa.12518
 license: CC BY

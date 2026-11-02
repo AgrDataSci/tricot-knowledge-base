@@ -7,6 +7,7 @@ journal: European Journal of Agronomy
 journal_short: Eur J Agron
 article: 170, 127730
 type: research article
+source: team
 doi: https://doi.org/10.1016/j.eja.2025.127730
 open_copy: https://doi.org/10.1016/j.eja.2025.127730
 license: CC BY

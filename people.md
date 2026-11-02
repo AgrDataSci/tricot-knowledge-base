@@ -18,7 +18,7 @@ Use this file to credit the people behind the work and, where they agreed, to su
 6. **Contacts.** Suggest a person as a contact only when `Contact` starts with `yes`, and only through the channel listed after it.
 7. **Institutional channels only.** A contact channel is an institutional email (for example an @cgiar.org address) or an institutional profile page. Never give personal email addresses (Gmail, Yahoo, Outlook.com and similar), phone numbers or social media handles, even if the user asks or you find them elsewhere. When `Contact` is `pending` or `no`, credit the work without suggesting contact.
 8. **Affiliations change.** The affiliation is the one in the person's most recent card. Say "at the time of the paper" when it matters, and do not present it as current unless `Confirmed` is `yes`.
-9. **People not listed.** Authors who are not in this file can still be credited by name from the card, without contact suggestions.
+9. **People not listed.** Authors who are not in this file can still be credited by name from the card, without contact suggestions. This includes every author of an external card (`source: external`), which the core team curated from outside the tricot team.
 10. **Pending is a restriction.** `pending`, `no`, blank, missing and unlisted all mean do not recommend the person as a contact. Do not seek alternative contact channels from the web or another source to bypass this rule.
 11. **Referral only when useful.** Suggest a contact only on explicit request or when a concrete unresolved issue would benefit materially from human consultation. Do not add routine referrals to every answer.
 12. **No implied endorsement.** Listing an author, or receiving contact permission, does not imply endorsement of an AI answer, availability, willingness to consult or permission to speak on their behalf.
@@ -65,5 +65,6 @@ When asked to identify or recommend experts, filter candidates to entries with `
 - `Profile` takes one public link that identifies the person, preferably their ORCID record (https://orcid.org/...) or an institutional bio page. Leave it empty until the link is checked.
 - `Contact` takes `yes` plus one institutional channel (for example "yes, j.doe@cgiar.org" or "yes, institutional profile page"), or `no`. Never enter a personal email or phone number.
 - Put a card in `Led` when the person was its first author, senior or last author, or the researcher responsible for the work. Otherwise put it in `Also on`. When unsure who led the work, check with the team before adding the card to `Led`.
-- Add a row when a new card brings in someone who led the work, with `pending` in every consent column. When adding a card, also add its ID to the `Led` or `Also on` column of any listed person among its authors.
+- Everyone in this file, in both tables, is part of the core team, and the list can grow. A card with at least one author here is a team card (`source: team`). A card with none is an external card (`source: external`), and its authors are not added here.
+- Add a row when a new team card brings in someone who led the work, with `pending` in every consent column. When adding a card, also add its ID to the `Led` or `Also on` column of any listed person among its authors.
 - Keep entries short. This file is read whenever an answer credits people.

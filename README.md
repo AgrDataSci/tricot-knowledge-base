@@ -15,6 +15,8 @@
 
 An AI-ready knowledge base of the open-access literature on tricot, on-farm testing and product testing with farmers and consumers. Each paper, report or guide is distilled into a verified markdown card with the questions it answers, its main argument, methods, stated limitations, key numbers with their primary sources, and links to the underlying data and code.
 
+Most cards cover the tricot team's own work. Others cover external literature, such as participatory plant breeding, on-farm experimentation and data principles, curated by the core team to give context and reduce team bias. Each card's `source` field says which it is (`team` or `external`). A card is `team` when at least one author is listed in [`people.md`](people.md).
+
 The repository works as a [Claude skill](SKILL.md), so an AI assistant can answer questions the way a colleague who knows this literature, and the people behind it, would. It credits the authors by name, reports numbers with their primary sources, says where the evidence is thin and, where authors agree, suggests who to talk to next. The cards are plain markdown, so people and other AI tools can read them directly.
 
 This is the literature layer of [AI-ready documentation for tricot](https://github.com/AgrDataSci/ai-ready-documentation), alongside [tricot-protocols](https://github.com/AgrDataSci/tricot-protocols) and [tricot-data](https://github.com/AgrDataSci/tricot-data).
@@ -35,7 +37,7 @@ This is the literature layer of [AI-ready documentation for tricot](https://gith
 | | Count |
 |---|---|
 | Source documents in `papers-pdf/` | 48 |
-| Cards in `papers/` | 49 |
+| Cards in `papers/` | 49 (47 team, 2 external) |
 | Cards still waiting for a handle or DOI | 0 |
 | People in `people.md` | 16 (3 contacts confirmed, 13 pending) |
 | Links between cards | 26 |

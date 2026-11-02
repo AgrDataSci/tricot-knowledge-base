@@ -7,6 +7,7 @@ journal: Alliance of Bioversity International and CIAT, UX Research and Inclusiv
 journal_short: Presentation
 article: review slides
 type: presentation
+source: team
 doi: https://hdl.handle.net/10568/169094
 open_copy: https://hdl.handle.net/10568/169094
 license: see repository record

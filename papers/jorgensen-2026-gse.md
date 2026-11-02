@@ -7,6 +7,7 @@ journal: Grassland Science in Europe, Vol. 31 (Challenges and innovations for gr
 journal_short: Grassl Sci Eur
 article: 31, 516-518
 type: conference paper
+source: team
 doi: https://hdl.handle.net/11250/5574875
 open_copy: https://hdl.handle.net/11250/5574875
 license: see proceedings

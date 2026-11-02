@@ -7,6 +7,7 @@ journal: Computational Statistics
 journal_short: Comput Stat
 article: online first 2020 (volume and pages not in the PDF)
 type: software paper
+source: team
 doi: https://doi.org/10.1007/s00180-020-00959-3
 open_copy: https://doi.org/10.1007/s00180-020-00959-3
 license: CC BY 4.0
