@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, plus external literature curated by the core team, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `f986b6475a8c`, updated 2026-11-02, 49 cards.<!-- version:end -->
+<!-- version:start -->Installed version `a21507e3e43c`, updated 2026-11-02, 49 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -56,7 +56,7 @@ If the user shares the repository link and you are reading the files from the we
 Every card has a `source` field, also shown in the index.
 
 - **team** cards have at least one author listed in `people.md`. They are the tricot team's own work.
-- **external** cards have no author in `people.md`. The core team listed in `people.md` selected them to bring in context from outside the team, such as participatory plant breeding, on-farm experimentation, citizen science, consumer research and data principles. They are part of the knowledge base and follow the same card rules.
+- **external** cards have no author in `people.md`. The core team, meaning everyone listed in `people.md`, selected them to bring in context from outside the team, such as participatory plant breeding, on-farm experimentation, citizen science, consumer research and data principles. They are part of the knowledge base and follow the same card rules.
 
 External cards exist to reduce team bias. Use them as follows.
 

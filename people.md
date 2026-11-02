@@ -65,6 +65,6 @@ When asked to identify or recommend experts, filter candidates to entries with `
 - `Profile` takes one public link that identifies the person, preferably their ORCID record (https://orcid.org/...) or an institutional bio page. Leave it empty until the link is checked.
 - `Contact` takes `yes` plus one institutional channel (for example "yes, j.doe@cgiar.org" or "yes, institutional profile page"), or `no`. Never enter a personal email or phone number.
 - Put a card in `Led` when the person was its first author, senior or last author, or the researcher responsible for the work. Otherwise put it in `Also on`. When unsure who led the work, check with the team before adding the card to `Led`.
-- This file lists the tricot team. A card with at least one author here is a team card (`source: team`). A card with none is an external card (`source: external`), and its authors are not added here.
+- Everyone in this file, in both tables, is part of the core team, and the list can grow. A card with at least one author here is a team card (`source: team`). A card with none is an external card (`source: external`), and its authors are not added here.
 - Add a row when a new team card brings in someone who led the work, with `pending` in every consent column. When adding a card, also add its ID to the `Led` or `Also on` column of any listed person among its authors.
 - Keep entries short. This file is read whenever an answer credits people.
