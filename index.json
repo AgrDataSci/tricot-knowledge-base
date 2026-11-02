@@ -1,5 +1,5 @@
 {
- "version": "625b1dd02026",
+ "version": "9da7728f6c46",
  "updated": "2026-11-02",
  "cards": 50,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
@@ -708,10 +708,10 @@
    "source": "external",
    "peer_reviewed": "no",
    "curated_card": "no",
-   "gist": "Independent evaluation of 1000FARMS (195-person survey, 21 interviews, four countries) finding tricot widely used for variety decisions, with 1000FARMS's contribution commingled in Ghana and Uganda and weak in Ethiopia and Haiti",
+   "gist": "Independent evaluation of 1000FARMS (195-person survey, 21 interviews, four countries) finding tricot used for variety decisions, including in Ethiopia and Haiti, where national partners ran it with little direct 1000FARMS support",
    "keywords": "1000FARMS, outcome study, contribution analysis, theory of change, scaling, institutionalization, variety release, ClimMob use, breeding program leadership, funding dependency, collaborative arrangements, seed systems",
    "path": "papers/howland-2025-report.md",
-   "hash": "437793dbb339",
+   "hash": "ff4b1f188e23",
    "relations": [
     {
      "relation": "discusses",
@@ -739,7 +739,7 @@
      "note": "cited as Ulzen et al. 2024 for the accuracy of farmer data"
     }
    ],
-   "not_established": "that 1000FARMS caused the uptake of tricot, since the contribution is weak or shared with other programmes in every case country; that tricot is cost-effective or yields better data than other on-farm methods, which the study reports as perceptions and partly contests; that protocols in official guidelines are confirmed, since the 42% figure is self-reported and the interviews give a less clear picture; any effect on variety adoption, yields or farmer income; that the findings hold for countries outside the four cases"
+   "not_established": "that 1000FARMS alone caused the uptake of tricot, since it acted with other programmes in Ghana and Uganda and gave little direct support in Ethiopia and Haiti; that tricot is cost-effective or yields better data than other on-farm methods, which the study reports as perceptions and partly contests; that protocols in official guidelines are confirmed, since the 42% figure is self-reported and the interviews give a less clear picture; any effect on variety adoption, yields or farmer income; that the findings hold for countries outside the four cases"
   },
   {
    "id": "kang-2025-expagric",
