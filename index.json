@@ -1,5 +1,5 @@
 {
- "version": "28ed19ec0c8e",
+ "version": "6f7d442f9cad",
  "updated": "2026-11-02",
  "cards": 49,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
@@ -9,7 +9,7 @@
  },
  "people": {
   "path": "people.md",
-  "hash": "76a8fc48e470"
+  "hash": "615d4c64497c"
  },
  "papers": [
   {
@@ -784,7 +784,7 @@
    "gist": "A single-season tricot trial with 372 Tanzanian farmers finds yield, market preference and disease resistance drive bean choice, with zone-, gender- and youth-specific trait priorities",
    "keywords": "common bean, Tanzania, tricot, trait preferences, gender, youth, anthracnose, market preference, intercropping, cooking with banana, red mottled, sugar bean, TARI, PVS",
    "path": "papers/kadege-2026-fsufs.md",
-   "hash": "ab508b65252f",
+   "hash": "64ed5e1734f8",
    "relations": [
     {
      "relation": "isDiscussedBy",
