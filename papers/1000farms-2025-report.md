@@ -7,6 +7,7 @@ journal: Meeting report
 journal_short: Report
 article: meeting report
 type: report
+source: team
 doi: https://hdl.handle.net/10568/175957
 open_copy: https://hdl.handle.net/10568/175957
 license: see CGSpace record

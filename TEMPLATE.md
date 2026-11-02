@@ -7,6 +7,7 @@ journal: Full journal name
 journal_short: Short journal name            # used in the index, e.g. PNAS, J Exp Bot
 article: volume(issue), pages or article number
 type: research article | review | perspective | software paper | preprint | book | guide | working paper | report | policy brief | presentation
+source: team | external                     # team if at least one author is listed in people.md; external if none is (external work curated by the core team)
 doi: https://doi.org/...                     # or the repository handle (https://hdl.handle.net/...) for grey literature
 open_copy: stable open full-text URL (PMC, institutional repository, or our GitHub markdown); may be empty
 license: CC BY 4.0                            # as stated in the PDF; otherwise "see CGSpace record"

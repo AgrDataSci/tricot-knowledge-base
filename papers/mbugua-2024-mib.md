@@ -7,6 +7,7 @@ journal: CGIAR Market Intelligence Brief 15
 journal_short: Market Intell Brief
 article: Market Intelligence Brief 15
 type: policy brief
+source: team
 doi: https://hdl.handle.net/10883/34683
 open_copy: https://hdl.handle.net/10883/34683
 license: see repository record

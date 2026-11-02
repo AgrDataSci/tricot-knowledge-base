@@ -7,6 +7,7 @@ journal: Journal of Agriculture and Food Research
 journal_short: J Agric Food Res
 article: 23, 102135
 type: research article
+source: team
 doi: https://doi.org/10.1016/j.jafr.2025.102135
 open_copy: https://doi.org/10.1016/j.jafr.2025.102135
 license: CC BY-NC-ND

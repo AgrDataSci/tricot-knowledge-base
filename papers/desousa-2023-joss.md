@@ -7,6 +7,7 @@ journal: Journal of Open Source Software
 journal_short: JOSS
 article: 8(85), 4405
 type: software paper
+source: team
 doi: https://doi.org/10.21105/joss.04405
 open_copy: https://doi.org/10.21105/joss.04405
 license: CC BY 4.0

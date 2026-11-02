@@ -7,6 +7,7 @@ journal: Communications Biology
 journal_short: Commun Biol
 article: 4, 944
 type: research article
+source: team
 doi: https://doi.org/10.1038/s42003-021-02463-w
 open_copy: https://doi.org/10.1038/s42003-021-02463-w
 license: CC BY 4.0

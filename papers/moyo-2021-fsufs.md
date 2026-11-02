@@ -7,6 +7,7 @@ journal: Frontiers in Sustainable Food Systems
 journal_short: Front Sustain Food Syst
 article: 5, 620363
 type: research article
+source: team
 doi: https://doi.org/10.3389/fsufs.2021.620363
 open_copy: https://doi.org/10.3389/fsufs.2021.620363
 license: CC BY 4.0

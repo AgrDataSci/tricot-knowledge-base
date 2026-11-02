@@ -7,6 +7,7 @@ journal: Agronomy for Sustainable Development
 journal_short: Agron Sustain Dev
 article: 37, 32
 type: research article
+source: team
 doi: https://doi.org/10.1007/s13593-017-0441-y
 open_copy: https://doi.org/10.1007/s13593-017-0441-y
 license: CC BY 4.0
