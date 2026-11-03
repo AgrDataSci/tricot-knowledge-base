@@ -36,12 +36,12 @@ This is the literature layer of [AI-ready documentation for tricot](https://gith
 
 | | Count |
 |---|---|
-| Source documents in `papers-pdf/` | 52 |
-| Cards in `papers/` | 53 (50 team, 3 external) |
+| Source documents in `papers-pdf/` | 53 |
+| Cards in `papers/` | 54 (51 team, 3 external) |
 | Cards still waiting for a handle or DOI | 0 |
-| Peer-reviewed cards | 36 (17 not peer-reviewed) |
-| Cards checked by a person (`curated_card: yes`) | 0 of 53 |
-| People in `people.md` | 16 (3 contacts confirmed, 13 pending) |
+| Peer-reviewed cards | 36 (18 not peer-reviewed) |
+| Cards checked by a person (`curated_card: yes`) | 0 of 54 |
+| People in `people.md` | 17 (4 contacts confirmed, 13 pending) |
 | Links between cards | 36 |
 
 Every source document has a long-format card. `python scripts/build_index.py` lists the cards that still need a handle, counts peer-reviewed and person-checked cards, and `index.json` records the current version.
@@ -54,7 +54,7 @@ Every source document has a long-format card. `python scripts/build_index.py` li
 | Origins, guides and the handbook | vanetten-2011-idsbull, vanetten-2019-expagric, steinke-2016-guide, vanetten-2020-guide, vanetten-2020-rtbwp, desousa-2024-asd, chase-2026-book |
 | Data quality, motivation and impact | steinke-2017-asd, beza-2017-plosone, gotor-2021-fsufs, occelli-2024-agecon, nabateregga-2025-eja, ulzen-2025-agrirxiv |
 | Climate, genomics and analysis methods | vanetten-2019-pnas, desousa-2021-commsbio, brown-2022-cropsci, dorado-2026-tag, vanetten-2023-pnas, cairns-2026-jxb |
-| Software and data standards (R packages, ClimMob, BrAPI) | turner-2020-compstat, desousa-2023-softwarex, desousa-2020-joss, desousa-2023-joss, quiros-2024-compag, selby-2025-database |
+| Software and data standards (R packages, ClimMob, Sikia, BrAPI) | turner-2020-compstat, desousa-2023-softwarex, desousa-2020-joss, desousa-2023-joss, quiros-2024-compag, goormachtigh-2026-flyer, selby-2025-database |
 | Crop applications | nanyonjo-2024-cropsci (cassava), daudi-2026-fes (groundnut), kadege-2026-fsufs (common bean), kang-2025-expagric and sharma-2025-jafr (potato), voss-2025-ppp (amaranth), mulatu-2024-slides and jorgensen-2026-gse (forages, Ethiopia and Norway) |
 | Consumer and product concept testing | moyo-2021-fsufs, alamu-2023-jsfa, olaosebikan-2023-jsfa, donovan-2025-expagric, rutsaert-2023-mib, mbugua-2024-mib |
 | Gender, inclusion and farmer feedback | teeken-2021-fsufs, voss-2023-fsoc, teeken-2023-slides, kadege-2026-fsufs, schumann-2024-ux, muller-2025-ux, steinke-2019-plosone |
@@ -132,7 +132,7 @@ Five rules make the cards trustworthy.
 - **Numbers carry their primary source.** When a paper reports a figure from another study, the card names that study, so users cite the original.
 - **R packages point to CRAN.** PlackettLuce, gosset, ClimMobTools, climatrends and chirps change over time, so cards record the CRAN version and date checked, and the skill tells the assistant to check the current version before giving code.
 - **Peer review is recorded.** Every card has `peer_reviewed: yes` or `no`. Papers in scientific journals are `yes`, because the core team screens every paper before it enters the repository (no predatory journals, trustworthy authors). Preprints, books, reports, guides, briefs, working papers, conference papers and presentations are `no`, and the skill gives them lower weight. A second field, `curated_card`, starts as `no` and turns `yes` once a person has checked the card against its source.
-- **Grey literature is labelled.** Guides, reports, briefs and presentations have their type in the index, and items published on CGSpace have an empty `doi` until their handle is added.
+- **Grey literature is labelled.** Guides, reports, briefs, presentations and flyers have their type in the index, and items published on CGSpace have an empty `doi` until their handle is added. Team flyers have no handle and link to their source in `open_copy`.
 
 PDF file names follow the first author and year of each source, for example `angudubo-et-al-2026a.pdf`, and card IDs follow the same pattern, for example `angudubo-2026-guide`. Card and PDF file names are always all lowercase. `scripts/build_index.py` stops with an error if it finds an uppercase letter in a card or PDF name, whether an agent or a person added the file.
 

@@ -29,6 +29,7 @@ Licences were read from each PDF on 2026-10-30.
 | dorado-betancourt-et-al-2026.pdf | [dorado-2026-tag](../papers/dorado-2026-tag.md) | https://doi.org/10.1007/s00122-026-05319-1 | CC BY 4.0 |
 | fadda-et-al-2020.pdf | [fadda-2020-fps](../papers/fadda-2020-fps.md) | https://doi.org/10.3389/fpls.2020.559515 | CC BY 4.0 |
 | gesesse-et-al-2023.pdf | [gesesse-2023-pnas](../papers/gesesse-2023-pnas.md) | https://doi.org/10.1073/pnas.2205774119 | CC BY 4.0 |
+| goormachtigh-et-al-2026.pdf | [goormachtigh-2026-flyer](../papers/goormachtigh-2026-flyer.md) | https://alliancebioversityciat.org/stories/sikia-ai-listen-farmers (no handle, team flyer) | none stated (team flyer) |
 | gotor-et-al-2021.pdf | [gotor-2021-fsufs](../papers/gotor-2021-fsufs.md) | https://doi.org/10.3389/fsufs.2021.726725 | CC BY 4.0 |
 | howland-et-al-2025.pdf | [howland-2025-report](../papers/howland-2025-report.md) | https://hdl.handle.net/10568/181675 | one-page pointer, not the report; the full report is on CGSpace |
 | jorgensen-et-al-2026.pdf | [jorgensen-2026-gse](../papers/jorgensen-2026-gse.md) | https://hdl.handle.net/11250/5574875 | none stated (conference proceedings) |

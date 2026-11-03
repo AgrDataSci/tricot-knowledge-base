@@ -222,7 +222,7 @@ new = re.sub(re.escape(VSTART) + r".*?" + re.escape(VEND), VSTART + stamp + VEND
 rel_lines = [f"- {a} **{rel}** {b}" + (f" ({note})" if note else "") for a, rel, b, note in links]
 new = re.sub(re.escape(RSTART) + r".*?" + re.escape(REND), RSTART + "\n" + "\n".join(rel_lines) + "\n" + REND, new, flags=re.S)
 skill.write_text(new, encoding="utf-8")
-no_doi = [m["id"] for m, _ in metas if not m["doi"]]
+no_doi = [m["id"] for m, _ in metas if not m["doi"] and m["type"] != "flyer"]  # flyers have no handle
 team_names = people_surnames()
 unmatched = [m["id"] for m, _ in metas if m["source"] == "team"
              and not any(n in m["authors"].lower() for n in team_names)]
