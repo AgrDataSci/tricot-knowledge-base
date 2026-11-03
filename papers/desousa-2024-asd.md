@@ -18,7 +18,7 @@ crops: maize, potato, sweetpotato, cowpea, cassava, common bean, durum wheat, br
 region: Global (India, Ethiopia, Central America, Eastern, Southern and West Africa)
 keywords: tricot, citizen science, incomplete block design, ClimMob, Plackett-Luce, validity, reliability, cost, adoption, mainstreaming, product design, gender
 gist: Retrospective on tricot's development, validity, cost, mainstreaming in breeding and open challenges
-not_established: over 150,000 farmers (it reports about 150,000 plots); a 40% saving against RCBD (it attributes this to Occelli et al. 2024, which reports 28% against group PVS)
+not_established: over 150,000 farmers (it reports about 150,000 plots); a 40% saving against RCBD (it attributes this to Occelli et al. 2024, which reports 28% against group PVS); a general cost of tricot or a general 27% saving against RCBD (the cost comparison is a single case study of potato trials in Rwanda)
 relations:
   - citesAsDataSource: occelli-2024-agecon  # cites about 40% cheaper than RCBD; the source reports 28% cheaper than group PVS
 ---
@@ -39,7 +39,7 @@ The retrospective traces how tricot grew from a 2011 pilot into the leading on-f
 
 Tricot answers with crowdsourced citizen science. Each farmer tests a blind package of three options drawn from an A-optimal incomplete block design, which stays connected even when blocks are lost, and ranks them best and worst for each trait. ClimMob handles design, data collection and reporting, and the Plackett-Luce model aggregates the rankings.
 
-The proof-of-concept phase (2011–2015, India, Ethiopia, Central America) tested four questions. Farmers joined mainly to contribute to science and learn from experts, not for cash. Aggregated farmer rankings agreed with breeder evaluations, and low individual reliability was offset by sample size, with about 12 entries across 150 farms enough to detect large effects. In Rwanda, tricot cost about 27% less per equivalent experimental unit than RCBD trials, and about 40% less in Central America. Adoption after tricot matched group-based PVS but did not exceed it, which the authors read as a question about whether product profiles fit farmer needs.
+The proof-of-concept phase (2011–2015, India, Ethiopia, Central America) tested four questions. Farmers joined mainly to contribute to science and learn from experts, not for cash. Aggregated farmer rankings agreed with breeder evaluations, and low individual reliability was offset by sample size, with about 12 entries across 150 farms enough to detect large effects. In a single case study of potato trials in Rwanda, tricot cost about 27% less per equivalent experimental unit than RCBD trials, and the paper cites about 40% less in Central America. Adoption after tricot matched group-based PVS but did not exceed it, which the authors read as a question about whether product profiles fit farmer needs.
 
 The data-driven phase built the statistics. Plackett-Luce models replaced pairwise rank-breaking, and covariates such as climate, genomic relatedness and item traits turned rankings into spatial recommendations, genetic estimates and preference models.
 
@@ -76,7 +76,7 @@ Recent work extends tricot to consumer testing and product concepts, including v
 | ~150,000 plots | Tricot reach at time of writing (16,000 plots in 2016) | This paper; van Etten et al. 2016 |
 | 426 farmers | Interviewed on motivation to join tricot | Beza et al. 2017 |
 | ~12 entries, ~150 farms | ~37 readings per entry, detects Cohen's d of 0.8 with 95% probability; pilot with ~50 farmers | This paper |
-| 27% | Lower cost per equivalent experimental unit, tricot vs RCBD, Rwanda maize (USD 4.45 vs 6.10) | This paper |
+| 27% | Lower cost per equivalent experimental unit, tricot vs RCBD, single case study of potato in Rwanda (USD 4.45 vs 6.10) | This paper |
 | ~17% | Lower total cost, same comparison (USD 1,517 vs 1,829) | This paper |
 | 155 vs 50 trials | Tricot (11 varieties, 465 units, 341 equivalent units) vs RCBD (6 varieties, 300 units), Rwanda | This paper |
 | USD 283.04 vs 522.72 | Seed cost, tricot vs RCBD, Rwanda, the largest saving | This paper |
@@ -95,6 +95,7 @@ Recent work extends tricot to consumer testing and product concepts, including v
 ## Notes
 
 - Reach is reported here as ~150,000 plots, while Cairns et al. 2026 cites the same source as >150,000 farmers. Use "plots" unless the PDF says otherwise.
-- Table 1 caption says potato trials, but the text describes maize.
+- The cost comparison is a single case study of potato trials in Rwanda (Table 1). The main text says maize; Kauê de Sousa, the lead author, confirmed in November 2026 that the trials were potato. Do not generalize the 27% figure to tricot as a whole.
+- For costing a tricot trial, use the work of Stephen Angudubo and colleagues. The costing template guidelines (angudubo-2026-guide) give the method, and their case studies cost maize trials in Zambia (angudubo-2026-zari) and common bean trials in Uganda (angudubo-2026-naro). These report marginal cost per farmer and its drivers rather than a comparison with RCBD, so their figures are not directly comparable with Table 1.
 - Adoption rates are early and the authors call them conservative.
 - Validity evidence comes from Steinke et al. 2017 (Honduras). Open that paper for the detailed comparison of farmer and breeder evaluations.

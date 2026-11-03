@@ -11,6 +11,9 @@ Licences were read from each PDF on 2026-10-30.
 | PDF | Card | DOI or handle | Licence |
 |---|---|---|---|
 | Alamu-et-al-2023.pdf | [alamu-2023-jsfa](../papers/alamu-2023-jsfa.md) | https://doi.org/10.1002/jsfa.12518 | CC BY 4.0 |
+| Angudubo-et-al-2026a.pdf | [angudubo-2026-guide](../papers/angudubo-2026-guide.md) | https://hdl.handle.net/10568/181933 | none stated (grey literature) |
+| Angudubo-et-al-2026b.pdf | [angudubo-2026-zari](../papers/angudubo-2026-zari.md) | https://hdl.handle.net/10568/182411 | none stated (grey literature) |
+| Angudubo-et-al-2026c.pdf | [angudubo-2026-naro](../papers/angudubo-2026-naro.md) | https://hdl.handle.net/10568/183339 | none stated (grey literature) |
 | Beza-et-al-2017.pdf | [beza-2017-plosone](../papers/beza-2017-plosone.md) | https://doi.org/10.1371/journal.pone.0175700 | CC BY 4.0 |
 | Brown-et-al-2022.pdf | [brown-2022-cropsci](../papers/brown-2022-cropsci.md) | https://doi.org/10.1002/csc2.20817 | CC BY 4.0 |
 | Cairns-et-al-2026.pdf | [cairns-2026-jxb](../papers/cairns-2026-jxb.md) | https://doi.org/10.1093/jxb/erag431 | CC BY 4.0 |

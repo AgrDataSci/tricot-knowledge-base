@@ -1,7 +1,7 @@
 ---
 name: people
 description: Who is behind the tricot knowledge base papers, how to name them, and whether they agreed to be suggested as contacts. Read when an answer credits people or suggests who to talk to.
-updated: 2026-10-30
+updated: 2026-11-03
 ---
 
 # People behind the papers
@@ -46,7 +46,7 @@ When asked to identify or recommend experts, filter candidates to entries with `
 
 | Person | Preferred | Affiliation (latest paper) | Topics | Led | Also on | Profile | Contact | Confirmed |
 |---|---|---|---|---|---|---|---|---|
-| Stephen Angudubo | pending | Bioversity International | cassava tricot, trial costing | nanyonjo-2024-cropsci (joint first author) | desousa-2024-asd, chase-2026-book | | pending | yes |
+| Stephen Angudubo | pending | Bioversity International | cassava tricot, trial costing, costing template, cost drivers | nanyonjo-2024-cropsci (joint first author), angudubo-2026-guide, angudubo-2026-zari, angudubo-2026-naro | desousa-2024-asd, chase-2026-book | | pending | yes |
 | Marie-Angélique Laporte | pending | Bioversity International | ontologies, data standards, ClimMob, BrAPI | quiros-2024-compag, selby-2025-database | vanetten-2020-rtbwp, voss-2025-ppp, chase-2026-book | https://orcid.org/0000-0002-8461-9745 | pending | yes |
 | Jill Cairns | Jill | CIMMYT | inclusive host-farmer sampling, farm typologies, gender, maize breeding, sorghum breeding | cairns-2026-jxb | vanetten-2023-pnas, desousa-2024-asd, chase-2026-book, voss-2023-fsoc | https://orcid.org/0000-0002-2735-3485 | yes, j.cairns@cgiar.org | yes |
 | Happy Daudi | Happy | CIMMYT | groundnut breeding, GxE, tricot champion in East Africa, Tanzania, on-farm and on-station correlation genetic gain | daudi-2026-fes | desousa-2024-asd, cairns-2026-jxb, dorado-2026-tag | http://orcid.org//0000-0001-5107-6564 | yes, h.daudi@cgiar.org | yes |
