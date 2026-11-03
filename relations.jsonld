@@ -408,6 +408,48 @@
    "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/voss-2025-ppp.md"
   },
   {
+   "@id": "https://hdl.handle.net/10568/181933",
+   "dcterms:identifier": "angudubo-2026-guide",
+   "dcterms:title": "Tricot costing template guidelines",
+   "dcterms:date": "2026",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/angudubo-2026-guide.md",
+   "cito:usesMethodIn": [
+    {
+     "@id": "https://hdl.handle.net/10568/109942"
+    }
+   ]
+  },
+  {
+   "@id": "https://hdl.handle.net/10568/183339",
+   "dcterms:identifier": "angudubo-2026-naro",
+   "dcterms:title": "Insights into the costing of on-farm testing. A case study of common bean tricot trials by the National Agricultural Research Organization (NARO)",
+   "dcterms:date": "2026",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/angudubo-2026-naro.md",
+   "cito:usesMethodIn": [
+    {
+     "@id": "https://hdl.handle.net/10568/181933"
+    },
+    {
+     "@id": "https://hdl.handle.net/10568/109942"
+    }
+   ]
+  },
+  {
+   "@id": "https://hdl.handle.net/10568/182411",
+   "dcterms:identifier": "angudubo-2026-zari",
+   "dcterms:title": "Insights into the costing of on-farm testing. A case study of maize tricot trials by Zambia Agricultural and Research Institute (ZARI)",
+   "dcterms:date": "2026",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/angudubo-2026-zari.md",
+   "cito:usesMethodIn": [
+    {
+     "@id": "https://hdl.handle.net/10568/181933"
+    },
+    {
+     "@id": "https://hdl.handle.net/10568/109942"
+    }
+   ]
+  },
+  {
    "@id": "https://doi.org/10.1093/jxb/erag431",
    "dcterms:identifier": "cairns-2026-jxb",
    "dcterms:title": "Advancing inclusive on-farm testing approaches to facilitate maize breakthrough product development in sub-Saharan Africa",

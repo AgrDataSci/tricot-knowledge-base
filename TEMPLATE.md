@@ -1,5 +1,5 @@
 ---
-id: firstauthor-year-journalabbrev          # must match the file name, e.g. vanetten-2019-pnas
+id: firstauthor-year-journalabbrev          # must match the file name, all lowercase, e.g. vanetten-2019-pnas
 title: Full article title
 authors: Surname AB, Surname C, ...          # first author first; "and N co-authors" is fine for long lists
 year: 2024

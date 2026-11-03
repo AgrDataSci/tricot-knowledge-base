@@ -1,15 +1,15 @@
 {
- "version": "9da7728f6c46",
- "updated": "2026-11-02",
- "cards": 50,
+ "version": "66de531b063d",
+ "updated": "2026-11-03",
+ "cards": 53,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
   "path": "SKILL.md",
-  "hash": "b7bbab957246"
+  "hash": "1890d28deb64"
  },
  "people": {
   "path": "people.md",
-  "hash": "b24e377fe573"
+  "hash": "678d180f4f4b"
  },
  "papers": [
   {
@@ -22,7 +22,7 @@
    "gist": "The first proposal of what became tricot, arguing that farmers could evaluate small blind seed packages in triads and report by mobile phone to scale up participatory crop improvement",
    "keywords": "tricot origin, crowdsourcing, citizen science, seed systems, farmer varieties, triadic comparisons, preference learning, mobile phones, crop diversity, food security, open source, genetic commons",
    "path": "papers/vanetten-2011-idsbull.md",
-   "hash": "6fbf7f7c4dbf",
+   "hash": "a6b5a44a8539",
    "relations": [
     {
      "relation": "isExtendedBy",
@@ -272,6 +272,21 @@
    "path": "papers/vanetten-2020-guide.md",
    "hash": "15c048810a22",
    "relations": [
+    {
+     "relation": "providesMethodFor",
+     "card": "angudubo-2026-guide",
+     "note": "costs the ten tricot steps described in the guide"
+    },
+    {
+     "relation": "providesMethodFor",
+     "card": "angudubo-2026-naro",
+     "note": "assumes the ten tricot steps"
+    },
+    {
+     "relation": "providesMethodFor",
+     "card": "angudubo-2026-zari",
+     "note": "assumes the ten tricot steps"
+    },
     {
      "relation": "isUpdatedBy",
      "card": "chase-2026-book",
@@ -536,7 +551,7 @@
    "gist": "Retrospective on tricot's development, validity, cost, mainstreaming in breeding and open challenges",
    "keywords": "tricot, citizen science, incomplete block design, ClimMob, Plackett-Luce, validity, reliability, cost, adoption, mainstreaming, product design, gender",
    "path": "papers/desousa-2024-asd.md",
-   "hash": "276a776aac59",
+   "hash": "9e2981f72e05",
    "relations": [
     {
      "relation": "citesAsDataSource",
@@ -554,7 +569,7 @@
      "note": "cites over 150,000 farmers; the source reports about 150,000 plots"
     }
    ],
-   "not_established": "over 150,000 farmers (it reports about 150,000 plots); a 40% saving against RCBD (it attributes this to Occelli et al. 2024, which reports 28% against group PVS)"
+   "not_established": "over 150,000 farmers (it reports about 150,000 plots); a 40% saving against RCBD (it attributes this to Occelli et al. 2024, which reports 28% against group PVS); a general cost of tricot or a general 27% saving against RCBD (the cost comparison is a single case study of potato trials in Rwanda)"
   },
   {
    "id": "mbugua-2024-mib",
@@ -711,7 +726,7 @@
    "gist": "Independent evaluation of 1000FARMS (195-person survey, 21 interviews, four countries) finding tricot used for variety decisions, including in Ethiopia and Haiti, where national partners ran it with little direct 1000FARMS support",
    "keywords": "1000FARMS, outcome study, contribution analysis, theory of change, scaling, institutionalization, variety release, ClimMob use, breeding program leadership, funding dependency, collaborative arrangements, seed systems",
    "path": "papers/howland-2025-report.md",
-   "hash": "ff4b1f188e23",
+   "hash": "3ea0e42ad274",
    "relations": [
     {
      "relation": "discusses",
@@ -866,6 +881,86 @@
    "path": "papers/voss-2025-ppp.md",
    "hash": "da4239d81132",
    "relations": []
+  },
+  {
+   "id": "angudubo-2026-guide",
+   "year": "2026",
+   "type": "guide",
+   "source": "team",
+   "peer_reviewed": "no",
+   "curated_card": "no",
+   "gist": "Step-by-step guide to the 1000FARMS Excel template that costs a tricot trial by activity, from seed multiplication to labour, travel and communication, with sensitivity and scenario analysis",
+   "keywords": "tricot costing, cost per farmer, trial budget, costing template, activity-based costing, cost drivers, seed multiplication cost, labour cost, per diem, transport cost, sensitivity analysis, scenario analysis",
+   "path": "papers/angudubo-2026-guide.md",
+   "hash": "1bcc08460db7",
+   "relations": [
+    {
+     "relation": "usesMethodIn",
+     "card": "vanetten-2020-guide",
+     "note": "costs the ten tricot steps described in the guide"
+    },
+    {
+     "relation": "providesMethodFor",
+     "card": "angudubo-2026-naro",
+     "note": "applies the costing template and guidelines"
+    },
+    {
+     "relation": "providesMethodFor",
+     "card": "angudubo-2026-zari",
+     "note": "applies the costing template and guidelines"
+    }
+   ],
+   "not_established": "any actual cost of a tricot trial (the numbers are worked examples, not results); that tricot is cheaper than other designs (the template costs one design and does not compare); that the UN mileage rates and ITU baskets match local prices in every country"
+  },
+  {
+   "id": "angudubo-2026-naro",
+   "year": "2026",
+   "type": "report",
+   "source": "team",
+   "peer_reviewed": "no",
+   "curated_card": "no",
+   "gist": "A 120-farmer common bean tricot trial in Uganda cost USD 92 per farmer, driven by researcher labour and transport; better delivery design could cut it to USD 47",
+   "keywords": "tricot costing, cost per farmer, common bean, Uganda, NARO, NaCRRI, cost drivers, researcher travel, transport, field agents, hub clustering, scenario analysis",
+   "path": "papers/angudubo-2026-naro.md",
+   "hash": "047921f37cab",
+   "relations": [
+    {
+     "relation": "usesMethodIn",
+     "card": "angudubo-2026-guide",
+     "note": "applies the costing template and guidelines"
+    },
+    {
+     "relation": "usesMethodIn",
+     "card": "vanetten-2020-guide",
+     "note": "assumes the ten tricot steps"
+    }
+   ],
+   "not_established": "the full cost of the trial (fixed costs such as trial preparation and central training are excluded); that the lower-cost scenarios keep data quality, which is assumed, not measured; that tricot is cheaper than other designs (no comparison was made); costs for other crops or countries"
+  },
+  {
+   "id": "angudubo-2026-zari",
+   "year": "2026",
+   "type": "report",
+   "source": "team",
+   "peer_reviewed": "no",
+   "curated_card": "no",
+   "gist": "A 110-farmer maize tricot trial in Zambia cost USD 142 per farmer, driven by researcher travel and participant support; better delivery design could cut it to USD 103",
+   "keywords": "tricot costing, cost per farmer, maize, Zambia, ZARI, cost drivers, per diem, participant support, field agents, scenario analysis, delivery model, cluster hubs",
+   "path": "papers/angudubo-2026-zari.md",
+   "hash": "0e57908f0943",
+   "relations": [
+    {
+     "relation": "usesMethodIn",
+     "card": "angudubo-2026-guide",
+     "note": "applies the costing template and guidelines"
+    },
+    {
+     "relation": "usesMethodIn",
+     "card": "vanetten-2020-guide",
+     "note": "assumes the ten tricot steps"
+    }
+   ],
+   "not_established": "the full cost of the trial (fixed costs such as trial preparation and central training are excluded); that the lower-cost scenarios keep data quality or participation, which is assumed, not measured; that tricot is cheaper than other designs (no comparison was made); costs for other crops or countries"
   },
   {
    "id": "cairns-2026-jxb",

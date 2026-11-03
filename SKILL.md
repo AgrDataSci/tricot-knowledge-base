@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, plus external literature curated by the core team, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `9da7728f6c46`, updated 2026-11-02, 50 cards.<!-- version:end -->
+<!-- version:start -->Installed version `66de531b063d`, updated 2026-11-03, 53 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -46,7 +46,7 @@ If the user shares the repository link and you are reading the files from the we
 4. Cite the primary source from the key-numbers table, not the paper that reports it secondhand.
 5. Say where the evidence is thin or where papers disagree. Use the limitations and notes sections, which record known discrepancies between papers.
 6. Weigh peer review. Cards with `peer_reviewed: yes` carry more weight than cards with `peer_reviewed: no`, so say which kind of source supports a claim (see "Peer review and card checks").
-7. For practical "how to" questions on running a trial, start with chase-2026-book, the current handbook, then the guides and the papers it builds on.
+7. For practical "how to" questions on running a trial, start with chase-2026-book, the current handbook, then the guides and the papers it builds on. For questions on what a trial costs or how to budget it, start with the costing template guidelines (angudubo-2026-guide) and the case studies by Stephen Angudubo and colleagues (angudubo-2026-zari, angudubo-2026-naro). Treat the Rwanda cost comparison in desousa-2024-asd as a single potato case study, not a general figure.
 8. When the user wants to go further, point to the dataset or code listed in the card. For detail beyond the card, fetch the `open_copy`, then the DOI.
 9. Never invent a paper, number or result. If the index has nothing relevant, say so.
 10. Follow the links between papers (see "How papers connect"). When you open a card, check its `relations` and the list below, and open linked cards that bear on the question.
@@ -177,6 +177,11 @@ Lines of work worth knowing:
 - muller-2025-ux **extends** schumann-2024-ux (field validation of the feedback prototypes)
 - selby-2025-database **discusses** quiros-2024-compag (ClimMob as a BrAPI-compatible tool)
 - ulzen-2025-agrirxiv **agreesWith** nabateregga-2025-eja (farmer volumetric yield measurement is accurate)
+- angudubo-2026-guide **usesMethodIn** vanetten-2020-guide (costs the ten tricot steps described in the guide)
+- angudubo-2026-naro **usesMethodIn** angudubo-2026-guide (applies the costing template and guidelines)
+- angudubo-2026-naro **usesMethodIn** vanetten-2020-guide (assumes the ten tricot steps)
+- angudubo-2026-zari **usesMethodIn** angudubo-2026-guide (applies the costing template and guidelines)
+- angudubo-2026-zari **usesMethodIn** vanetten-2020-guide (assumes the ten tricot steps)
 - cairns-2026-jxb **citesAsDataSource** desousa-2024-asd (cites over 150,000 farmers; the source reports about 150,000 plots)
 - chase-2026-book **updates** vanetten-2020-guide (several chapters reuse the 2020 guide, updated and extended)
 - chase-2026-book **updates** steinke-2016-guide
@@ -237,6 +242,9 @@ Lines of work worth knowing:
 | [sharma-2025-jafr](papers/sharma-2025-jafr.md) | Sharma et al. 2025, *J Agric Food Res* | research article | yes | team | Tricot with 295 potato farmers in Plateau State, Nigeria, ranks two CIP clones above the check Marabel and shows market-oriented and subsistence farmers value different traits | potato, tricot, Nigeria, CIP clones, Marabel | see card |
 | [ulzen-2025-agrirxiv](papers/ulzen-2025-agrirxiv.md) | Ulzen et al. 2025, *agriRxiv* | preprint | no | team | With 40 Ghanaian farmers, measuring harvest with a tin of known volume was the most accurate and robust method, while weighing with scales was error-prone even after training | farmer-generated yield, harvest measurement, volumetric measurement, tin can, weighing scale | see card |
 | [voss-2025-ppp](papers/voss-2025-ppp.md) | Voss et al. 2025, *Plants People Planet* | research article | yes | team | Tricot trials of 14 amaranth varieties with 2,063 farmers in Benin, Mali and Tanzania identify gender- and business-based farmer segments with distinct variety preferences | opportunity crops, NUS, amaranth, tricot, farmer segmentation | see card |
+| [angudubo-2026-guide](papers/angudubo-2026-guide.md) | Angudubo et al. 2026, *Guide* | guide | no | team | Step-by-step guide to the 1000FARMS Excel template that costs a tricot trial by activity, from seed multiplication to labour, travel and communication, with sensitivity and scenario analysis | tricot costing, cost per farmer, trial budget, costing template, activity-based costing | see card |
+| [angudubo-2026-naro](papers/angudubo-2026-naro.md) | Angudubo et al. 2026, *Report* | report | no | team | A 120-farmer common bean tricot trial in Uganda cost USD 92 per farmer, driven by researcher labour and transport; better delivery design could cut it to USD 47 | tricot costing, cost per farmer, common bean, Uganda, NARO | see card |
+| [angudubo-2026-zari](papers/angudubo-2026-zari.md) | Angudubo et al. 2026, *Report* | report | no | team | A 110-farmer maize tricot trial in Zambia cost USD 142 per farmer, driven by researcher travel and participant support; better delivery design could cut it to USD 103 | tricot costing, cost per farmer, maize, Zambia, ZARI | see card |
 | [cairns-2026-jxb](papers/cairns-2026-jxb.md) | Cairns et al. 2026, *J Exp Bot* | review | yes | team | Review arguing that inclusive host-farmer sampling, sparse testing and cheaper phenotyping let maize breeding in SSA deliver breakthrough products | breakthrough products, TPE, on-farm testing, sparse testing, tricot | none |
 | [chase-2026-book](papers/chase-2026-book.md) | Chase et al. 2026, *Book* | book | no | team | The current tricot handbook, covering all ten steps from objectives, sampling, trial size and SOPs to ClimMob, statistics, farmer feedback, evaluation and African case studies | tricot handbook, ten steps, objective setting, budgeting, costing template | none |
 | [daudi-2026-fes](papers/daudi-2026-fes.md) | Daudi et al. 2026, *Food Energy Secur* | research article | yes | team | Combines 18-environment station trials with tricot on-farm trials in Tanzania to select stable groundnut genotypes and show women and men prioritize different traits | groundnut, GEI, GGE biplot, tricot, gender | see card |

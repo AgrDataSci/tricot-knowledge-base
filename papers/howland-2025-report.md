@@ -88,7 +88,7 @@ Lessons cover funding dependency, the weight of breeding directors, the need for
 
 ## Notes
 
-- `papers-pdf/Howland-et-al-2025.pdf` is a one-page pointer to the CGSpace record and the reference, not the report. The card was checked against the full 117-page report.
+- `papers-pdf/howland-et-al-2025.pdf` is a one-page pointer to the CGSpace record and the reference, not the report. The card was checked against the full 117-page report.
 - The authors are the Alliance's PISA4i evaluation team, not the tricot team, so the card is `source: external`. It is the main independent assessment of 1000FARMS and the best source in the knowledge base for how national breeders experience tricot. Follow "Fair disagreement" in `SKILL.md` where it diverges from team papers.
 - A "weak" contribution rating in Ethiopia and Haiti does not mean 1000FARMS failed there. It means the project gave little direct support, while national partners implemented tricot by themselves, which points to stand-alone national capacity and to 1000FARMS reaching beyond its scope. In the report's own terms, the Haiti spillover is shown for knowledge through webinars, not yet for implementation.
 - The citation year is 2025, but fieldwork ran from July 2025 to January 2026 and the PDF is dated February 2026.

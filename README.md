@@ -36,13 +36,13 @@ This is the literature layer of [AI-ready documentation for tricot](https://gith
 
 | | Count |
 |---|---|
-| Source documents in `papers-pdf/` | 49 |
-| Cards in `papers/` | 50 (47 team, 3 external) |
+| Source documents in `papers-pdf/` | 52 |
+| Cards in `papers/` | 53 (50 team, 3 external) |
 | Cards still waiting for a handle or DOI | 0 |
-| Peer-reviewed cards | 36 (14 not peer-reviewed) |
-| Cards checked by a person (`curated_card: yes`) | 0 of 50 |
+| Peer-reviewed cards | 36 (17 not peer-reviewed) |
+| Cards checked by a person (`curated_card: yes`) | 0 of 53 |
 | People in `people.md` | 16 (3 contacts confirmed, 13 pending) |
-| Links between cards | 31 |
+| Links between cards | 36 |
 
 Every source document has a long-format card. `python scripts/build_index.py` lists the cards that still need a handle, counts peer-reviewed and person-checked cards, and `index.json` records the current version.
 
@@ -58,6 +58,7 @@ Every source document has a long-format card. `python scripts/build_index.py` li
 | Crop applications | nanyonjo-2024-cropsci (cassava), daudi-2026-fes (groundnut), kadege-2026-fsufs (common bean), kang-2025-expagric and sharma-2025-jafr (potato), voss-2025-ppp (amaranth), mulatu-2024-slides and jorgensen-2026-gse (forages, Ethiopia and Norway) |
 | Consumer and product concept testing | moyo-2021-fsufs, alamu-2023-jsfa, olaosebikan-2023-jsfa, donovan-2025-expagric, rutsaert-2023-mib, mbugua-2024-mib |
 | Gender, inclusion and farmer feedback | teeken-2021-fsufs, voss-2023-fsoc, teeken-2023-slides, kadege-2026-fsufs, schumann-2024-ux, muller-2025-ux, steinke-2019-plosone |
+| Costing on-farm testing | angudubo-2026-guide (costing template), angudubo-2026-zari (maize, Zambia), angudubo-2026-naro (common bean, Uganda), desousa-2024-asd (potato, Rwanda), occelli-2024-agecon (bean, Central America) |
 | Mainstreaming in breeding | 1000farms-2025-report, howland-2025-report |
 
 ## Use it
@@ -133,11 +134,11 @@ Five rules make the cards trustworthy.
 - **Peer review is recorded.** Every card has `peer_reviewed: yes` or `no`. Papers in scientific journals are `yes`, because the core team screens every paper before it enters the repository (no predatory journals, trustworthy authors). Preprints, books, reports, guides, briefs, working papers, conference papers and presentations are `no`, and the skill gives them lower weight. A second field, `curated_card`, starts as `no` and turns `yes` once a person has checked the card against its source.
 - **Grey literature is labelled.** Guides, reports, briefs and presentations have their type in the index, and items published on CGSpace have an empty `doi` until their handle is added.
 
-PDF file names follow the first author and year of each source, and card IDs follow the same pattern.
+PDF file names follow the first author and year of each source, for example `angudubo-et-al-2026a.pdf`, and card IDs follow the same pattern, for example `angudubo-2026-guide`. Card and PDF file names are always all lowercase. `scripts/build_index.py` stops with an error if it finds an uppercase letter in a card or PDF name, whether an agent or a person added the file.
 
 ## Contribute a card
 
-1. Pick a PDF from `papers-pdf/` and extract its text with `pdftotext -layout file.pdf file.txt`. Drop everything after the reference list and keep figure and table captions.
+1. Pick a PDF from `papers-pdf/`, or add one named in lowercase as `firstauthor-et-al-year.pdf` (with a, b, c for several by the same first author and year) and extract its text with `pdftotext -layout file.pdf file.txt`. Drop everything after the reference list and keep figure and table captions.
 2. Copy `TEMPLATE.md` to `papers/<id>.md`, with the id as `firstauthor-year-journalabbrev`, for example `vanetten-2019-pnas`.
 3. Draft the card. Giving Claude the extracted text and the template works well. Ask for the summary in its own words.
 4. Verify every number against the PDF and fill the primary-source column. For R packages, record the current CRAN version in `software`.

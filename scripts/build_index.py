@@ -10,6 +10,7 @@ Rules checked for every card
 - required fields are present and filled
 - the doi field is present; it may be empty for items still waiting for their handle
 - the id matches the file name
+- card and PDF file names are all lowercase (papers/*.md and papers-pdf/*.pdf)
 - every relation uses a known CiTO term and points to an existing card
 - peer_reviewed and curated_card are yes or no
 - source is team or external; a team card should have at least one author listed in people.md
@@ -135,6 +136,10 @@ def short_data(value):
 
 
 cards = sorted((ROOT / "papers").glob("*.md"))
+upper = [f"papers/{p.name}" for p in cards if p.name != p.name.lower()]
+upper += [f"papers-pdf/{p.name}" for p in sorted((ROOT / "papers-pdf").glob("*")) if p.suffix.lower() == ".pdf" and p.name != p.name.lower()]
+if upper:
+    raise SystemExit("File names must be all lowercase. Rename: " + ", ".join(upper))
 metas = [(front_matter(p), p) for p in cards]
 metas.sort(key=lambda x: (x[0]["year"], x[0]["id"]))
 rows = ["| ID | Paper | Type | Peer-reviewed | Source | Gist | Keywords | Data |", "|---|---|---|---|---|---|---|---|"]
