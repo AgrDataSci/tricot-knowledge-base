@@ -6,11 +6,11 @@ year: 2024
 journal: Full journal name
 journal_short: Short journal name            # used in the index, e.g. PNAS, J Exp Bot
 article: volume(issue), pages or article number
-type: research article | review | perspective | software paper | preprint | book | guide | working paper | report | policy brief | presentation
+type: research article | review | perspective | software paper | preprint | book | guide | working paper | report | policy brief | presentation | flyer
 source: team | external                     # team if at least one author is listed in people.md; external if none is (external work curated by the core team)
 peer_reviewed: yes | no                      # yes for papers in scientific journals, which the core team screened before adding (no predatory journals, trustworthy authors); no for preprints, books, reports, guides, briefs, working papers, conference papers and presentations
 curated_card: yes | no                       # starts as no; set to yes once a person has checked the card against the source document
-doi: https://doi.org/...                     # or the repository handle (https://hdl.handle.net/...) for grey literature
+doi: https://doi.org/...                     # or the repository handle (https://hdl.handle.net/...) for grey literature; empty for team flyers, which have none
 open_copy: stable open full-text URL (PMC, institutional repository, or our GitHub markdown); may be empty
 license: CC BY 4.0                            # as stated in the PDF; otherwise "see CGSpace record"
 data: dataset DOI or repository, and where the code lives; "none" if not applicable

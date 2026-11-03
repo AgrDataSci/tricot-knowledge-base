@@ -510,6 +510,13 @@
    "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/dorado-2026-tag.md"
   },
   {
+   "@id": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/goormachtigh-2026-flyer.md",
+   "dcterms:identifier": "goormachtigh-2026-flyer",
+   "dcterms:title": "Sikia. Listening at scale",
+   "dcterms:date": "2026",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/goormachtigh-2026-flyer.md"
+  },
+  {
    "@id": "https://hdl.handle.net/11250/5574875",
    "dcterms:identifier": "jorgensen-2026-gse",
    "dcterms:title": "Improving forage production in Norway. Participatory evaluation of climate-adapted seed mixtures",

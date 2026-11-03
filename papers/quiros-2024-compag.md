@@ -69,3 +69,4 @@ The paper explains the early design choices. The team realized that every step o
 ## Notes
 
 - ClimMob is a live platform. Check climmob.net and the ClimMobTools CRAN page for current features rather than relying on the 2024 description.
+- ClimMob now has Sikia enabled for voice-based, multilingual data collection (goormachtigh-2026-flyer), which postdates this paper.

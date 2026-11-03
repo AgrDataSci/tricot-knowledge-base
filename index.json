@@ -1,15 +1,15 @@
 {
- "version": "66de531b063d",
+ "version": "f6db8ed592cd",
  "updated": "2026-11-03",
- "cards": 53,
+ "cards": 54,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
   "path": "SKILL.md",
-  "hash": "1890d28deb64"
+  "hash": "784b1d09c02f"
  },
  "people": {
   "path": "people.md",
-  "hash": "678d180f4f4b"
+  "hash": "0021baf4fbd3"
  },
  "papers": [
   {
@@ -651,7 +651,7 @@
    "gist": "Describes ClimMob, the open-source platform that runs tricot trials end to end, its design choices, architecture, Crop Ontology links and usability scores",
    "keywords": "ClimMob, software design, ODK, Crop Ontology, trial design, participant registration, data collection, reports, usability, component-based software engineering",
    "path": "papers/quiros-2024-compag.md",
-   "hash": "cd8cab0e00f4",
+   "hash": "93d343fc3c48",
    "relations": [
     {
      "relation": "isDiscussedBy",
@@ -991,7 +991,7 @@
    "gist": "The current tricot handbook, covering all ten steps from objectives, sampling, trial size and SOPs to ClimMob, statistics, farmer feedback, evaluation and African case studies",
    "keywords": "tricot handbook, ten steps, objective setting, budgeting, costing template, target product profile, task groups, gender, sampling, trial size, sample-size calculator, seed calculator, plot size, SOPs, trial documentation, metadata, ethics, access and benefit sharing, ClimMob, ODK, field agents, observation card, Plackett-Luce, feedback workshop, evaluation indicators, case studies",
    "path": "papers/chase-2026-book.md",
-   "hash": "9b08ec400c4a",
+   "hash": "9a871cab4e9e",
    "relations": [
     {
      "relation": "updates",
@@ -1067,6 +1067,20 @@
    "path": "papers/dorado-2026-tag.md",
    "hash": "083a699cc120",
    "relations": []
+  },
+  {
+   "id": "goormachtigh-2026-flyer",
+   "year": "2026",
+   "type": "flyer",
+   "source": "team",
+   "peer_reviewed": "no",
+   "curated_card": "no",
+   "gist": "Team flyer on Sikia, an AI tool integrated with ClimMob that records, transcribes, translates and codes open-ended farmer answers in local languages, offline on ordinary smartphones",
+   "keywords": "Sikia, ClimMob, voice data collection, farmer feedback, local languages, speech recognition, AI transcription, dynamic probing, offline data collection, qualitative data, open-ended answers, ODK",
+   "path": "papers/goormachtigh-2026-flyer.md",
+   "hash": "28a36126a957",
+   "relations": [],
+   "not_established": "accuracy of Sikia's transcription, translation or coding (the flyer reports no evaluation); that Sikia lowers cost or improves data quality in tricot trials, which the flyer claims for interviews in general but does not measure; that every language listed works equally well (Oromo is still being refined and three languages are planned for 2027)"
   },
   {
    "id": "jorgensen-2026-gse",
