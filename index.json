@@ -1,5 +1,5 @@
 {
- "version": "f6db8ed592cd",
+ "version": "c6434f22a4d9",
  "updated": "2026-11-03",
  "cards": 54,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
@@ -651,7 +651,7 @@
    "gist": "Describes ClimMob, the open-source platform that runs tricot trials end to end, its design choices, architecture, Crop Ontology links and usability scores",
    "keywords": "ClimMob, software design, ODK, Crop Ontology, trial design, participant registration, data collection, reports, usability, component-based software engineering",
    "path": "papers/quiros-2024-compag.md",
-   "hash": "93d343fc3c48",
+   "hash": "f04b4cb5f701",
    "relations": [
     {
      "relation": "isDiscussedBy",
