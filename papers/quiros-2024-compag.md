@@ -70,3 +70,4 @@ The paper explains the early design choices. The team realized that every step o
 
 - ClimMob is a live platform. Check climmob.net and the ClimMobTools CRAN page for current features rather than relying on the 2024 description.
 - ClimMob now has Sikia enabled for voice-based, multilingual data collection (goormachtigh-2026-flyer), which postdates this paper.
+- ClimMob is current developed by a consortium between the Alliance of Bioversity and CIAT (https://alliancebioversityciat.org/tools-innovations/climmob) and MrBot Software Solutions (https://mrbotcr.com) who is in charge of it's support and maintenance.
