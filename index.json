@@ -1,5 +1,5 @@
 {
- "version": "3d09336b5449",
+ "version": "66de531b063d",
  "updated": "2026-11-03",
  "cards": 53,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
@@ -22,7 +22,7 @@
    "gist": "The first proposal of what became tricot, arguing that farmers could evaluate small blind seed packages in triads and report by mobile phone to scale up participatory crop improvement",
    "keywords": "tricot origin, crowdsourcing, citizen science, seed systems, farmer varieties, triadic comparisons, preference learning, mobile phones, crop diversity, food security, open source, genetic commons",
    "path": "papers/vanetten-2011-idsbull.md",
-   "hash": "6fbf7f7c4dbf",
+   "hash": "a6b5a44a8539",
    "relations": [
     {
      "relation": "isExtendedBy",
@@ -726,7 +726,7 @@
    "gist": "Independent evaluation of 1000FARMS (195-person survey, 21 interviews, four countries) finding tricot used for variety decisions, including in Ethiopia and Haiti, where national partners ran it with little direct 1000FARMS support",
    "keywords": "1000FARMS, outcome study, contribution analysis, theory of change, scaling, institutionalization, variety release, ClimMob use, breeding program leadership, funding dependency, collaborative arrangements, seed systems",
    "path": "papers/howland-2025-report.md",
-   "hash": "ff4b1f188e23",
+   "hash": "3ea0e42ad274",
    "relations": [
     {
      "relation": "discusses",
