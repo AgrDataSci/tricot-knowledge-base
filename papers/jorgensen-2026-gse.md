@@ -3,13 +3,13 @@ id: jorgensen-2026-gse
 title: Improving forage production in Norway. Participatory evaluation of climate-adapted seed mixtures
 authors: Jørgensen M, Borchsenius R, Elverland E, Gillund F, Muradagha K, de Sousa K, Sturite I
 year: 2026
-journal: Grassland Science in Europe, Vol. 31 (Challenges and innovations for grasslands resilience)
+journal: Grassland Science in Europe 31, 516-518, eISBN: 978-90-047-6342-5. ISSN: 3134-6529.
 journal_short: Grassl Sci Eur
 article: 31, 516-518
 type: conference paper
 source: team
-peer_reviewed: no
-curated_card: no
+peer_reviewed: yes
+curated_card: yes
 doi: https://hdl.handle.net/11250/5574875
 open_copy: https://hdl.handle.net/11250/5574875
 license: see proceedings
@@ -66,5 +66,4 @@ Interest exceeded expectations, with more than the planned 100 farmers wanting t
 
 ## Notes
 
-- The abstract describes ten options, while the methods and table list twelve mixtures. Use twelve.
-- A short conference paper describing a trial in progress. Check for later results before citing outcomes.
+- There are two regional trails implemented with 12 mixtures. North with 10 forages + 1 regional check. South with 10 forages + 1 regional check.
