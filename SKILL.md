@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, plus external literature curated by the core team, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `c6434f22a4d9`, updated 2026-11-03, 54 cards.<!-- version:end -->
+<!-- version:start -->Installed version `02af730aa2e2`, updated 2026-11-04, 54 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -254,6 +254,6 @@ Lines of work worth knowing:
 | [daudi-2026-fes](papers/daudi-2026-fes.md) | Daudi et al. 2026, *Food Energy Secur* | research article | yes | team | Combines 18-environment station trials with tricot on-farm trials in Tanzania to select stable groundnut genotypes and show women and men prioritize different traits | groundnut, GEI, GGE biplot, tricot, gender | see card |
 | [dorado-2026-tag](papers/dorado-2026-tag.md) | Dorado-Betancourt et al. 2026, *Theor Appl Genet* | research article | yes | team | Shows that genotype means and variances from Plackett-Luce or Thurstonian models can feed standard two-step mixed models to estimate heritability from tricot rankings | genetic parameters, heritability, variance components, Thurstonian model, Plackett-Luce | Zenodo |
 | [goormachtigh-2026-flyer](papers/goormachtigh-2026-flyer.md) | Goormachtigh et al. 2026, *Flyer* | flyer | no | team | Team flyer on Sikia, an AI tool integrated with ClimMob that records, transcribes, translates and codes open-ended farmer answers in local languages, offline on ordinary smartphones | Sikia, ClimMob, voice data collection, farmer feedback, local languages | none |
-| [jorgensen-2026-gse](papers/jorgensen-2026-gse.md) | Jørgensen et al. 2026, *Grassl Sci Eur* | conference paper | no | team | Describes INNOFORAGE, the first tricot application in Norway, testing climate-adapted forage seed mixtures in 100 on-farm mini-trials alongside station RCBD trials | tricot in Europe, forage, seed mixtures, grassland, Norway | none |
+| [jorgensen-2026-gse](papers/jorgensen-2026-gse.md) | Jørgensen et al. 2026, *Grassl Sci Eur* | conference paper | yes | team | Describes INNOFORAGE, the first tricot application in Norway, testing climate-adapted forage seed mixtures in 100 on-farm mini-trials alongside station RCBD trials | tricot in Europe, forage, seed mixtures, grassland, Norway | none |
 | [kadege-2026-fsufs](papers/kadege-2026-fsufs.md) | Kadege et al. 2026, *Front Sustain Food Syst* | research article | yes | external, curated | A single-season tricot trial with 372 Tanzanian farmers finds yield, market preference and disease resistance drive bean choice, with zone-, gender- and youth-specific trait priorities | common bean, Tanzania, tricot, trait preferences, gender | see card |
 <!-- index:end -->

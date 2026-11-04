@@ -1,6 +1,6 @@
 {
- "version": "c6434f22a4d9",
- "updated": "2026-11-03",
+ "version": "02af730aa2e2",
+ "updated": "2026-11-04",
  "cards": 54,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
@@ -1087,12 +1087,12 @@
    "year": "2026",
    "type": "conference paper",
    "source": "team",
-   "peer_reviewed": "no",
-   "curated_card": "no",
+   "peer_reviewed": "yes",
+   "curated_card": "yes",
    "gist": "Describes INNOFORAGE, the first tricot application in Norway, testing climate-adapted forage seed mixtures in 100 on-farm mini-trials alongside station RCBD trials",
    "keywords": "tricot in Europe, forage, seed mixtures, grassland, Norway, INNOFORAGE, winter survival, advisers, participatory research, RCBD combination",
    "path": "papers/jorgensen-2026-gse.md",
-   "hash": "9f3cca94b737",
+   "hash": "f2fdc8061946",
    "relations": []
   },
   {
