@@ -3,7 +3,7 @@ id: jorgensen-2026-gse
 title: Improving forage production in Norway. Participatory evaluation of climate-adapted seed mixtures
 authors: Jørgensen M, Borchsenius R, Elverland E, Gillund F, Muradagha K, de Sousa K, Sturite I
 year: 2026
-journal: Grassland Science in Europe 31, 516-518, eISBN: 978-90-047-6342-5. ISSN: 3134-6529.
+journal: Grassland Science in Europe 31, 516-518, eISBN: 978-90-047-6342-5. ISSN: 3134-6529
 journal_short: Grassl Sci Eur
 article: 31, 516-518
 type: conference paper
