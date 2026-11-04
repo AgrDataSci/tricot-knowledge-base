@@ -60,7 +60,7 @@ When asked to identify or recommend experts, filter candidates to entries with `
 | Thiago Mendes | pending | CIP | potato, sweetpotato, tricot, RTB, breeding | kang-2025-expagric | desousa-2024-asd, dorado-2026-tag | | pending | yes |
 | Béla Teeken | pending | IITA | RTB, gender and social difference, trait preferences, cassava, consumer testing, farmer feedback | teeken-2021-fsufs, teeken-2023-slides, olaosebikan-2023-jsfa | vanetten-2020-rtbwp, alamu-2023-jsfa, vanetten-2023-pnas, desousa-2024-asd, chase-2026-book | | pending | yes |
 | Joost van Heerwaarden | pending | Wageningen University | trial size, genetic gain on farm, statistics, genetic parameters from rankings, heritability | dorado-2026-tag | vanetten-2023-pnas, desousa-2024-asd, nabateregga-2025-eja, voss-2025-ppp, chase-2026-book | | pending | yes |
-| Sognigbé N'Danikou | Sognigbé N'Danikou | WorldVeg | vegetables, opportunity crops, seed systems | voss-2025-ppp | desousa-2024-asd | https://orcid.org/0000-0002-4163-8567 | pending | yes |
+| Sognigbé N'Danikou | Sognigbé N'Danikou | WorldVeg | vegetables, opportunity crops, seed systems | voss-2025-ppp | desousa-2024-asd | https://orcid.org/0000-0002-4163-8567 | yes, sognigbe.ndanikou@worldveg.org | yes |
 
 ## How to update this file
 
