@@ -1,7 +1,7 @@
 ---
 name: people
 description: Who is behind the tricot knowledge base papers, how to name them, and whether they agreed to be suggested as contacts. Read when an answer credits people or suggests who to talk to.
-updated: 2026-11-03
+updated: 2026-11-04
 ---
 
 # People behind the papers
@@ -38,28 +38,29 @@ When asked to identify or recommend experts, filter candidates to entries with `
 
 | Person | Preferred | Affiliation (latest paper) | Topics | Led | Also on | Profile | Contact | Confirmed |
 |---|---|---|---|---|---|---|---|---|
-| Kauê de Sousa | Kauê | Bioversity International | tricot methods, data synthesis, R packages (gosset, climatrends, chirps), ClimMob, climate adaptation, data-driven breeding | desousa-2020-joss, desousa-2021-commsbio, desousa-2023-joss, desousa-2023-softwarex, desousa-2024-asd, nabateregga-2025-eja | most other cards, see each card's authors | https://orcid.org/0000-0002-7571-7845 | yes, k.desousa@cgiar.org | yes |
-| Jacob van Etten | Jacob | Bioversity International | origin of tricot, citizen science, PlackettLuce | vanetten-2011-idsbull, vanetten-2019-expagric, vanetten-2019-pnas, vanetten-2020-guide, vanetten-2020-rtbwp, vanetten-2023-pnas, steinke-2016-guide, steinke-2019-plosone, fadda-2020-fps, occelli-2024-agecon, quiros-2024-compag, ulzen-2025-agrirxiv, chase-2026-book | most other cards, see each card's authors | https://orcid.org/0000-0001-7554-2558 | no | yes |
-| Rachel Chase | Rachel | Bioversity International | tricot handbook, implementation guidance | chase-2026-book | none yet | https://orcid.org/0000-0002-5859-6455 | no | yes |
+| Kauê de Sousa | Kauê | Alliance of Bioversity International & CIAT | tricot methods, data synthesis, R packages (gosset, climatrends, chirps), ClimMob, climate adaptation, data-driven breeding | desousa-2020-joss, desousa-2021-commsbio, desousa-2023-joss, desousa-2023-softwarex, desousa-2024-asd, nabateregga-2025-eja | most other cards, see each card's authors | https://orcid.org/0000-0002-7571-7845 | yes, k.desousa@cgiar.org | yes |
+| Jacob van Etten | Jacob | Alliance of Bioversity International & CIAT | origin of tricot, citizen science, PlackettLuce | vanetten-2011-idsbull, vanetten-2019-expagric, vanetten-2019-pnas, vanetten-2020-guide, vanetten-2020-rtbwp, vanetten-2023-pnas, steinke-2016-guide, steinke-2019-plosone, fadda-2020-fps, occelli-2024-agecon, quiros-2024-compag, ulzen-2025-agrirxiv, chase-2026-book | most other cards, see each card's authors | https://orcid.org/0000-0001-7554-2558 | no | yes |
+| Rachel Chase | Rachel | Alliance of Bioversity International & CIAT | tricot handbook, implementation guidance | chase-2026-book | none yet | https://orcid.org/0000-0002-5859-6455 | no | yes |
 
 ## Authors of the cards
 
 | Person | Preferred | Affiliation (latest paper) | Topics | Led | Also on | Profile | Contact | Confirmed |
 |---|---|---|---|---|---|---|---|---|
-| Stephen Angudubo | pending | Bioversity International | cassava tricot, trial costing, costing template, cost drivers | nanyonjo-2024-cropsci (joint first author), angudubo-2026-guide, angudubo-2026-zari, angudubo-2026-naro | desousa-2024-asd, chase-2026-book | | pending | yes |
-| Lennart Woltering | Lennart | CIAT (Alliance of Bioversity International and CIAT) | Sikia, ARTEMIS, AI for farmer feedback, voice and image data collection, speech recognition in local languages, smartphone phenotyping, computer vision for breeding, digital inclusion, sustainable innovation and transformation, scaling | | goormachtigh-2026-flyer | | yes, L.WOLTERING@cgiar.org | yes |
-| Laurens Goormachtigh | pending | Alliance of Bioversity International and CIAT | Sikia (head of product), AI for qualitative farmer feedback, product development | goormachtigh-2026-flyer | | https://alliancebioversityciat.org/who-we-are/laurens-goormachtigh | pending | pending |
-| Marie-Angélique Laporte | pending | Bioversity International | ontologies, data standards, ClimMob, BrAPI | quiros-2024-compag, selby-2025-database | vanetten-2020-rtbwp, voss-2025-ppp, chase-2026-book | https://orcid.org/0000-0002-8461-9745 | pending | yes |
-| Jill Cairns | Jill | CIMMYT | inclusive host-farmer sampling, farm typologies, gender, maize breeding, sorghum breeding | cairns-2026-jxb | vanetten-2023-pnas, desousa-2024-asd, chase-2026-book, voss-2023-fsoc | https://orcid.org/0000-0002-2735-3485 | yes, j.cairns@cgiar.org | yes |
-| Happy Daudi | Happy | CIMMYT | groundnut breeding, GxE, tricot champion in East Africa, Tanzania, on-farm and on-station correlation genetic gain | daudi-2026-fes | desousa-2024-asd, cairns-2026-jxb, dorado-2026-tag | http://orcid.org//0000-0001-5107-6564 | yes, h.daudi@cgiar.org | yes |
-| Marit Jørgensen | pending | NIBIO | forage mixtures, Norway, Ethiopia | jorgensen-2026-gse, mulatu-2024-slides | none | | pending | yes |
-| Mukani Moyo | pending | CIP | consumer testing, sweetpotato | moyo-2021-fsufs | desousa-2024-asd | | pending | yes |
-| Anna Müller | pending | Bioversity International | farmer feedback, inclusive design, UX | muller-2025-ux, schumann-2024-ux | vanetten-2023-pnas, desousa-2024-asd, quiros-2024-compag, chase-2026-book | | pending | yes |
-| Pieter Rutsaert | pending | CIMMYT | video-based product concept testing, product testing | rutsaert-2023-mib, mbugua-2024-mib, donovan-2025-expagric | desousa-2024-asd | | pending | yes |
-| Thiago Mendes | pending | CIP | potato, sweetpotato, tricot, RTB | kang-2025-expagric | desousa-2024-asd, dorado-2026-tag | | pending | yes |
+| Stephen Angudubo | pending | Alliance of Bioversity International & CIAT | cassava tricot, trial costing, costing template, cost drivers | nanyonjo-2024-cropsci (joint first author), angudubo-2026-guide, angudubo-2026-zari, angudubo-2026-naro | desousa-2024-asd, chase-2026-book | | pending | yes |
+| Lennart Woltering | Lennart | Alliance of Bioversity International & CIAT | Sikia, ARTEMIS, AI for farmer feedback, voice and image data collection, speech recognition, smartphone phenotyping, computer vision for breeding, scaling | | goormachtigh-2026-flyer | | yes, l.woltering@cgiar.org | yes |
+| Laurens Goormachtigh | Laurens | Alliance of Bioversity International & CIAT | Sikia (head of product), AI for qualitative farmer feedback, product development | goormachtigh-2026-flyer | | | yes, l.goormachtigh@cgiar.org | yes |
+| Brandon Madriz | Brandon | MrBot Software Solutions | ClimMob, software development | | quiros-2024-compag, vanetten-2019-pnas, desousa-2024-asd  | | yes, bmadriz@mrbotcr.com | yes |
+| Marie-Angélique Laporte | pending | Alliance of Bioversity International & CIAT | ontologies, data standards, BrAPI, FAIR, semantics | quiros-2024-compag, selby-2025-database | vanetten-2020-rtbwp, voss-2025-ppp, chase-2026-book | https://orcid.org/0000-0002-8461-9745 | pending | yes |
+| Jill Cairns | Jill | CIMMYT | inclusive host-farmer sampling, farm typologies, gender, maize, sorghum, breeding | cairns-2026-jxb | vanetten-2023-pnas, desousa-2024-asd, chase-2026-book, voss-2023-fsoc | https://orcid.org/0000-0002-2735-3485 | yes, j.cairns@cgiar.org | yes |
+| Happy Daudi | Happy | CIMMYT | groundnut, dryland crops, breeding, GxE, tricot champion in East Africa, Tanzania, on-farm and on-station correlation genetic gain | daudi-2026-fes | desousa-2024-asd, cairns-2026-jxb, dorado-2026-tag | http://orcid.org//0000-0001-5107-6564 | yes, h.daudi@cgiar.org | yes |
+| Marit Jørgensen | Marit | NIBIO | forage, forage mixtures, nordic countries | jorgensen-2026-gse, mulatu-2024-slides | none | https://orcid.org/0000-0002-6104-124X | yes, marit.jorgensen@nibio.no | yes |
+| Mukani Moyo | Mukani | CIP | consumer testing, sweetpotato, RTB | moyo-2021-fsufs | desousa-2024-asd | https://orcid.org/0000-0001-5658-2669 | yes, mukani.moyo@cgiar.org | yes |
+| Anna Müller | pending | Alliance of Bioversity International & CIAT | farmer feedback, inclusive design, UX | muller-2025-ux, schumann-2024-ux | vanetten-2023-pnas, desousa-2024-asd, quiros-2024-compag, chase-2026-book | | pending | yes |
+| Pieter Rutsaert | pending | CIMMYT | video-based product concept testing, product testing, market research | rutsaert-2023-mib, mbugua-2024-mib, donovan-2025-expagric | desousa-2024-asd | https://orcid.org/0000-0001-9691-6088 | yes, p.rutsaert@cgiar.org | yes |
+| Thiago Mendes | pending | CIP | potato, sweetpotato, tricot, RTB, breeding | kang-2025-expagric | desousa-2024-asd, dorado-2026-tag | | pending | yes |
 | Béla Teeken | pending | IITA | RTB, gender and social difference, trait preferences, cassava, consumer testing, farmer feedback | teeken-2021-fsufs, teeken-2023-slides, olaosebikan-2023-jsfa | vanetten-2020-rtbwp, alamu-2023-jsfa, vanetten-2023-pnas, desousa-2024-asd, chase-2026-book | | pending | yes |
 | Joost van Heerwaarden | pending | Wageningen University | trial size, genetic gain on farm, statistics, genetic parameters from rankings, heritability | dorado-2026-tag | vanetten-2023-pnas, desousa-2024-asd, nabateregga-2025-eja, voss-2025-ppp, chase-2026-book | | pending | yes |
-| Sognigbé N'Danikou | N'Danikou | WorldVeg | vegetable breeding, opportunity crops, seed systems | voss-2025-ppp | desousa-2024-asd | | pending | yes |
+| Sognigbé N'Danikou | Sognigbé N'Danikou | WorldVeg | vegetables, opportunity crops, seed systems | voss-2025-ppp | desousa-2024-asd | https://orcid.org/0000-0002-4163-8567 | pending | yes |
 
 ## How to update this file
 
