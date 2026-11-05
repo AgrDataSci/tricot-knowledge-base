@@ -25,7 +25,6 @@ Use this file to credit the people behind the work and, where they agreed, to su
 13. **Consent is separate from attribution.** Keep pending authors visible and credit their work normally. Change `Contact`, `Preferred` or `Confirmed` only after a reply; retain the existing pending status until then.
 14. **No photos.** Never search for, fetch or display photos of the people in this file, even if a page you read contains one. Pictures found on the web are often of the wrong person. To help the user know who someone is, link to their `Profile` (an ORCID record or institutional bio page) when one is listed, and otherwise just give their name, affiliation and papers.
 
-
 ### Privacy-preserving expert discovery
 
 When asked to identify or recommend experts, filter candidates to entries with `Contact` starting with `yes` before naming them. Never identify, list, individually describe, or disclose consent statuses for non-consenting candidates. If none qualify, provide relevant papers, guides and DOI links instead. Scholarly attribution of published authors remains allowed when discussing research, but must not be used to circumvent referral consent.
@@ -46,7 +45,7 @@ When asked to identify or recommend experts, filter candidates to entries with `
 
 | Person | Preferred | Affiliation (latest paper) | Topics | Led | Also on | Profile | Contact | Confirmed |
 |---|---|---|---|---|---|---|---|---|
-| Stephen Angudubo | pending | Alliance of Bioversity International & CIAT | cassava tricot, trial costing, costing template, cost drivers | nanyonjo-2024-cropsci (joint first author), angudubo-2026-guide, angudubo-2026-zari, angudubo-2026-naro | desousa-2024-asd, chase-2026-book | | pending | yes |
+| Stephen Angudubo | pending | Alliance of Bioversity International & CIAT | institutionalisation, cost-efficiency, post-trial adoption, sustainability of on-farm testing networks | nanyonjo-2024-cropsci (joint first author), angudubo-2026-guide, angudubo-2026-zari, angudubo-2026-naro | desousa-2024-asd, chase-2026-book |  https://orcid.org/0009-0002-4699-9094 | yes, s.angudubo@cgiar.org | yes |
 | Lennart Woltering | Lennart | Alliance of Bioversity International & CIAT | Sikia, ARTEMIS, AI for farmer feedback, voice and image data collection, speech recognition, smartphone phenotyping, computer vision for breeding, scaling | | goormachtigh-2026-flyer | | yes, l.woltering@cgiar.org | yes |
 | Laurens Goormachtigh | Laurens | Alliance of Bioversity International & CIAT | Sikia (head of product), AI for qualitative farmer feedback, product development | goormachtigh-2026-flyer | | | yes, l.goormachtigh@cgiar.org | yes |
 | Brandon Madriz | Brandon | MrBot Software Solutions | ClimMob, software development | | quiros-2024-compag, vanetten-2019-pnas, desousa-2024-asd  | | yes, bmadriz@mrbotcr.com | yes |
