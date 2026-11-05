@@ -43,7 +43,7 @@ The lessons point to scaling mixtures to similar suitable environments, and to t
 ## Methods in brief
 
 - **Sites.** Mid-altitude mixed farming systems in Amhara and SNNP/Sidama, selected for forage potential and scarcity.
-- **Design.** Tricot packages of three options from grasses, legumes and mixtures, run by trained woreda development agents.
+- **Design.** tricot packages of three options from grasses, legumes and mixtures, run by trained woreda development agents.
 - **Evaluation.** Best-worst rankings for about 20 traits at first and second harvest.
 - **Analysis.** Plackett-Luce models, probability of outperforming Desho, Kendall correlations with overall preference.
 

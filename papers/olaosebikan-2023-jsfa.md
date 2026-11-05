@@ -18,7 +18,7 @@ software: PlackettLuce, gosset
 crops: cassava (gari and eba)
 region: Nigeria (Osun, Benue), Cameroon (Littoral)
 keywords: consumer testing, cassava, gari, eba, food quality, texture, color, cohesiveness, cross-country, Plackett-Luce trees, reliability, RTBfoods
-gist: Tricot consumer tests of eba in Nigeria and Cameroon linked to lab measures show preferences for cohesive, bright eba are surprisingly similar across cultures, with a few country differences
+gist: tricot consumer tests of eba in Nigeria and Cameroon linked to lab measures show preferences for cohesive, bright eba are surprisingly similar across cultures, with a few country differences
 ---
 
 ## Questions this paper answers
@@ -46,7 +46,7 @@ The authors argue that the wide acceptance of a single genotype across diverse s
 
 - **Materials.** Improved clones, processor-selected local varieties and breeders' checks grown at stations in Nigeria and Cameroon.
 - **Processing.** Gari produced, then eba prepared in a standard way.
-- **Consumer test.** Tricot with sequentially balanced randomized sets of three samples, overall acceptability and attributes ranked.
+- **Consumer test.** tricot with sequentially balanced randomized sets of three samples, overall acceptability and attributes ranked.
 - **Laboratory.** Color (L*, a*, b*), texture by double compression (texturometer), solubility and swelling power.
 - **Analysis.** Plackett-Luce models, model-based recursive partitioning on country and social covariates, Kendall's tau, reliability against checks.
 

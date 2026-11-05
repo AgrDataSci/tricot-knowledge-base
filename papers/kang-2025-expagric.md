@@ -18,7 +18,7 @@ software: PlackettLuce, gosset, climatrends
 crops: potato
 region: Rwanda (Gicumbi, Nyamagabe)
 keywords: potato, tricot, RHoMIS, socio-economic covariates, temperature, on-station vs on-farm, variety preference, market orientation, gender, Plackett-Luce trees
-gist: Tricot potato trial with 460 Rwandan farmers, linked to RHoMIS, climate and station data, shows old varieties still preferred and temperature and market orientation shaping rankings
+gist: tricot potato trial with 460 Rwandan farmers, linked to RHoMIS, climate and station data, shows old varieties still preferred and temperature and market orientation shaping rankings
 ---
 
 ## Questions this paper answers
@@ -42,7 +42,7 @@ The newer varieties Gisubizo and Kazeneza ranked third and fourth but did not di
 
 ## Methods in brief
 
-- **Tricot.** 460 farmers, 11 varieties, three per farmer, seasons 2021A (September 2020 to February 2021) and 2021B (March to July 2021).
+- **tricot.** 460 farmers, 11 varieties, three per farmer, seasons 2021A (September 2020 to February 2021) and 2021B (March to July 2021).
 - **Socio-economic data.** RHoMIS survey of 283 participants.
 - **Station data.** Multi-environment trials 2018–2019 for genotypic values.
 - **Analysis.** Plackett-Luce trees with climate and socio-economic covariates (90% confidence cut-off, minimum group size 25).
@@ -56,7 +56,7 @@ The newer varieties Gisubizo and Kazeneza ranked third and fourth but did not di
 
 | Number | Context | Primary source |
 |---|---|---|
-| 460 farmers | Tricot participants in Gicumbi and Nyamagabe | This paper |
+| 460 farmers | tricot participants in Gicumbi and Nyamagabe | This paper |
 | 11 varieties | Potato varieties tested, three per farmer | This paper |
 | 283 farmers | Participants surveyed with RHoMIS | This paper |
 | 2018–2019 | On-station multi-environment trials | This paper |

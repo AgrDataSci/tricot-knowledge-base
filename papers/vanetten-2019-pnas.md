@@ -46,7 +46,7 @@ The paper positions tricot as a scalable, demand-led way to track climate on far
 
 ## Methods in brief
 
-- **Trials.** Tricot in Nicaragua (842 plots), Ethiopia (1,090) and India (10,477), 2012–2016, three varieties per farm (four in Ethiopia).
+- **Trials.** tricot in Nicaragua (842 plots), Ethiopia (1,090) and India (10,477), 2012–2016, three varieties per farm (four in Ethiopia).
 - **Covariates.** Climate (land-surface temperature, rainfall) and soil variables linked by coordinates and planting date.
 - **Model.** Plackett-Luce trees, with 10-fold cross-validated pseudo-R² to compare covariate sets.
 - **Recommendations.** Predictions over a 15-year base period, perfect-forecast scenario, probability of winning and worst regret, maps of top varieties.

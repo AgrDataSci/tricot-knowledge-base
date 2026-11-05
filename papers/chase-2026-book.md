@@ -112,7 +112,7 @@ A target product profile (TPP) is the formal blueprint of the traits and perform
 
 **Questions.** How do I choose participants who represent real users? How should gender be handled? What ethics, privacy and ABS rules apply?
 
-The sampling section argues that tricot's statistical power comes from replication across space and seasons, so sampling must capture who farms where and under what constraints. It criticizes recruitment by broad demographic categories or equal numbers of men and women regardless of experience, and recruitment of people who are simply comfortable speaking to researchers. Tricot instead uses purposive sampling by task groups, meaning people who perform similar crop tasks (cultivation, processing, marketing) within locally defined social groups, with gender analysed afterwards within and across task groups rather than imposed upfront.
+The sampling section argues that tricot's statistical power comes from replication across space and seasons, so sampling must capture who farms where and under what constraints. It criticizes recruitment by broad demographic categories or equal numbers of men and women regardless of experience, and recruitment of people who are simply comfortable speaking to researchers. tricot instead uses purposive sampling by task groups, meaning people who perform similar crop tasks (cultivation, processing, marketing) within locally defined social groups, with gender analysed afterwards within and across task groups rather than imposed upfront.
 
 The practical sequence is to identify relevant tasks, identify local social groups with leaders, key informants and transect walks while guarding against elite capture, map tasks within groups, exclude groups not involved in the crop, organize participants under a lead farmer, and agree modest compensation. In Nigerian cassava trials, ten participants per community worked under a lead farmer they chose themselves, and a worked example shows eight local social groups in a southwest Nigerian village and the ten participants selected. Participant teams are prepared one to two months before planting material arrives, and drop-outs are replaced by people from similar groups. Lead-farmer trainings, ideally after plot installation and at state level in Nigeria, use a guide of four to five farmer-defined parameters. A short RHoMIS questionnaire is administered to every participant.
 
@@ -257,14 +257,14 @@ Tools in development include an open online tricot course with a certificate, Si
 
 The chapter consists of interviews, so its evidence is practitioner experience, not designed comparisons.
 
-- **Groundnut, Kenya and Tanzania (Happy Daudi, CIMMYT).** Tricot data supported a variety release proposal and a groundnut product profile, allowed on-farm genetic gain estimates and showed that selection traits differ by zone. Constraints were seed for many farmers, English-only software and weak handling of quantitative data. Linked paper daudi-2026-fes.
+- **Groundnut, Kenya and Tanzania (Happy Daudi, CIMMYT).** tricot data supported a variety release proposal and a groundnut product profile, allowed on-farm genetic gain estimates and showed that selection traits differ by zone. Constraints were seed for many farmers, English-only software and weak handling of quantitative data. Linked paper daudi-2026-fes.
 - **Maize, Rwanda (Elysé Tuyishime, One Acre Fund).** Up to 15 varieties tested in one season with fewer farm visits, blind testing raised curiosity, rankings exposed grain size as a driver, and zone maps narrowed the list to one to three candidates. Testing farming practices proved harder than testing varieties.
 - **Common bean, Tanzania (Edith Kadege, TARI).** Farmers prioritized yield, market acceptance and disease resistance, anthracnose varied by agro-ecological zone, women stressed post-harvest traits, men agronomic traits and youth marketability. Real-time ODK data allowed in-season corrections. Linked paper kadege-2026-fsufs.
 - **Maize, Kenya (Jamlick Mwathi, Bayer).** Farmers valued grain size and colour beyond yield and preferred a hybrid the breeders had ranked lower, which entered the programme, and two areas assumed similar proved different.
-- **Sweetpotato, Uganda (Reuben Ssali, CIP).** Tricot reached more farmers regardless of education, validated survey-based trait priorities and showed some farmers accept mealiness when other traits are strong. Varieties must be multiplied before the trial, and rankings do not reveal trade-offs. Linked paper moyo-2021-fsufs.
+- **Sweetpotato, Uganda (Reuben Ssali, CIP).** tricot reached more farmers regardless of education, validated survey-based trait priorities and showed some farmers accept mealiness when other traits are strong. Varieties must be multiplied before the trial, and rankings do not reveal trade-offs. Linked paper moyo-2021-fsufs.
 - **Groundnut, Ghana (Richard Oteng-Frimpong, SARI).** Fifteen lines reached previously inaccessible farmers, female farmers preferred early maturity, and seed size, colour and fast maturity fed into product profiles. Seed had to be multiplied off-season and field agents translated across languages.
 - **Cowpea, Nigeria (Patrick Ongom, IITA).** Grain colour, seed size and pest and disease resistance shaped product profiles and release decisions, and the pipeline was restructured by market class. Poorly trained field agents caused data problems, including duplicate uploads.
-- **Seed systems, Ethiopia (Mohammed Hassena, ISSD).** Tricot brought new varieties to isolated farmers through local partners and builds familiarity before release, but companies may resist unfavourable results on released varieties, and renaming varieties at release confuses farmers.
+- **Seed systems, Ethiopia (Mohammed Hassena, ISSD).** tricot brought new varieties to isolated farmers through local partners and builds familiarity before release, but companies may resist unfavourable results on released varieties, and renaming varieties at release confuses farmers.
 
 ## Methods in brief
 
@@ -278,11 +278,11 @@ The chapter consists of interviews, so its evidence is practitioner experience, 
 - Rankings carry roughly half the information of measurements, and rank-based estimates are unreliable with too few replicates.
 - The sample-size calculator ignores data return rates, and trial numbers shrink over seasons, so plans need a margin.
 - Better guidance on optimal trial dimensions across environments awaits future studies.
-- Tricot analyses have not consistently detected gender differences in preferences, likely because gender interacts with social variables that are rarely measured.
+- tricot analyses have not consistently detected gender differences in preferences, likely because gender interacts with social variables that are rarely measured.
 - Free-listing exercises reflect salience in discourse more than real trade-offs.
 - Small plots do not suit every crop or trait, especially where interplot competition is strong or produce is needed for processing and cooking tests.
 - Rankings alone do not reveal which trade-offs farmers make, and current software handles quantitative data less well than rankings (case studies).
-- Tricot proved harder to apply to farming practices than to varieties in one case study.
+- tricot proved harder to apply to farming practices than to varieties in one case study.
 - Several chapters reuse 2020 guide material, and ClimMob features described are those at the time of writing.
 
 ## Key numbers
@@ -316,7 +316,7 @@ The chapter consists of interviews, so its evidence is practitioner experience, 
 | 75–110 min | Recommended feedback workshop agenda, for 20 to 25 people | This book |
 | 5–7 | People per small discussion group at feedback workshops | This book |
 | 4 | Indicators of success for evaluating a cycle | This book |
-| ~25% cheaper, ~2× farmers | Tricot vs PVS for common bean in Central America | Occelli et al. 2024 (reports 28% cheaper) |
+| ~25% cheaper, ~2× farmers | tricot vs PVS for common bean in Central America | Occelli et al. 2024 (reports 28% cheaper) |
 | 15 | Maize varieties (One Acre Fund) and groundnut lines (SARI) tested in one trial | This book (case studies) |
 | 480 | Participants in the Tanzanian bean trial used to test Sikia | This book |
 | ~170 USD vs 0.7 USD | Cost per in-depth household interview vs per SMS respondent, cited for Sikia | This book |
