@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 <!-- badges: end -->
 
-<a href="https://github.com/AgrDataSci/ai-ready-documentation"><img src="docs/aipim-logo.svg" alt="Part of AIpim" height="64" align="right"></a>
+<a href="https://github.com/AgrDataSci/ai-ready-documentation"><img src="docs/maniva-logo.svg" alt="Part of Maniva" height="64" align="right"></a>
 
 # Evidence base on product testing with users in agriculture
 
@@ -21,7 +21,7 @@ Most cards cover the tricot team's own work. Others cover external literature, s
 
 The repository works as a [Claude skill](SKILL.md), so an AI assistant can answer questions the way a colleague who knows this literature, and the people behind it, would. It credits the authors by name, reports numbers with their primary sources, says where the evidence is thin and, where authors agree, suggests who to talk to next. The cards are plain markdown, so people and other AI tools can read them directly.
 
-This is the literature layer of [AIpim](https://github.com/AgrDataSci/ai-ready-documentation), the AI-ready documentation for tricot, alongside [tricot-protocols](https://github.com/AgrDataSci/tricot-protocols) and [tricot-data](https://github.com/AgrDataSci/tricot-data).
+This is the literature layer of [Maniva](https://github.com/AgrDataSci/ai-ready-documentation), the AI-ready documentation for tricot, alongside [tricot-protocols](https://github.com/AgrDataSci/tricot-protocols) and [tricot-data](https://github.com/AgrDataSci/tricot-data).
 
 ## What you can ask
 
@@ -67,7 +67,7 @@ Every source document has a long-format card. `python scripts/build_index.py` li
 
 **In Claude.** Download the [latest skill package](https://github.com/AgrDataSci/tricot-knowledge-base/releases/latest/download/tricot-knowledge-base.zip) and upload it under Customize > Skills. Code execution must be on, and on Team or Enterprise plans an owner may need to allow skills. Claude loads the index in `SKILL.md` whenever a question touches tricot or on-farm testing, and opens only the cards it needs.
 
-**In Claude Code.** Clone the repository into your skills directory, or install it from the [AIpim](https://github.com/AgrDataSci/ai-ready-documentation) repository once its plugin marketplace is published.
+**In Claude Code.** Clone the repository into your skills directory, or install it from the [Maniva](https://github.com/AgrDataSci/ai-ready-documentation) repository once its plugin marketplace is published.
 
 **By sharing the link.** Paste the repository link into an assistant with web access. It reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md), answers from the live files, and offers to install the skill so the link is not needed next time. It installs nothing without the user's agreement.
 
