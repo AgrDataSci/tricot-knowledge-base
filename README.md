@@ -36,6 +36,7 @@ This is the literature layer of [maniva](https://github.com/AgrDataSci/maniva), 
 
 ## Status
 
+<!-- status:start -->
 | | Count |
 |---|---|
 | Source documents in `papers-pdf/` | 68 |
@@ -43,10 +44,11 @@ This is the literature layer of [maniva](https://github.com/AgrDataSci/maniva), 
 | Cards still waiting for a handle or DOI | 0 |
 | Peer-reviewed cards | 51 (17 not peer-reviewed) |
 | Cards checked by a person (`curated_card: yes`) | 1 of 68 |
-| People in `people.md` | 17 (4 contacts confirmed, 13 pending) |
+| People in `people.md` | 18 (12 agreed to be contacted, 4 pending, 2 declined) |
 | Links between cards | 40 |
+<!-- status:end -->
 
-Every source document has a long-format card. `python scripts/build_index.py` lists the cards that still need a handle, counts peer-reviewed and person-checked cards, and `index.json` records the current version.
+Every source document has a long-format card. `python scripts/build_index.py` refreshes this table, lists the cards that still need a handle, counts peer-reviewed and person-checked cards, and `index.json` records the current version.
 
 ### What the cards cover
 

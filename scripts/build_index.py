@@ -27,6 +27,10 @@ The version combines the hashes of every card, people.md and the instructions in
 
 The script adds the inverse links, writes the graph to index.json and relations.jsonld
 (JSON-LD with the CiTO vocabulary), and lists every link in SKILL.md.
+
+It also rewrites the status table in README.md, between the status markers, so the counts
+of PDFs, cards, people and links always match the repository. Run it after any change to a
+card, a PDF or people.md.
 """
 import datetime
 import hashlib
@@ -39,6 +43,7 @@ START, END = "<!-- index:start -->", "<!-- index:end -->"
 VSTART, VEND = "<!-- version:start -->", "<!-- version:end -->"
 RAW = "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/"
 RSTART, REND = "<!-- relations:start -->", "<!-- relations:end -->"
+SSTART, SEND = "<!-- status:start -->", "<!-- status:end -->"
 # CiTO terms (http://purl.org/spar/cito/) and their inverses
 RELATIONS = {
     "extends": "isExtendedBy",
@@ -227,6 +232,8 @@ team_names = people_surnames()
 unmatched = [m["id"] for m, _ in metas if m["source"] == "team"
              and not any(n in m["authors"].lower() for n in team_names)]
 external = [m["id"] for m, _ in metas if m["source"] == "external"]
+not_pr = [m["id"] for m, _ in metas if m["peer_reviewed"] == "no"]
+to_curate = [m["id"] for m, _ in metas if m["curated_card"] == "no"]
 print(f"{len(links)} relations between cards.")
 print(f"Index rebuilt with {len(cards)} papers. Version {version} ({updated}). SKILL.md is {len(new.encode())} bytes.")
 if no_doi:
@@ -238,3 +245,27 @@ to_curate = [m["id"] for m, _ in metas if m["curated_card"] == "no"]
 print(f"{len(metas) - len(to_curate)} cards checked by a person, {len(to_curate)} still to check.")
 if unmatched:
     print(f"Check source: team cards with no author found in people.md: {', '.join(unmatched)}")
+
+# Status table in README.md
+readme = ROOT / "README.md"
+rtext = readme.read_text(encoding="utf-8")
+if SSTART not in rtext or SEND not in rtext:
+    raise SystemExit(f"README.md needs the {SSTART} and {SEND} markers")
+pdfs = len(list((ROOT / "papers-pdf").glob("*.pdf")))
+contacts = [line.split("|")[8].strip().lower() for line in people.read_text(encoding="utf-8").splitlines()
+            if line.startswith("| ") and not line.startswith("| Person") and line.count("|") >= 10]
+n_yes = sum(c.startswith("yes") for c in contacts)
+n_no = sum(c.startswith("no") for c in contacts)
+status = [
+    "| | Count |", "|---|---|",
+    f"| Source documents in `papers-pdf/` | {pdfs} |",
+    f"| Cards in `papers/` | {len(metas)} ({len(metas) - len(external)} team, {len(external)} external) |",
+    f"| Cards still waiting for a handle or DOI | {len(no_doi)} |",
+    f"| Peer-reviewed cards | {len(metas) - len(not_pr)} ({len(not_pr)} not peer-reviewed) |",
+    f"| Cards checked by a person (`curated_card: yes`) | {len(metas) - len(to_curate)} of {len(metas)} |",
+    f"| People in `people.md` | {len(contacts)} ({n_yes} agreed to be contacted, {len(contacts) - n_yes - n_no} pending, {n_no} declined) |",
+    f"| Links between cards | {len(links)} |",
+]
+rnew = re.sub(re.escape(SSTART) + r".*?" + re.escape(SEND), SSTART + "\n" + "\n".join(status) + "\n" + SEND, rtext, flags=re.S)
+readme.write_text(rnew, encoding="utf-8")
+print(f"README status updated: {pdfs} PDFs, {len(metas)} cards, {len(contacts)} people.")
