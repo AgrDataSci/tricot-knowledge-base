@@ -36,30 +36,33 @@ This is the literature layer of [maniva](https://github.com/AgrDataSci/maniva), 
 
 ## Status
 
+<!-- status:start -->
 | | Count |
 |---|---|
-| Source documents in `papers-pdf/` | 53 |
-| Cards in `papers/` | 54 (51 team, 3 external) |
+| Source documents in `papers-pdf/` | 68 |
+| Cards in `papers/` | 68 (58 team, 10 external) |
 | Cards still waiting for a handle or DOI | 0 |
-| Peer-reviewed cards | 36 (18 not peer-reviewed) |
-| Cards checked by a person (`curated_card: yes`) | 0 of 54 |
-| People in `people.md` | 17 (4 contacts confirmed, 13 pending) |
-| Links between cards | 36 |
+| Peer-reviewed cards | 51 (17 not peer-reviewed) |
+| Cards checked by a person (`curated_card: yes`) | 1 of 68 |
+| People in `people.md` | 18 (12 agreed to be contacted, 4 pending, 2 declined) |
+| Links between cards | 40 |
+<!-- status:end -->
 
-Every source document has a long-format card. `python scripts/build_index.py` lists the cards that still need a handle, counts peer-reviewed and person-checked cards, and `index.json` records the current version.
+Every source document has a long-format card. `python scripts/build_index.py` refreshes this table, lists the cards that still need a handle, counts peer-reviewed and person-checked cards, and `index.json` records the current version.
 
 ### What the cards cover
 
 | Topic | Cards |
 |---|---|
-| Pre-breeding with genebanks (Seeds for Needs) | mancini-2017-scirep, fadda-2020-fps, gesesse-2023-pnas |
+| Pre-breeding with genebanks (Seeds for Needs) | mancini-2017-scirep, fadda-2020-fps, gesesse-2023-pnas, tanaka-2021-tag |
 | Origins, guides and the handbook | vanetten-2011-idsbull, vanetten-2019-expagric, steinke-2016-guide, vanetten-2020-guide, vanetten-2020-rtbwp, desousa-2024-asd, chase-2026-book |
 | Data quality, motivation and impact | steinke-2017-asd, beza-2017-plosone, gotor-2021-fsufs, occelli-2024-agecon, nabateregga-2025-eja, ulzen-2025-agrirxiv |
+| Participatory research, citizen science and on-farm experimentation | hansson-2019-ejps, vandegevel-2020-asd, kool-2020-expagric, laajaj-2020-scirep, cairns-2025-ppp, occelli-2026-ahv |
 | Climate, genomics and analysis methods | vanetten-2019-pnas, desousa-2021-commsbio, brown-2022-cropsci, dorado-2026-tag, vanetten-2023-pnas, cairns-2026-jxb |
-| Software and data standards (R packages, ClimMob, Sikia, BrAPI) | turner-2020-compstat, desousa-2023-softwarex, desousa-2020-joss, desousa-2023-joss, quiros-2024-compag, goormachtigh-2026-flyer, selby-2025-database |
+| Software and data standards (R packages, ClimMob, Sikia, BrAPI, ontologies, FAIR and CARE) | turner-2020-compstat, desousa-2023-softwarex, desousa-2020-joss, desousa-2023-joss, quiros-2024-compag, goormachtigh-2026-flyer, selby-2025-database, carroll-2020-dsj, dumschott-2023-fps, arnaud-2023-jsfa |
 | Crop applications | nanyonjo-2024-cropsci (cassava), daudi-2026-fes (groundnut), kadege-2026-fsufs (common bean), kang-2025-expagric and sharma-2025-jafr (potato), voss-2025-ppp (amaranth), mulatu-2024-slides and jorgensen-2026-gse (forages, Ethiopia and Norway) |
-| Consumer and product concept testing | moyo-2021-fsufs, alamu-2023-jsfa, olaosebikan-2023-jsfa, donovan-2025-expagric, rutsaert-2023-mib, mbugua-2024-mib |
-| Gender, inclusion and farmer feedback | teeken-2021-fsufs, voss-2023-fsoc, teeken-2023-slides, kadege-2026-fsufs, schumann-2024-ux, muller-2025-ux, steinke-2019-plosone |
+| Consumer preferences, trait prioritization and product concept testing | moyo-2021-fsufs, alamu-2023-jsfa, olaosebikan-2023-jsfa, thiele-2021-ijfst, occelli-2024-natplants, donovan-2025-expagric, rutsaert-2023-mib, mbugua-2024-mib, mawia-2025-fsufs |
+| Gender, inclusion and farmer feedback | teeken-2021-fsufs, voss-2021-outlook, voss-2023-fsoc, cairns-2025-ppp, teeken-2023-slides, kadege-2026-fsufs, schumann-2024-ux, muller-2025-ux, steinke-2019-plosone |
 | Costing on-farm testing | angudubo-2026-guide (costing template), angudubo-2026-zari (maize, Zambia), angudubo-2026-naro (common bean, Uganda), desousa-2024-asd (potato, Rwanda), occelli-2024-agecon (bean, Central America) |
 | Mainstreaming in breeding | 1000farms-2025-report, howland-2025-report |
 

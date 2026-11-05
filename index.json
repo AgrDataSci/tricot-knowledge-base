@@ -1,15 +1,15 @@
 {
- "version": "757183c380f2",
+ "version": "da92d2b9c348",
  "updated": "2026-11-05",
- "cards": 54,
+ "cards": 68,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
   "path": "SKILL.md",
-  "hash": "784b1d09c02f"
+  "hash": "af240c6cfc8b"
  },
  "people": {
   "path": "people.md",
-  "hash": "64d53e381c01"
+  "hash": "759f4d127364"
  },
  "papers": [
   {
@@ -129,6 +129,20 @@
    ]
   },
   {
+   "id": "hansson-2019-ejps",
+   "year": "2019",
+   "type": "research article",
+   "source": "external",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "Philosophical analysis showing farmers' own experiments are real action-guiding experiments, with more replication and local relevance than scientists' field trials but weaker controls and evaluation",
+   "keywords": "farmers' experiments, philosophy of science, experimental methodology, directly action-guiding experiments, control fields, historical controls, randomization, blinding, replication, indigenous knowledge, field trials",
+   "path": "papers/hansson-2019-ejps.md",
+   "hash": "a9c8e9ea5584",
+   "relations": [],
+   "not_established": "that farmers' experiments give better or worse decisions than scientists' trials (the author calls this an open empirical question); any figure on how often farmers experiment beyond the cited surveys; claims about tricot, which the paper does not discuss"
+  },
+  {
    "id": "steinke-2019-plosone",
    "year": "2019",
    "type": "research article",
@@ -188,6 +202,11 @@
      "note": ""
     },
     {
+     "relation": "isDiscussedBy",
+     "card": "vandegevel-2020-asd",
+     "note": "cites crowdsourced crop variety evaluation (tricot, ClimMob) as agricultural citizen science"
+    },
+    {
      "relation": "isExtendedBy",
      "card": "desousa-2021-commsbio",
      "note": ""
@@ -196,9 +215,28 @@
      "relation": "isExtendedBy",
      "card": "gotor-2021-fsufs",
      "note": "household impact of the Bihar Seeds for Needs intervention"
+    },
+    {
+     "relation": "isDiscussedBy",
+     "card": "thiele-2021-ijfst",
+     "note": "cites tricot as a tool for farmer-guided dissemination through the informal system"
     }
    ],
    "not_established": "effects on farmer income, food security or adoption; acceptance of tricot data in official variety release"
+  },
+  {
+   "id": "carroll-2020-dsj",
+   "year": "2020",
+   "type": "perspective",
+   "source": "external",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "First formal publication of the CARE Principles (Collective benefit, Authority to control, Responsibility, Ethics), which complement FAIR so that open data serve the peoples the data come from",
+   "keywords": "CARE principles, Indigenous data sovereignty, data governance, FAIR principles, collective benefit, authority to control, responsibility, ethics, open data, traditional knowledge, benefit sharing",
+   "path": "papers/carroll-2020-dsj.md",
+   "hash": "ce62bab06abd",
+   "relations": [],
+   "not_established": "that CARE applies directly to on-farm trial data from non-Indigenous farmers (the authors say it may extend to other collectives, but it was written for Indigenous Peoples' data); specific tools or procedures for implementation, which the authors list as further work"
   },
   {
    "id": "desousa-2020-joss",
@@ -248,6 +286,34 @@
    ]
   },
   {
+   "id": "kool-2020-expagric",
+   "year": "2020",
+   "type": "review",
+   "source": "external",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "Review of 172 on-farm agronomy studies in Africa finds most cannot be reproduced from what they report and few define for whom or where their results hold",
+   "keywords": "on-farm experiments, reproducibility, external validity, internal validity, research population, farmer practice, control treatment, yield-determining factors, site selection, experimentation at scale, agronomy",
+   "path": "papers/kool-2020-expagric.md",
+   "hash": "ccdab4b45ae5",
+   "relations": [],
+   "not_established": "that the reviewed experiments gave wrong results (the review scores reporting, not correctness); that more farms alone fix external validity; findings for variety trials specifically, since only 22 of 172 studies were on cultivars"
+  },
+  {
+   "id": "laajaj-2020-scirep",
+   "year": "2020",
+   "type": "research article",
+   "source": "external",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "In Kenyan fertilizer trials, correcting for farmer and plot selection, management and yield calculation wiped out the soybean package's gain but left the maize gain intact",
+   "keywords": "on-farm trials, yield gap, external validity, farmer selection, selection bias, behavioural response, attrition, value-cost ratio, fertilizer, input packages, adoption, smallholders",
+   "path": "papers/laajaj-2020-scirep.md",
+   "hash": "ee9704692916",
+   "relations": [],
+   "not_established": "that trial yield gains are always overestimated (adjustments went in opposite directions for the two crops); findings for variety trials; that labour costs would not change the profitability results (labour was not costed)"
+  },
+  {
    "id": "turner-2020-compstat",
    "year": "2020",
    "type": "software paper",
@@ -259,6 +325,26 @@
    "path": "papers/turner-2020-compstat.md",
    "hash": "fcc0ccc0fa88",
    "relations": []
+  },
+  {
+   "id": "vandegevel-2020-asd",
+   "year": "2020",
+   "type": "review",
+   "source": "team",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "Review arguing that citizen science, with digital tools, differentiated roles and attention to motivation, can overcome the barriers that kept participatory agricultural research out of the mainstream",
+   "keywords": "citizen science, participatory research, farmer participation, institutionalization, participant motivation, role differentiation, user-centred design, digital tools, social inclusion, democratization of science, accountability",
+   "path": "papers/vandegevel-2020-asd.md",
+   "hash": "79970a2ba3a6",
+   "relations": [
+    {
+     "relation": "discusses",
+     "card": "vanetten-2019-pnas",
+     "note": "cites crowdsourced crop variety evaluation (tricot, ClimMob) as agricultural citizen science"
+    }
+   ],
+   "not_established": "that citizen science lowers total research costs (it shifts and creates costs); that digital citizen science is socially inclusive by default (unequal access and literacy are flagged); quantitative effects of tricot, which the review cites only as an example"
   },
   {
    "id": "vanetten-2020-guide",
@@ -376,6 +462,20 @@
    ]
   },
   {
+   "id": "tanaka-2021-tag",
+   "year": "2021",
+   "type": "research article",
+   "source": "external",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "Genomic prediction trained on unfertilized farmers' fields in Madagascar picked high-performing rice genebank accessions with accuracy similar to on-station studies, and two became breeding donors",
+   "keywords": "genomic selection, genebank accessions, donor selection, 3K rice genomes, on-farm phenotyping, low-input, phosphorus deficiency, GBLUP, expected improvement, prediction accuracy, smallholder farms",
+   "path": "papers/tanaka-2021-tag.md",
+   "hash": "640a8cfa68b3",
+   "relations": [],
+   "not_established": "that farmer-managed or participatory evaluation was used (trials were researcher-run plots on farmers' fields); that the donors have produced released varieties; that expected improvement beats predicted genotypic value (no difference found)"
+  },
+  {
    "id": "teeken-2021-fsufs",
    "year": "2021",
    "type": "research article",
@@ -388,6 +488,40 @@
    "hash": "d516242df62e",
    "relations": [],
    "not_established": "results of a tricot trial (it is a 1000minds and RHoMIS survey); trait preferences for crops other than cassava or places outside Nigeria"
+  },
+  {
+   "id": "thiele-2021-ijfst",
+   "year": "2021",
+   "type": "review",
+   "source": "team",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "Five RTB case studies confirm that neglect of consumer-preferred traits slows uptake of modern varieties, leave the gender hypothesis unresolved and find informal seed systems both help and hinder",
+   "keywords": "varietal adoption, varietal turnover, consumer preferences, roots tubers and bananas, product profiles, gender, informal seed systems, varietal naming, DNA fingerprinting, landraces, demand-led breeding, RTBfoods",
+   "path": "papers/thiele-2021-ijfst.md",
+   "hash": "9a73a7b1e1b0",
+   "relations": [
+    {
+     "relation": "discusses",
+     "card": "vanetten-2019-pnas",
+     "note": "cites tricot as a tool for farmer-guided dissemination through the informal system"
+    }
+   ],
+   "not_established": "that gender differences in consumer preferences drive slow adoption (the review calls the evidence insufficient); that informal seed systems are the main barrier (evidence mixed); that tricot improves RTB adoption (mentioned as a tool, not assessed)"
+  },
+  {
+   "id": "voss-2021-outlook",
+   "year": "2021",
+   "type": "review",
+   "source": "team",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "Review finding that evidence of gender-differentiated maize trait preferences is inconclusive and that gender-intentional maize breeding needs better methods, household-level analysis and new incentives",
+   "keywords": "gender, maize breeding, gender-intentional breeding, trait preferences, seed adoption, market segmentation, intrahousehold decision-making, CGIAR Gender and Breeding Initiative, participatory plant breeding, tricot, seed systems",
+   "path": "papers/voss-2021-outlook.md",
+   "hash": "1ef33c27d724",
+   "relations": [],
+   "not_established": "that women and men do not differ in maize preferences (the review says evidence is inconclusive, not absent); that tricot reveals gender differences in maize (cited as a promising option, not tested here); that gender-intentional breeding improves women's adoption"
   },
   {
    "id": "brown-2022-cropsci",
@@ -416,6 +550,20 @@
    "relations": []
   },
   {
+   "id": "arnaud-2023-jsfa",
+   "year": "2023",
+   "type": "review",
+   "source": "team",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "RTBfoods shows how SOPs, data templates and Crop Ontology food quality traits let consumer, sensory, lab and NIRS data on 12 RTB food products link to genotypes in Breedbase",
+   "keywords": "RTBfoods, consumer preferences, food quality, sensory panel, Crop Ontology, Breedbase, SOPs, data templates, NIRS, gendered food product profile, target product profile, data integration",
+   "path": "papers/arnaud-2023-jsfa.md",
+   "hash": "8b960870b988",
+   "relations": [],
+   "not_established": "that more quality traits in breeding databases led to more adopted varieties; that tricot data were part of this integration (the paper does not mention tricot); the percentage changes in Table 9 (see Notes)"
+  },
+  {
    "id": "desousa-2023-joss",
    "year": "2023",
    "type": "software paper",
@@ -440,6 +588,20 @@
    "path": "papers/desousa-2023-softwarex.md",
    "hash": "da2985809dd2",
    "relations": []
+  },
+  {
+   "id": "dumschott-2023-fps",
+   "year": "2023",
+   "type": "review",
+   "source": "team",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "Review guiding plant scientists through the ontologies, metadata frameworks (ISA) and lookup services that make plant research data FAIR, including the CGIAR Crop Ontology",
+   "keywords": "ontologies, FAIR data, metadata, Crop Ontology, ISA framework, Planteome, Plant Ontology, Trait Ontology, MIAPPE, PPEO, AgroPortal, DataPLANT, Swate, research data management",
+   "path": "papers/dumschott-2023-fps.md",
+   "hash": "cf6c476f2105",
+   "relations": [],
+   "not_established": "that using ontologies makes datasets FAIR on its own (metadata frameworks and repositories are also needed); a single correct ontology for each term (the authors say there is no one-size-fits-all); anything specific to on-farm or tricot data, which the review does not cover"
   },
   {
    "id": "gesesse-2023-pnas",
@@ -567,6 +729,11 @@
      "relation": "isCitedAsDataSourceBy",
      "card": "cairns-2026-jxb",
      "note": "cites over 150,000 farmers; the source reports about 150,000 plots"
+    },
+    {
+     "relation": "isDiscussedBy",
+     "card": "occelli-2026-ahv",
+     "note": "cites tricot as digitally mediated crowdsourcing of varietal feedback"
     }
    ],
    "not_established": "over 150,000 farmers (it reports about 150,000 plots); a 40% saving against RCBD (it attributes this to Occelli et al. 2024, which reports 28% against group PVS); a general cost of tricot or a general 27% saving against RCBD (the cost comparison is a single case study of potato trials in Rwanda)"
@@ -614,7 +781,13 @@
    "keywords": "cassava, elite clones, tricot, participatory variety selection, rank aggregation, sociodemographic covariates, climate covariates, reliability, food quality traits, variety release, NaCRRI",
    "path": "papers/nanyonjo-2024-cropsci.md",
    "hash": "05a200950815",
-   "relations": []
+   "relations": [
+    {
+     "relation": "isDiscussedBy",
+     "card": "cairns-2025-ppp",
+     "note": "host farmers selected by weighting on gender and other factors in Uganda"
+    }
+   ]
   },
   {
    "id": "occelli-2024-agecon",
@@ -640,6 +813,20 @@
     }
    ],
    "not_established": "cost savings against RCBD or researcher-managed trials (the 28% is against group PVS); better food security from tricot (group PVS did better); effects outside bean in Central America"
+  },
+  {
+   "id": "occelli-2024-natplants",
+   "year": "2024",
+   "type": "review",
+   "source": "external",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "Scoping review of 40 years of trait prioritization studies finds weak designs, ad hoc sampling, little sex-disaggregation and no shared trait taxonomy, so findings cannot be compared or pooled",
+   "keywords": "trait prioritization, trait preferences, scoping review, PRISMA-ScR, sex-disaggregated data, sampling, trait taxonomy, Crop Ontology, participatory plant breeding, research networks, demand-led breeding",
+   "path": "papers/occelli-2024-natplants.md",
+   "hash": "6859797244ba",
+   "relations": [],
+   "not_established": "that any single elicitation tool, including tricot, gives the most valid trait priorities (the review maps use, not validity); that direct questions give wrong results (cited, not tested here); that roughly 250 respondents is an adequate sample; rankings of specific traits for a given crop and country"
   },
   {
    "id": "quiros-2024-compag",
@@ -696,6 +883,26 @@
    "path": "papers/1000farms-2025-report.md",
    "hash": "26b635173751",
    "relations": []
+  },
+  {
+   "id": "cairns-2025-ppp",
+   "year": "2025",
+   "type": "research article",
+   "source": "team",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "A typology of 2,040 randomly surveyed Zimbabwean maize farms showed extension-selected trial hosts matched the population's farm types, and that women and men farmers each form several distinct types",
+   "keywords": "host farmer selection, farm typology, representativeness, gender-responsive breeding, women-headed households, intersectionality, participatory varietal selection, on-farm testing, target population of environments, social inclusion, random forest",
+   "path": "papers/cairns-2025-ppp.md",
+   "hash": "bb4578c77d80",
+   "relations": [
+    {
+     "relation": "discusses",
+     "card": "nanyonjo-2024-cropsci",
+     "note": "host farmers selected by weighting on gender and other factors in Uganda"
+    }
+   ],
+   "not_established": "that representative host farmers change which hybrids are advanced (not tested); the minimum survey size needed for a typology (the authors call it an open question); that the hosts were tricot farmers (this is CIMMYT's participatory variety testing network)"
   },
   {
    "id": "donovan-2025-expagric",
@@ -768,6 +975,20 @@
    "path": "papers/kang-2025-expagric.md",
    "hash": "9d1cf167c113",
    "relations": []
+  },
+  {
+   "id": "mawia-2025-fsufs",
+   "year": "2025",
+   "type": "research article",
+   "source": "team",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "In a mock agro-dealer experiment with about 590 Kenyan farmers, 70% chose the decades-old market leader hybrid, driven by familiarity and drought tolerance, and few tried alternatives when it was out of stock",
+   "keywords": "seed choice, market leader varieties, varietal turnover, hybrid maize, mock agro-dealer store, stockout, trait preferences, drought tolerance, seed price, multinomial logit, brand loyalty",
+   "path": "papers/mawia-2025-fsufs.md",
+   "hash": "44ec5a21c807",
+   "relations": [],
+   "not_established": "causal effects of experience or traits on seed choice (correlational design); that posters, discounts or information cannot shift choice in other settings; preferences beyond one semi-arid county"
   },
   {
    "id": "muller-2025-ux",
@@ -1119,6 +1340,26 @@
     }
    ],
    "not_established": "that men are more involved than women in bean production nationally (participation shares come from one trial sample); effects across seasons (single season); measured yield or disease differences (yield was ranked by grain volume, disease by field-agent scores); that tricot data alone yield the detailed trait evaluations of PVS"
+  },
+  {
+   "id": "occelli-2026-ahv",
+   "year": "2026",
+   "type": "research article",
+   "source": "external",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "Three long-running participatory breeding programmes show that farmer participation spread through champions and partnerships, while national seed and research policies lag far behind established practice",
+   "keywords": "Farmer First, participatory research, institutionalization, agricultural policy, seed systems, farmer organizations, quality-declared seed, variety release, champions, curricula, PABRA, CIAL",
+   "path": "papers/occelli-2026-ahv.md",
+   "hash": "024f4415dff0",
+   "relations": [
+    {
+     "relation": "discusses",
+     "card": "desousa-2024-asd",
+     "note": "cites tricot as digitally mediated crowdsourcing of varietal feedback"
+    }
+   ],
+   "not_established": "that participatory breeding improved farmer welfare or food security in these cases (not assessed); that the three cases represent all countries; causal effects of the projects on policy (the authors draw lessons, not causal links); anything about tricot specifically, which is mentioned only as a form of crowdsourcing"
   }
  ]
 }
