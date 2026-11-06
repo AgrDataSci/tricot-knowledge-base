@@ -1,7 +1,7 @@
 {
- "version": "44137fa7d915",
+ "version": "f75cc831b3dc",
  "updated": "2026-11-06",
- "cards": 69,
+ "cards": 70,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
   "path": "SKILL.md",
@@ -101,6 +101,11 @@
      "relation": "isExtendedBy",
      "card": "desousa-2021-commsbio",
      "note": ""
+    },
+    {
+     "relation": "isCitedAsDataSourceBy",
+     "card": "woldeyohannes-2022-elife",
+     "note": "earlier participatory evaluation of durum wheat in Ethiopia showing gender differences"
     },
     {
      "relation": "providesDataFor",
@@ -417,6 +422,11 @@
     },
     {
      "relation": "isAgreedWithBy",
+     "card": "woldeyohannes-2022-elife",
+     "note": "farmer appreciation is heritable and informative for breeding"
+    },
+    {
+     "relation": "isAgreedWithBy",
      "card": "gesesse-2023-pnas",
      "note": "farmer appreciation improves prediction accuracy"
     }
@@ -543,6 +553,36 @@
    ]
   },
   {
+   "id": "woldeyohannes-2022-elife",
+   "year": "2022",
+   "type": "research article",
+   "source": "team",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "Characterises 366 Ethiopian teff varieties with genomics, agronomy, farmer scores and climate, finding farmer appreciation highly heritable, gender-specific trait weights, and a lake Tana region most vulnerable to climate change",
+   "keywords": "teff, farmer varieties, landraces, participatory variety selection, farmer appreciation, Likert scores, Plackett-Luce, gender, heritability, GWAS, genomic offset, climate change, neglected and underutilized species, Ethiopia",
+   "path": "papers/woldeyohannes-2022-elife.md",
+   "hash": "ec1e83d8cb15",
+   "relations": [
+    {
+     "relation": "usesMethodIn",
+     "card": "gesesse-2023-pnas",
+     "note": "the same farmer-rating to Plackett-Luce workflow, with scores converted to paired comparisons and worth linked to agronomic traits"
+    },
+    {
+     "relation": "agreesWith",
+     "card": "desousa-2021-commsbio",
+     "note": "farmer appreciation is heritable and informative for breeding"
+    },
+    {
+     "relation": "citesAsDataSource",
+     "card": "mancini-2017-scirep",
+     "note": "earlier participatory evaluation of durum wheat in Ethiopia showing gender differences"
+    }
+   ],
+   "not_established": "that candidate genes near QTNs are causal, since low-density genotyping and population structure confound associations; that the two common-garden locations represent the range of teff environments; that the genomic offset predicts yield loss"
+  },
+  {
    "id": "alamu-2023-jsfa",
    "year": "2023",
    "type": "research article",
@@ -661,8 +701,13 @@
    "gist": "Farmer appreciation of 1,200 EtNAM wheat lines is heritable and, used in genomic selection, predicts grain yield in new environments better than models trained on yield itself",
    "keywords": "genomic selection, EtNAM, nested association mapping, farmer appreciation, participatory variety selection, heritability, QTL, GWAS, durum wheat, traditional knowledge, Plackett-Luce, local adaptation",
    "path": "papers/gesesse-2023-pnas.md",
-   "hash": "21885073b249",
+   "hash": "67c5ded4a9d4",
    "relations": [
+    {
+     "relation": "providesMethodFor",
+     "card": "woldeyohannes-2022-elife",
+     "note": "the same farmer-rating to Plackett-Luce workflow, with scores converted to paired comparisons and worth linked to agronomic traits"
+    },
     {
      "relation": "usesDataFrom",
      "card": "mancini-2017-scirep",

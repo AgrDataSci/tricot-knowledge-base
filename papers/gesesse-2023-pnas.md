@@ -13,7 +13,7 @@ curated_card: no
 doi: https://doi.org/10.1073/pnas.2205774119
 open_copy: https://doi.org/10.1073/pnas.2205774119
 license: CC BY 4.0
-data: raw data on Dryad (https://doi.org/10.5061/dryad.w6m905qrv); scripts at https://github.com/mdellh2o/EtNAM.GS
+data: raw data on Dryad (https://doi.org/10.5061/dryad.w6m905qrv); scripts at https://github.com/mdellh2o/EtNAM.GS; the farmer-rating to Plackett-Luce scripts are at https://github.com/AgrDataSci/teff-breeding-elife (mislabelled as the teff paper) and curated in https://github.com/AgrDataSci/tricot-analysis-workflows (use-cases/can-farmer-ratings-be-analysed-as-rankings)
 software: Plackett-Luce model (R package PlackettLuce, https://CRAN.R-project.org/package=PlackettLuce, check the current CRAN version)
 crops: durum wheat
 region: Ethiopia (Adet, Geregera, Kulumsa; diversity panel also at Hagreselam)
