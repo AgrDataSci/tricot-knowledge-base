@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, plus external literature curated by the core team, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `214846ee6fec`, updated 2026-11-05, 68 cards.<!-- version:end -->
+<!-- version:start -->Installed version `788fdd4dcbf2`, updated 2026-11-06, 68 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -37,10 +37,6 @@ If the user shares the repository link and you are reading the files from the we
   - In other assistants, help them add `SKILL.md` and the `papers/` folder to a project or to custom instructions, or suggest simply sharing the link at the start of each conversation.
 - **If a step fails**, say what probably went wrong in plain words and offer the simplest fallback, which is to keep sharing the link.
 - **Never install anything or change the user's settings without their agreement.** If they say no, keep answering from the live files and do not ask again.
-
-## Names
-
-Write tricot and maniva in lowercase, always. That holds in headings, table cells, lists and at the start of a sentence, so never write "tricot" or "Maniva". tricot stands for triadic comparison of technology options. Quote published titles exactly as printed, even where they capitalise tricot or expand it as "triadic comparisons of technologies".
 
 ## How to answer
 
