@@ -17,6 +17,7 @@ Licences were read from each PDF on 2026-10-30. The batch added on 2026-11-05 wa
 | arnaud-et-al-2023.pdf | [arnaud-2023-jsfa](../papers/arnaud-2023-jsfa.md) | https://doi.org/10.1002/jsfa.12710 | CC BY 4.0 |
 | beza-et-al-2017.pdf | [beza-2017-plosone](../papers/beza-2017-plosone.md) | https://doi.org/10.1371/journal.pone.0175700 | CC BY 4.0 |
 | brown-et-al-2022.pdf | [brown-2022-cropsci](../papers/brown-2022-cropsci.md) | https://doi.org/10.1002/csc2.20817 | CC BY 4.0 |
+| brown-et-al-2023.pdf | [brown-2023-agronj](../papers/brown-2023-agronj.md) | https://doi.org/10.1002/agj2.21436 | CC BY 4.0 |
 | cairns-et-al-2025.pdf | [cairns-2025-ppp](../papers/cairns-2025-ppp.md) | https://doi.org/10.1002/ppp3.70070 | CC BY 4.0 |
 | cairns-et-al-2026.pdf | [cairns-2026-jxb](../papers/cairns-2026-jxb.md) | https://doi.org/10.1093/jxb/erag431 | CC BY 4.0 |
 | carroll-et-al-2020.pdf | [carroll-2020-dsj](../papers/carroll-2020-dsj.md) | https://doi.org/10.5334/dsj-2020-043 | CC BY 4.0 |
