@@ -82,6 +82,6 @@ The authors recommend more work on nutritious crops and neglected regions, linki
 ## Notes
 
 - The abstract and Fig. 6 give 657 included studies, while the results describe 564 original studies. Use 564 for shares of original studies and say so.
-- Tricot appears only as one tool among 21 under "direct experience". The review does not report how many studies used tricot.
+- tricot appears only as one tool among 21 under "direct experience". The review does not report how many studies used tricot.
 - The recommendation to link trait studies to Crop Ontology matches the team's data standards work (arnaud-2023-jsfa, dumschott-2023-fps, quiros-2024-compag).
 - Different paper from occelli-2024-agecon, the same first author's randomized comparison of tricot and group PVS. See occelli-2026-ahv for the same Cornell group's policy review of farmer participation, and voss-2021-outlook and teeken-2021-fsufs on gender and trait preferences.

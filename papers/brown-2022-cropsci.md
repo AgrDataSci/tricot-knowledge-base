@@ -59,7 +59,7 @@ Pooling trials let the analysis exploit the spread of locations and seasons that
 
 | Number | Context | Primary source |
 |---|---|---|
-| 14 trials | Tricot common bean trials pooled | This paper |
+| 14 trials | tricot common bean trials pooled | This paper |
 | 2015–2018 | Trial period | This paper |
 | 4 countries | Costa Rica, El Salvador, Honduras, Nicaragua | This paper |
 | 27 → 17 | Genotypes after name harmonization | This paper |

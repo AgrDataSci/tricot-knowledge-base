@@ -31,7 +31,7 @@ gist: The R package behind tricot analysis, fitting Plackett-Luce models to part
 
 ## Summary
 
-The paper presents the PlackettLuce R package, which fits a generalized Plackett-Luce model to rankings. Under Luce's axiom, each item has a worth, and the probability of a ranking is the product of choosing each item in turn from those that remain. Tricot produces exactly this kind of data, where each farmer ranks a small subset of a larger set of varieties.
+The paper presents the PlackettLuce R package, which fits a generalized Plackett-Luce model to rankings. Under Luce's axiom, each item has a worth, and the probability of a ranking is the product of choosing each item in turn from those that remain. tricot produces exactly this kind of data, where each farmer ranks a small subset of a larger set of varieties.
 
 The package extends the standard model in three ways that matter for on-farm data. It handles partial rankings, where each ranking covers only a subset of items. It handles ties of any order, with tie parameters estimated alongside worths. By default it adds pseudo-rankings with a hypothetical item, which keeps the network of wins and losses connected so that every item has a finite worth estimate and standard error, even with sparse data. The pseudo-rankings also act as a mild regularization, shrinking estimates for items seen in few rankings.
 
@@ -51,7 +51,7 @@ Tie parameters have a direct interpretation. For two items of equal worth, the p
 - **Fitting.** Iterative scaling, BFGS or L-BFGS. L-BFGS was typically fastest.
 - **Inference.** Standard errors, Z tests and quasi-variances for contrasts.
 - **Covariates.** pltree() combines the model with model-based recursive partitioning (psychotree, partykit).
-- **Tricot example.** Best-worst rankings of three varieties plus pairwise comparisons with the local variety, grouped per farmer.
+- **tricot example.** Best-worst rankings of three varieties plus pairwise comparisons with the local variety, grouped per farmer.
 
 ## Stated limitations
 

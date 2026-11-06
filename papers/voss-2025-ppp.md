@@ -18,7 +18,7 @@ software: PlackettLuce, gosset
 crops: leafy amaranth
 region: Benin, Mali, Tanzania
 keywords: opportunity crops, NUS, amaranth, tricot, farmer segmentation, cluster analysis, gender, market segments, demand-driven breeding, seed systems, World Vegetable Center
-gist: Tricot trials of 14 amaranth varieties with 2,063 farmers in Benin, Mali and Tanzania identify gender- and business-based farmer segments with distinct variety preferences
+gist: tricot trials of 14 amaranth varieties with 2,063 farmers in Benin, Mali and Tanzania identify gender- and business-based farmer segments with distinct variety preferences
 ---
 
 ## Questions this paper answers
@@ -44,7 +44,7 @@ The trials also show tricot working at scale for a leafy vegetable, extending th
 
 ## Methods in brief
 
-- **Trials.** Tricot with 14 amaranth varieties, three per farmer, in three countries.
+- **Trials.** tricot with 14 amaranth varieties, three per farmer, in three countries.
 - **Participants.** 2,063 farmers with gender and household data.
 - **Analysis.** Plackett-Luce models of overall and trait rankings, Kendall correlations between traits and overall preference, and cluster analysis to define farmer segments with segment-specific variety rankings.
 

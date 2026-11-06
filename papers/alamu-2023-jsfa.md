@@ -45,7 +45,7 @@ NIRS also predicted several texture traits reasonably, with R² in prediction of
 - **Processing.** Gari and eba following RTBfoods SOPs.
 - **Measurements.** Colorimetry, instrumental texture profile analysis, sensory texture profile analysis by 16 trained panelists, NIRS calibration.
 - **Genetics.** BLUEs and broad-sense heritability estimates.
-- **Consumers.** Tricot test with 600 consumers on ten genotypes, Plackett-Luce trees with social covariates.
+- **Consumers.** tricot test with 600 consumers on ten genotypes, Plackett-Luce trees with social covariates.
 
 ## Stated limitations
 
@@ -61,7 +61,7 @@ NIRS also predicted several texture traits reasonably, with R² in prediction of
 | 12 months | Harvest age | This paper |
 | 16 panelists | Trained sensory panel, 0–10 scale | This paper |
 | 13 genotypes | Selected for sensory and instrumental texture comparison | This paper |
-| 600 consumers | Tricot consumer test, Osun and Benue, Nigeria | This paper |
+| 600 consumers | tricot consumer test, Osun and Benue, Nigeria | This paper |
 | 85.3% | Variance in eba texture explained by first two principal components | This paper |
 | >30% / <10% | Heritability of color traits / most texture traits | This paper |
 | 0.80 / 0.66 / 0.35 | NIRS calibration R² for eba L* / a* / b* | This paper |

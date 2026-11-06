@@ -30,7 +30,7 @@ not_established: cost savings against RCBD or researcher-managed trials (the 28%
 
 ## Summary
 
-The paper is an impact evaluation comparing tricot (tricot-PVS) with the established group-based participatory variety selection approach (group-PVS) on outcomes for farmers, not just on the quality of variety information. Participatory approaches bring farmer knowledge and local context into breeding but are rarely streamlined or scaled. Tricot addresses scale, but its effects on participants had not been tested against a strong benchmark.
+The paper is an impact evaluation comparing tricot (tricot-PVS) with the established group-based participatory variety selection approach (group-PVS) on outcomes for farmers, not just on the quality of variety information. Participatory approaches bring farmer knowledge and local context into breeding but are rarely streamlined or scaled. tricot addresses scale, but its effects on participants had not been tested against a strong benchmark.
 
 The study covers common bean in the Trifinio area of Central America, where Guatemala, Honduras and El Salvador meet. It uses data from 1,978 smallholder farmers in 140 villages, which were randomly assigned to tricot-PVS, group-PVS or a control, with baseline and follow-up surveys. Outcomes were on-farm varietal diversification and household food security, estimated with a difference-in-difference model with inverse probability weighting and an instrumental-variable approach.
 
@@ -38,7 +38,7 @@ Farmers in both approaches reached comparable levels of on-farm varietal diversi
 
 A cost analysis found tricot-PVS 28% cheaper than group-PVS. The authors conclude that tricot achieves similar diversification at lower cost but lacks the learning effects of group approaches, and suggest combining tricot's scale with complementary agronomic training. They frame this as part of making participatory variety selection more inclusive and demand-driven.
 
-The authors had expected both approaches to raise diversification, even though they expose farmers differently. Tricot farmers observe three varieties intensively on their own farm, while group farmers observe the whole set less intensively. Both groups indeed diversified more than control farmers, and adoption was similar once the ability of each approach to deliver the preferred variety at each site was accounted for. An average adoption of about 20% is in line with other estimates and promising given that most tested varieties were new cultivars.
+The authors had expected both approaches to raise diversification, even though they expose farmers differently. tricot farmers observe three varieties intensively on their own farm, while group farmers observe the whole set less intensively. Both groups indeed diversified more than control farmers, and adoption was similar once the ability of each approach to deliver the preferred variety at each site was accounted for. An average adoption of about 20% is in line with other estimates and promising given that most tested varieties were new cultivars.
 
 For food security, the authors expected group participants to benefit from agronomic training and exchanges with technical staff and other farmers, raising yields. That mechanism appears to explain the advantage of group-PVS, which had a stronger effect on food security than on variety adoption. The results point to a trade-off between the scale and lower cost of tricot and the learning benefits of group-based approaches.
 

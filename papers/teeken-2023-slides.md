@@ -37,7 +37,7 @@ Each participant ranked their three varieties from best to worst, overall and fo
 
 The central message is that women largely dominate cassava processing and marketing and therefore determine which varieties suit the whole value chain. The slides argue for integrating tricot sustainably in breeding as improved on-farm testing for variety release, standardizing automated social covariate analysis within breeding data, and including crop users as stakeholders in the breeding process.
 
-The slides place tricot within a longer research sequence that informed IITA's cassava product profile for gari and fufu. Earlier work included a state-representative survey with participatory processing and consumer testing of preferred characteristics, gender-responsive mother-baby trials with farmers and processors, a 1000minds study of the economic value of agronomic and food quality traits, and demand creation trials. Tricot was introduced to upscale the baby-trial approach, reaching more participants and greater representativeness while keeping processors and consumers involved. The design shows how tricot was adapted for a clonal crop processed into food, with evaluation continuing from planting through processing, and with participants chosen to represent the social and task groups that shape cassava value chains.
+The slides place tricot within a longer research sequence that informed IITA's cassava product profile for gari and fufu. Earlier work included a state-representative survey with participatory processing and consumer testing of preferred characteristics, gender-responsive mother-baby trials with farmers and processors, a 1000minds study of the economic value of agronomic and food quality traits, and demand creation trials. tricot was introduced to upscale the baby-trial approach, reaching more participants and greater representativeness while keeping processors and consumers involved. The design shows how tricot was adapted for a clonal crop processed into food, with evaluation continuing from planting through processing, and with participants chosen to represent the social and task groups that shape cassava value chains.
 
 ## Methods in brief
 
@@ -55,7 +55,7 @@ The slides place tricot within a longer research sequence that informed IITA's c
 
 | Number | Context | Primary source |
 |---|---|---|
-| 320 trials | Tricot participants and trials across 4 states | This presentation |
+| 320 trials | tricot participants and trials across 4 states | This presentation |
 | 80 per state | Trials per state | This presentation |
 | 30 varieties | Farmer-popular and new varieties tested | This presentation |
 | 10 per community | Farmers sampled per community | This presentation |

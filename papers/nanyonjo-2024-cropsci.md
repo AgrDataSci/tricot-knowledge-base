@@ -18,7 +18,7 @@ software: PlackettLuce, gosset
 crops: cassava
 region: Uganda
 keywords: cassava, elite clones, tricot, participatory variety selection, rank aggregation, sociodemographic covariates, climate covariates, reliability, food quality traits, variety release, NaCRRI
-gist: Tricot evaluation of 20 elite cassava clones with 614 farmers in Uganda, merging two cycles by rank aggregation and finding geography and heavy-rain days drove performance more than farmer traits
+gist: tricot evaluation of 20 elite cassava clones with 614 farmers in Uganda, merging two cycles by rank aggregation and finding geography and heavy-rain days drove performance more than farmer traits
 ---
 
 ## Questions this paper answers
@@ -60,7 +60,7 @@ The authors explain why location outweighed farmer characteristics. Overall perf
 |---|---|---|
 | 20 clones + 1 check | Elite cassava clones and NAROCASS 1 | This paper |
 | 294 men, 320 women | Participating farmers | This paper |
-| 484 trials (207 + 277) | Tricot trials retained after cleaning, cycles 1 and 2 | This paper |
+| 484 trials (207 + 277) | tricot trials retained after cleaning, cycles 1 and 2 | This paper |
 | ≥30 farmers | Minimum size of the farmer group per parish | This paper |
 | 12 MAP | Harvest evaluation, 12 months after planting | This paper |
 | 10% | Minimum observations per tree node | This paper |

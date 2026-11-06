@@ -75,7 +75,7 @@ Cite the primary source in the last column, not this review.
 | 41% / 37% / 25% | Intercropping in women-, jointly- and men-managed maize plots | Cairns et al. 2026 |
 | 0.49 ha / 0.9 ha | Average farm size, Kenya / Ethiopia (vs 56 ha Europe, 447 ha USA) | Rapsomanikis 2015 |
 | <20 → ~300 farms | Late-stage on-farm testing per maize pipeline after sparse testing | Setimela et al. 2012, 2017; Prasanna et al. 2022 |
-| >150,000 farmers | Tricot participants across crops over 12 years | de Sousa et al. 2024 |
+| >150,000 farmers | tricot participants across crops over 12 years | de Sousa et al. 2024 |
 | USD 3,467 | Researcher-led yield measurement, 20 locations, one Zimbabwe district | Hamadziripi et al. 2025 |
 | >20 questions | Typical survey length to delineate farm types | This review |
 | 8 → 18 kg N/ha | SSA fertilizer use over two decades, vs 50 kg Abuja target | Rasche and Vanlauwe 2025 |

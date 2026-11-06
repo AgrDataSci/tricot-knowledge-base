@@ -30,7 +30,7 @@ not_established: a universal sample size for yield measurement; accuracy for cro
 
 ## Summary
 
-Tricot relies mainly on farmer rankings, which give relative performance but not the absolute yields breeders need to measure genetic gain, satisfy release committees or assess returns on breeding investment. The study tests whether farmers can generate accurate yield data for common bean in decentralized on-farm trials.
+tricot relies mainly on farmer rankings, which give relative performance but not the absolute yields breeders need to measure genetic gain, satisfy release committees or assess returns on breeding investment. The study tests whether farmers can generate accurate yield data for common bean in decentralized on-farm trials.
 
 A yield determination survey in 2022 involved 30 farmers (24 men and 6 women) in Kilindi and Karatu districts in northern Tanzania. Farmers and trained technicians measured harvested grain volumes using common local containers (sado tins), after farmers sun-dried the beans to reduce moisture. Researchers then measured absolute yield in mass and moisture content for comparison.
 

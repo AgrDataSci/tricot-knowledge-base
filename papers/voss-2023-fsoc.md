@@ -35,7 +35,7 @@ SPTA worked with Corteva on the Ms44 gene, which makes maize plants non-pollen p
 
 The team, smaller than many breeding projects, took up recommendations from a donor gender audit and engaged gender specialists to study differences in management and resource constraints between women and men. Because a technology can only benefit women if they can access and evaluate it, SPTA prioritized equitable participation as trial hosts and in participatory variety selection, reaching over 50% women and many resource-poor farmers.
 
-Tricot was central to this shift. The team piloted it in 2021 with 112 farmers (55% women) in Kenya. With the 1000FARMS project, it expanded to 356 farmers (65% women) in 2022 and 1,380 farmers (56% women) in 2023. Attention to intrahousehold dynamics was part of the method, including ensuring that the three trial varieties were stored, milled and cooked separately in over 100 households so that post-harvest traits could be compared.
+tricot was central to this shift. The team piloted it in 2021 with 112 farmers (55% women) in Kenya. With the 1000FARMS project, it expanded to 356 farmers (65% women) in 2022 and 1,380 farmers (56% women) in 2023. Attention to intrahousehold dynamics was part of the method, including ensuring that the three trial varieties were stored, milled and cooked separately in over 100 households so that post-harvest traits could be compared.
 
 The authors reflect on successes and challenges and draw lessons for other breeding teams, mainly that gender integration works when breeders own it, when it is backed by specialists and resources, and when testing methods such as tricot make broad, inclusive participation feasible.
 
@@ -44,7 +44,7 @@ Central to the case was handing on-farm trials to the social science team, which
 ## Methods in brief
 
 - **Approach.** Innovation history from project documents and team experience.
-- **On-farm testing.** Tricot trials in Kenya from 2021, recruiting women as trial hosts.
+- **On-farm testing.** tricot trials in Kenya from 2021, recruiting women as trial hosts.
 - **Post-harvest evaluation.** Separate storage, milling and cooking of the three varieties in households.
 
 ## Stated limitations
@@ -58,9 +58,9 @@ Central to the case was handing on-farm trials to the social science team, which
 |---|---|---|
 | 2016 / 2020 | SPTA launch / second phase | This paper |
 | 1:1 | Segregation of pollen and non-pollen plants in Ms44 hybrids (50% FNP) | This paper |
-| 112 farmers (55% women) | Tricot pilot in Kenya, 2021 | This paper |
-| 356 farmers (65% women) | Tricot in Kenya, 2022, with 1000FARMS | This paper |
-| 1,380 farmers (56% women) | Tricot in Kenya, 2023 | This paper |
+| 112 farmers (55% women) | tricot pilot in Kenya, 2021 | This paper |
+| 356 farmers (65% women) | tricot in Kenya, 2022, with 1000FARMS | This paper |
+| 1,380 farmers (56% women) | tricot in Kenya, 2023 | This paper |
 | >100 households | Separate storage, milling and cooking of trial varieties | This paper |
 | >50% | Women's participation as trial hosts and in PVS | This paper |
 

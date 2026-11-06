@@ -18,7 +18,7 @@ software: ClimMob, PlackettLuce
 crops: potato
 region: Nigeria (Plateau State)
 keywords: potato, tricot, Nigeria, CIP clones, Marabel, market orientation, subsistence farmers, bootstrap, farmer segments, decentralized variety testing
-gist: Tricot with 295 potato farmers in Plateau State, Nigeria, ranks two CIP clones above the check Marabel and shows market-oriented and subsistence farmers value different traits
+gist: tricot with 295 potato farmers in Plateau State, Nigeria, ranks two CIP clones above the check Marabel and shows market-oriented and subsistence farmers value different traits
 ---
 
 ## Questions this paper answers

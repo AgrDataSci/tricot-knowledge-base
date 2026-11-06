@@ -30,7 +30,7 @@ gist: First test of tricot data quality, showing individual farmer rankings are 
 
 ## Summary
 
-The paper tests the core assumption of tricot, that many independent, lightly supervised farmer observations can be aggregated into valid results. Participatory approaches are hard to scale because they need trained staff, collective plots and sustained farmer engagement. Tricot instead relies on the "wisdom of crowds", where a diverse group of independent observers converges on the right answer even if each individual is often wrong.
+The paper tests the core assumption of tricot, that many independent, lightly supervised farmer observations can be aggregated into valid results. Participatory approaches are hard to scale because they need trained staff, collective plots and sustained farmer engagement. tricot instead relies on the "wisdom of crowds", where a diverse group of independent observers converges on the right answer even if each individual is often wrong.
 
 At five sites in Honduras, 35 farmers (18 women and 17 men) evaluated sets of three common bean varieties grown side by side. They ranked the varieties for plant vigor, plant architecture, pest resistance and disease resistance, and an experienced agronomist ranked the same sets independently. The agronomist's ranking served as the reference for validity.
 
@@ -38,7 +38,7 @@ Individual reliability was low. Agreement among farmers (Kendall's W) ranged fro
 
 A simulation built on the empirical data then estimated how many participants are needed. More observers steadily increase the number of varieties that can be told apart from the best one, and harder traits need more observers. The discriminative ability reached for plant vigor with 50 participants required 200 participants for disease resistance.
 
-The authors conclude that low individual reliability does not undermine accuracy when enough farmers take part. Assuming attrition of 20% or less, 150 to 200 participants are likely sufficient to evaluate 10 to 12 varieties. They also note that some disagreement reflects genuinely different criteria among farmers, for example on what good plant architecture means, rather than error. Tricot results therefore represent an average of farmer views, which later work addresses by modelling heterogeneity directly.
+The authors conclude that low individual reliability does not undermine accuracy when enough farmers take part. Assuming attrition of 20% or less, 150 to 200 participants are likely sufficient to evaluate 10 to 12 varieties. They also note that some disagreement reflects genuinely different criteria among farmers, for example on what good plant architecture means, rather than error. tricot results therefore represent an average of farmer views, which later work addresses by modelling heterogeneity directly.
 
 The simulation also showed that adding varieties to a trial of fixed size raises the number of varieties distinguishable from the best, within limits, and that traits needing closer inspection, such as plant architecture and pest resistance, call for more observers. The results agree with earlier ethnobiological work in Honduras, where farmers knew plants precisely, insects less well and plant diseases least, so ease of visual observation is a main factor in the accuracy of farmer data.
 

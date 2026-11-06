@@ -46,7 +46,7 @@ The GGE analysis grouped the test environments into four mega-environments, whic
 
 - **Station trials.** 16 genotypes (2 checks), randomized complete block design, 18 environments.
 - **Analysis.** Combined ANOVA and GGE biplot for stability and mega-environments.
-- **On-farm trials.** Tricot in 42 locations, 36 villages, 10 regions, 2021–2023, with sex-disaggregated rankings.
+- **On-farm trials.** tricot in 42 locations, 36 villages, 10 regions, 2021–2023, with sex-disaggregated rankings.
 - **Preference analysis.** Plackett-Luce models of trait and overall rankings by gender.
 
 ## Stated limitations
@@ -60,8 +60,8 @@ The GGE analysis grouped the test environments into four mega-environments, whic
 |---|---|---|
 | 16 genotypes (2 checks) | Evaluated in station trials | This paper |
 | 18 environments | Station multi-environment trials | This paper |
-| 42 locations | Tricot on-farm trials | This paper |
-| 154 / 178 / 871 farmers | Tricot participants in 2021 / 2022 / 2023 | This paper |
+| 42 locations | tricot on-farm trials | This paper |
+| 154 / 178 / 871 farmers | tricot participants in 2021 / 2022 / 2023 | This paper |
 | 36 villages, 10 regions | Coverage of tricot trials | This paper |
 | ~927 kg/ha | Highest mean kernel yield, ICGV-SM 05534 | This paper |
 | ~936 / ~878 kg/ha | Mean kernel yield of the most stable genotypes, ICGV-SM 16645 / ICGV-SM 10014 | This paper |

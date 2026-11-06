@@ -64,6 +64,6 @@ The authors call for mechanisms, tools and policies to implement CARE, for appli
 
 ## Notes
 
-- Context for data ethics in the suite. Tricot data are released openly (CC0), while CARE asks who benefits and who controls data about communities. Use it with dumschott-2023-fps on making plant data FAIR.
+- Context for data ethics in the suite. tricot data are released openly (CC0), while CARE asks who benefits and who controls data about communities. Use it with dumschott-2023-fps on making plant data FAIR.
 - The tricot SOPs handle personal data with pseudonymization, masking and aggregation in ClimMob (chase-2026-book, quiros-2024-compag). CARE concerns collective rights, which is a different question from individual privacy.
 - Not about agriculture or tricot. Do not present it as endorsing any data practice of the team.
