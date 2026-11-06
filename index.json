@@ -1,7 +1,7 @@
 {
- "version": "788fdd4dcbf2",
+ "version": "44137fa7d915",
  "updated": "2026-11-06",
- "cards": 68,
+ "cards": 69,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
   "path": "SKILL.md",
@@ -534,7 +534,13 @@
    "keywords": "data synthesis, rank aggregation, meta-analysis, Plackett-Luce trees, environmental covariates, WSDI, heat, planting date, survival analysis, area of applicability, variety maps",
    "path": "papers/brown-2022-cropsci.md",
    "hash": "6a6aa106938b",
-   "relations": []
+   "relations": [
+    {
+     "relation": "isExtendedBy",
+     "card": "brown-2023-agronj",
+     "note": "applies rank-based data synthesis to non-ranking station data and disease scores instead of tricot rankings"
+    }
+   ]
   },
   {
    "id": "alamu-2023-jsfa",
@@ -564,6 +570,36 @@
    "not_established": "that more quality traits in breeding databases led to more adopted varieties; that tricot data were part of this integration (the paper does not mention tricot); the percentage changes in Table 9 (see Notes)"
   },
   {
+   "id": "brown-2023-agronj",
+   "year": "2023",
+   "type": "research article",
+   "source": "team",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "Pools 31 Musa trials from 1990 to 2019 that scored black leaf streak with five different metrics by converting them to rankings, and finds that dry spell length separates humid from dry environments with different resistant genotypes",
+   "keywords": "data synthesis, rank aggregation, heterogeneous trials, Plackett-Luce trees, black leaf streak disease, black Sigatoka, Musa, AgERA5, dry spell, relative humidity, reliability, stability assessment, genotype by environment",
+   "path": "papers/brown-2023-agronj.md",
+   "hash": "a4284bcc3b1b",
+   "relations": [
+    {
+     "relation": "extends",
+     "card": "brown-2022-cropsci",
+     "note": "applies rank-based data synthesis to non-ranking station data and disease scores instead of tricot rankings"
+    },
+    {
+     "relation": "usesMethodIn",
+     "card": "desousa-2023-softwarex",
+     "note": "gosset for rank_numeric, reliability and model summaries"
+    },
+    {
+     "relation": "usesMethodIn",
+     "card": "desousa-2023-joss",
+     "note": "climatrends indices over the evaluation period"
+    }
+   ],
+   "not_established": "that dry environments are disease-free; that the top genotypes in dry environments differ significantly from the reference Calcutta 4; a causal mechanism for the humidity effect; that genotypes outperforming Calcutta 4 in one environment do so in the other"
+  },
+  {
    "id": "desousa-2023-joss",
    "year": "2023",
    "type": "software paper",
@@ -574,7 +610,13 @@
    "keywords": "climatrends, temperature indices, precipitation indices, growing degree-days, evapotranspiration, late spring frost, crop-sensitive indices, R package, climate covariates",
    "path": "papers/desousa-2023-joss.md",
    "hash": "101218b0c9f4",
-   "relations": []
+   "relations": [
+    {
+     "relation": "providesMethodFor",
+     "card": "brown-2023-agronj",
+     "note": "climatrends indices over the evaluation period"
+    }
+   ]
   },
   {
    "id": "desousa-2023-softwarex",
@@ -587,7 +629,13 @@
    "keywords": "gosset, R package, ranking data, rank_tricot, Plackett-Luce, Bradley-Terry, reliability, regret, worth map, cross-validation, tricot workflow",
    "path": "papers/desousa-2023-softwarex.md",
    "hash": "da2985809dd2",
-   "relations": []
+   "relations": [
+    {
+     "relation": "providesMethodFor",
+     "card": "brown-2023-agronj",
+     "note": "gosset for rank_numeric, reliability and model summaries"
+    }
+   ]
   },
   {
    "id": "dumschott-2023-fps",

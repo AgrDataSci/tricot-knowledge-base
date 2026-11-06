@@ -249,6 +249,26 @@
    "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/arnaud-2023-jsfa.md"
   },
   {
+   "@id": "https://doi.org/10.1002/agj2.21436",
+   "dcterms:identifier": "brown-2023-agronj",
+   "dcterms:title": "Rank-based data synthesis of heterogeneous trials to identify the effects of climatic factors on the reaction of Musa genotypes to black leaf streak disease",
+   "dcterms:date": "2023",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/brown-2023-agronj.md",
+   "cito:extends": [
+    {
+     "@id": "https://doi.org/10.1002/csc2.20817"
+    }
+   ],
+   "cito:usesMethodIn": [
+    {
+     "@id": "https://doi.org/10.1016/j.softx.2023.101402"
+    },
+    {
+     "@id": "https://doi.org/10.21105/joss.04405"
+    }
+   ]
+  },
+  {
    "@id": "https://doi.org/10.21105/joss.04405",
    "dcterms:identifier": "desousa-2023-joss",
    "dcterms:title": "Climate variability indices for ecological and crop models in R. The climatrends package",
