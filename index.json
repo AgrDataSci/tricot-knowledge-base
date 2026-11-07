@@ -1,6 +1,6 @@
 {
- "version": "f75cc831b3dc",
- "updated": "2026-11-06",
+ "version": "0393e7a60715",
+ "updated": "2026-11-07",
  "cards": 70,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
@@ -562,7 +562,7 @@
    "gist": "Characterises 366 Ethiopian teff varieties with genomics, agronomy, farmer scores and climate, finding farmer appreciation highly heritable, gender-specific trait weights, and a lake Tana region most vulnerable to climate change",
    "keywords": "teff, farmer varieties, landraces, participatory variety selection, farmer appreciation, Likert scores, Plackett-Luce, gender, heritability, GWAS, genomic offset, climate change, neglected and underutilized species, Ethiopia",
    "path": "papers/woldeyohannes-2022-elife.md",
-   "hash": "ec1e83d8cb15",
+   "hash": "ef748d1da3e3",
    "relations": [
     {
      "relation": "usesMethodIn",
