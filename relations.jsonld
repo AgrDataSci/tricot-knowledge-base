@@ -235,6 +235,28 @@
    "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/brown-2022-cropsci.md"
   },
   {
+   "@id": "https://doi.org/10.7554/eLife.80009",
+   "dcterms:identifier": "woldeyohannes-2022-elife",
+   "dcterms:title": "Data-driven, participatory characterization of farmer varieties discloses teff breeding potential under current and future climates",
+   "dcterms:date": "2022",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/woldeyohannes-2022-elife.md",
+   "cito:usesMethodIn": [
+    {
+     "@id": "https://doi.org/10.1073/pnas.2205774119"
+    }
+   ],
+   "cito:agreesWith": [
+    {
+     "@id": "https://doi.org/10.1038/s42003-021-02463-w"
+    }
+   ],
+   "cito:citesAsDataSource": [
+    {
+     "@id": "https://doi.org/10.1038/s41598-017-07628-4"
+    }
+   ]
+  },
+  {
    "@id": "https://doi.org/10.1002/jsfa.12518",
    "dcterms:identifier": "alamu-2023-jsfa",
    "dcterms:title": "Establishing the linkage between eba's instrumental and sensory descriptive profiles and their correlation with consumer preferences. Implications for cassava breeding",

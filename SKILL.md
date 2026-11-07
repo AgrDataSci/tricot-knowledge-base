@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, plus external literature curated by the core team, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `44137fa7d915`, updated 2026-11-06, 69 cards.<!-- version:end -->
+<!-- version:start -->Installed version `0393e7a60715`, updated 2026-11-07, 70 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -173,6 +173,9 @@ Lines of work worth knowing:
 - desousa-2021-commsbio **extends** vanetten-2019-pnas
 - gotor-2021-fsufs **extends** vanetten-2019-pnas (household impact of the Bihar Seeds for Needs intervention)
 - thiele-2021-ijfst **discusses** vanetten-2019-pnas (cites tricot as a tool for farmer-guided dissemination through the informal system)
+- woldeyohannes-2022-elife **usesMethodIn** gesesse-2023-pnas (the same farmer-rating to Plackett-Luce workflow, with scores converted to paired comparisons and worth linked to agronomic traits)
+- woldeyohannes-2022-elife **agreesWith** desousa-2021-commsbio (farmer appreciation is heritable and informative for breeding)
+- woldeyohannes-2022-elife **citesAsDataSource** mancini-2017-scirep (earlier participatory evaluation of durum wheat in Ethiopia showing gender differences)
 - brown-2023-agronj **extends** brown-2022-cropsci (applies rank-based data synthesis to non-ranking station data and disease scores instead of tricot rankings)
 - brown-2023-agronj **usesMethodIn** desousa-2023-softwarex (gosset for rank_numeric, reliability and model summaries)
 - brown-2023-agronj **usesMethodIn** desousa-2023-joss (climatrends indices over the evaluation period)
@@ -238,6 +241,7 @@ Lines of work worth knowing:
 | [thiele-2021-ijfst](papers/thiele-2021-ijfst.md) | Thiele et al. 2021, *Int J Food Sci Technol* | review | yes | team | Five RTB case studies confirm that neglect of consumer-preferred traits slows uptake of modern varieties, leave the gender hypothesis unresolved and find informal seed systems both help and hinder | varietal adoption, varietal turnover, consumer preferences, roots tubers and bananas, product profiles | none |
 | [voss-2021-outlook](papers/voss-2021-outlook.md) | Voss et al. 2021, *Outlook Agric* | review | yes | team | Review finding that evidence of gender-differentiated maize trait preferences is inconclusive and that gender-intentional maize breeding needs better methods, household-level analysis and new incentives | gender, maize breeding, gender-intentional breeding, trait preferences, seed adoption | none |
 | [brown-2022-cropsci](papers/brown-2022-cropsci.md) | Brown et al. 2022, *Crop Sci* | research article | yes | team | Pools 14 tricot common bean trials from four Central American countries into one Plackett-Luce analysis, finding heat the main driver and mapping variety performance by season | data synthesis, rank aggregation, meta-analysis, Plackett-Luce trees, environmental covariates | see card |
+| [woldeyohannes-2022-elife](papers/woldeyohannes-2022-elife.md) | Woldeyohannes et al. 2022, *eLife* | research article | yes | team | Characterises 366 Ethiopian teff varieties with genomics, agronomy, farmer scores and climate, finding farmer appreciation highly heritable, gender-specific trait weights, and a lake Tana region most vulnerable to climate change | teff, farmer varieties, landraces, participatory variety selection, farmer appreciation | GitHub |
 | [alamu-2023-jsfa](papers/alamu-2023-jsfa.md) | Alamu et al. 2023, *J Sci Food Agric* | research article | yes | team | Links instrumental and sensory texture and color of eba to tricot consumer preferences from 600 Nigerians, identifying cohesiveness, hardness and color as breeding targets | eba, gari, texture profile analysis, sensory panel, color | see card |
 | [arnaud-2023-jsfa](papers/arnaud-2023-jsfa.md) | Arnaud et al. 2023, *J Sci Food Agric* | review | yes | team | RTBfoods shows how SOPs, data templates and Crop Ontology food quality traits let consumer, sensory, lab and NIRS data on 12 RTB food products link to genotypes in Breedbase | RTBfoods, consumer preferences, food quality, sensory panel, Crop Ontology | Dataverse |
 | [brown-2023-agronj](papers/brown-2023-agronj.md) | Brown et al. 2023, *Agron J* | research article | yes | team | Pools 31 Musa trials from 1990 to 2019 that scored black leaf streak with five different metrics by converting them to rankings, and finds that dry spell length separates humid from dry environments with different resistant genotypes | data synthesis, rank aggregation, heterogeneous trials, Plackett-Luce trees, black leaf streak disease | GitHub |

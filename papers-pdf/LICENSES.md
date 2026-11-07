@@ -79,3 +79,4 @@ Licences were read from each PDF on 2026-10-30. The batch added on 2026-11-05 wa
 | voss-et-al-2021.pdf | [voss-2021-outlook](../papers/voss-2021-outlook.md) | https://doi.org/10.1177/00307270211058208 | CC BY 4.0 (stated on the publisher page and in Crossref; the PDF itself carries no licence line) |
 | voss-et-al-2023.pdf | [voss-2023-fsoc](../papers/voss-2023-fsoc.md) | https://doi.org/10.3389/fsoc.2023.1254595 | CC BY 4.0 |
 | voss-et-al-2025.pdf | [voss-2025-ppp](../papers/voss-2025-ppp.md) | https://doi.org/10.1002/ppp3.70035 | CC BY 4.0 |
+| woldeyohannes-et-al-2022.pdf | [woldeyohannes-2022-elife](../papers/woldeyohannes-2022-elife.md) | https://doi.org/10.7554/eLife.80009 | CC BY 4.0 |
