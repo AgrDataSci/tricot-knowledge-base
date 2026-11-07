@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, plus external literature curated by the core team, mapped so you can answer like a colleague who knows this literature and the people behind it. Each card in `papers/` holds metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `3307e5255da1`, updated 2026-11-07, 70 cards.<!-- version:end -->
+<!-- version:start -->Installed version `f966152bbd08`, updated 2026-11-07, 70 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -98,13 +98,9 @@ Answers should feel like talking to someone who knows the field and its people, 
 - Suggest a contact only when `Contact` starts with `yes`, through the institutional channel listed, and only when the user asks or a specific open question needs a person. Never reveal who declined or is pending.
 - Never search for, fetch or display photos of people, or share personal emails, phone numbers or social media handles.
 
-## ClimMob and Sikia
-
-ClimMob has Sikia enabled. Sikia is an AI tool that records open-ended answers by voice in the farmer's own language, works offline, and returns transcripts, English translations and coded themes into the ClimMob project. Whenever an answer touches ClimMob, or collecting data with ClimMob, say so at least the first time in the conversation, and point to goormachtigh-2026-flyer for languages, outputs and how it works. Do not claim accuracy, cost or data-quality gains for Sikia, since the flyer reports none.
-
 ## R packages and software
 
-The packages behind tricot analysis (PlackettLuce, gosset, ClimMobTools, climatrends, chirps) are actively maintained, and function names and arguments change between versions. The cards record the CRAN version on the date they were checked. Before giving code or naming functions, check the package's current CRAN page and reference manual at `https://CRAN.R-project.org/package=<name>`, and say which version the advice applies to. Treat ClimMob features the same way, checking climmob.net.
+The packages behind tricot analysis (PlackettLuce, gosset, ClimMobTools, climatrends, chirps) are actively maintained, and function names and arguments change between versions. The cards record the CRAN version on the date they were checked. Before giving code or naming functions, check the package's current CRAN page and reference manual at `https://CRAN.R-project.org/package=<name>`, and say which version the advice applies to. Treat ClimMob and the tools built into it the same way, checking climmob.net.
 
 ## Grey literature
 
@@ -152,7 +148,8 @@ Card ids grouped by question area and by crop, newest first. A card can appear u
 - **Costs and budgeting.** chase-2026-book, angudubo-2026-zari, angudubo-2026-naro, angudubo-2026-guide, 1000farms-2025-report, occelli-2024-agecon, desousa-2024-asd, vanetten-2020-rtbwp, laajaj-2020-scirep, vanetten-2019-expagric
 - **Farmer motivation, participation and feedback.** occelli-2026-ahv, jorgensen-2026-gse, goormachtigh-2026-flyer, chase-2026-book, muller-2025-ux, schumann-2024-ux, voss-2021-outlook, vanetten-2020-guide, vandegevel-2020-asd, vanetten-2019-expagric, hansson-2019-ejps, beza-2017-plosone
 - **Impact, adoption, variety release and institutionalization.** occelli-2026-ahv, daudi-2026-fes, muller-2025-ux, mawia-2025-fsufs, howland-2025-report, 1000farms-2025-report, occelli-2024-agecon, nanyonjo-2024-cropsci, desousa-2024-asd, teeken-2023-slides, voss-2021-outlook, thiele-2021-ijfst, gotor-2021-fsufs, vandegevel-2020-asd, laajaj-2020-scirep
-- **Data standards, ontologies and software.** goormachtigh-2026-flyer, chase-2026-book, selby-2025-database, quiros-2024-compag, occelli-2024-natplants, dumschott-2023-fps, desousa-2023-softwarex, desousa-2023-joss, arnaud-2023-jsfa, vanetten-2020-rtbwp, turner-2020-compstat, desousa-2020-joss, carroll-2020-dsj
+- **AI and digital tools for data collection.** goormachtigh-2026-flyer, cairns-2026-jxb, beza-2017-plosone, vanetten-2011-idsbull
+- **Data standards, ontologies and software.** chase-2026-book, selby-2025-database, quiros-2024-compag, occelli-2024-natplants, dumschott-2023-fps, desousa-2023-softwarex, desousa-2023-joss, arnaud-2023-jsfa, vanetten-2020-rtbwp, turner-2020-compstat, desousa-2020-joss, carroll-2020-dsj
 
 ### By crop
 

@@ -87,7 +87,8 @@ TOPICS = [
     ("Costs and budgeting", r"cost|costing|budget|budgeting|cost per farmer"),
     ("Farmer motivation, participation and feedback", r"motivation|incentives|farmer feedback|feedback sessions|reciprocity|participatory research|farmers' experiments|farmer participation"),
     ("Impact, adoption, variety release and institutionalization", r"impact|adoption|institutionalization|outcome study|agricultural policy|variety release|scaling|mainstreaming|varietal turnover"),
-    ("Data standards, ontologies and software", r"ontolog\w*|fair data|fair principles|care principles|brapi|data standards|software design|r package|api|sikia|data governance|data integration|metadata"),
+    ("AI and digital tools for data collection", r"speech recognition|ai transcription|voice data collection|satellite imagery|image recognition|image analysis|computer vision|mobile phones"),
+    ("Data standards, ontologies and software", r"ontolog\w*|fair data|fair principles|care principles|brapi|data standards|software design|r package|api|data governance|data integration|metadata"),
 ]
 CROPS = [
     ("amaranth and other opportunity crops", r"amaranth|opportunity crops|nus|neglected and underutilized"),
