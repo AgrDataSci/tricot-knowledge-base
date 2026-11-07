@@ -1,4 +1,5 @@
-"""Rebuild the index table in SKILL.md and index.json from the YAML front matter of every card in papers/.
+"""Rebuild the topic map in SKILL.md, the index table in index.md, and index.json from the YAML front matter
+of every card in papers/.
 
 index.json carries a content-based version and a hash per card, so an assistant can
 compare its installed copy with the live repository and fetch only what changed.
@@ -25,8 +26,14 @@ relations:
 The version combines the hashes of every card, people.md and the instructions in SKILL.md
 (without its generated blocks), so editing any of them produces a new version.
 
-The script adds the inverse links, writes the graph to index.json and relations.jsonld
-(JSON-LD with the CiTO vocabulary), and lists every link in SKILL.md.
+The script adds the inverse links and writes the graph to index.json and relations.jsonld
+(JSON-LD with the CiTO vocabulary).
+
+SKILL.md carries a short topic map (card ids grouped by question area and by crop) so the
+skill stays under about 20 KB as cards are added. Topics and crops are assigned by matching
+the patterns in TOPICS and CROPS against each card's keywords, gist and type. Every card must
+fall in at least one topic; the script stops with an error otherwise. The full table with
+the gist of every paper is written to index.md, which assistants open only as a fallback.
 
 It also rewrites the status table in README.md, between the status markers, so the counts
 of PDFs, cards, people and links always match the repository. Run it after any change to a
@@ -39,7 +46,8 @@ import pathlib
 import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-START, END = "<!-- index:start -->", "<!-- index:end -->"
+START, END = "<!-- index:start -->", "<!-- index:end -->"  # in index.md
+TSTART, TEND = "<!-- topics:start -->", "<!-- topics:end -->"  # in SKILL.md
 VSTART, VEND = "<!-- version:start -->", "<!-- version:end -->"
 RAW = "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/"
 RSTART, REND = "<!-- relations:start -->", "<!-- relations:end -->"
@@ -61,6 +69,46 @@ REQUIRED = ["id", "title", "authors", "year", "journal", "type", "source", "peer
 YESNO = ["peer_reviewed", "curated_card"]  # must be yes or no
 SOURCES = {"team": "team", "external": "external, curated"}  # value -> label in the index
 PRESENT = ["doi", "open_copy", "license"]  # must exist, may be empty
+
+# Topic map in SKILL.md. Each pattern is a regular expression matched, case-insensitive and on
+# word boundaries, against a card's keywords, gist and type. A card can sit in several topics.
+TOPICS = [
+    ("Origins of tricot, guides and the handbook", r"tricot origin|tricot guide|tricot handbook|ten steps|guide|book|retrospective"),
+    ("Trial design, sample size and data quality", r"sample size|sample-size|data quality|validity|trial design|trial size|plot size|incomplete block|trial dimensions|sampling"),
+    ("Who hosts trials and representativeness", r"host farmer|farm typology|representativeness|external validity|selection bias|research population|site selection|target population of environments|tpe"),
+    ("Ranking data analysis and statistics", r"plackett-luce|plackett-luce trees|ranking data|partial rankings|bradley-terry|thurstonian|rank aggregation|variance components|gge biplot"),
+    ("Climate and environmental covariates", r"climate|rainfall|chirps|temperature|agera5|environmental|dry spell|heat|frost|precipitation"),
+    ("Gender, social inclusion and farmer segments", r"gender|women|intersectionality|social inclusion|youth|farmer segments|user segments|farmer segmentation|household heterogeneity|household type|intrahousehold"),
+    ("Trait preferences, product profiles and demand-led breeding", r"trait preferences?|trait prioritization|product profiles?|demand-led|demand-driven|market segments?|market segmentation|market preference"),
+    ("Consumer testing and food quality", r"consumer|sensory|food quality|gari|eba|taste|texture|tasting"),
+    ("Product concept testing and seed choice", r"vpct|product concept|seed choice|seed products?|agro-dealer|seed price"),
+    ("Genebanks, genomics and pre-breeding", r"genebanks?|genebank accessions|genomic|gwas|qtl|landraces|3d.breeding|etnam|pre-breeding|nested association|heritability"),
+    ("Yield measured by farmers and genetic gain", r"farmer-generated yield|yield estimation|volumetric|harvest measurement|genetic gain|absolute yield"),
+    ("Costs and budgeting", r"cost|costing|budget|budgeting|cost per farmer"),
+    ("Farmer motivation, participation and feedback", r"motivation|incentives|farmer feedback|feedback sessions|reciprocity|participatory research|farmers' experiments|farmer participation"),
+    ("Impact, adoption, variety release and institutionalization", r"impact|adoption|institutionalization|outcome study|agricultural policy|variety release|scaling|mainstreaming|varietal turnover"),
+    ("Data standards, ontologies and software", r"ontolog\w*|fair data|fair principles|care principles|brapi|data standards|software design|r package|api|sikia|data governance|data integration|metadata"),
+]
+CROPS = [
+    ("amaranth and other opportunity crops", r"amaranth|opportunity crops|nus|neglected and underutilized"),
+    ("banana", r"musa|black sigatoka|black leaf streak"),
+    ("cassava", r"cassava|gari|eba|fufu"),
+    ("common bean", r"common bean|bean"),
+    ("forages", r"forages?|grassland|grass-legume"),
+    ("groundnut", r"groundnut"),
+    ("maize", r"maize"),
+    ("potato", r"potato"),
+    ("rice", r"rice"),
+    ("sorghum", r"sorghum"),
+    ("sweetpotato", r"sweetpotato"),
+    ("teff", r"teff"),
+    ("wheat", r"wheat"),
+]
+
+
+def matches(meta, pattern):
+    text = " ".join([meta["keywords"], meta["gist"], meta["type"]]).lower()
+    return re.search(r"\b(?:" + pattern + r")\b", text) is not None
 
 
 def front_matter(path):
@@ -181,13 +229,15 @@ people_hash = digest(people) if people.exists() else ""
 
 def instructions_hash(text):
     # hash SKILL.md without its generated blocks, so only instruction edits change it
-    for a, b in [(START, END), (VSTART, VEND), (RSTART, REND)]:
+    for a, b in [(TSTART, TEND), (VSTART, VEND), (START, END), (RSTART, REND)]:
         text = re.sub(re.escape(a) + r".*?" + re.escape(b), a + b, text, flags=re.S)
     return hashlib.sha256(text.encode("utf-8")).hexdigest()[:12]
 
 
 skill_hash = instructions_hash((ROOT / "SKILL.md").read_text(encoding="utf-8"))
-version = hashlib.sha256(("".join(e["hash"] for e in entries) + people_hash + skill_hash).encode()).hexdigest()[:12]
+install = ROOT / "INSTALL.md"
+install_hash = digest(install) if install.exists() else ""
+version = hashlib.sha256(("".join(e["hash"] for e in entries) + people_hash + skill_hash + install_hash).encode()).hexdigest()[:12]
 
 index_path = ROOT / "index.json"
 updated = datetime.date.today().isoformat()
@@ -197,7 +247,9 @@ if index_path.exists():
         updated = old.get("updated", updated)  # unchanged content keeps its date
 index = {"version": version, "updated": updated, "cards": len(entries), "raw_base": RAW,
          "skill": {"path": "SKILL.md", "hash": skill_hash},
-         "people": {"path": "people.md", "hash": people_hash}, "papers": entries}
+         "people": {"path": "people.md", "hash": people_hash},
+         "install": {"path": "INSTALL.md", "hash": install_hash},
+         "index_table": {"path": "index.md"}, "papers": entries}
 index_path.write_text(json.dumps(index, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
 # JSON-LD export of the citation graph with the CiTO vocabulary
@@ -216,16 +268,36 @@ jsonld = {"@context": {"cito": "http://purl.org/spar/cito/", "dcterms": "http://
                        "fabio": "http://purl.org/spar/fabio/"}, "@graph": nodes}
 (ROOT / "relations.jsonld").write_text(json.dumps(jsonld, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
+# Topic map in SKILL.md and full table in index.md
+untopiced = [m["id"] for m, _ in metas if not any(matches(m, pat) for _, pat in TOPICS)]
+if untopiced:
+    raise SystemExit("Cards in no topic. Add a keyword to the card or a pattern to TOPICS: " + ", ".join(untopiced))
+newest_first = sorted(metas, key=lambda x: (x[0]["year"], x[0]["id"]), reverse=True)
+topic_lines = ["### By question", ""]
+for name, pat in TOPICS:
+    hits = [m["id"] for m, _ in newest_first if matches(m, pat)]
+    topic_lines.append(f"- **{name}.** " + ", ".join(hits))
+topic_lines += ["", "### By crop", ""]
+for name, pat in CROPS:
+    hits = [m["id"] for m, _ in newest_first if matches(m, pat)]
+    if hits:
+        topic_lines.append(f"- **{name}.** " + ", ".join(hits))
+
+index_md = ROOT / "index.md"
+index_md.write_text(
+    "# Index of cards\n\n"
+    "Generated by `scripts/build_index.py`. Do not edit by hand. One row per card, oldest first, with the gist of each paper. "
+    "Assistants route questions with the topic map in `SKILL.md` and open this table only when the map does not settle which cards to read.\n\n"
+    + START + "\n" + "\n".join(rows) + "\n" + END + "\n", encoding="utf-8")
+
 skill = ROOT / "SKILL.md"
 text = skill.read_text(encoding="utf-8")
-for a, b in [(START, END), (VSTART, VEND), (RSTART, REND)]:
+for a, b in [(TSTART, TEND), (VSTART, VEND)]:
     if a not in text or b not in text:
         raise SystemExit(f"SKILL.md needs the {a} and {b} markers")
-new = re.sub(re.escape(START) + r".*?" + re.escape(END), START + "\n" + "\n".join(rows) + "\n" + END, text, flags=re.S)
+new = re.sub(re.escape(TSTART) + r".*?" + re.escape(TEND), TSTART + "\n" + "\n".join(topic_lines) + "\n" + TEND, text, flags=re.S)
 stamp = f"Installed version `{version}`, updated {updated}, {len(entries)} cards."
 new = re.sub(re.escape(VSTART) + r".*?" + re.escape(VEND), VSTART + stamp + VEND, new, flags=re.S)
-rel_lines = [f"- {a} **{rel}** {b}" + (f" ({note})" if note else "") for a, rel, b, note in links]
-new = re.sub(re.escape(RSTART) + r".*?" + re.escape(REND), RSTART + "\n" + "\n".join(rel_lines) + "\n" + REND, new, flags=re.S)
 skill.write_text(new, encoding="utf-8")
 no_doi = [m["id"] for m, _ in metas if not m["doi"] and m["type"] != "flyer"]  # flyers have no handle
 team_names = people_surnames()
@@ -236,6 +308,8 @@ not_pr = [m["id"] for m, _ in metas if m["peer_reviewed"] == "no"]
 to_curate = [m["id"] for m, _ in metas if m["curated_card"] == "no"]
 print(f"{len(links)} relations between cards.")
 print(f"Index rebuilt with {len(cards)} papers. Version {version} ({updated}). SKILL.md is {len(new.encode())} bytes.")
+if len(new.encode()) > 20480:
+    print("Warning: SKILL.md is over the 20 KB budget. Move detail to a file opened on demand.")
 if no_doi:
     print(f"{len(no_doi)} cards still need a handle or DOI: {', '.join(no_doi)}")
 print(f"{len(metas) - len(external)} team cards, {len(external)} external cards curated by the core team.")

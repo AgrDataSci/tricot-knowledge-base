@@ -13,7 +13,7 @@
 
 > Kauê de Sousa, Brayden Youngberg, Rachel Chase, Marie-Angélique Laporte
 
-**AI assistants:** before answering any question from this repository, read [`SKILL.md`](SKILL.md) for the answering rules and paper index, and [`people.md`](people.md) before crediting or suggesting anyone. See also [`AGENTS.md`](AGENTS.md).
+**AI assistants:** before answering any question from this repository, read [`SKILL.md`](SKILL.md) for the answering rules and the topic map of cards, and [`people.md`](people.md) before crediting or suggesting anyone. See also [`AGENTS.md`](AGENTS.md).
 
 An AI-ready knowledge base of the open-access literature on tricot, on-farm testing and product testing with farmers and consumers. Each paper, report or guide is distilled into a verified markdown card with the questions it answers, its main argument, methods, stated limitations, key numbers with their primary sources, and links to the underlying data and code.
 
@@ -68,19 +68,21 @@ Every source document has a long-format card. `python scripts/build_index.py` re
 
 ## Use it
 
-**In Claude.** Download the [latest skill package](https://github.com/AgrDataSci/tricot-knowledge-base/releases/latest/download/tricot-knowledge-base.zip) and upload it under Customize > Skills. Code execution must be on, and on Team or Enterprise plans an owner may need to allow skills. Claude loads the index in `SKILL.md` whenever a question touches tricot or on-farm testing, and opens only the cards it needs.
+**In Claude.** Download the [latest skill package](https://github.com/AgrDataSci/tricot-knowledge-base/releases/latest/download/tricot-knowledge-base.zip) and upload it under Customize > Skills. Code execution must be on, and on Team or Enterprise plans an owner may need to allow skills. Claude loads `SKILL.md`, with its rules and topic map, whenever a question touches tricot or on-farm testing, and opens only the cards it needs.
 
 **In Claude Code.** Clone the repository into your skills directory, or install it from the [maniva](https://github.com/AgrDataSci/maniva) repository once its plugin marketplace is published.
 
 **By sharing the link.** Paste the repository link into an assistant with web access. It reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md), answers from the live files, and offers to install the skill so the link is not needed next time. It installs nothing without the user's agreement.
 
-**With other AI tools or by hand.** Start from the index table in [`SKILL.md`](SKILL.md), then open the relevant cards in [`papers/`](papers/). Each card names an open full-text copy and, where available, the dataset behind the paper.
+**With other AI tools or by hand.** Start from the topic map in [`SKILL.md`](SKILL.md) or the full table in [`index.md`](index.md), then open the relevant cards in [`papers/`](papers/). Each card names an open full-text copy and, where available, the dataset behind the paper.
 
 ## What's inside
 
 ```
 tricot-knowledge-base/
-├── SKILL.md               # skill instructions, version and paper index (generated)
+├── SKILL.md               # skill instructions, version and topic map of the cards (map generated)
+├── index.md               # full table of cards with the gist of each paper (generated)
+├── INSTALL.md             # how the assistant helps a user install the skill
 ├── people.md              # who is behind the papers, naming and contact consent
 ├── AGENTS.md              # entry point for AI agents reading the repository
 ├── llms.txt               # short machine-readable map of the repository
@@ -107,7 +109,7 @@ relations:
   - citesAsDataSource: desousa-2024-asd  # cites over 150,000 farmers; the source reports about 150,000 plots
 ```
 
-The terms in use are `extends`, `reviews`, `discusses`, `updates`, `usesDataFrom`, `usesMethodIn`, `citesAsDataSource`, `agreesWith` and `disagreesWith`. `scripts/build_index.py` checks that every term and target is valid, adds the inverse links (for example `isExtendedBy`), lists every link in `SKILL.md`, and writes the graph to `index.json` and to [`relations.jsonld`](relations.jsonld) for ontology tools. The assistant follows these links to tell a line of work in order, for example from genebank evaluation with farmers (mancini-2017-scirep) to crowdsourced testing (vanetten-2019-pnas), 3D-breeding (desousa-2021-commsbio) and genomic selection with farmer scores (gesesse-2023-pnas), and to flag numbers that a later paper reports differently from the original.
+The terms in use are `extends`, `reviews`, `discusses`, `updates`, `usesDataFrom`, `usesMethodIn`, `citesAsDataSource`, `agreesWith` and `disagreesWith`. `scripts/build_index.py` checks that every term and target is valid, adds the inverse links (for example `isExtendedBy`) and writes the graph to `index.json` and to [`relations.jsonld`](relations.jsonld) for ontology tools. The assistant follows these links to tell a line of work in order, for example from genebank evaluation with farmers (mancini-2017-scirep) to crowdsourced testing (vanetten-2019-pnas), 3D-breeding (desousa-2021-commsbio) and genomic selection with farmer scores (gesesse-2023-pnas), and to flag numbers that a later paper reports differently from the original.
 
 Tagging keywords with AGROVOC terms and traits with Crop Ontology identifiers is a possible next step.
 
@@ -121,7 +123,7 @@ All consent fields start as `pending`. Update a row only after the person replie
 
 The repository is organic, so the installed skill can fall behind. Three pieces keep it current.
 
-- **A version.** `scripts/build_index.py` computes a version from the content of every card, `people.md` and the instructions in `SKILL.md`, and writes it to `SKILL.md` and `index.json`. Unchanged content keeps the same version and date.
+- **A version.** `scripts/build_index.py` computes a version from the content of every card, `people.md`, `INSTALL.md` and the instructions in `SKILL.md`, and writes it to `SKILL.md` and `index.json`. Unchanged content keeps the same version and date.
 - **An automatic rebuild.** A GitHub Action reruns the script on every push to `main` that touches cards, `people.md` or `SKILL.md`, so the live repository always advertises its current version.
 - **A check in the skill.** Once per conversation, the assistant fetches the live `index.json`, compares versions, and fetches only what changed, including the instructions in `SKILL.md`. If web access is off, it uses the installed copy.
 
@@ -150,7 +152,8 @@ PDF file names follow the first author and year of each source, for example `ang
 5. Add a stable open copy. Publisher pages often block automated reading, so prefer PMC or an institutional repository such as CGSpace. If there is no DOI, leave `doi` empty and add the CGSpace handle when it exists.
 6. Cross-check against existing cards, note any disagreement in both, and add `relations` to the cards this one builds on, reviews, reuses or cites for a number.
 7. Add the card's ID to the `Led` or `Also on` column of any author already in `people.md`. If the person who led the work is not listed, add a row with `pending` consent.
-8. Open a pull request. The GitHub Action rebuilds the index and version when it is merged, or run `python scripts/build_index.py` yourself.
+8. Run `python scripts/build_index.py`. It places the card in the topic map of `SKILL.md` by matching its keywords against the topics and crops listed in the script, and stops if the card fits no topic. Then either add a keyword a user would search for, or add a pattern or a new topic to `TOPICS` in the script. It also warns when `SKILL.md` passes its 20 KB budget.
+9. Open a pull request. The GitHub Action rebuilds the index and version again when it is merged.
 
 Writing rules for cards are plain, assertive prose in concise paragraphs, no pasted text from the papers, no em-dashes, a `gist` under 30 words, and `keywords` written as a user would search.
 
@@ -161,7 +164,7 @@ The skill must stay light because it travels between users. The GitHub Action bu
 ```bash
 python scripts/build_index.py
 mkdir -p build/tricot-knowledge-base
-cp -r SKILL.md people.md index.json AGENTS.md papers build/tricot-knowledge-base/
+cp -r SKILL.md index.md INSTALL.md people.md index.json AGENTS.md papers build/tricot-knowledge-base/
 cd build && zip -r ../tricot-knowledge-base.zip tricot-knowledge-base
 ```
 
