@@ -19,6 +19,8 @@ crops: common bean (example)
 region: Nicaragua (example)
 keywords: gosset, R package, ranking data, rank_tricot, Plackett-Luce, Bradley-Terry, reliability, regret, worth map, cross-validation, tricot workflow
 gist: R package covering the tricot analysis workflow, from converting tricot data to rankings through model selection to reliability, regret and worth plots
+relations:
+  - usesMethodIn: eskridge-1992-tag  # the reliability function
 ---
 
 ## Questions this paper answers

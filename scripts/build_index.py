@@ -76,7 +76,7 @@ TOPICS = [
     ("Origins of tricot, guides and the handbook", r"tricot origin|tricot guide|tricot handbook|ten steps|guide|book|retrospective"),
     ("Trial design, sample size and data quality", r"sample size|sample-size|data quality|validity|trial design|trial size|plot size|incomplete block|trial dimensions|sampling"),
     ("Who hosts trials and representativeness", r"host farmer|farm typology|representativeness|external validity|selection bias|research population|site selection|target population of environments|tpe"),
-    ("Ranking data analysis and statistics", r"plackett-luce|plackett-luce trees|ranking data|partial rankings|bradley-terry|thurstonian|rank aggregation|variance components|gge biplot"),
+    ("Ranking data analysis and statistics", r"plackett-luce|plackett-luce trees|ranking data|partial rankings|bradley-terry|thurstonian|rank aggregation|variance components|gge biplot|probability of outperforming a check"),
     ("Climate and environmental covariates", r"climate|rainfall|chirps|temperature|agera5|environmental|dry spell|heat|frost|precipitation"),
     ("Gender, social inclusion and farmer segments", r"gender|women|intersectionality|social inclusion|youth|farmer segments|user segments|farmer segmentation|household heterogeneity|household type|intrahousehold"),
     ("Trait preferences, product profiles and demand-led breeding", r"trait preferences?|trait prioritization|product profiles?|demand-led|demand-driven|market segments?|market segmentation|market preference"),
