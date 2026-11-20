@@ -14,6 +14,7 @@
 | Imprecise | n |
 | Not in source | n |
 | Contradicted | n |
+| Source issues (problems in the source itself, not card errors) | n |
 | Important omissions | n |
 | Metadata issues | n |
 
@@ -38,6 +39,13 @@ Every factual claim in the card: each summary sentence, each methods bullet, eac
 |---|---|---|---|---|---|
 
 Status is one of: Supported, Imprecise, Not in source, Contradicted.
+
+## Source issues
+
+Problems in the source itself, such as text that disagrees with a table, figure or caption, or numbers that do not add up. Say whether the card flags each one, and give suggested Notes text if it does not. These are not counted as card errors.
+
+| Issue | Where (page) | Flagged in card? | Suggested Notes text |
+|---|---|---|---|
 
 ## Completeness
 
