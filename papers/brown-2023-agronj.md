@@ -24,6 +24,7 @@ relations:
   - extends: brown-2022-cropsci  # applies rank-based data synthesis to non-ranking station data and disease scores instead of tricot rankings
   - usesMethodIn: desousa-2023-softwarex  # gosset for rank_numeric, reliability and model summaries
   - usesMethodIn: desousa-2023-joss  # climatrends indices over the evaluation period
+  - usesMethodIn: eskridge-1992-tag  # reliability, the probability of outperforming the reference genotype
 ---
 
 ## Questions this paper answers
