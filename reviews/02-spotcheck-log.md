@@ -14,3 +14,5 @@ The most important finding of each review, checked again by hand against the PDF
 | cairns-2025-ppp | the summary uses figure-legend farm-type labels that the card's own Notes say are wrong; the authors' "no control group" limitation is missing | Confirmed (p. 271, and card lines 40 and 75) |
 | brown-2022-cropsci | the summary says EAP 9508-93 appears "only where tested". The source says it is predicted in the top three across much of Costa Rica, where it was never tested. The c index is 0.563 and 0.625, not 0.563 for both | Confirmed (p. 2257, p. 2262) |
 | cairns-2026-jxb | no not_established field; the gist overstates ("cannot" deliver without on-farm testing, where the source says it "can play a valuable role") | Confirmed (p. 1) |
+| fadda-2020-fps | the card leaves out the release 4 years faster than average (p. 5); 373 + 27 is right for this paper and differs from Mancini 2017 (400 with 25 improved) | Confirmed (p. 3, p. 5) |
+| desousa-2023-softwarex | the summary says gosset handled model validation in the example; the paper lists cross-validation, btpermute and regret only as next steps | Confirmed (p. 4) |

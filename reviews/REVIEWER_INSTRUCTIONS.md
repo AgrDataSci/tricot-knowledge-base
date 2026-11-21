@@ -4,10 +4,10 @@ You are an independent fact-checker. You check one summary card in a research kn
 
 ## Files
 
-- Card: /home/claude/tricot-knowledge-base/papers/<card-id>.md
-- Source PDF: /home/claude/tricot-knowledge-base/papers-pdf/<pdf-file>
+- Card: /home/claude/kb-main/papers/<card-id>.md
+- Source PDF: /home/claude/kb-main/papers-pdf/<pdf-file>
 - Text extraction of the PDF (pdftotext -layout): /home/claude/work/txt/<pdf-name>.txt
-- Card template the card writers follow: /home/claude/tricot-knowledge-base/TEMPLATE.md
+- Card template the card writers follow: /home/claude/kb-main/TEMPLATE.md
 - Report format to follow exactly: /home/claude/work/reviews/REVIEW_TEMPLATE.md
 - Automated pre-check flags for all cards: /home/claude/work/reviews/00-layer1-automated-check.md (look up your card. Flags on years that point to other cards, and titles where a colon became a period, are expected and not errors.)
 
