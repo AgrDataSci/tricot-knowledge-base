@@ -39,13 +39,13 @@ This is the literature layer of [maniva](https://github.com/AgrDataSci/maniva), 
 <!-- status:start -->
 | | Count |
 |---|---|
-| Source documents in `papers-pdf/` | 70 |
-| Cards in `papers/` | 70 (60 team, 10 external) |
+| Source documents in `papers-pdf/` | 71 |
+| Cards in `papers/` | 71 (61 team, 10 external) |
 | Cards still waiting for a handle or DOI | 0 |
-| Peer-reviewed cards | 53 (17 not peer-reviewed) |
-| Cards checked by a person (`curated_card: yes`) | 1 of 70 |
+| Peer-reviewed cards | 53 (18 not peer-reviewed) |
+| Cards checked by a person (`curated_card: yes`) | 1 of 71 |
 | People in `people.md` | 18 (15 agreed to be contacted, 3 pending, 0 declined) |
-| Links between cards | 46 |
+| Links between cards | 47 |
 <!-- status:end -->
 
 Every source document has a long-format card. `python scripts/build_index.py` refreshes this table, lists the cards that still need a handle, counts peer-reviewed and person-checked cards, and `index.json` records the current version.
@@ -61,7 +61,7 @@ Every source document has a long-format card. `python scripts/build_index.py` re
 | Climate, genomics and analysis methods | vanetten-2019-pnas, desousa-2021-commsbio, brown-2022-cropsci, dorado-2026-tag, vanetten-2023-pnas, cairns-2026-jxb |
 | Software and data standards (R packages, ClimMob, Sikia, BrAPI, ontologies, FAIR and CARE) | turner-2020-compstat, desousa-2023-softwarex, desousa-2020-joss, desousa-2023-joss, quiros-2024-compag, goormachtigh-2026-flyer, selby-2025-database, carroll-2020-dsj, dumschott-2023-fps, arnaud-2023-jsfa |
 | Crop applications | nanyonjo-2024-cropsci (cassava), daudi-2026-fes (groundnut), kadege-2026-fsufs (common bean), kang-2025-expagric and sharma-2025-jafr (potato), voss-2025-ppp (amaranth), mulatu-2024-slides and jorgensen-2026-gse (forages, Ethiopia and Norway) |
-| Consumer preferences, trait prioritization and product concept testing | moyo-2021-fsufs, alamu-2023-jsfa, olaosebikan-2023-jsfa, thiele-2021-ijfst, occelli-2024-natplants, donovan-2025-expagric, rutsaert-2023-mib, mbugua-2024-mib, mawia-2025-fsufs |
+| Consumer preferences, trait prioritization and product concept testing | moyo-2021-fsufs, alamu-2023-jsfa, olaosebikan-2023-jsfa, thiele-2021-ijfst, occelli-2024-natplants, donovan-2025-expagric, rutsaert-2023-mib, rutsaert-2023-cimmyt, mbugua-2024-mib, mawia-2025-fsufs |
 | Gender, inclusion and farmer feedback | teeken-2021-fsufs, voss-2021-outlook, voss-2023-fsoc, cairns-2025-ppp, teeken-2023-slides, kadege-2026-fsufs, schumann-2024-ux, muller-2025-ux, steinke-2019-plosone |
 | Costing on-farm testing | angudubo-2026-guide (costing template), angudubo-2026-zari (maize, Zambia), angudubo-2026-naro (common bean, Uganda), desousa-2024-asd (potato, Rwanda), occelli-2024-agecon (bean, Central America) |
 | Mainstreaming in breeding | 1000farms-2025-report, howland-2025-report |

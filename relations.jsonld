@@ -336,6 +336,18 @@
    "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/olaosebikan-2023-jsfa.md"
   },
   {
+   "@id": "https://hdl.handle.net/10883/22773",
+   "dcterms:identifier": "rutsaert-2023-cimmyt",
+   "dcterms:title": "Market Intelligence Insights for Groundnut Breeding and Seed Systems in Tanzania",
+   "dcterms:date": "2023",
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/rutsaert-2023-cimmyt.md",
+   "cito:usesMethodIn": [
+    {
+     "@id": "https://hdl.handle.net/10883/22467"
+    }
+   ]
+  },
+  {
    "@id": "https://hdl.handle.net/10883/22467",
    "dcterms:identifier": "rutsaert-2023-mib",
    "dcterms:title": "Future market segments for hybrid maize in East Africa",

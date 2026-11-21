@@ -1,11 +1,11 @@
 {
- "version": "0393e7a60715",
- "updated": "2026-11-07",
- "cards": 70,
+ "version": "4545e4307ce1",
+ "updated": "2026-11-21",
+ "cards": 71,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
   "path": "SKILL.md",
-  "hash": "af240c6cfc8b"
+  "hash": "c7fab572f867"
  },
  "people": {
   "path": "people.md",
@@ -734,6 +734,25 @@
    "relations": []
   },
   {
+   "id": "rutsaert-2023-cimmyt",
+   "year": "2023",
+   "type": "report",
+   "source": "team",
+   "peer_reviewed": "no",
+   "curated_card": "no",
+   "gist": "Trader, stakeholder, farmer and tricot data from Tanzania show early maturity and taste drive groundnut demand, fodder and oil need no breeding focus, and farmers want to buy seed",
+   "keywords": "market intelligence, groundnut, product design team, market segmentation, target product profiles, video-based product concept testing, seed systems, traders, maturity, Tanzania",
+   "path": "papers/rutsaert-2023-cimmyt.md",
+   "hash": "393f53546586",
+   "relations": [
+    {
+     "relation": "usesMethodIn",
+     "card": "rutsaert-2023-mib",
+     "note": "video-based product concept testing"
+    }
+   ]
+  },
+  {
    "id": "rutsaert-2023-mib",
    "year": "2023",
    "type": "policy brief",
@@ -745,6 +764,11 @@
    "path": "papers/rutsaert-2023-mib.md",
    "hash": "b2e74f9df762",
    "relations": [
+    {
+     "relation": "providesMethodFor",
+     "card": "rutsaert-2023-cimmyt",
+     "note": "video-based product concept testing"
+    },
     {
      "relation": "providesMethodFor",
      "card": "mbugua-2024-mib",

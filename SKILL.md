@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, plus external literature curated by the core team, indexed so you can answer like a colleague who knows this literature and the people behind it. Each row points to a card in `papers/` with metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `0393e7a60715`, updated 2026-11-07, 70 cards.<!-- version:end -->
+<!-- version:start -->Installed version `4545e4307ce1`, updated 2026-11-21, 71 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -154,7 +154,7 @@ Cards declare how they relate to other cards in a `relations` list, using terms 
 Lines of work worth knowing:
 
 - **Genebank to farm (durum wheat, Ethiopia).** mancini-2017-scirep → vanetten-2019-pnas → desousa-2021-commsbio (3D-breeding) → gesesse-2023-pnas, reviewed in fadda-2020-fps. The early papers are not tricot trials but are its pre-breeding basis.
-- **Product concept testing.** rutsaert-2023-mib → donovan-2025-expagric, with mbugua-2024-mib applying the method to sorghum.
+- **Product concept testing.** rutsaert-2023-mib → donovan-2025-expagric, with rutsaert-2023-cimmyt and mbugua-2024-mib applying the method to groundnut and sorghum.
 - **Farmer-measured yield.** nabateregga-2025-eja and ulzen-2025-agrirxiv agree that volumetric measurement by farmers is accurate.
 - **Farmer feedback.** schumann-2024-ux → muller-2025-ux.
 - **Who hosts on-farm trials.** kool-2020-expagric and laajaj-2020-scirep (external) show that researcher-chosen hosts and undefined research populations limit what on-farm trials can predict. cairns-2025-ppp tests a farm typology for choosing hosts, and cairns-2026-jxb builds on it.
@@ -181,6 +181,7 @@ Lines of work worth knowing:
 - brown-2023-agronj **usesMethodIn** desousa-2023-joss (climatrends indices over the evaluation period)
 - gesesse-2023-pnas **usesDataFrom** mancini-2017-scirep (diversity panel and farmer scores)
 - gesesse-2023-pnas **agreesWith** desousa-2021-commsbio (farmer appreciation improves prediction accuracy)
+- rutsaert-2023-cimmyt **usesMethodIn** rutsaert-2023-mib (video-based product concept testing)
 - desousa-2024-asd **citesAsDataSource** occelli-2024-agecon (cites about 40% cheaper than RCBD; the source reports 28% cheaper than group PVS)
 - mbugua-2024-mib **usesMethodIn** rutsaert-2023-mib (video-based product concept testing)
 - cairns-2025-ppp **discusses** nanyonjo-2024-cropsci (host farmers selected by weighting on gender and other factors in Uganda)
@@ -250,6 +251,7 @@ Lines of work worth knowing:
 | [dumschott-2023-fps](papers/dumschott-2023-fps.md) | Dumschott et al. 2023, *Front Plant Sci* | review | yes | team | Review guiding plant scientists through the ontologies, metadata frameworks (ISA) and lookup services that make plant research data FAIR, including the CGIAR Crop Ontology | ontologies, FAIR data, metadata, Crop Ontology, ISA framework | none |
 | [gesesse-2023-pnas](papers/gesesse-2023-pnas.md) | Gesesse et al. 2023, *PNAS* | research article | yes | team | Farmer appreciation of 1,200 EtNAM wheat lines is heritable and, used in genomic selection, predicts grain yield in new environments better than models trained on yield itself | genomic selection, EtNAM, nested association mapping, farmer appreciation, participatory variety selection | GitHub |
 | [olaosebikan-2023-jsfa](papers/olaosebikan-2023-jsfa.md) | Olaosebikan et al. 2023, *J Sci Food Agric* | research article | yes | team | tricot consumer tests of eba in Nigeria and Cameroon linked to lab measures show preferences for cohesive, bright eba are surprisingly similar across cultures, with a few country differences | consumer testing, cassava, gari, eba, food quality | see card |
+| [rutsaert-2023-cimmyt](papers/rutsaert-2023-cimmyt.md) | Rutsaert et al. 2023, *CIMMYT report* | report | no | team | Trader, stakeholder, farmer and tricot data from Tanzania show early maturity and taste drive groundnut demand, fodder and oil need no breeding focus, and farmers want to buy seed | market intelligence, groundnut, product design team, market segmentation, target product profiles | see card |
 | [rutsaert-2023-mib](papers/rutsaert-2023-mib.md) | Rutsaert et al. 2023, *Market Intell Brief* | policy brief | no | team | Brief explaining video-based product concept testing and applying it with 2,400 farmers to propose future hybrid maize market segments in East Africa | VPCT, video-based product concept testing, market segmentation, hybrid maize, future segments | none |
 | [teeken-2023-slides](papers/teeken-2023-slides.md) | Teeken et al. 2023, *Presentation* | presentation | no | team | Conference slides on scaling cassava PVS in Nigeria with tricot (320 farmers, 30 varieties, 4 states), showing how socially inclusive feedback, especially from women processors, informs breeding | cassava, gender, social inclusion, processors, gari | none |
 | [vanetten-2023-pnas](papers/vanetten-2023-pnas.md) | van Etten et al. 2023, *PNAS* | perspective | yes | team | Perspective arguing that data-driven methods let genebanks and breeders serve heterogeneous environments and users, and setting out five investment priorities | data-driven breeding, crop diversity management, genebanks, 3D breeding, GxExM | none |
