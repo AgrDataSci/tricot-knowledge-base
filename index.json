@@ -1,17 +1,49 @@
 {
- "version": "0393e7a60715",
- "updated": "2026-11-07",
- "cards": 70,
+ "version": "acd7b8e518f2",
+ "updated": "2026-11-21",
+ "cards": 72,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
   "path": "SKILL.md",
-  "hash": "af240c6cfc8b"
+  "hash": "f45258c54149"
  },
  "people": {
   "path": "people.md",
   "hash": "70e10e3b33d0"
  },
+ "install": {
+  "path": "INSTALL.md",
+  "hash": "68e4aaaeb23f"
+ },
+ "index_table": {
+  "path": "index.md"
+ },
  "papers": [
+  {
+   "id": "eskridge-1992-tag",
+   "year": "1992",
+   "type": "research article",
+   "source": "external",
+   "peer_reviewed": "yes",
+   "curated_card": "no",
+   "gist": "Defines reliability as the probability that a test cultivar outperforms a check across environments, shows how to estimate and test it, and finds it more repeatable than common stability statistics",
+   "keywords": "reliability, probability of outperforming a check, check variety, stability analysis, safety-first, genotype by environment interaction, pairwise comparison, repeatability, Cochran Q test, cultivar selection, risk",
+   "path": "papers/eskridge-1992-tag.md",
+   "hash": "2d1de389b928",
+   "relations": [
+    {
+     "relation": "providesMethodFor",
+     "card": "brown-2023-agronj",
+     "note": "reliability, the probability of outperforming the reference genotype"
+    },
+    {
+     "relation": "providesMethodFor",
+     "card": "desousa-2023-softwarex",
+     "note": "the reliability function"
+    }
+   ],
+   "not_established": "that reliability applies unchanged to farmer rankings or tricot data, which the paper does not cover; any threshold other than zero, such as a 25% yield gain; that reliability is as repeatable as the mean yield (it was less so); that a high reliability against one check holds against another check or outside the check's area of adaptation; any use of on-farm or farmer-managed trials (the data are researcher-run international variety trials)"
+  },
   {
    "id": "vanetten-2011-idsbull",
    "year": "2011",
@@ -619,7 +651,7 @@
    "gist": "Pools 31 Musa trials from 1990 to 2019 that scored black leaf streak with five different metrics by converting them to rankings, and finds that dry spell length separates humid from dry environments with different resistant genotypes",
    "keywords": "data synthesis, rank aggregation, heterogeneous trials, Plackett-Luce trees, black leaf streak disease, black Sigatoka, Musa, AgERA5, dry spell, relative humidity, reliability, stability assessment, genotype by environment",
    "path": "papers/brown-2023-agronj.md",
-   "hash": "a4284bcc3b1b",
+   "hash": "7634ec6d57d5",
    "relations": [
     {
      "relation": "extends",
@@ -635,6 +667,11 @@
      "relation": "usesMethodIn",
      "card": "desousa-2023-joss",
      "note": "climatrends indices over the evaluation period"
+    },
+    {
+     "relation": "usesMethodIn",
+     "card": "eskridge-1992-tag",
+     "note": "reliability, the probability of outperforming the reference genotype"
     }
    ],
    "not_established": "that dry environments are disease-free; that the top genotypes in dry environments differ significantly from the reference Calcutta 4; a causal mechanism for the humidity effect; that genotypes outperforming Calcutta 4 in one environment do so in the other"
@@ -668,12 +705,17 @@
    "gist": "R package covering the tricot analysis workflow, from converting tricot data to rankings through model selection to reliability, regret and worth plots",
    "keywords": "gosset, R package, ranking data, rank_tricot, Plackett-Luce, Bradley-Terry, reliability, regret, worth map, cross-validation, tricot workflow",
    "path": "papers/desousa-2023-softwarex.md",
-   "hash": "da2985809dd2",
+   "hash": "bc722c41edc5",
    "relations": [
     {
      "relation": "providesMethodFor",
      "card": "brown-2023-agronj",
      "note": "gosset for rank_numeric, reliability and model summaries"
+    },
+    {
+     "relation": "usesMethodIn",
+     "card": "eskridge-1992-tag",
+     "note": "the reliability function"
     }
    ]
   },
@@ -734,6 +776,25 @@
    "relations": []
   },
   {
+   "id": "rutsaert-2023-cimmyt",
+   "year": "2023",
+   "type": "report",
+   "source": "team",
+   "peer_reviewed": "no",
+   "curated_card": "no",
+   "gist": "Trader, stakeholder, farmer and tricot data from Tanzania show early maturity and taste drive groundnut demand, fodder and oil need no breeding focus, and farmers want to buy seed",
+   "keywords": "market intelligence, groundnut, product design team, market segmentation, target product profiles, video-based product concept testing, seed systems, traders, maturity, Tanzania",
+   "path": "papers/rutsaert-2023-cimmyt.md",
+   "hash": "393f53546586",
+   "relations": [
+    {
+     "relation": "usesMethodIn",
+     "card": "rutsaert-2023-mib",
+     "note": "video-based product concept testing"
+    }
+   ]
+  },
+  {
    "id": "rutsaert-2023-mib",
    "year": "2023",
    "type": "policy brief",
@@ -745,6 +806,11 @@
    "path": "papers/rutsaert-2023-mib.md",
    "hash": "b2e74f9df762",
    "relations": [
+    {
+     "relation": "providesMethodFor",
+     "card": "rutsaert-2023-cimmyt",
+     "note": "video-based product concept testing"
+    },
     {
      "relation": "providesMethodFor",
      "card": "mbugua-2024-mib",

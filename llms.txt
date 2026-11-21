@@ -6,7 +6,8 @@ Read SKILL.md before answering. It holds the rules for evidence, attribution and
 
 ## Core files
 
-- [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/SKILL.md): answering rules, evidence boundaries and the paper index
+- [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/SKILL.md): answering rules, evidence boundaries and a topic map of the cards
+- [index.md](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/index.md): the gist of every card, opened when the topic map is not enough
 - [people.md](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/people.md): how to credit authors and who agreed to be suggested as a contact
 - [index.json](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/index.json): version, card list with hashes and links between papers
 - [AGENTS.md](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/AGENTS.md): short instructions for AI agents

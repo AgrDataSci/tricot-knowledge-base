@@ -32,6 +32,7 @@ Licences were read from each PDF on 2026-10-30. The batch added on 2026-11-05 wa
 | donovan-et-al-2025.pdf | [donovan-2025-expagric](../papers/donovan-2025-expagric.md) | https://doi.org/10.1017/S001447972500002X | CC BY 4.0 |
 | dorado-betancourt-et-al-2026.pdf | [dorado-2026-tag](../papers/dorado-2026-tag.md) | https://doi.org/10.1007/s00122-026-05319-1 | CC BY 4.0 |
 | dumschott-et-al-2023.pdf | [dumschott-2023-fps](../papers/dumschott-2023-fps.md) | https://doi.org/10.3389/fpls.2023.1279694 | CC BY 4.0 |
+| eskridge-and-mumm-1992.pdf | [eskridge-1992-tag](../papers/eskridge-1992-tag.md) | https://doi.org/10.1007/BF00229512 | one-page pointer, not the article; the article has no open licence (© Springer-Verlag 1992) and is available from the publisher through the DOI |
 | fadda-et-al-2020.pdf | [fadda-2020-fps](../papers/fadda-2020-fps.md) | https://doi.org/10.3389/fpls.2020.559515 | CC BY 4.0 |
 | gesesse-et-al-2023.pdf | [gesesse-2023-pnas](../papers/gesesse-2023-pnas.md) | https://doi.org/10.1073/pnas.2205774119 | CC BY 4.0 |
 | goormachtigh-et-al-2026.pdf | [goormachtigh-2026-flyer](../papers/goormachtigh-2026-flyer.md) | https://alliancebioversityciat.org/stories/sikia-ai-listen-farmers (no handle, team flyer) | none stated (team flyer) |
