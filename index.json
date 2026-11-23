@@ -1,5 +1,5 @@
 {
- "version": "014e9f58702a",
+ "version": "dcb27001d847",
  "updated": "2026-11-23",
  "cards": 72,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
@@ -100,17 +100,18 @@
    "source": "team",
    "peer_reviewed": "yes",
    "curated_card": "no",
-   "gist": "Survey of 426 tricot farmers in India, Ethiopia and Honduras showing they join mainly to share information and contribute to science, and expect advice, training or seed rather than cash",
-   "keywords": "farmer motivation, citizen science, incentives, rewards, mobile phones, Seeds for Needs, participation, retention",
+   "gist": "In 426 tricot farmers in India, Ethiopia and Honduras, contributing to science or sharing information motivated most, fun least, and those wanting returns sought advice, training or seed",
+   "keywords": "farmer motivation, citizen science, incentives, rewards, mobile phones, SMS, Interactive Voice Response, gamification, Seeds for Needs, participation, retention",
    "path": "papers/beza-2017-plosone.md",
-   "hash": "640b738fce2c",
+   "hash": "d96f7f7194c3",
    "relations": [
     {
      "relation": "isReviewedBy",
      "card": "fadda-2020-fps",
      "note": ""
     }
-   ]
+   ],
+   "not_established": "that farmers take part without wanting any return (about half expected something back); that phones were used to report trial results in these trials (they were not yet); that cash payments raise or lower participation (not tested); that the results represent all farmers in the three countries (exploratory, non-random sample); that women's motivations are well described (17% of respondents were women)"
   },
   {
    "id": "mancini-2017-scirep",
@@ -268,6 +269,16 @@
      "relation": "isDiscussedBy",
      "card": "thiele-2021-ijfst",
      "note": "cites tricot as a tool for farmer-guided dissemination through the informal system"
+    },
+    {
+     "relation": "isExtendedBy",
+     "card": "brown-2022-cropsci",
+     "note": "pools the Nicaragua trials analysed there with trials from three more countries"
+    },
+    {
+     "relation": "isDiscussedBy",
+     "card": "desousa-2023-softwarex",
+     "note": "cited as a study that used the methods"
     }
    ],
    "not_established": "effects on farmer income, food security or adoption; acceptance of tricot data in official variety release"
@@ -293,11 +304,12 @@
    "source": "team",
    "peer_reviewed": "yes",
    "curated_card": "no",
-   "gist": "R client for CHIRPS daily rainfall (plus IMERG and ESI) that computes precipitation indices for trial locations and dates, a standard source of rainfall covariates for tricot",
+   "gist": "R package chirps retrieves CHIRPS, IMERG and ESI data for chosen points and dates through the ClimateSERV API and computes rainfall indices, shown in a Brazilian Amazon example",
    "keywords": "CHIRPS, rainfall, precipitation indices, IMERG, ESI, climate covariates, API client, R package, dry spell, environmental data for trials",
    "path": "papers/desousa-2020-joss.md",
-   "hash": "76d6440ee6f5",
-   "relations": []
+   "hash": "60b144e1f41f",
+   "relations": [],
+   "not_established": "That CHIRPS indices match rainfall measured on individual farms; that the Tapajós example shows a statistically tested drying trend; that CHIRPS or the package was validated against station data in this paper; that chirps has been used in tricot trials (the paper does not mention tricot); that repeated calls return identical data over time"
   },
   {
    "id": "fadda-2020-fps",
@@ -372,7 +384,13 @@
    "keywords": "Plackett-Luce model, rankings, partial rankings, ties, pseudo-rankings, worth, quasi-variance, Plackett-Luce trees, R package, tricot analysis",
    "path": "papers/turner-2020-compstat.md",
    "hash": "476e84a58ed8",
-   "relations": []
+   "relations": [
+    {
+     "relation": "providesMethodFor",
+     "card": "desousa-2023-softwarex",
+     "note": "Plackett-Luce models and trees in the example"
+    }
+   ]
   },
   {
    "id": "vandegevel-2020-asd",
@@ -469,6 +487,11 @@
      "note": "farmer appreciation is heritable and informative for breeding"
     },
     {
+     "relation": "isDiscussedBy",
+     "card": "desousa-2023-softwarex",
+     "note": "cited as a study that used the methods"
+    },
+    {
      "relation": "isAgreedWithBy",
      "card": "gesesse-2023-pnas",
      "note": "farmer appreciation improves prediction accuracy"
@@ -507,6 +530,11 @@
    "path": "papers/moyo-2021-fsufs.md",
    "hash": "1b3705630f9d",
    "relations": [
+    {
+     "relation": "isDiscussedBy",
+     "card": "desousa-2023-softwarex",
+     "note": "cited as a study that used the methods"
+    },
     {
      "relation": "isDiscussedBy",
      "card": "chase-2026-book",
@@ -586,14 +614,25 @@
    "gist": "Pools 14 tricot common bean trials from four Central American countries into one Plackett-Luce analysis, finding heat the main driver and mapping variety performance by season",
    "keywords": "data synthesis, rank aggregation, meta-analysis, Plackett-Luce trees, environmental covariates, WSDI, heat, planting date, survival analysis, area of applicability, variety maps",
    "path": "papers/brown-2022-cropsci.md",
-   "hash": "6a6aa106938b",
+   "hash": "81baadc41260",
    "relations": [
+    {
+     "relation": "extends",
+     "card": "vanetten-2019-pnas",
+     "note": "pools the Nicaragua trials analysed there with trials from three more countries"
+    },
     {
      "relation": "isExtendedBy",
      "card": "brown-2023-agronj",
      "note": "applies rank-based data synthesis to non-ranking station data and disease scores instead of tricot rankings"
+    },
+    {
+     "relation": "isDiscussedBy",
+     "card": "desousa-2023-softwarex",
+     "note": "cited as a study that used the methods"
     }
-   ]
+   ],
+   "not_established": "that the environmental covariates greatly improve prediction of farmer rankings (cross-validated gains over the no-covariate model were small); that heat is the only factor driving bean variety performance in Central America; that the maps are direct variety recommendations for genotypes tested in only one country; that the planting-date models are accurate for the Postrera and Apante seasons; that predictions hold outside the area of applicability; that the maps were validated with new independent trials; that results for overall performance hold for single traits such as yield"
   },
   {
    "id": "woldeyohannes-2022-elife",
@@ -621,6 +660,11 @@
      "relation": "citesAsDataSource",
      "card": "mancini-2017-scirep",
      "note": "earlier participatory evaluation of durum wheat in Ethiopia showing gender differences"
+    },
+    {
+     "relation": "isDiscussedBy",
+     "card": "desousa-2023-softwarex",
+     "note": "cited among studies that implemented the next steps"
     }
    ],
    "not_established": "that candidate genes near QTNs are causal, since low-density genotyping and population structure confound associations; that the two common-garden locations represent the range of teff environments; that the genomic offset predicts yield loss"
@@ -632,11 +676,18 @@
    "source": "team",
    "peer_reviewed": "yes",
    "curated_card": "no",
-   "gist": "Links instrumental and sensory texture and color of eba to tricot consumer preferences from 600 Nigerians, identifying cohesiveness, hardness and color as breeding targets",
+   "gist": "tricot rankings by 600 Nigerian consumers favor cohesive eba from brighter, redder, less yellow gari, traits that instrumental color and texture measures can screen in cassava breeding",
    "keywords": "eba, gari, texture profile analysis, sensory panel, color, heritability, NIRS, high-throughput phenotyping, consumer preference, tricot, RTBfoods, cassava breeding",
    "path": "papers/alamu-2023-jsfa.md",
-   "hash": "f3d00b929693",
-   "relations": []
+   "hash": "d69ad877be1b",
+   "relations": [
+    {
+     "relation": "isDiscussedBy",
+     "card": "desousa-2023-softwarex",
+     "note": "cited as a study that used the methods"
+    }
+   ],
+   "not_established": "that hardness drives eba preference across all consumers (significant only in the Idoma, Igede and Yoruba node); that lab eba color predicts consumer liking (color was not measured on the eba used in consumer testing); that NIRS can screen cohesiveness (R² in prediction 0.23); that instrumental texture captures stretchability; that the preferences hold beyond Osun and Benue states or for more contrasting varieties; that a* of gari is heritable in this population (H² 0)"
   },
   {
    "id": "arnaud-2023-jsfa",
@@ -713,10 +764,10 @@
    "source": "team",
    "peer_reviewed": "yes",
    "curated_card": "no",
-   "gist": "R package covering the tricot analysis workflow, from converting tricot data to rankings through model selection to reliability, regret and worth plots",
-   "keywords": "gosset, R package, ranking data, rank_tricot, Plackett-Luce, Bradley-Terry, reliability, regret, worth map, cross-validation, tricot workflow",
+   "gist": "gosset adds R functions missing from PlackettLuce and related packages to prepare, model and present ranking data, demonstrated on a common bean tricot trial in Nicaragua.",
+   "keywords": "gosset, R package, ranking data, rank_tricot, Plackett-Luce, Bradley-Terry, reliability, regret, worth map, cross-validation, Kendall tau, tricot workflow",
    "path": "papers/desousa-2023-softwarex.md",
-   "hash": "bc722c41edc5",
+   "hash": "b133a05302fa",
    "relations": [
     {
      "relation": "providesMethodFor",
@@ -727,8 +778,54 @@
      "relation": "usesMethodIn",
      "card": "eskridge-1992-tag",
      "note": "the reliability function"
+    },
+    {
+     "relation": "usesMethodIn",
+     "card": "turner-2020-compstat",
+     "note": "Plackett-Luce models and trees in the example"
+    },
+    {
+     "relation": "discusses",
+     "card": "vanetten-2019-pnas",
+     "note": "cited as a study that used the methods"
+    },
+    {
+     "relation": "discusses",
+     "card": "moyo-2021-fsufs",
+     "note": "cited as a study that used the methods"
+    },
+    {
+     "relation": "discusses",
+     "card": "desousa-2021-commsbio",
+     "note": "cited as a study that used the methods"
+    },
+    {
+     "relation": "discusses",
+     "card": "brown-2022-cropsci",
+     "note": "cited as a study that used the methods"
+    },
+    {
+     "relation": "discusses",
+     "card": "alamu-2023-jsfa",
+     "note": "cited as a study that used the methods"
+    },
+    {
+     "relation": "discusses",
+     "card": "gesesse-2023-pnas",
+     "note": "cited as a study that used the methods"
+    },
+    {
+     "relation": "discusses",
+     "card": "woldeyohannes-2022-elife",
+     "note": "cited among studies that implemented the next steps"
+    },
+    {
+     "relation": "discusses",
+     "card": "rutsaert-2023-mib",
+     "note": "cited as a study that used the methods"
     }
-   ]
+   ],
+   "not_established": "that the Nicaragua example results are variety recommendations; that the rainfall split is significant at the 5% level; that cross-validation, btpermute or regret were demonstrated in the example; that gosset was benchmarked against other software; that all trials run through ClimMob are analysed with gosset"
   },
   {
    "id": "dumschott-2023-fps",
@@ -760,6 +857,11 @@
      "relation": "providesMethodFor",
      "card": "woldeyohannes-2022-elife",
      "note": "the same farmer-rating to Plackett-Luce workflow, with scores converted to paired comparisons and worth linked to agronomic traits"
+    },
+    {
+     "relation": "isDiscussedBy",
+     "card": "desousa-2023-softwarex",
+     "note": "cited as a study that used the methods"
     },
     {
      "relation": "usesDataFrom",
@@ -817,6 +919,11 @@
    "path": "papers/rutsaert-2023-mib.md",
    "hash": "b2e74f9df762",
    "relations": [
+    {
+     "relation": "isDiscussedBy",
+     "card": "desousa-2023-softwarex",
+     "note": "cited as a study that used the methods"
+    },
     {
      "relation": "providesMethodFor",
      "card": "rutsaert-2023-cimmyt",
@@ -889,6 +996,11 @@
      "relation": "citesAsDataSource",
      "card": "occelli-2024-agecon",
      "note": "cites about 40% cheaper than RCBD; the source reports 28% cheaper than group PVS"
+    },
+    {
+     "relation": "providesMethodFor",
+     "card": "1000farms-2025-report",
+     "note": "cited for the tricot approach"
     },
     {
      "relation": "isDiscussedBy",
@@ -1049,11 +1161,23 @@
    "source": "team",
    "peer_reviewed": "no",
    "curated_card": "no",
-   "gist": "Report of a 26-person CGIAR-NARES meeting setting recommendations and 12-month action plans to mainstream tricot in breeding, from sampling and SOPs to analysis, cost and coordination",
+   "gist": "CGIAR-NARES breeding teams agreed that mainstreaming tricot needs representative sampling, harmonized SOPs, structured advancement decisions, cost control and cross-crop coordination, and set 12-month action plans",
    "keywords": "mainstreaming, 1000FARMS, CGIAR-NARES, sampling, SOPs, trial design, genetic gain on-farm, variety advancement, cost, coordination, digital ecosystem, market segments",
    "path": "papers/1000farms-2025-report.md",
-   "hash": "26b635173751",
-   "relations": []
+   "hash": "d16bfbea9ea6",
+   "relations": [
+    {
+     "relation": "usesMethodIn",
+     "card": "desousa-2024-asd",
+     "note": "cited for the tricot approach"
+    },
+    {
+     "relation": "discusses",
+     "card": "donovan-2025-expagric",
+     "note": "cited as a suggested approach for video-based product concept testing"
+    }
+   ],
+   "not_established": "that these recommendations improve data quality, cost or decisions (they are participants' proposals, not tested); that the 12-month action plans were carried out; that on-farm genetic gain has been estimated from tricot data (a framework was only presented); that CGIAR or national variety release systems have adopted tricot or these SOPs; that the views represent all CGIAR-NARES teams (26 participants, 15 listed under CIMMYT)"
   },
   {
    "id": "cairns-2025-ppp",
@@ -1082,17 +1206,23 @@
    "source": "team",
    "peer_reviewed": "yes",
    "curated_card": "no",
-   "gist": "Video-based concept testing with 2,400 farmers in Kenya and Uganda finds resilience, drought escape and intercropping concepts most preferred among eight future maize hybrid concepts",
-   "keywords": "product concept testing, VPCT, videos, hybrid maize, market segments, product design, seed products, intercropping, drought escape, resilience, demand-led breeding",
+   "gist": "Video concept testing with 2,400 farmers in Kenya and Uganda ranked resilience, drought escape (Uganda) and intercropping (Kenya) highest among eight future maize hybrid concepts",
+   "keywords": "product concept testing, VPCT, videos, hybrid maize, tricot, Plackett-Luce, product design, seed products, intercropping, drought escape, resilience, demand-led breeding",
    "path": "papers/donovan-2025-expagric.md",
-   "hash": "2900d3c173a6",
+   "hash": "2a4a5c7d77a9",
    "relations": [
+    {
+     "relation": "isDiscussedBy",
+     "card": "1000farms-2025-report",
+     "note": "cited as a suggested approach for video-based product concept testing"
+    },
     {
      "relation": "extends",
      "card": "rutsaert-2023-mib",
      "note": "full analysis of the maize concept testing in the brief"
     }
-   ]
+   ],
+   "not_established": "that farmers would buy these hybrids once available (preferences were stated after watching videos and no seed was offered); that early-maturity or intercropping hybrids yield more or reduce risk in farmers' fields (no hybrids were bred or tested); that the results hold outside the mid-altitude zones of western Kenya and central Uganda; that gender and farm size significantly shape concept preference (the printed p-values for these tree splits are above 0.05); that mixed interest in some concepts reflects low value rather than weak understanding of new uses (not tested); which traits and thresholds each concept needs"
   },
   {
    "id": "howland-2025-report",
@@ -1141,11 +1271,12 @@
    "source": "team",
    "peer_reviewed": "yes",
    "curated_card": "no",
-   "gist": "tricot potato trial with 460 Rwandan farmers, linked to RHoMIS, climate and station data, shows old varieties still preferred and temperature and market orientation shaping rankings",
-   "keywords": "potato, tricot, RHoMIS, socio-economic covariates, temperature, on-station vs on-farm, variety preference, market orientation, gender, Plackett-Luce trees",
+   "gist": "In a 460-farmer potato tricot trial in Rwanda, old varieties ranked highest, yield ranks shifted with temperature, marketability with crop income, and on-station values predicted on-farm ranks poorly",
+   "keywords": "potato, tricot, RHoMIS, socio-economic covariates, temperature, on-station vs on-farm, variety preference, market orientation, marketability, gender, Plackett-Luce trees, PLADMM",
    "path": "papers/kang-2025-expagric.md",
-   "hash": "5e1a3857b11d",
-   "relations": []
+   "hash": "6c6107fac075",
+   "relations": [],
+   "not_established": "that new potato varieties are worse than old ones in general (several did not differ significantly from Kirundo, and the old-variety lead may partly reflect the large warm-site group); that on-station trials cannot predict farm performance in general (one on-station season, nine varieties, two imputed); that temperature itself causes the yield rank changes (the biological causes were not identified); that crop income or gender cause the preference differences (associations in a subset of households); results for all of Rwanda (two districts, two seasons)"
   },
   {
    "id": "mawia-2025-fsufs",
@@ -1430,10 +1561,10 @@
    "source": "team",
    "peer_reviewed": "yes",
    "curated_card": "no",
-   "gist": "Combines 18-environment station trials with tricot on-farm trials in Tanzania to select stable groundnut genotypes and show women and men prioritize different traits",
+   "gist": "Across 18 Tanzanian environments, ICGV-SM 16645 and 10014 were high-yielding and stable, and tricot farmers of both genders favored marketable tan small-medium kernels, with women valuing labor-saving traits more",
    "keywords": "groundnut, GEI, GGE biplot, tricot, gender, trait preferences, kernel yield, stability, target product profile, variety release, TARI",
    "path": "papers/daudi-2026-fes.md",
-   "hash": "5446bab83385",
+   "hash": "33e3fa56763d",
    "relations": [
     {
      "relation": "isDiscussedBy",
@@ -1445,7 +1576,8 @@
      "card": "kadege-2026-fsufs",
      "note": "women and men prioritize different traits in tricot trials of Tanzanian legumes"
     }
-   ]
+   ],
+   "not_established": "that station kernel yields and tricot rankings were analysed jointly or agree with each other (they were analysed separately); that ICGV-SM 05534 is the top-yielding genotype (Table 4 shows ICGV-SM 16645 higher); that any genotype was released on the basis of these results; that the gender differences were tested statistically (they are descriptive correlations); that women and men differ on the top traits (both rank marketability, kernel color and kernel size highest); that the four mega-environments hold over more than two seasons; that young farmers' preferences were assessed"
   },
   {
    "id": "dorado-2026-tag",
@@ -1454,11 +1586,12 @@
    "source": "team",
    "peer_reviewed": "yes",
    "curated_card": "no",
-   "gist": "Shows that genotype means and variances from Plackett-Luce or Thurstonian models can feed standard two-step mixed models to estimate heritability from tricot rankings",
-   "keywords": "genetic parameters, heritability, variance components, Thurstonian model, Plackett-Luce, two-step analysis, mixed models, ranking data, genetic gain, simulation",
+   "gist": "Shows, with simulations and four on-farm datasets, that tricot rankings fed into a two-step mixed model give reliable genotype means and heritability, given about 30 replicates per genotype",
+   "keywords": "genetic parameters, heritability, variance components, Thurstonian model, Plackett-Luce, two-step analysis, mixed models, ranking data, quasi-variances, simulation, on-farm trials",
    "path": "papers/dorado-2026-tag.md",
-   "hash": "083a699cc120",
-   "relations": []
+   "hash": "e514070dc64e",
+   "relations": [],
+   "not_established": "performance for taste, colour or other non-quantitative traits (only yield was tested); estimates of genetic gain or genotype × environment effects (left for future work); that raw Plackett-Luce estimates are on the same scale as yield-based means (they needed a scaling factor of about 0.85 to 0.90); that heritability from rankings equals heritability from measured yield (it was lower in three of four datasets); that 30 replicates per genotype are always enough (more are needed when genetic variation is high relative to residual variation); that rankings should replace yield measurement where farmers can measure yield (the authors say rankings may then be complementary or unnecessary)"
   },
   {
    "id": "goormachtigh-2026-flyer",

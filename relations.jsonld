@@ -244,7 +244,12 @@
    "dcterms:identifier": "brown-2022-cropsci",
    "dcterms:title": "Rank-based data synthesis of common bean on-farm trials across four Central American countries",
    "dcterms:date": "2022",
-   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/brown-2022-cropsci.md"
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/brown-2022-cropsci.md",
+   "cito:extends": [
+    {
+     "@id": "https://doi.org/10.1073/pnas.1813720116"
+    }
+   ]
   },
   {
    "@id": "https://doi.org/10.7554/eLife.80009",
@@ -321,6 +326,35 @@
    "cito:usesMethodIn": [
     {
      "@id": "https://doi.org/10.1007/BF00229512"
+    },
+    {
+     "@id": "https://doi.org/10.1007/s00180-020-00959-3"
+    }
+   ],
+   "cito:discusses": [
+    {
+     "@id": "https://doi.org/10.1073/pnas.1813720116"
+    },
+    {
+     "@id": "https://doi.org/10.3389/fsufs.2021.620363"
+    },
+    {
+     "@id": "https://doi.org/10.1038/s42003-021-02463-w"
+    },
+    {
+     "@id": "https://doi.org/10.1002/csc2.20817"
+    },
+    {
+     "@id": "https://doi.org/10.1002/jsfa.12518"
+    },
+    {
+     "@id": "https://doi.org/10.1073/pnas.2205774119"
+    },
+    {
+     "@id": "https://doi.org/10.7554/eLife.80009"
+    },
+    {
+     "@id": "https://hdl.handle.net/10883/22467"
     }
    ]
   },
@@ -466,7 +500,17 @@
    "dcterms:identifier": "1000farms-2025-report",
    "dcterms:title": "Mainstreaming the tricot approach into the CGIAR-NARES Breeding Initiative. Insights from the meeting held in Nairobi, 3–5 December 2024",
    "dcterms:date": "2025",
-   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/1000farms-2025-report.md"
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/1000farms-2025-report.md",
+   "cito:usesMethodIn": [
+    {
+     "@id": "https://doi.org/10.1007/s13593-023-00937-1"
+    }
+   ],
+   "cito:discusses": [
+    {
+     "@id": "https://doi.org/10.1017/S001447972500002X"
+    }
+   ]
   },
   {
    "@id": "https://doi.org/10.1002/ppp3.70070",
