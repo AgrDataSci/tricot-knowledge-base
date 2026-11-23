@@ -48,3 +48,7 @@ Reply with three lines: the verdict; the counts (supported / imprecise / not in 
 ## Scratch files
 
 Other reviewers run at the same time. Put any temporary files (page images, scripts) only in /tmp/rv-<card-id>/, never in a shared folder such as /tmp/rv.
+
+## No web access
+
+Do not use WebFetch or WebSearch. Check the card only against the PDF and its text. Mark fields that need an outside record (handle, DOI landing page, CRAN version) as "Not checked (no web access)" and do not count them as errors.
