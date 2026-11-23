@@ -3,3 +3,4 @@
 - Trial years: desousa-2023-joss dates the Nicaragua trial to 2015 to 2017, vanetten-2019-pnas card says 2012 to 2016.
 - Reach: ~150,000 plots (desousa-2024-asd) vs >150,000 farmers (cairns-2026-jxb).
 - vanetten-2020-rtbwp (p. 21) gives a rough estimate of 40% lower cost for tricot vs intensive conventional PVS, with no data. This may be the real origin of the "~40%" that desousa-2024-asd attaches to Occelli et al. 2024 and RCBD. Worth checking with the desousa-2024 authors before stating it as fact.
+- nabateregga-2025-eja cites Ulzen et al. 2024 for farmer factors affecting heap volume estimates (pp. 8 to 9). Check whether that is the same work as ulzen-2025-agrirxiv, whose results on tin volume differ.
