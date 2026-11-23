@@ -1,6 +1,6 @@
 {
- "version": "acd7b8e518f2",
- "updated": "2026-11-21",
+ "version": "014e9f58702a",
+ "updated": "2026-11-23",
  "cards": 72,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
@@ -56,6 +56,11 @@
    "path": "papers/vanetten-2011-idsbull.md",
    "hash": "a6b5a44a8539",
    "relations": [
+    {
+     "relation": "providesMethodFor",
+     "card": "mancini-2017-scirep",
+     "note": "crowdsourced redistribution of top varieties, ref. 44"
+    },
     {
      "relation": "isExtendedBy",
      "card": "vanetten-2019-expagric",
@@ -114,11 +119,16 @@
    "source": "external",
    "peer_reviewed": "yes",
    "curated_card": "no",
-   "gist": "60 Ethiopian farmers scored 400 genebank wheat accessions, giving 192,000 data points that link farmer preferences to metric traits and rank landraces for local breeding",
-   "keywords": "participatory evaluation, traditional knowledge, durum wheat, landraces, genebank accessions, farmer preference, gender, metric traits, canonical correlation, Seeds for Needs, pre-breeding",
+   "gist": "60 Ethiopian farmers scored 400 genebank wheat accessions, giving 192,000 data points that link farmer preferences to metric traits and rank all accessions for local breeding",
+   "keywords": "participatory evaluation, traditional knowledge, durum wheat, landraces, genebank accessions, farmer preference, gender, metric traits, canonical correlation, crowdsourcing, pre-breeding",
    "path": "papers/mancini-2017-scirep.md",
-   "hash": "8be988bf909e",
+   "hash": "2084990ecb12",
    "relations": [
+    {
+     "relation": "usesMethodIn",
+     "card": "vanetten-2011-idsbull",
+     "note": "crowdsourced redistribution of top varieties, ref. 44"
+    },
     {
      "relation": "isExtendedBy",
      "card": "vanetten-2019-pnas",
@@ -144,7 +154,8 @@
      "card": "gesesse-2023-pnas",
      "note": "diversity panel and farmer scores"
     }
-   ]
+   ],
+   "not_established": "farmer scores in these high-input trials predict performance on farmers' own fields; top-ranked landraces outyield modern varieties under farmer management; the gender differences hold beyond these two communities; the ranking is stable across seasons (one season only); outcomes of the crowdsourced redistribution (only its reach is reported); that this was a tricot trial"
   },
   {
    "id": "steinke-2017-asd",
@@ -869,10 +880,10 @@
    "source": "team",
    "peer_reviewed": "yes",
    "curated_card": "no",
-   "gist": "Retrospective on tricot's development, validity, cost, mainstreaming in breeding and open challenges",
+   "gist": "\"Retrospective of 12 years of tricot: aggregated farmer rankings are adequately valid with large samples, one Rwanda case cost 27% less than RCBD, and breeding programmes now use it.\"",
    "keywords": "tricot, citizen science, incomplete block design, ClimMob, Plackett-Luce, validity, reliability, cost, adoption, mainstreaming, product design, gender",
    "path": "papers/desousa-2024-asd.md",
-   "hash": "41d6dc15aa48",
+   "hash": "cc5fab8f9618",
    "relations": [
     {
      "relation": "citesAsDataSource",
@@ -895,7 +906,7 @@
      "note": "cites tricot as digitally mediated crowdsourcing of varietal feedback"
     }
    ],
-   "not_established": "over 150,000 farmers (it reports about 150,000 plots); a 40% saving against RCBD (it attributes this to Occelli et al. 2024, which reports 28% against group PVS); a general cost of tricot or a general 27% saving against RCBD (the cost comparison is a single case study of potato trials in Rwanda)"
+   "not_established": "over 150,000 farmers (it reports about 150,000 plots); a 40% saving against RCBD as a primary result (the paper states it on p. 6 but cites Occelli et al. 2024, which reportedly reports 28% against group PVS); a general cost of tricot or a general 27% saving against RCBD (the cost comparison is one Rwanda case study over two seasons, and the authors say costs are country specific)"
   },
   {
    "id": "mbugua-2024-mib",
@@ -923,11 +934,12 @@
    "source": "team",
    "peer_reviewed": "no",
    "curated_card": "no",
-   "gist": "Slides on tricot trials of forage grasses, legumes and mixtures with about 740 Ethiopian farmers, comparing them with the local reference Desho across many farmer-assessed traits",
+   "gist": "Slides on tricot trials of 21 forages in Ethiopia. For biomass, one mixture beat Desho in Amhara and seven options in SNNP. Preference tracked ease of harvesting and transplanting",
    "keywords": "forages, grass-legume mixtures, livestock feed, tricot, Ethiopia, Desho, land restoration, trait preferences, Plackett-Luce, multipurpose forages",
    "path": "papers/mulatu-2024-slides.md",
-   "hash": "3900bd49686c",
-   "relations": []
+   "hash": "907139392cc3",
+   "relations": [],
+   "not_established": "That any option significantly outyields Desho, as no uncertainty is shown for biomass; measured biomass, forage quality or animal performance; that yield is what farmers value most; performance outside the tested woredas or seasons"
   },
   {
    "id": "nanyonjo-2024-cropsci",
@@ -980,10 +992,10 @@
    "source": "external",
    "peer_reviewed": "yes",
    "curated_card": "no",
-   "gist": "Scoping review of 40 years of trait prioritization studies finds weak designs, ad hoc sampling, little sex-disaggregation and no shared trait taxonomy, so findings cannot be compared or pooled",
+   "gist": "Scoping review of 657 trait prioritization studies finds uneven crop and regional coverage, weak sampling, unsystematic sex disaggregation and no shared trait taxonomy, so findings cannot be compared",
    "keywords": "trait prioritization, trait preferences, scoping review, PRISMA-ScR, sex-disaggregated data, sampling, trait taxonomy, Crop Ontology, participatory plant breeding, research networks, demand-led breeding",
    "path": "papers/occelli-2024-natplants.md",
-   "hash": "4a44abad6085",
+   "hash": "c5a119340eb6",
    "relations": [],
    "not_established": "that any single elicitation tool, including tricot, gives the most valid trait priorities (the review maps use, not validity); that direct questions give wrong results (cited, not tested here); that roughly 250 respondents is an adequate sample; rankings of specific traits for a given crop and country"
   },
@@ -1299,10 +1311,10 @@
    "source": "team",
    "peer_reviewed": "no",
    "curated_card": "no",
-   "gist": "A 120-farmer common bean tricot trial in Uganda cost USD 92 per farmer, driven by researcher labour and transport; better delivery design could cut it to USD 47",
+   "gist": "A 120-farmer common bean tricot trial in Uganda had marginal costs of USD 92 per farmer, mostly researcher labour and transport. Modelled scenarios cut this to USD 47",
    "keywords": "tricot costing, cost per farmer, common bean, Uganda, NARO, NaCRRI, cost drivers, researcher travel, transport, field agents, hub clustering, scenario analysis",
    "path": "papers/angudubo-2026-naro.md",
-   "hash": "047921f37cab",
+   "hash": "15cc89d3d491",
    "relations": [
     {
      "relation": "usesMethodIn",
@@ -1315,7 +1327,7 @@
      "note": "assumes the ten tricot steps"
     }
    ],
-   "not_established": "the full cost of the trial (fixed costs such as trial preparation and central training are excluded); that the lower-cost scenarios keep data quality, which is assumed, not measured; that tricot is cheaper than other designs (no comparison was made); costs for other crops or countries"
+   "not_established": "the full cost of the trial (fixed costs such as trial preparation and central training are excluded and not reported); that the lower-cost scenarios keep data quality, which is assumed, not measured; that the scenario savings were achieved in the field (they are modelled with the template); that cost per farmer falls as farmer numbers grow (the executive summary claims it but shows no numbers); that the figures are audited expenditure (the report presents template estimates using standard rates); that tricot is cheaper than other designs (no comparison was made); costs for other crops or countries"
   },
   {
    "id": "angudubo-2026-zari",
