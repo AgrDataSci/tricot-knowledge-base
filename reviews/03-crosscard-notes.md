@@ -1,0 +1,7 @@
+- Cost figure chain: occelli-2024-agecon reports 28% lower total cost and 62% lower cost per farmer for tricot-PVS vs group-PVS (Table A7), with no RCBD comparison and no 40%. desousa-2024-asd cites it as "~40% cheaper than RCBD". The fixed desousa-2024-asd card in PR #19 says the cited source "reportedly" gives 28% vs group PVS. This can now be stated firmly. chase-2026-book's "about a quarter cheaper" fits.
+- Panel size: mancini-2017 (400, 25 improved) vs fadda-2020 (373 + 27).
+- Trial years: desousa-2023-joss dates the Nicaragua trial to 2015 to 2017, vanetten-2019-pnas card says 2012 to 2016.
+- Reach: ~150,000 plots (desousa-2024-asd) vs >150,000 farmers (cairns-2026-jxb).
+- vanetten-2020-rtbwp (p. 21) gives a rough estimate of 40% lower cost for tricot vs intensive conventional PVS, with no data. This may be the real origin of the "~40%" that desousa-2024-asd attaches to Occelli et al. 2024 and RCBD. Worth checking with the desousa-2024 authors before stating it as fact.
+- nabateregga-2025-eja cites Ulzen et al. 2024 for farmer factors affecting heap volume estimates (pp. 8 to 9). Check whether that is the same work as ulzen-2025-agrirxiv, whose results on tin volume differ.
+- Nicaragua trial years: vanetten-2019-pnas gives only 2012 to 2016 overall (5 seasons in Nicaragua, p. 4198, per-country years in SI Table S1, not in the PDF). desousa-2023-joss dates the Nicaragua data to 2015 to 2017 citing it. Both cards now flag this. Needs the SI table or an author to settle.
