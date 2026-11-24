@@ -9,7 +9,7 @@ article: 56(4), 587-607
 type: review
 source: external
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1017/S0014479720000174
 open_copy: https://doi.org/10.1017/S0014479720000174
 license: CC BY 4.0

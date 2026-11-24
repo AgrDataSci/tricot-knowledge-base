@@ -9,7 +9,7 @@ article: 9, 1639680
 type: research article
 source: external
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.3389/fsufs.2025.1639680
 open_copy: https://doi.org/10.3389/fsufs.2025.1639680
 license: CC BY 4.0

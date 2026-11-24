@@ -9,7 +9,7 @@ article: 9, 32
 type: research article
 source: external
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1007/s13194-019-0255-7
 open_copy: https://doi.org/10.1007/s13194-019-0255-7
 license: CC BY 4.0

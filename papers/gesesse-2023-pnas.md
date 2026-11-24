@@ -9,7 +9,7 @@ article: 120(14), e2205774119
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1073/pnas.2205774119
 open_copy: https://doi.org/10.1073/pnas.2205774119
 license: CC BY 4.0

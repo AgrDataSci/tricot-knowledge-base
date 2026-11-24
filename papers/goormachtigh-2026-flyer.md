@@ -9,7 +9,7 @@ article: 2 p.
 type: flyer
 source: team
 peer_reviewed: no
-curated_card: no
+curated_card: yes
 doi:
 open_copy: https://alliancebioversityciat.org/stories/sikia-ai-listen-farmers
 license: none stated (team flyer)
