@@ -1,5 +1,5 @@
 {
- "version": "f9f9b6b7ad1d",
+ "version": "aeafb41209be",
  "updated": "2026-11-24",
  "cards": 72,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
@@ -85,18 +85,19 @@
    "type": "guide",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
-   "gist": "The first practical guide to running a tricot project in ten steps, from problem analysis and seed calculations to workshops, observation cards, analysis and evaluation",
+   "curated_card": "yes",
+   "gist": "A step-by-step manual, illustrated by a Honduras bean project, advising 8 to 12 varieties, 100 to 200 farmers, three-variety packages and ClimMob for design, analysis and feedback",
    "keywords": "tricot guide, ten steps, project design, seed quantities, observation card, workshops, ClimMob, field facilitators, evaluation indicators",
    "path": "papers/steinke-2016-guide.md",
-   "hash": "df72d903f280",
+   "hash": "2afef2c5001e",
    "relations": [
     {
      "relation": "isUpdatedBy",
      "card": "chase-2026-book",
      "note": ""
     }
-   ]
+   ],
+   "not_established": "that the guide's numbers (8 to 12 varieties, 100 to 200 participants, at most 20 farmers per workshop, up to 25 farmers per facilitator) were tested, as they are practical advice; that the Honduras bean case produced published, statistically tested results, as the guide reports it only as a narrative example; that tricot raises adoption rates, which the guide expects but does not measure; that the ClimMob screens, files and apps described still match the current platform"
   },
   {
    "id": "beza-2017-plosone",
@@ -203,12 +204,13 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Adapts Positive Deviance to agriculture, using Pareto-optimal performance across five objectives to find 54 outlier households and 14 locally proven practices",
-   "keywords": "positive deviance, Pareto optimality, household heterogeneity, trade-offs, RHoMIS, livelihood practices, targeting, multi-objective development",
+   "curated_card": "yes",
+   "gist": "Positive Deviance with Pareto-optimal residual performance on five objectives found 54 of 521 Tanzanian households doing better than expected, and 14 uncommon practices that plausibly explain this",
+   "keywords": "positive deviance, Pareto optimality, household heterogeneity, trade-offs, RHoMIS, livelihood practices, targeting, multi-objective development, resource homologues, Tanzania",
    "path": "papers/steinke-2019-plosone.md",
-   "hash": "f028ce91fd92",
-   "relations": []
+   "hash": "ee97bf68a138",
+   "relations": [],
+   "not_established": "that the 14 practices cause better household performance (they were identified in interviews, not tested); that the practices will improve outcomes for the resource-homologue households they are matched to; that positive deviants do better than other households in absolute terms on all five objectives; that the approach finds options not already used locally; that the same positive deviants or practices would emerge with other indicators, sample sizes or seasons; that this is a tricot trial or an on-farm experiment"
   },
   {
    "id": "vanetten-2019-expagric",
@@ -251,11 +253,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "First large tricot test (12,409 plots, 3 countries) showing farmer rankings capture climate effects and improve variety recommendations",
+   "curated_card": "yes",
+   "gist": "Large tricot trials (12,409 plots, 3 countries) show farmer rankings capture known climate effects on varieties and can improve variety recommendations",
    "keywords": "tricot, citizen science, Plackett-Luce trees, climate adaptation, variety recommendation, seasonal forecast, worst regret, ClimMob",
    "path": "papers/vanetten-2019-pnas.md",
-   "hash": "3b3b597d5944",
+   "hash": "6f4c93fd0253",
    "relations": [
     {
      "relation": "extends",
@@ -270,7 +272,7 @@
     {
      "relation": "isDiscussedBy",
      "card": "vandegevel-2020-asd",
-     "note": "cites crowdsourced crop variety evaluation (tricot, ClimMob) as agricultural citizen science"
+     "note": "cites crowdsourced crop variety evaluation (climmob.net) as agricultural citizen science"
     },
     {
      "relation": "isExtendedBy",
@@ -308,7 +310,7 @@
      "note": "tricot method reference"
     }
    ],
-   "not_established": "effects on farmer income, food security or adoption; acceptance of tricot data in official variety release"
+   "not_established": "effects on farmer income, food security or adoption; acceptance of tricot data in official variety release; that tricot trials caused the 2017 Ethiopian variety releases; gains from real (not perfect) seasonal forecasts; yield gains (farmers ranked relative performance, the paper reports no yield data); that tricot outperforms a combination of conventional trial methods"
   },
   {
    "id": "carroll-2020-dsj",
@@ -417,18 +419,19 @@
    "type": "software paper",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "The R package behind tricot analysis, fitting Plackett-Luce models to partial and tied rankings, with pseudo-rankings for stable estimates and model trees for covariates",
+   "curated_card": "yes",
+   "gist": "The PlackettLuce R package fits Plackett-Luce models to subset rankings with ties, keeps sparse data estimable with pseudo-rankings, and finds covariate subgroups with model trees",
    "keywords": "Plackett-Luce model, rankings, partial rankings, ties, pseudo-rankings, worth, quasi-variance, Plackett-Luce trees, R package, tricot analysis",
    "path": "papers/turner-2020-compstat.md",
-   "hash": "476e84a58ed8",
+   "hash": "015f0eb94ed6",
    "relations": [
     {
      "relation": "providesMethodFor",
      "card": "desousa-2023-softwarex",
      "note": "Plackett-Luce models and trees in the example"
     }
-   ]
+   ],
+   "not_established": "that PlackettLuce is the fastest ranking software (PLMIX was faster on two of three benchmark data sets); that it fits top n rankings; that it models covariate effects on worth directly (covariates enter only through trees); that it was designed for or validated on tricot data (the Nicaragua bean trial is one worked example); that the bean tree identifies heat-tolerant varieties (it illustrates the method and makes no agronomic claim); that explicit tie modelling is practical beyond ties of order 4"
   },
   {
    "id": "vandegevel-2020-asd",
@@ -436,19 +439,19 @@
    "type": "review",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Review arguing that citizen science, with digital tools, differentiated roles and attention to motivation, can overcome the barriers that kept participatory agricultural research out of the mainstream",
+   "curated_card": "yes",
+   "gist": "Review arguing that citizen science, through digital tools, differentiated roles and motivation-aware design, could help participatory agricultural research reach the mainstream, given persistent institutional support",
    "keywords": "citizen science, participatory research, farmer participation, institutionalization, participant motivation, role differentiation, user-centred design, digital tools, social inclusion, democratization of science, accountability",
    "path": "papers/vandegevel-2020-asd.md",
-   "hash": "79970a2ba3a6",
+   "hash": "8eba45d0e3eb",
    "relations": [
     {
      "relation": "discusses",
      "card": "vanetten-2019-pnas",
-     "note": "cites crowdsourced crop variety evaluation (tricot, ClimMob) as agricultural citizen science"
+     "note": "cites crowdsourced crop variety evaluation (climmob.net) as agricultural citizen science"
     }
    ],
-   "not_established": "that citizen science lowers total research costs (it shifts and creates costs); that digital citizen science is socially inclusive by default (unequal access and literacy are flagged); quantitative effects of tricot, which the review cites only as an example"
+   "not_established": "that citizen science lowers total research costs (it shifts and creates costs); that digital citizen science is socially inclusive by default (unequal access and literacy are flagged); that citizen science has been shown to overcome the barriers to mainstreaming (the review argues potential, conditional on persistent institutional support, from a narrative review without a stated search method); that farmers will join any task without compensation (in one cited survey 37% rated payment essential for experimentation tasks); quantitative effects of crowdsourced variety evaluation (tricot), which the review cites only as an example"
   },
   {
    "id": "vanetten-2020-guide",
@@ -456,11 +459,11 @@
    "type": "guide",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
-   "gist": "Illustrated step-by-step guide for running large tricot experiments, covering roles, packages, observation timing, ODK data collection, ClimMob analysis and farmer feedback",
-   "keywords": "tricot guide, ten steps, implementers, local facilitators, observation card, ODK, ClimMob, field agents, feedback workshop, FAQ",
+   "curated_card": "yes",
+   "gist": "Practical guide showing that a tricot project runs in ten steps, with 8 to 12 options, blind three-option packages, about 100 to 200 farmers at first, and ClimMob analysis",
+   "keywords": "tricot guide, ten steps, implementers, local facilitators, observation card, ODK, ClimMob, field agents, feedback workshop, balanced randomization, FAQ",
    "path": "papers/vanetten-2020-guide.md",
-   "hash": "15c048810a22",
+   "hash": "080f9518248e",
    "relations": [
     {
      "relation": "providesMethodFor",
@@ -482,7 +485,8 @@
      "card": "chase-2026-book",
      "note": "several chapters reuse the 2020 guide, updated and extended"
     }
-   ]
+   ],
+   "not_established": "that 100 to 200 farmers is enough for every crop or trait (the guide says most situations); that the 30, 45 or 75 day observation times are fixed rules; that tricot has been validated for technologies other than annual crop varieties (the guide says such trials are underway); that the guide reports any trial results or effect sizes; that ClimMob will stay free for commercial or very large trials"
   },
   {
    "id": "vanetten-2020-rtbwp",
@@ -490,12 +494,13 @@
    "type": "working paper",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
-   "gist": "Methodological synthesis of tricot for on-farm variety evaluation, covering plot size, number of farms, inclusion, ethics, yield, data standards, analysis tools and cost",
-   "keywords": "trial dimensions, plot size, number of farms, gender, ethics, traditional knowledge, yield estimation, genetic gain, data standards, ontologies, R packages, cost, business models",
+   "curated_card": "yes",
+   "gist": "tricot synthesis recommending small plots on 100 to 200 farms for about 12 entries, rankings, farmer yield measures and inclusive sampling, and estimating roughly 40% savings vs intensive PVS",
+   "keywords": "trial dimensions, plot size, number of farms, gender, ethics, yield estimation, genetic gain, data standards, ontologies, R packages, cost, business models",
    "path": "papers/vanetten-2020-rtbwp.md",
-   "hash": "c5a07469a2e9",
-   "relations": []
+   "hash": "790e3bbfb036",
+   "relations": [],
+   "not_established": "a measured or audited 40% saving (it is a rough estimate with no data, method or cost unit); a 40% saving against RCBD or in a named country; a tenfold saving outside the US mail-and-smartphone model; that 100 to 200 farms suffice for any trial (the figure is for about 12 entries, comes from one bean study, and more environments need more farms); that men and women do not differ in variety preferences (no differences were detected, but analyses lacked intersectional data); that farmer volumetric yield estimates are validated beyond one common bean study in Kenya"
   },
   {
    "id": "desousa-2021-commsbio",
@@ -607,13 +612,13 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "Survey of 792 Nigerian cassava users shows women favor gari quality traits and men productivity traits, with gaps widening among food-insecure households and varying by region",
    "keywords": "gender, trait preferences, intersectionality, food insecurity, poverty, household type, 1000minds, RHoMIS, gari, cassava breeding, customer profiles",
    "path": "papers/teeken-2021-fsufs.md",
-   "hash": "d516242df62e",
+   "hash": "bb1087a23c10",
    "relations": [],
-   "not_established": "results of a tricot trial (it is a 1000minds and RHoMIS survey); trait preferences for crops other than cassava or places outside Nigeria"
+   "not_established": "results of a tricot trial or of on-farm variety testing (it is a 1000minds and RHoMIS stated-preference survey); trait preferences for crops other than cassava, for cassava products other than gari, or for places outside Nigeria; causal effects of gender, poverty or food security on trait preferences (the analyses show associations); a clear poor versus non-poor contrast (the paper defines the PPI groups inconsistently); that women in every region rank quality traits above yield (in the South South and South East women ranked fresh root yield higher than men)"
   },
   {
    "id": "thiele-2021-ijfst",
@@ -621,11 +626,11 @@
    "type": "review",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "Five RTB case studies confirm that neglect of consumer-preferred traits slows uptake of modern varieties, leave the gender hypothesis unresolved and find informal seed systems both help and hinder",
    "keywords": "varietal adoption, varietal turnover, consumer preferences, roots tubers and bananas, product profiles, gender, informal seed systems, varietal naming, DNA fingerprinting, landraces, demand-led breeding, RTBfoods",
    "path": "papers/thiele-2021-ijfst.md",
-   "hash": "9a73a7b1e1b0",
+   "hash": "4c193e9917c7",
    "relations": [
     {
      "relation": "discusses",
@@ -633,7 +638,7 @@
      "note": "cites tricot as a tool for farmer-guided dissemination through the informal system"
     }
    ],
-   "not_established": "that gender differences in consumer preferences drive slow adoption (the review calls the evidence insufficient); that informal seed systems are the main barrier (evidence mixed); that tricot improves RTB adoption (mentioned as a tool, not assessed)"
+   "not_established": "that gender differences in consumer preferences drive slow adoption (the review calls the evidence insufficient); that informal seed systems are the main barrier (evidence mixed); that tricot improves RTB adoption (mentioned as a tool, not assessed); that consumer traits matter more than yield and disease resistance (the review finds both drive adoption); that the 2010 adoption figures are accurate (breeder elicitations overestimated adoption, for example for C18 yam and sweetpotato in Uganda)"
   },
   {
    "id": "voss-2021-outlook",
@@ -641,11 +646,11 @@
    "type": "review",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "Review finding that evidence of gender-differentiated maize trait preferences is inconclusive and that gender-intentional maize breeding needs better methods, household-level analysis and new incentives",
    "keywords": "gender, maize breeding, gender-intentional breeding, trait preferences, seed adoption, market segmentation, intrahousehold decision-making, CGIAR Gender and Breeding Initiative, participatory plant breeding, tricot, seed systems",
    "path": "papers/voss-2021-outlook.md",
-   "hash": "1ef33c27d724",
+   "hash": "d38308b2347b",
    "relations": [
     {
      "relation": "isDiscussedBy",
@@ -653,7 +658,7 @@
      "note": "women in men-headed households neglected in earlier trials"
     }
    ],
-   "not_established": "that women and men do not differ in maize preferences (the review says evidence is inconclusive, not absent); that tricot reveals gender differences in maize (cited as a promising option, not tested here); that gender-intentional breeding improves women's adoption"
+   "not_established": "that women and men do not differ in maize preferences (the review says evidence is inconclusive, not absent); that gender-differentiated trait preferences explain the gender gap in maize adoption; that PVS or researcher-managed trials hide women's preferences (argued from trial design, not tested); that tricot reveals gender differences in maize (cited as a promising option, not tested here); that gender-intentional breeding improves women's adoption"
   },
   {
    "id": "brown-2022-cropsci",
@@ -691,11 +696,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Characterises 366 Ethiopian teff varieties with genomics, agronomy, farmer scores and climate, finding farmer appreciation highly heritable, gender-specific trait weights, and a lake Tana region most vulnerable to climate change",
-   "keywords": "teff, farmer varieties, landraces, participatory variety selection, farmer appreciation, Likert scores, Plackett-Luce, gender, heritability, GWAS, genomic offset, climate change, neglected and underutilized species, Ethiopia",
+   "curated_card": "yes",
+   "gist": "Farmer scores of 366 Ethiopian teff accessions were highly heritable, women and men weighted traits differently but preferred one ideotype, and genomic offset peaked south of lake Tana",
+   "keywords": "teff, farmer varieties, participatory variety selection, farmer appreciation, Likert scores, Plackett-Luce, gender, heritability, GWAS, genomic offset, climate change, Ethiopia",
    "path": "papers/woldeyohannes-2022-elife.md",
-   "hash": "ef748d1da3e3",
+   "hash": "1449f9f9d1b4",
    "relations": [
     {
      "relation": "usesMethodIn",
@@ -718,7 +723,7 @@
      "note": "cited among studies that implemented the next steps"
     }
    ],
-   "not_established": "that candidate genes near QTNs are causal, since low-density genotyping and population structure confound associations; that the two common-garden locations represent the range of teff environments; that the genomic offset predicts yield loss"
+   "not_established": "that candidate genes near QTNs are causal, since low-density genotyping and population structure confound associations; that the two common-garden locations represent the range of teff environments; that the genomic offset predicts yield loss; that women and men prefer different teff varieties, since both chose the same ideotype and gender is confounded with site; that the paper validates converting Likert scores to rankings; that farmer scores are more heritable than yield within a location"
   },
   {
    "id": "alamu-2023-jsfa",
@@ -1438,18 +1443,19 @@
    "type": "software paper",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Overview of BrAPI v2, the open API standard for breeding data, with a showcase of compatible tools including ClimMob, which pulls germplasm from breeding databases and pushes tricot data back",
+   "curated_card": "yes",
+   "gist": "BrAPI v2, an open community standard for breeding data, has grown to 201 endpoints and many compatible tools, including ClimMob, which exchanges germplasm and trial data with breeding databases",
    "keywords": "BrAPI, interoperability, data standards, API, breeding databases, ClimMob, germplasm, FAIR data, data integration, genebanks",
    "path": "papers/selby-2025-database.md",
-   "hash": "c5e4032848a7",
+   "hash": "a79148e2149f",
    "relations": [
     {
      "relation": "discusses",
      "card": "quiros-2024-compag",
      "note": "ClimMob as a BrAPI-compatible tool"
     }
-   ]
+   ],
+   "not_established": "That ClimMob's BrAPI link is in routine use with a named breeding database (the paper describes the capability without examples, users or numbers); that tricot rankings map onto BrAPI data models without loss of information (not discussed); that BrAPI adoption raises genetic gain or speeds variety release (no evaluation is reported); that every tool shown supports BrAPI v2 (GLIS, PIPPA, FAIDARE indexing and BrAPI2ISA still work with v1.3 or v1.2); that the tool list is complete (the authors say it is not)"
   },
   {
    "id": "sharma-2025-jafr",
@@ -1477,11 +1483,11 @@
    "type": "preprint",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "With 40 Ghanaian farmers, measuring harvest with a tin of known volume was the most accurate and robust method, while weighing with scales was error-prone even after training",
    "keywords": "farmer-generated yield, harvest measurement, volumetric measurement, tin can, weighing scale, taring, training, accuracy, citizen science, tricot, decentralized trials, Kookoo Pa",
    "path": "papers/ulzen-2025-agrirxiv.md",
-   "hash": "ed2f9a583e84",
+   "hash": "c7bc41652e8f",
    "relations": [
     {
      "relation": "isDiscussedBy",
@@ -1493,7 +1499,8 @@
      "card": "nabateregga-2025-eja",
      "note": "farmer volumetric yield measurement is accurate"
     }
-   ]
+   ],
+   "not_established": "That farmer weighing is inherently inaccurate, since trained farmers weighing cocoa came close to tin can accuracy; that tin can accuracy holds for real plot harvests, very small yields or other crops, since the exercises used prepared 25 kg and 64.3 kg lots of maize and cocoa; that training alone caused the weighing gains, since trained and untrained farmers came from different communities; that farmer characteristics have no effect on volumetric accuracy, since the regressions were exploratory with 40 farmers and many predictors; that farmer volumes give dry-matter yield, since moisture was not measured"
   },
   {
    "id": "voss-2025-ppp",
@@ -1818,11 +1825,11 @@
    "type": "research article",
    "source": "external",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Three long-running participatory breeding programmes show that farmer participation spread through champions and partnerships, while national seed and research policies lag far behind established practice",
+   "curated_card": "yes",
+   "gist": "Three long-running participatory breeding and seed programmes suggest that farmer participation spreads through champions and partnerships, while national seed and research policies lag behind established practice",
    "keywords": "Farmer First, participatory research, institutionalization, agricultural policy, seed systems, farmer organizations, quality-declared seed, variety release, champions, curricula, PABRA, CIAL",
    "path": "papers/occelli-2026-ahv.md",
-   "hash": "024f4415dff0",
+   "hash": "af1ed9049c53",
    "relations": [
     {
      "relation": "discusses",
@@ -1830,7 +1837,7 @@
      "note": "cites tricot as digitally mediated crowdsourcing of varietal feedback"
     }
    ],
-   "not_established": "that participatory breeding improved farmer welfare or food security in these cases (not assessed); that the three cases represent all countries; causal effects of the projects on policy (the authors draw lessons, not causal links); anything about tricot specifically, which is mentioned only as a form of crowdsourcing"
+   "not_established": "that participatory breeding improved farmer welfare or food security in these cases (not assessed); that the three cases represent all countries; causal effects of the projects on policy (the authors draw lessons, not causal links); anything about tricot specifically, which is mentioned only as a form of crowdsourcing; that farmer-generated variety evidence by itself drives policy change (the authors suggest champions matter more); that PABRA changed national policies (the paper says this has not been assessed)"
   }
  ]
 }

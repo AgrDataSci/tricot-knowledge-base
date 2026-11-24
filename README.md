@@ -43,7 +43,7 @@ This is the literature layer of [maniva](https://github.com/AgrDataSci/maniva), 
 | Cards in `papers/` | 72 (61 team, 11 external) |
 | Cards still waiting for a handle or DOI | 0 |
 | Peer-reviewed cards | 53 (19 not peer-reviewed) |
-| Cards checked by a person (`curated_card: yes`) | 44 of 72 |
+| Cards checked by a person (`curated_card: yes`) | 58 of 72 |
 | People in `people.md` | 18 (15 agreed to be contacted, 3 pending, 0 declined) |
 | Links between cards | 76 |
 <!-- status:end -->
