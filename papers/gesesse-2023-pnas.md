@@ -9,16 +9,17 @@ article: 120(14), e2205774119
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1073/pnas.2205774119
 open_copy: https://doi.org/10.1073/pnas.2205774119
 license: CC BY 4.0
-data: raw data on Dryad (https://doi.org/10.5061/dryad.w6m905qrv); scripts at https://github.com/mdellh2o/EtNAM.GS; the farmer-rating to Plackett-Luce scripts are at https://github.com/AgrDataSci/teff-breeding-elife (mislabelled as the teff paper) and curated in https://github.com/AgrDataSci/tricot-analysis-workflows (use-cases/can-farmer-ratings-be-analysed-as-rankings)
+data: raw data on Dryad (https://doi.org/10.5061/dryad.w6m905qrv); scripts at https://github.com/mdellh2o/EtNAM.GS
 software: Plackett-Luce model (R package PlackettLuce, https://CRAN.R-project.org/package=PlackettLuce, check the current CRAN version)
 crops: durum wheat
 region: Ethiopia (Adet, Geregera, Kulumsa; diversity panel also at Hagreselam)
 keywords: genomic selection, EtNAM, nested association mapping, farmer appreciation, participatory variety selection, heritability, QTL, GWAS, durum wheat, traditional knowledge, Plackett-Luce, local adaptation
-gist: Farmer appreciation of 1,200 EtNAM wheat lines is heritable and, used in genomic selection, predicts grain yield in new environments better than models trained on yield itself
+gist: Farmer appreciation of 1,200 EtNAM durum wheat lines is heritable and, in genomic selection, predicts grain yield across panels better than yield itself, though accuracies stay low
+not_established: farmer appreciation scores can replace measured yield or multi-location yield trials; genomic prediction from farmer scores is accurate in absolute terms (accuracies for yield were 0.09 to 0.11); prediction from the diversity panel works in high-potential sites (Kulumsa was predicted negatively); these results come from tricot rankings or on-farm trials (scores were given on research-station plots); the farmers represent the full diversity of Ethiopian farming systems; the design explains gender differences in trait priorities; candidate genes for farmer preference were identified
 relations:
   - usesDataFrom: mancini-2017-scirep  # diversity panel and farmer scores
   - agreesWith: desousa-2021-commsbio  # farmer appreciation improves prediction accuracy
@@ -36,19 +37,20 @@ relations:
 
 Smallholder farmers in sub-Saharan Africa select varieties using traditional knowledge, and only about 40% of intended beneficiaries adopt new varieties from breeding. The study tests whether farmers' evaluations can be built into genomics-driven breeding, using Ethiopian durum wheat.
 
-The team used two sets of material. A diversity panel of 400 mostly traditional varieties had been phenotyped and scored by farmers earlier (mancini-2017-scirep). Landraces from that panel were crossed with an elite line of international pedigree to create the Ethiopian nested association mapping population (EtNAM). Here, 1,200 recombinant inbred lines from 12 EtNAM families were grown in a replicated design at three Ethiopian sites (Adet, Geregera and Kulumsa), covering 10,400 plots. Separate groups of women and men farmers gave each line an overall appreciation score from one to five near flowering, and agronomic traits were measured. Both sets were genotyped.
+The team used two sets of material. A diversity panel of 400 mostly traditional varieties had been phenotyped and scored by farmers earlier (mancini-2017-scirep). Fifty landraces from that panel and one Italian variety (Bidi) were crossed with Asassa, a modern variety of international pedigree, to create the Ethiopian nested association mapping population (EtNAM). Here, 1,200 recombinant inbred lines from 12 EtNAM families were grown in a replicated design at three Ethiopian sites (Adet, Geregera and Kulumsa), covering 10,400 plots. Separate groups of women and men farmers gave each line an overall appreciation score from one to five near flowering, and agronomic traits were measured. Both sets were genotyped.
 
-Farmer appreciation behaved like a quantitative trait. Its broad-sense heritability (0.45) was close to that of grain yield (0.49), with higher heritability for men's scores (0.54) than women's (0.32). Women and men chose overlapping top lines, with 26 of the top 5% chosen by both. Appreciation correlated with grain yield in every location and farmer group (0.41 to 0.66), and in Geregera, the most limiting site, it also tracked yield stability across environments. Plackett-Luce models showed that drivers of choice differed by site and gender. Early maturity dominated in Geregera, while yield and biomass mattered more in Kulumsa. Some EtNAM families outperformed the reference modern variety everywhere.
+Farmer appreciation behaved like a quantitative trait. Its broad-sense heritability (0.45) was close to that of grain yield (0.49), with higher heritability for men's scores (0.54) than women's (0.32). Women and men chose overlapping top lines, with 26 of the top 5% chosen by both. Appreciation correlated with grain yield in every location and farmer group (0.41 to 0.66), and in Geregera, the most limiting site, it also tracked yield stability across environments. Plackett-Luce models showed that drivers of choice differed by site and gender. Early maturity dominated in Geregera, while yield and biomass mattered more in Kulumsa. In each location and farmer group, some EtNAM families could reach a higher worth than the reference modern variety, Asassa.
 
-The key result concerns genomic selection. A model trained on yield in the diversity panel could not predict yield in the EtNAM, but a model trained on farmer appreciation in the panel predicted EtNAM yield with an accuracy of 0.09, and predicted EtNAM appreciation with accuracies above 0.20 for combined data. In the reverse direction, appreciation measured on the EtNAM predicted panel yield at 0.11 and panel appreciation at 0.41, against 0.02 for a yield-trained model. The authors suggest farmers integrate heritable yield components and experience over many seasons. Association mapping found loci for appreciation on several chromosomes, some shared with yield and grain weight and one on 6B linked to no measured trait, and family-specific maps identified 382 partially overlapping QTL.
+The key result concerns genomic selection. A model trained on yield in the diversity panel could not predict yield in the EtNAM, but a model trained on farmer appreciation in the panel predicted EtNAM yield with an accuracy of 0.09, and predicted EtNAM appreciation with accuracies above 0.20 for combined data. Accuracies were low in absolute terms and depended on the site. At Kulumsa, the high-potential site, the panel predicted EtNAM performance negatively, although the appreciation-trained model still did better than the yield-trained one. Accuracy for both traits improved when training and testing stayed within the EtNAM across locations. In the reverse direction, appreciation measured on the EtNAM predicted panel yield at 0.11, against 0.02 for a model trained on EtNAM yield, and predicted panel appreciation at 0.41. Men's scores gave slightly higher accuracies than women's. The authors suggest farmers integrate heritable yield components and experience over many seasons. Association mapping found loci for appreciation on several chromosomes, some shared with yield and grain weight and one on 6B linked to no measured trait, and family-specific maps identified 382 partially overlapping QTL.
 
-The authors propose combining on-station participatory evaluation with genomic selection at early breeding stages, then moving selected lines to decentralized on-farm testing through 3D-breeding (desousa-2021-commsbio). They stress that farmer scores cannot be the only selection driver and that on-station fields do not reflect farmers' input levels.
+The authors propose combining on-station participatory evaluation with genomic selection at early breeding stages, then moving selected lines to decentralized on-farm testing through 3D-breeding (desousa-2021-commsbio). They stress that farmer scores cannot be the only selection driver and that on-station fields are seldom representative of farmers' input levels.
 
 ## Methods in brief
 
 - **Material.** 1,200 EtNAM RILs from 12 families plus a 400-entry diversity panel, both genotyped.
-- **Trials.** Three locations in Ethiopia, fully replicated, 10,400 plots.
-- **Farmer scoring.** Overall appreciation on a 1 to 5 Likert scale by separate women and men groups.
+- **Trials.** Adet and Geregera in the 2016 main season and Kulumsa in 2017, fully replicated, 10,400 plots scored. The diversity panel was grown earlier in Geregera and Hagreselam (2012 and 2013).
+- **Farmer scoring.** Expert local wheat growers, split by gender into groups of five, scored each plot for overall appreciation on a 1 to 5 scale when half the plots had flowered. Different farmer groups scored at each site and on the diversity panel.
+- **Ranking analysis.** Each farmer's scores were converted to pairwise wins between lines, with ties dropped. A Plackett-Luce tree then estimated the worth of each EtNAM family, split by location and then by gender in Adet and Kulumsa, against the reference variety Asassa (worth set at 0). Trait BLUPs were used to explain choices.
 - **Analysis.** BLUPs, heritability, Plackett-Luce models of farmer choice, genomic selection across panels and locations, GWAS and family-specific QTL mapping.
 
 ## Stated limitations
@@ -57,6 +59,9 @@ The authors propose combining on-station participatory evaluation with genomic s
 - On-station trials use more fertilizer and weeding than farmers' fields, which may push scores toward yield potential.
 - Centralized participatory evaluation has a high cost per data point and limited environmental coverage.
 - Mapping resolution is too low to identify candidate genes.
+- The farmers represent smallholders in the wheat-growing areas, not the full diversity of Ethiopian farming systems.
+- The design allows only a partial breakdown of farmers' appreciation into plant traits.
+- QTL positions found in one EtNAM family may not hold in other genetic backgrounds.
 
 ## Key numbers
 
@@ -64,7 +69,7 @@ The authors propose combining on-station participatory evaluation with genomic s
 |---|---|---|
 | 1,200 RILs, 12 families | EtNAM lines evaluated | This paper |
 | 10,400 plots | Plots evaluated by farmers across three locations | This paper |
-| ~40% | Adoption of new varieties by smallholder beneficiaries | Cited in this paper |
+| ~40% | Adoption of new varieties by smallholder beneficiaries | Mausch et al. 2021 (ref. 17), cited in this paper |
 | H² 0.45 / 0.49 | Heritability of farmer appreciation / grain yield | This paper |
 | H² 0.54 / 0.32 | Heritability of men's / women's appreciation | This paper |
 | 26 | Lines in the top 5% chosen by both women and men | This paper |
@@ -77,3 +82,9 @@ The authors propose combining on-station participatory evaluation with genomic s
 
 - Not a tricot trial. On-station participatory evaluation that continues mancini-2017-scirep and points to on-farm testing via desousa-2021-commsbio.
 - Kauê de Sousa is a co-author and contributed analytic tools.
+- Outside the source (team knowledge, not checked against the PDF): scripts that convert farmer ratings to Plackett-Luce rankings for this dataset are reported to sit in https://github.com/AgrDataSci/teff-breeding-elife and are curated in https://github.com/AgrDataSci/tricot-analysis-workflows (use-cases/can-farmer-ratings-be-analysed-as-rankings).
+- Source issue: the text (p. 4) says family N45 should be prioritized for Geregera and Adet but not Kulumsa, and that N51 had the highest worth in Geregera. Fig. 2 (p. 5) shows N45 and N51 with high worth in Kulumsa and close to the reference in Geregera. Check Fig. 2 before using these family recommendations.
+- Source issue: the Methods sentence on how farmer data were aggregated before the Plackett-Luce model breaks off after "aggregated by" (p. 9). Fig. 2 reports worth by EtNAM family.
+- Source issue: the Fig. 2 caption points to SI Table S1 for drivers of choice, while the text uses Table S3 (p. 4 to 5).
+- Source issue: a correlation is reported as "R2 = −0.29" (p. 4). A coefficient of determination cannot be negative.
+- Source issue: R/qtl2 is cited to a Collaborative Cross paper (ref. 64), and the text uses JoinMap 5 while ref. 63 is JoinMap 4 (p. 9 to 10).
