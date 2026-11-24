@@ -9,7 +9,7 @@ article: 56, 1076-1092
 type: review
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1111/ijfs.14684
 open_copy: https://doi.org/10.1111/ijfs.14684
 license: CC BY (version not stated in the PDF)

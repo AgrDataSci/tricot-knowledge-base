@@ -9,7 +9,7 @@ article: 43, 175
 type: research article
 source: external
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1007/s10460-026-10976-5
 open_copy: https://doi.org/10.1007/s10460-026-10976-5
 license: CC BY-NC-ND 4.0

@@ -9,7 +9,7 @@ article: version 1, May 2016
 type: guide
 source: team
 peer_reviewed: no
-curated_card: no
+curated_card: yes
 doi: https://hdl.handle.net/10568/78782
 open_copy: https://hdl.handle.net/10568/78782
 license: see CGSpace record

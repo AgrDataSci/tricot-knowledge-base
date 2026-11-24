@@ -9,7 +9,7 @@ article: 116(10), 4194-4199
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1073/pnas.1813720116
 open_copy: https://pmc.ncbi.nlm.nih.gov/articles/PMC6410884
 license: CC BY-NC-ND 4.0

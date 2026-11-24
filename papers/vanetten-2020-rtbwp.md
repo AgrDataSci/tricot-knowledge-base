@@ -9,7 +9,7 @@ article: RTB Working Paper No. 2021-2, December 2020
 type: working paper
 source: team
 peer_reviewed: no
-curated_card: no
+curated_card: yes
 doi: https://hdl.handle.net/10568/111044
 open_copy: https://hdl.handle.net/10568/111044
 license: CC BY 4.0

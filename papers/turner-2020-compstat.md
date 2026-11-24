@@ -9,7 +9,7 @@ article: 35, 1027-1057 (from the University of Warwick repository record, not ch
 type: software paper
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1007/s00180-020-00959-3
 open_copy: https://doi.org/10.1007/s00180-020-00959-3
 license: CC BY 4.0

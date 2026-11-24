@@ -9,7 +9,7 @@ article: 14(2), e0212926
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1371/journal.pone.0212926
 open_copy: https://doi.org/10.1371/journal.pone.0212926
 license: CC BY (Creative Commons Attribution License, version not stated in the PDF)

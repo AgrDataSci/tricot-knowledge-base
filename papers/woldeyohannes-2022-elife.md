@@ -9,7 +9,7 @@ article: 11, e80009
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.7554/eLife.80009
 open_copy: https://doi.org/10.7554/eLife.80009
 license: CC BY (Creative Commons Attribution License, version not stated in the PDF)

@@ -9,7 +9,7 @@ article: 50(4), 392-405
 type: review
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1177/00307270211058208
 open_copy: https://doi.org/10.1177/00307270211058208
 license: CC BY 4.0

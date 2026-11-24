@@ -9,7 +9,7 @@ article: 40, 35
 type: review
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1007/s13593-020-00636-1
 open_copy: https://doi.org/10.1007/s13593-020-00636-1
 license: CC BY 4.0
