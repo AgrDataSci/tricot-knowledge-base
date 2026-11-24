@@ -9,7 +9,7 @@ article: 15(2), e70228
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1002/fes3.70228
 open_copy: https://doi.org/10.1002/fes3.70228
 license: CC BY

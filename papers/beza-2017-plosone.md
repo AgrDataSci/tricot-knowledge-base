@@ -9,7 +9,7 @@ article: 12(5), e0175700
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1371/journal.pone.0175700
 open_copy: https://doi.org/10.1371/journal.pone.0175700
 license: CC BY (Creative Commons Attribution License, version not printed in the PDF)

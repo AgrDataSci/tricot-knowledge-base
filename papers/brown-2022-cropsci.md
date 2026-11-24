@@ -9,7 +9,7 @@ article: 62(6), 2246-2266
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1002/csc2.20817
 open_copy: https://doi.org/10.1002/csc2.20817
 license: CC BY

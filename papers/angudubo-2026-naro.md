@@ -9,7 +9,7 @@ article: 15 p.
 type: report
 source: team
 peer_reviewed: no
-curated_card: no
+curated_card: yes
 doi: https://hdl.handle.net/10568/183339
 open_copy: https://hdl.handle.net/10568/183339
 license: see CGSpace record
