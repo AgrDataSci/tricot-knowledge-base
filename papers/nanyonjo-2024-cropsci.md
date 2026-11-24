@@ -9,7 +9,7 @@ article: 64(5), 2679-2697
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1002/csc2.21293
 open_copy: https://doi.org/10.1002/csc2.21293
 license: CC BY

@@ -9,7 +9,7 @@ article: 44, 8
 type: review (retrospective)
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1007/s13593-023-00937-1
 open_copy: https://edoc.hu-berlin.de/18452/32306
 license: CC BY 4.0

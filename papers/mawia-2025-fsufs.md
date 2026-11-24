@@ -9,7 +9,7 @@ article: 9, 1563538
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.3389/fsufs.2025.1563538
 open_copy: https://doi.org/10.3389/fsufs.2025.1563538
 license: CC BY (version not stated in the PDF)

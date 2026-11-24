@@ -9,7 +9,7 @@ article: 217, 108539
 type: software paper
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1016/j.compag.2023.108539
 open_copy: https://doi.org/10.1016/j.compag.2023.108539
 license: CC BY

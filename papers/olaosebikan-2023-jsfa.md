@@ -9,7 +9,7 @@ article: 104(8), 4770–4781 (2024 issue, published online 7 August 2023)
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1002/jsfa.12867
 open_copy: https://doi.org/10.1002/jsfa.12867
 license: CC BY

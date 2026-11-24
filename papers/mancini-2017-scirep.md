@@ -9,7 +9,7 @@ article: 7, 9120
 type: research article
 source: external
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1038/s41598-017-07628-4
 open_copy: https://doi.org/10.1038/s41598-017-07628-4
 license: CC BY 4.0
