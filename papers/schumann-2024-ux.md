@@ -9,7 +9,7 @@ article: review slides
 type: presentation
 source: team
 peer_reviewed: no
-curated_card: no
+curated_card: yes
 doi: https://hdl.handle.net/10568/169094
 open_copy: https://hdl.handle.net/10568/169094
 license: see repository record

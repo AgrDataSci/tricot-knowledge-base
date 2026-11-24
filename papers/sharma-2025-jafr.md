@@ -9,7 +9,7 @@ article: 23, 102135
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1016/j.jafr.2025.102135
 open_copy: https://doi.org/10.1016/j.jafr.2025.102135
 license: CC BY-NC-ND 4.0

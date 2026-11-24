@@ -9,7 +9,7 @@ article: 134, 3397-3410
 type: research article
 source: external
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1007/s00122-021-03909-9
 open_copy: https://doi.org/10.1007/s00122-021-03909-9
 license: CC BY 4.0

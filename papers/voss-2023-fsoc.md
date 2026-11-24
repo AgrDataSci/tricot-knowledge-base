@@ -6,10 +6,10 @@ year: 2023
 journal: Frontiers in Sociology
 journal_short: Front Sociol
 article: 8, 1254595
-type: community case study
+type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.3389/fsoc.2023.1254595
 open_copy: https://doi.org/10.3389/fsoc.2023.1254595
 license: CC BY

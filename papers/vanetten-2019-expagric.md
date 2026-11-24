@@ -9,7 +9,7 @@ article: 55(S1), 275-296 (first published online December 2016)
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1017/S0014479716000739
 open_copy: https://doi.org/10.1017/S0014479716000739
 license: CC BY 4.0

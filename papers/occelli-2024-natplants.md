@@ -9,7 +9,7 @@ article: 10, 402-411
 type: review
 source: external
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1038/s41477-024-01639-6
 open_copy: https://doi.org/10.1038/s41477-024-01639-6
 license: CC BY 4.0

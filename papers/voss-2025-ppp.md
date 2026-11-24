@@ -9,7 +9,7 @@ article: published 2025, e70035
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1002/ppp3.70035
 open_copy: https://doi.org/10.1002/ppp3.70035
 license: CC BY
