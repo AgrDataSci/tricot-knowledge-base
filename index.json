@@ -1,5 +1,5 @@
 {
- "version": "0107fbbd6fe9",
+ "version": "f9f9b6b7ad1d",
  "updated": "2026-11-24",
  "cards": 72,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
@@ -65,6 +65,11 @@
      "relation": "isExtendedBy",
      "card": "vanetten-2019-expagric",
      "note": "implements and tests the 2011 proposal"
+    },
+    {
+     "relation": "isReviewedBy",
+     "card": "fadda-2020-fps",
+     "note": ""
     },
     {
      "relation": "isDiscussedBy",
@@ -184,13 +189,13 @@
    "type": "research article",
    "source": "external",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "Philosophical analysis showing farmers' own experiments are real action-guiding experiments, with more replication and local relevance than scientists' field trials but weaker controls and evaluation",
    "keywords": "farmers' experiments, philosophy of science, experimental methodology, directly action-guiding experiments, control fields, historical controls, randomization, blinding, replication, indigenous knowledge, field trials",
    "path": "papers/hansson-2019-ejps.md",
-   "hash": "a9c8e9ea5584",
+   "hash": "33b0c7a9aad7",
    "relations": [],
-   "not_established": "that farmers' experiments give better or worse decisions than scientists' trials (the author calls this an open empirical question); any figure on how often farmers experiment beyond the cited surveys; claims about tricot, which the paper does not discuss"
+   "not_established": "that farmers' experiments give better or worse decisions than scientists' trials (the author calls this an empirical question that armchair analysis cannot settle); that farmers never randomize or blind (the author finds no trace of it in the published literature only); that blinding changes the results of variety trials (the paper says it may, citing Bulte et al. 2014); that changing one variable at a time is always wrong (the argument applies to action-guiding experiments); any figure on how often farmers experiment beyond the cited surveys; claims about tricot, which the paper does not discuss"
   },
   {
    "id": "steinke-2019-plosone",
@@ -221,6 +226,11 @@
      "relation": "extends",
      "card": "vanetten-2011-idsbull",
      "note": "implements and tests the 2011 proposal"
+    },
+    {
+     "relation": "isReviewedBy",
+     "card": "fadda-2020-fps",
+     "note": "cited in the review as Van Etten et al. 2016"
     },
     {
      "relation": "isDiscussedBy",
@@ -334,11 +344,11 @@
    "type": "review",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "Review arguing that Seeds for Needs bridges genomics-based and participatory breeding, from genebank screening with farmers to the EtNAM population and crowdsourced on-farm testing",
-   "keywords": "Seeds for Needs, participatory breeding, genebanks, genomics, EtNAM, crowdsourcing, citizen science, climate adaptation, farmer varieties, durum wheat",
+   "keywords": "Seeds for Needs, participatory breeding, genebanks, genomics, EtNAM, crowdsourcing, citizen science, climate adaptation, farmer varieties, durum wheat, tricot",
    "path": "papers/fadda-2020-fps.md",
-   "hash": "c6c3445402bc",
+   "hash": "389e4a5b4252",
    "relations": [
     {
      "relation": "reviews",
@@ -359,8 +369,19 @@
      "relation": "reviews",
      "card": "beza-2017-plosone",
      "note": ""
+    },
+    {
+     "relation": "reviews",
+     "card": "vanetten-2011-idsbull",
+     "note": ""
+    },
+    {
+     "relation": "reviews",
+     "card": "vanetten-2019-expagric",
+     "note": "cited in the review as Van Etten et al. 2016"
     }
-   ]
+   ],
+   "not_established": "That combining genomics and participatory breeding is more efficient or cheaper than either alone (argued, not measured in this review); that QTLs from farmer-scored traits are already used in a breeding pipeline (the review says they may be); that the community-level feedback loop with mobile monitoring and a genetic database exists (proposed); that the van Etten et al. 2019 synthesis involved 12,409 farmers (the primary source reports 12,409 plots); that the two varieties released in 2017 were selected through tricot trials (the review links them to Seeds for Needs characterization only)"
   },
   {
    "id": "kool-2020-expagric",
@@ -368,13 +389,13 @@
    "type": "review",
    "source": "external",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Review of 172 on-farm agronomy studies in Africa finds most cannot be reproduced from what they report and few define for whom or where their results hold",
+   "curated_card": "yes",
+   "gist": "Review of 172 on-farm agronomy studies in Africa finds most report too little to be repeated and none explicitly defines for whom or where its results hold",
    "keywords": "on-farm experiments, reproducibility, external validity, internal validity, research population, farmer practice, control treatment, yield-determining factors, site selection, experimentation at scale, agronomy",
    "path": "papers/kool-2020-expagric.md",
-   "hash": "ccdab4b45ae5",
+   "hash": "d345d708eb6e",
    "relations": [],
-   "not_established": "that the reviewed experiments gave wrong results (the review scores reporting, not correctness); that more farms alone fix external validity; findings for variety trials specifically, since only 22 of 172 studies were on cultivars"
+   "not_established": "that the reviewed experiments gave wrong results (the review scores reporting, not correctness); that a high reproducibility score means the findings would replicate; that more farms alone fix external validity; that the 172 papers cover all on-farm research in Africa (one Web of Science search, 1986-2015); findings for variety trials specifically, since only 22 of 172 studies were mainly on cultivars"
   },
   {
    "id": "laajaj-2020-scirep",
@@ -382,13 +403,13 @@
    "type": "research article",
    "source": "external",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "In Kenyan fertilizer trials, correcting for farmer and plot selection, management and yield calculation wiped out the soybean package's gain but left the maize gain intact",
+   "curated_card": "yes",
+   "gist": "In Kenyan on-farm trials, correcting for farmer and plot selection, management and yield calculation made the soybean package's gain non-significant but left the maize gain intact",
    "keywords": "on-farm trials, yield gap, external validity, farmer selection, selection bias, behavioural response, attrition, value-cost ratio, fertilizer, input packages, adoption, smallholders",
    "path": "papers/laajaj-2020-scirep.md",
-   "hash": "ee9704692916",
+   "hash": "c41efe487b9d",
    "relations": [],
-   "not_established": "that trial yield gains are always overestimated (adjustments went in opposite directions for the two crops); findings for variety trials; that labour costs would not change the profitability results (labour was not costed)"
+   "not_established": "that trial yield gains are always overestimated (adjustments went in opposite directions for the two crops); that the 30% and 52% yield drops from the calculation adjustment apply to yield gains (the maize gain barely changed); findings for variety comparisons (the maize variety contrasts were not analysed); that labour costs would not change the profitability results (labour was not costed, so ratios are upper bounds); that the soybean package fails for all farmers (47% still profited after adjustments)"
   },
   {
    "id": "turner-2020-compstat",
@@ -527,11 +548,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "Survey of 600 households in Bihar finds that the Seeds for Needs crowdsourced intervention increased rice and wheat varietal diversity, perceived yields and recovery from shocks",
    "keywords": "impact assessment, varietal diversification, Seeds for Needs, citizen science, livelihoods, resilience, RHoMIS, doubly robust estimator, Simpson diversity, Bihar, adaptive capacity",
    "path": "papers/gotor-2021-fsufs.md",
-   "hash": "a87763dfca36",
+   "hash": "e4e0c13108e1",
    "relations": [
     {
      "relation": "extends",
@@ -539,7 +560,7 @@
      "note": "household impact of the Bihar Seeds for Needs intervention"
     }
    ],
-   "not_established": "measured yield gains (yield change is self-reported); randomized causal effects; effects beyond rice and wheat in Bihar"
+   "not_established": "measured yield gains (yield change is self-reported on a −4 to +4 scale, and the percent effects are not yield percentages); randomized causal effects (quasi-experimental, no baseline); effects of crowdsourced trials alone (the intervention also ran Farmer Field School training); benefits for every household (the recovery effect was negative for households with high prior recovery capacity); effects beyond rice and wheat in Bihar"
   },
   {
    "id": "moyo-2021-fsufs",
@@ -878,11 +899,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Farmer appreciation of 1,200 EtNAM wheat lines is heritable and, used in genomic selection, predicts grain yield in new environments better than models trained on yield itself",
+   "curated_card": "yes",
+   "gist": "Farmer appreciation of 1,200 EtNAM durum wheat lines is heritable and, in genomic selection, predicts grain yield across panels better than yield itself, though accuracies stay low",
    "keywords": "genomic selection, EtNAM, nested association mapping, farmer appreciation, participatory variety selection, heritability, QTL, GWAS, durum wheat, traditional knowledge, Plackett-Luce, local adaptation",
    "path": "papers/gesesse-2023-pnas.md",
-   "hash": "67c5ded4a9d4",
+   "hash": "dd3cd4abf0e6",
    "relations": [
     {
      "relation": "providesMethodFor",
@@ -904,7 +925,8 @@
      "card": "desousa-2021-commsbio",
      "note": "farmer appreciation improves prediction accuracy"
     }
-   ]
+   ],
+   "not_established": "farmer appreciation scores can replace measured yield or multi-location yield trials; genomic prediction from farmer scores is accurate in absolute terms (accuracies for yield were 0.09 to 0.11); prediction from the diversity panel works in high-potential sites (Kulumsa was predicted negatively); these results come from tricot rankings or on-farm trials (scores were given on research-station plots); the farmers represent the full diversity of Ethiopian farming systems; the design explains gender differences in trait priorities; candidate genes for farmer preference were identified"
   },
   {
    "id": "olaosebikan-2023-jsfa",
@@ -1079,18 +1101,19 @@
    "type": "policy brief",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "Video-based concept testing with 1,100 Tanzanian farmers finds hybrid and home-use sorghum concepts most preferred, and proposes revised market segments and product profiles",
-   "keywords": "VPCT, sorghum, seed product concepts, hybrid, home use, malting, market segmentation, target product profiles, Tanzania",
+   "keywords": "VPCT, product concept testing, sorghum, seed product concepts, hybrid, home use, malting, Plackett-Luce, market segmentation, target product profiles, Tanzania",
    "path": "papers/mbugua-2024-mib.md",
-   "hash": "4cc11d2f6aeb",
+   "hash": "489c49968f71",
    "relations": [
     {
      "relation": "usesMethodIn",
      "card": "rutsaert-2023-mib",
      "note": "video-based product concept testing"
     }
-   ]
+   ],
+   "not_established": "that farmers will buy or adopt hybrid sorghum seed (preferences were stated for hypothetical concepts); that the hybrid is preferred over home use across Tanzania (the two were not significantly different overall, and Dodoma differed from Shinyanga); that farmers accept a 20% yield penalty in practice; that brewing demand drives the hybrid preference (this is the authors' interpretation, and the hybrid concept was described as not designed for malting); results for regions other than Dodoma and Shinyanga"
   },
   {
    "id": "mulatu-2024-slides",
@@ -1737,26 +1760,27 @@
    "type": "flyer",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
-   "gist": "Team flyer on Sikia, an AI tool integrated with ClimMob that records, transcribes, translates and codes open-ended farmer answers in local languages, offline on ordinary smartphones",
+   "curated_card": "yes",
+   "gist": "Flyer on Sikia, an AI tool that records and probes interviews offline on Android phones, then transcribes, translates and codes local-language answers after sync, using ClimMob or ODK forms",
    "keywords": "Sikia, ClimMob, voice data collection, farmer feedback, local languages, speech recognition, AI transcription, dynamic probing, offline data collection, qualitative data, open-ended answers, ODK",
    "path": "papers/goormachtigh-2026-flyer.md",
-   "hash": "28a36126a957",
+   "hash": "2699d56a2b9a",
    "relations": [],
-   "not_established": "accuracy of Sikia's transcription, translation or coding (the flyer reports no evaluation); that Sikia lowers cost or improves data quality in tricot trials, which the flyer claims for interviews in general but does not measure; that every language listed works equally well (Oromo is still being refined and three languages are planned for 2027)"
+   "not_established": "accuracy of Sikia's transcription, translation or coding (the flyer reports no evaluation); that Sikia lowers cost or improves data quality in tricot trials, which the flyer claims for interviews in general but does not measure; that every language listed works equally well (Oromo is still being refined and three languages are planned for 2027); that transcription, translation and coding run offline (on the flyer they run after the phone syncs); that Sikia has been used in a tricot trial (the flyer names only product concept testing in Ethiopia and Tanzania and rice research evaluation in Colombia)"
   },
   {
    "id": "jorgensen-2026-gse",
    "year": "2026",
    "type": "conference paper",
    "source": "team",
-   "peer_reviewed": "yes",
+   "peer_reviewed": "no",
    "curated_card": "yes",
-   "gist": "Describes INNOFORAGE, the first tricot application in Norway, testing climate-adapted forage seed mixtures in 100 on-farm mini-trials alongside station RCBD trials",
+   "gist": "Sets out INNOFORAGE, the first tricot use in Norway, with 12 forage seed mixtures in 100 on-farm mini-trials plus RCBD trials. No performance results are reported yet.",
    "keywords": "tricot in Europe, forage, seed mixtures, grassland, Norway, INNOFORAGE, winter survival, advisers, participatory research, RCBD combination",
    "path": "papers/jorgensen-2026-gse.md",
-   "hash": "9b899208172f",
-   "relations": []
+   "hash": "8dc668992df3",
+   "relations": [],
+   "not_established": "that tricot gives robust results for perennial forage mixtures in Norway (proposed, not yet tested); that any mixture outperforms another (no performance results reported); that farmer rankings can replace RCBD trials for feed quality or biomass yield (the authors say these need controlled trials); that the project has increased adoption or farmer engagement (expected, not yet measured); that the confirmatory Plackett-Luce model with covariates has been fitted (planned)"
   },
   {
    "id": "kadege-2026-fsufs",
@@ -1764,11 +1788,11 @@
    "type": "research article",
    "source": "external",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "A single-season tricot trial with 372 Tanzanian farmers finds yield, market preference and disease resistance drive bean choice, with zone-, gender- and youth-specific trait priorities",
-   "keywords": "common bean, Tanzania, tricot, trait preferences, gender, youth, anthracnose, market preference, intercropping, cooking with banana, red mottled, sugar bean, TARI, PVS",
+   "keywords": "common bean, Tanzania, tricot, trait preferences, gender, youth, anthracnose, market preference, intercropping, cooking with banana, red mottled, PVS",
    "path": "papers/kadege-2026-fsufs.md",
-   "hash": "07f084d8c247",
+   "hash": "676a7cc6173f",
    "relations": [
     {
      "relation": "isDiscussedBy",
@@ -1786,7 +1810,7 @@
      "note": "women and men prioritize different traits in tricot trials of Tanzanian legumes"
     }
    ],
-   "not_established": "that men are more involved than women in bean production nationally (participation shares come from one trial sample); effects across seasons (single season); measured yield or disease differences (yield was ranked by grain volume, disease by field-agent scores); that tricot data alone yield the detailed trait evaluations of PVS"
+   "not_established": "that men are more involved than women in bean production nationally (participation shares come from one trial sample); effects across seasons (single season); measured yield or disease differences (yield was ranked by grain volume, disease by field-agent scores, and only ranks were analysed); that tricot data alone yield the detailed trait evaluations of PVS; that the preferences hold for all Tanzanian bean areas (six districts chosen for the highest anthracnose incidence, farmers screened by eligibility criteria); that the top genotypes differ significantly in overall preference (only rank positions are shown, without worth estimates or confidence intervals)"
   },
   {
    "id": "occelli-2026-ahv",
