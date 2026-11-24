@@ -69,7 +69,7 @@ We built the knowledge base so that anyone working on demand-led products, and t
 
 # Place in the AI-ready suite
 
-The knowledge base is the evidence layer of ai-ready-documentation (<https://github.com/AgrDataSci/ai-ready-documentation>), a set of linked repositories in which each layer carries its own skill. The other layers hold the field protocols, the harmonized on-farm trial data and the team's analytical approaches, including how trial data link with climate, soil and other environmental data. A shared template supports reproducible analyses across them [@deSousaLaporte2026]. The suite and its design are described in the ai-ready-documentation repository.
+The knowledge base is the evidence layer of maniva (<https://github.com/AgrDataSci/maniva>), an open commons of evidence, protocols, data and analysis for agricultural research, made of linked repositories in which each layer carries its own skill. The other layers hold the field protocols, the harmonized on-farm trial data and the team's analytical approaches, including how trial data link with climate, soil and other environmental data. A shared template supports reproducible analyses across them [@deSousaLaporte2026]. The suite and its design are described in the maniva repository.
 
 The layers connect through shared identifiers. A card names the dataset its findings rest on, a dataset names the protocol that produced it, and protocols and data share trait definitions from the Crop Ontology. An assistant can follow these links from a published finding to the trials behind it, and to the analytical approaches that relate trial results to climate.
 
@@ -130,7 +130,7 @@ Users reach the knowledge base in four ways. The simplest is to share one link.
 
 1.  **In Claude.** Download the latest skill package from the repository releases and upload it as a skill. The assistant then consults the index whenever a question touches tricot or on-farm testing.
 2.  **In Claude Code.** Clone the repository into the skills directory.
-3.  **By sharing a link.** Paste the link of ai-ready-documentation (<https://github.com/AgrDataSci/ai-ready-documentation>) into an AI assistant with web access. Its routing skill sends each question to the right layer, here the knowledge base, and the assistant answers from the live files. The link of the knowledge base itself works the same way for evidence questions.
+3.  **By sharing a link.** Paste the link of maniva (<https://github.com/AgrDataSci/maniva>) into an AI assistant with web access. Its routing skill sends each question to the right layer, here the knowledge base, and the assistant answers from the live files. The link of the knowledge base itself works the same way for evidence questions.
 4.  **By hand or with other tools.** Start from the index table in `SKILL.md` and open the relevant cards in `papers/`.
 
 Contributors add a source by extracting its text, drafting a card from the template, checking every number against the source, adding links to related cards and authors, and opening a pull request. The index and version update automatically when the change is merged.
