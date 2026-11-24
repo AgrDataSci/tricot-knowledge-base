@@ -9,7 +9,7 @@ article: 115(6), 2990-3009
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1002/agj2.21436
 open_copy: https://doi.org/10.1002/agj2.21436
 license: CC BY

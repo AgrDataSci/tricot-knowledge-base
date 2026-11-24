@@ -9,7 +9,7 @@ article: 19, 43
 type: perspective
 source: external
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.5334/dsj-2020-043
 open_copy: https://doi.org/10.5334/dsj-2020-043
 license: CC BY 4.0

@@ -9,7 +9,7 @@ article: 104(8), 4514-4526 (published online 2023)
 type: review
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1002/jsfa.12710
 open_copy: https://doi.org/10.1002/jsfa.12710
 license: CC BY 4.0

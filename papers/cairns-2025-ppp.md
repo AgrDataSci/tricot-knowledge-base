@@ -9,7 +9,7 @@ article: 8(1), 259-276 (2026 issue, published online 2025)
 type: research article
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1002/ppp3.70070
 open_copy: https://doi.org/10.1002/ppp3.70070
 license: CC BY (Creative Commons Attribution License, version not stated in the PDF)

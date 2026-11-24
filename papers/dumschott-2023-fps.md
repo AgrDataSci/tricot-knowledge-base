@@ -9,7 +9,7 @@ article: 14, 1279694
 type: review
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.3389/fpls.2023.1279694
 open_copy: https://doi.org/10.3389/fpls.2023.1279694
 license: CC BY

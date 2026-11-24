@@ -9,7 +9,7 @@ article: erag431 (advance access 4 September 2026, pp. 1-15)
 type: review
 source: team
 peer_reviewed: yes
-curated_card: no
+curated_card: yes
 doi: https://doi.org/10.1093/jxb/erag431
 open_copy: https://academic.oup.com/jxb/advance-article/doi/10.1093/jxb/erag431/8785350
 license: CC BY 4.0
