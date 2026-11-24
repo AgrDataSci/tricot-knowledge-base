@@ -577,7 +577,7 @@
   {
    "@id": "https://hdl.handle.net/10568/179807",
    "dcterms:identifier": "muller-2025-ux",
-   "dcterms:title": "Farmer feedback in tricot. Redesigning the tricot feedback process and field validation 2024–2025",
+   "dcterms:title": "Farmer Feedback in Tricot. Redesigning the Tricot feedback process & field validation 2024 - 2025",
    "dcterms:date": "2025",
    "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/muller-2025-ux.md",
    "cito:extends": [

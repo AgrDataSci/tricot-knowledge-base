@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, plus external literature curated by the core team, mapped so you can answer like a colleague who knows this literature and the people behind it. Each card in `papers/` holds metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `dcb27001d847`, updated 2026-11-23, 72 cards.<!-- version:end -->
+<!-- version:start -->Installed version `c8199135d427`, updated 2026-11-24, 72 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -137,12 +137,12 @@ Card ids grouped by question area and by crop, newest first. A card can appear u
 - **Origins of tricot, guides and the handbook.** chase-2026-book, angudubo-2026-guide, desousa-2024-asd, vanetten-2020-guide, vanetten-2019-expagric, steinke-2016-guide, vanetten-2011-idsbull
 - **Trial design, sample size and data quality.** chase-2026-book, cairns-2026-jxb, 1000farms-2025-report, quiros-2024-compag, occelli-2024-natplants, desousa-2024-asd, vanetten-2020-rtbwp, laajaj-2020-scirep, kool-2020-expagric, steinke-2017-asd
 - **Who hosts trials and representativeness.** cairns-2026-jxb, cairns-2025-ppp, laajaj-2020-scirep, kool-2020-expagric
-- **Ranking data analysis and statistics.** dorado-2026-tag, daudi-2026-fes, chase-2026-book, kang-2025-expagric, donovan-2025-expagric, nanyonjo-2024-cropsci, mulatu-2024-slides, desousa-2024-asd, olaosebikan-2023-jsfa, gesesse-2023-pnas, desousa-2023-softwarex, brown-2023-agronj, woldeyohannes-2022-elife, brown-2022-cropsci, moyo-2021-fsufs, turner-2020-compstat, vanetten-2019-pnas, steinke-2017-asd, eskridge-1992-tag
+- **Ranking data analysis and statistics.** dorado-2026-tag, daudi-2026-fes, chase-2026-book, kang-2025-expagric, donovan-2025-expagric, nanyonjo-2024-cropsci, mulatu-2024-slides, desousa-2024-asd, rutsaert-2023-mib, olaosebikan-2023-jsfa, gesesse-2023-pnas, desousa-2023-softwarex, brown-2023-agronj, woldeyohannes-2022-elife, brown-2022-cropsci, moyo-2021-fsufs, turner-2020-compstat, vanetten-2019-pnas, steinke-2017-asd, eskridge-1992-tag
 - **Climate and environmental covariates.** jorgensen-2026-gse, kang-2025-expagric, nanyonjo-2024-cropsci, desousa-2023-joss, brown-2023-agronj, woldeyohannes-2022-elife, brown-2022-cropsci, fadda-2020-fps, desousa-2020-joss, vanetten-2019-pnas
-- **Gender, social inclusion and farmer segments.** kadege-2026-fsufs, daudi-2026-fes, chase-2026-book, voss-2025-ppp, sharma-2025-jafr, kang-2025-expagric, cairns-2025-ppp, desousa-2024-asd, voss-2023-fsoc, vanetten-2023-pnas, teeken-2023-slides, woldeyohannes-2022-elife, voss-2021-outlook, thiele-2021-ijfst, teeken-2021-fsufs, moyo-2021-fsufs, vanetten-2020-rtbwp, vandegevel-2020-asd, vanetten-2019-expagric, steinke-2019-plosone, mancini-2017-scirep
+- **Gender, social inclusion and farmer segments.** kadege-2026-fsufs, daudi-2026-fes, chase-2026-book, voss-2025-ppp, sharma-2025-jafr, kang-2025-expagric, cairns-2025-ppp, desousa-2024-asd, voss-2023-fsoc, vanetten-2023-pnas, teeken-2023-slides, rutsaert-2023-mib, woldeyohannes-2022-elife, voss-2021-outlook, thiele-2021-ijfst, teeken-2021-fsufs, moyo-2021-fsufs, vanetten-2020-rtbwp, vandegevel-2020-asd, vanetten-2019-expagric, steinke-2019-plosone, mancini-2017-scirep
 - **Trait preferences, product profiles and demand-led breeding.** kadege-2026-fsufs, daudi-2026-fes, chase-2026-book, voss-2025-ppp, mawia-2025-fsufs, donovan-2025-expagric, 1000farms-2025-report, occelli-2024-natplants, mulatu-2024-slides, mbugua-2024-mib, vanetten-2023-pnas, teeken-2023-slides, rutsaert-2023-mib, rutsaert-2023-cimmyt, arnaud-2023-jsfa, voss-2021-outlook, thiele-2021-ijfst, teeken-2021-fsufs
-- **Consumer testing and food quality.** nanyonjo-2024-cropsci, teeken-2023-slides, rutsaert-2023-cimmyt, olaosebikan-2023-jsfa, arnaud-2023-jsfa, alamu-2023-jsfa, thiele-2021-ijfst, teeken-2021-fsufs, moyo-2021-fsufs
-- **Product concept testing and seed choice.** mawia-2025-fsufs, donovan-2025-expagric, mbugua-2024-mib, rutsaert-2023-mib, rutsaert-2023-cimmyt
+- **Consumer testing and food quality.** nanyonjo-2024-cropsci, teeken-2023-slides, olaosebikan-2023-jsfa, arnaud-2023-jsfa, alamu-2023-jsfa, thiele-2021-ijfst, teeken-2021-fsufs, moyo-2021-fsufs
+- **Product concept testing and seed choice.** mawia-2025-fsufs, donovan-2025-expagric, mbugua-2024-mib, rutsaert-2023-mib
 - **Genebanks, genomics and pre-breeding.** dorado-2026-tag, cairns-2026-jxb, selby-2025-database, vanetten-2023-pnas, gesesse-2023-pnas, alamu-2023-jsfa, woldeyohannes-2022-elife, thiele-2021-ijfst, tanaka-2021-tag, desousa-2021-commsbio, fadda-2020-fps, mancini-2017-scirep
 - **Yield measured by farmers and genetic gain.** ulzen-2025-agrirxiv, nabateregga-2025-eja, 1000farms-2025-report, vanetten-2020-rtbwp
 - **Costs and budgeting.** chase-2026-book, angudubo-2026-zari, angudubo-2026-naro, angudubo-2026-guide, 1000farms-2025-report, occelli-2024-agecon, desousa-2024-asd, vanetten-2020-rtbwp, laajaj-2020-scirep, vanetten-2019-expagric
@@ -155,7 +155,7 @@ Card ids grouped by question area and by crop, newest first. A card can appear u
 
 - **amaranth and other opportunity crops.** voss-2025-ppp, woldeyohannes-2022-elife
 - **banana.** brown-2023-agronj
-- **cassava.** nanyonjo-2024-cropsci, teeken-2023-slides, olaosebikan-2023-jsfa, alamu-2023-jsfa, teeken-2021-fsufs
+- **cassava.** muller-2025-ux, nanyonjo-2024-cropsci, teeken-2023-slides, olaosebikan-2023-jsfa, alamu-2023-jsfa, teeken-2021-fsufs
 - **common bean.** kadege-2026-fsufs, angudubo-2026-naro, nabateregga-2025-eja, occelli-2024-agecon, desousa-2023-softwarex, brown-2022-cropsci
 - **forages.** jorgensen-2026-gse, mulatu-2024-slides
 - **groundnut.** daudi-2026-fes, rutsaert-2023-cimmyt

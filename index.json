@@ -1,6 +1,6 @@
 {
- "version": "dcb27001d847",
- "updated": "2026-11-23",
+ "version": "c8199135d427",
+ "updated": "2026-11-24",
  "cards": 72,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
@@ -119,11 +119,11 @@
    "type": "research article",
    "source": "external",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "60 Ethiopian farmers scored 400 genebank wheat accessions, giving 192,000 data points that link farmer preferences to metric traits and rank all accessions for local breeding",
    "keywords": "participatory evaluation, traditional knowledge, durum wheat, landraces, genebank accessions, farmer preference, gender, metric traits, canonical correlation, crowdsourcing, pre-breeding",
    "path": "papers/mancini-2017-scirep.md",
-   "hash": "2084990ecb12",
+   "hash": "f13660f9aa07",
    "relations": [
     {
      "relation": "usesMethodIn",
@@ -524,11 +524,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "First tricot consumer test, with 1,433 participants ranking boiled sweetpotato in Ghana and Uganda, showing consistent top genotypes across central and home tasting and taste as the main driver",
+   "curated_card": "yes",
+   "gist": "tricot rankings by 1,433 consumers of boiled sweetpotato in Ghana and Uganda gave the same top genotype per country in home and centralized tasting, with taste driving Ugandan preferences",
    "keywords": "consumer testing, tricot, sweetpotato, boiled roots, taste, centralized tasting, home tasting, Plackett-Luce trees, user segments, orange-fleshed sweetpotato",
    "path": "papers/moyo-2021-fsufs.md",
-   "hash": "1b3705630f9d",
+   "hash": "cf6d57568324",
    "relations": [
     {
      "relation": "isDiscussedBy",
@@ -540,7 +540,8 @@
      "card": "chase-2026-book",
      "note": "sweetpotato case study interview"
     }
-   ]
+   ],
+   "not_established": "that taste drives preference in Ghana (taste was not analyzed there); that tricot consumer testing costs less than sensory panels (cost was not measured); that home tasting alone, with about 100 participants, can separate 20 or more genotypes; that the same top genotype holds in every district or segment (NASPOT 12 led in Gulu home tasting); that raw-root nutrient profiles describe the boiled product; that consumer rankings predict adoption or market demand"
   },
   {
    "id": "tanaka-2021-tag",
@@ -881,12 +882,13 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "tricot consumer tests of eba in Nigeria and Cameroon linked to lab measures show preferences for cohesive, bright eba are surprisingly similar across cultures, with a few country differences",
+   "curated_card": "yes",
+   "gist": "tricot tests with 1000 consumers in Nigeria and Cameroon found some cassava genotypes accepted for eba in both countries, but eba texture and gari solubility preferences differed by country",
    "keywords": "consumer testing, cassava, gari, eba, food quality, texture, color, cohesiveness, cross-country, Plackett-Luce trees, reliability, RTBfoods",
    "path": "papers/olaosebikan-2023-jsfa.md",
-   "hash": "dd2dc6411673",
-   "relations": []
+   "hash": "bc7e63edd28b",
+   "relations": [],
+   "not_established": "that eba trait preferences are the same across countries (texture, solubility and swelling power relations differ or reverse between Nigeria and Cameroon); that cohesiveness drove liking in Cameroon (significant only in pooled and Nigerian data); that TMS14F1278P0003 (TMS3) is a released variety; that taste is the main driver of eba choice (the high Kendall tau may reflect the tasting setting and serving without sauce); that the results hold for fufu or other cassava products; that the genotypes show agronomic wide adaptation"
   },
   {
    "id": "rutsaert-2023-cimmyt",
@@ -894,18 +896,19 @@
    "type": "report",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
-   "gist": "Trader, stakeholder, farmer and tricot data from Tanzania show early maturity and taste drive groundnut demand, fodder and oil need no breeding focus, and farmers want to buy seed",
-   "keywords": "market intelligence, groundnut, product design team, market segmentation, target product profiles, video-based product concept testing, seed systems, traders, maturity, Tanzania",
+   "curated_card": "yes",
+   "gist": "Trader, farmer and tricot data from Tanzania define three groundnut segments, show farmers prefer early maturity and rarely feed residue, and find low seed access but high purchase interest",
+   "keywords": "market intelligence, groundnut, product design team, market segmentation, target product profiles, concept testing, seed systems, seed recycling, traders, maturity, tricot, Tanzania",
    "path": "papers/rutsaert-2023-cimmyt.md",
-   "hash": "393f53546586",
+   "hash": "52da6264d3f7",
    "relations": [
     {
      "relation": "usesMethodIn",
      "card": "rutsaert-2023-mib",
-     "note": "video-based product concept testing"
+     "note": "concept testing; the report does not say which form and shows no results"
     }
-   ]
+   ],
+   "not_established": "that taste is the top preference driver for farmers (the 69% figure comes from 300 traders); that the segment shares reflect national production (they come from traders' reported sales); that this report presents concept test results (none are shown); that early maturity is the strongest driver in tricot rankings (in the on-farm chart it correlates less with overall preference than marketability, colour and size); that oil content does not matter for any segment (it is a priority for the small and medium tan peanut butter segment, not for the large segments); that farmers would pay for certified seed (purchase interest was a hypothetical question to 485 farmers); that small and medium groundnuts were confirmed as one group in tricot (the tricot slide is not split by product type)"
   },
   {
    "id": "rutsaert-2023-mib",
@@ -913,11 +916,11 @@
    "type": "policy brief",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
-   "gist": "Brief explaining video-based product concept testing and applying it with 2,400 farmers to propose future hybrid maize market segments in East Africa",
-   "keywords": "VPCT, video-based product concept testing, market segmentation, hybrid maize, future segments, target product profiles, drought avoidance, intercropping",
+   "curated_card": "yes",
+   "gist": "Video concept testing with 2,400 Kenyan and Ugandan farmers confirmed demand for the resilient benchmark and pointed to intercropping (Kenya) and early maturity (Uganda) as future maize segments",
+   "keywords": "VPCT, video-based product concept testing, market segmentation, hybrid maize, future segments, target product profiles, drought avoidance, intercropping, Plackett-Luce, gender",
    "path": "papers/rutsaert-2023-mib.md",
-   "hash": "b2e74f9df762",
+   "hash": "6bf1d0f8ac6a",
    "relations": [
     {
      "relation": "isDiscussedBy",
@@ -927,7 +930,7 @@
     {
      "relation": "providesMethodFor",
      "card": "rutsaert-2023-cimmyt",
-     "note": "video-based product concept testing"
+     "note": "concept testing; the report does not say which form and shows no results"
     },
     {
      "relation": "providesMethodFor",
@@ -939,7 +942,8 @@
      "card": "donovan-2025-expagric",
      "note": "full analysis of the maize concept testing in the brief"
     }
-   ]
+   ],
+   "not_established": "that the proposed future segments were tested in field trials or confirmed by seed sales; that ranking a video concept predicts seed purchase or adoption; that gender differences in concept rankings are statistically significant (the Plackett-Luce tree gender splits had p = 0.66 in Kenya and p = 0.13 in Uganda); that the results apply outside wet mid-altitude areas of western Kenya and central Uganda; that yellow or orange maize has no future market in East Africa"
   },
   {
    "id": "teeken-2023-slides",
@@ -986,11 +990,11 @@
    "type": "review (retrospective)",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "\"Retrospective of 12 years of tricot: aggregated farmer rankings are adequately valid with large samples, one Rwanda case cost 27% less than RCBD, and breeding programmes now use it.\"",
    "keywords": "tricot, citizen science, incomplete block design, ClimMob, Plackett-Luce, validity, reliability, cost, adoption, mainstreaming, product design, gender",
    "path": "papers/desousa-2024-asd.md",
-   "hash": "cc5fab8f9618",
+   "hash": "088f0e75ddfa",
    "relations": [
     {
      "relation": "citesAsDataSource",
@@ -1045,11 +1049,11 @@
    "type": "presentation",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "Slides on tricot trials of 21 forages in Ethiopia. For biomass, one mixture beat Desho in Amhara and seven options in SNNP. Preference tracked ease of harvesting and transplanting",
    "keywords": "forages, grass-legume mixtures, livestock feed, tricot, Ethiopia, Desho, land restoration, trait preferences, Plackett-Luce, multipurpose forages",
    "path": "papers/mulatu-2024-slides.md",
-   "hash": "907139392cc3",
+   "hash": "d93f7c85b979",
    "relations": [],
    "not_established": "That any option significantly outyields Desho, as no uncertainty is shown for biomass; measured biomass, forage quality or animal performance; that yield is what farmers value most; performance outside the tested woredas or seasons"
   },
@@ -1059,18 +1063,19 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "tricot evaluation of 20 elite cassava clones with 614 farmers in Uganda, merging two cycles by rank aggregation and finding geography and heavy-rain days drove performance more than farmer traits",
+   "curated_card": "yes",
+   "gist": "tricot trials of 20 cassava clones in Uganda, merged over two cycles, showed district shaped rankings more than sex or age, and no clone beat the check on yield",
    "keywords": "cassava, elite clones, tricot, participatory variety selection, rank aggregation, sociodemographic covariates, climate covariates, reliability, food quality traits, variety release, NaCRRI",
    "path": "papers/nanyonjo-2024-cropsci.md",
-   "hash": "63e35b67a5d0",
+   "hash": "70b38b85b62a",
    "relations": [
     {
      "relation": "isDiscussedBy",
      "card": "cairns-2025-ppp",
      "note": "host farmers selected by weighting on gender and other factors in Uganda"
     }
-   ]
+   ],
+   "not_established": "that any of the 20 clones out-yields NAROCASS 1 on-farm; that UG130007 is drought tolerant (a hypothesis, and its advantage in the dry node was not significant at p < 0.05); that gender does not affect cassava trait preferences; that the district and rainfall splits are stable; that UG110164, UGC14170 or UG120193 have been released as varieties"
   },
   {
    "id": "occelli-2024-agecon",
@@ -1078,11 +1083,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Randomized comparison of tricot and group PVS with 1,978 bean farmers finds similar varietal diversification and adoption, better food security from group PVS, and tricot 28% cheaper",
-   "keywords": "impact evaluation, tricot vs group PVS, difference-in-difference, food security, varietal diversification, adoption, cost comparison, randomized assignment",
+   "curated_card": "yes",
+   "gist": "Randomized trial with 1,978 bean farmers finds tricot and group PVS give similar varietal diversification and adoption, group PVS better food security, and tricot 28% lower total cost",
+   "keywords": "impact evaluation, tricot vs group PVS, difference-in-difference, food security, varietal diversification, adoption, cost comparison, randomized assignment, attrition",
    "path": "papers/occelli-2024-agecon.md",
-   "hash": "91e8dc0e1bc6",
+   "hash": "fb8fce1cc7d2",
    "relations": [
     {
      "relation": "isCitedAsDataSourceBy",
@@ -1095,7 +1100,7 @@
      "note": "the FAQ says about a quarter cheaper than PVS and nearly twice as many farmers reached; the source reports 28% cheaper"
     }
    ],
-   "not_established": "cost savings against RCBD or researcher-managed trials (the 28% is against group PVS); better food security from tricot (group PVS did better); effects outside bean in Central America"
+   "not_established": "cost savings against RCBD or researcher-managed trials (the only comparison is with group PVS); a 40% saving (no such figure in this paper); the 28% as a per-farmer saving (it is total programme cost, and tricot reached 739 farmers against 394, so per farmer the saving is 62%); better food security from tricot (no gain, and a slightly higher hunger score than control villages); a food security gain from group PVS against all controls (significant only against control farmers in treated villages); effects outside bean in Central America"
   },
   {
    "id": "occelli-2024-natplants",
@@ -1103,11 +1108,11 @@
    "type": "review",
    "source": "external",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "Scoping review of 657 trait prioritization studies finds uneven crop and regional coverage, weak sampling, unsystematic sex disaggregation and no shared trait taxonomy, so findings cannot be compared",
    "keywords": "trait prioritization, trait preferences, scoping review, PRISMA-ScR, sex-disaggregated data, sampling, trait taxonomy, Crop Ontology, participatory plant breeding, research networks, demand-led breeding",
    "path": "papers/occelli-2024-natplants.md",
-   "hash": "c5a119340eb6",
+   "hash": "b5a50da272ae",
    "relations": [],
    "not_established": "that any single elicitation tool, including tricot, gives the most valid trait priorities (the review maps use, not validity); that direct questions give wrong results (cited, not tested here); that roughly 250 respondents is an adequate sample; rankings of specific traits for a given crop and country"
   },
@@ -1117,11 +1122,11 @@
    "type": "software paper",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Describes ClimMob, the open-source platform that runs tricot trials end to end, its design choices, architecture, Crop Ontology links and usability scores",
-   "keywords": "ClimMob, software design, ODK, Crop Ontology, trial design, participant registration, data collection, reports, usability, component-based software engineering",
+   "curated_card": "yes",
+   "gist": "ClimMob, open-source software co-designed with the tricot workflow, supports tricot trials from design to automated reports, has close to 800 users and median-level usability (SUS 68.1)",
+   "keywords": "ClimMob, tricot, citizen science, software design, ODK, Crop Ontology, trial design, participant registration, data collection, reports, usability, component-based software engineering",
    "path": "papers/quiros-2024-compag.md",
-   "hash": "f04b4cb5f701",
+   "hash": "59bb5745d612",
    "relations": [
     {
      "relation": "isDiscussedBy",
@@ -1133,7 +1138,8 @@
      "card": "chase-2026-book",
      "note": "ClimMob chapters"
     }
-   ]
+   ],
+   "not_established": "that tricot data collected with ClimMob are more accurate than other methods (this is a software paper and the science is described elsewhere); that ClimMob improves breeding decisions or variety adoption; that the usability scores represent all users (16 and 25 respondents, first quarter of 2022); that integration with EBS, genomic data, FormShare or USSD, IVR and SMS channels existed in 2024 (all planned); that all traits in all projects are linked to Crop Ontology"
   },
   {
    "id": "schumann-2024-ux",
@@ -1284,13 +1290,13 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "In a mock agro-dealer experiment with about 590 Kenyan farmers, 70% chose the decades-old market leader hybrid, driven by familiarity and drought tolerance, and few tried alternatives when it was out of stock",
+   "curated_card": "yes",
+   "gist": "In a mock seed store with 587 Kenyan farmers, 70% planned to buy one 20-year-old market leader hybrid, a choice linked to repeat planting, narrow experience and food traits",
    "keywords": "seed choice, market leader varieties, varietal turnover, hybrid maize, mock agro-dealer store, stockout, trait preferences, drought tolerance, seed price, multinomial logit, brand loyalty",
    "path": "papers/mawia-2025-fsufs.md",
-   "hash": "44ec5a21c807",
+   "hash": "10a3418c2e9f",
    "relations": [],
-   "not_established": "causal effects of experience or traits on seed choice (correlational design); that posters, discounts or information cannot shift choice in other settings; preferences beyond one semi-arid county"
+   "not_established": "that 70% of farmers bought the market leader in the store (the categories are stated purchase intentions); causal effects of experience or traits on seed choice (correlational design); that drought tolerance explains loyalty to the market leader (not significant in the model); effects of the information poster or price promotion (not reported by treatment); what farmers chose when their variety was out of stock; preferences beyond one semi-arid county"
   },
   {
    "id": "muller-2025-ux",
@@ -1298,18 +1304,19 @@
    "type": "presentation",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
-   "gist": "Field validation in Nigeria of a redesigned tricot feedback sheet and diploma, rated highly by 44 farmers (NPS 70) though only half decoded the trait icons",
+   "curated_card": "yes",
+   "gist": "Nigerian cassava field test of a redesigned tricot feedback sheet and diploma, which 44 farmers found useful (NPS 70), though understanding was moderate and trait icons were often misread",
    "keywords": "farmer feedback, feedback sheet, diploma, Net Promoter Score, icons, usability, field validation, implementers, variety release evidence, NRCRI",
    "path": "papers/muller-2025-ux.md",
-   "hash": "d51b109d9a90",
+   "hash": "bb029d20e503",
    "relations": [
     {
      "relation": "extends",
      "card": "schumann-2024-ux",
      "note": "field validation of the feedback prototypes"
     }
-   ]
+   ],
+   "not_established": "That farmers understand the sheet without facilitation; that 48% of all 44 farmers decoded the icons correctly (the icon test had 12 farmers); that the design works for other crops, countries or languages; that feedback sessions raise variety adoption or seed uptake; that a variety release committee has used the sheets as evidence; that the implementer score represents implementers in general (six implementers)"
   },
   {
    "id": "nabateregga-2025-eja",
@@ -1317,11 +1324,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Shows farmer volumetric yield estimates for common bean agree closely with technician measures (r = 0.96) and predict absolute yield, so tricot can supply yield data for breeders",
+   "curated_card": "yes",
+   "gist": "In Tanzania, farmer tin-volume yield estimates for common bean agreed closely with technician measures (r = 0.96) and predicted weighed yield, so tricot can supply yield data",
    "keywords": "farmer-generated yield, yield estimation, volumetric measurement, sado tins, data accuracy, genetic gain, moisture content, tricot, absolute yield",
    "path": "papers/nabateregga-2025-eja.md",
-   "hash": "533121965dcc",
+   "hash": "83dd2b51a3ca",
    "relations": [
     {
      "relation": "isDiscussedBy",
@@ -1334,7 +1341,7 @@
      "note": "farmer volumetric yield measurement is accurate"
     }
    ],
-   "not_established": "a universal sample size for yield measurement; accuracy for crops with repeated or piecemeal harvests; acceptance of farmer-measured yield by a release committee"
+   "not_established": "a universal sample size for yield measurement; accuracy for smaller-seeded crops such as wheat, sorghum or millet, or for crops with repeated or piecemeal harvests; accurate yield per hectare where plot area is uncertain; representative variety yields from this sample; acceptance of farmer-measured yield by a release committee; an effect of literacy, which could not be tested"
   },
   {
    "id": "selby-2025-database",
@@ -1441,11 +1448,11 @@
    "type": "report",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "A 120-farmer common bean tricot trial in Uganda had marginal costs of USD 92 per farmer, mostly researcher labour and transport. Modelled scenarios cut this to USD 47",
    "keywords": "tricot costing, cost per farmer, common bean, Uganda, NARO, NaCRRI, cost drivers, researcher travel, transport, field agents, hub clustering, scenario analysis",
    "path": "papers/angudubo-2026-naro.md",
-   "hash": "15cc89d3d491",
+   "hash": "a583b52cfe55",
    "relations": [
     {
      "relation": "usesMethodIn",
