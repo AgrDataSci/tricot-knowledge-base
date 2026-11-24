@@ -15,4 +15,18 @@ An independent reviewer that did not write the card reads the whole source. It s
 
 ## Status
 
-Pilot done on 2026-11-20 for five cards: desousa-2024-asd, occelli-2024-natplants, mancini-2017-scirep, angudubo-2026-naro, mulatu-2024-slides. No card has been edited yet.
+Review and correction done in November 2026.
+
+- 68 cards reviewed claim by claim against their source PDFs, one review per card in this folder. The main finding of each review was checked again by hand (`02-spotcheck-log.md`).
+- All 68 cards corrected in PR #19 to #26, with one change log per card in `changes/`. Each change was confirmed in the source before it was applied.
+- All corrected cards set to `curated_card: yes` (PR #21 to #27), as decided by the curator.
+
+Still open:
+
+- howland-2025-report, vanetten-2011-idsbull and eskridge-1992-tag: the PDFs in `papers-pdf/` are one-page link stubs, so these cards wait for the full texts.
+- chase-2026-book: not yet reviewed.
+- Facts that cards state differently, listed in `03-crosscard-notes.md`.
+
+## Other files
+
+- `REVIEWER_INSTRUCTIONS.md` and `FIXER_INSTRUCTIONS.md`: the instructions given to the review and fix agents. They refer to working paths outside this repository.
