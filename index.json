@@ -1,5 +1,5 @@
 {
- "version": "c8199135d427",
+ "version": "c736f0f350c5",
  "updated": "2026-11-24",
  "cards": 72,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
@@ -164,18 +164,19 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "First test of tricot data quality, showing individual farmer rankings are unreliable but valid in aggregate, so 150 to 200 farmers suffice for 10 to 12 varieties",
+   "curated_card": "yes",
+   "gist": "First test of tricot data quality, showing individual farmer rankings are unreliable but valid in aggregate, so 150 to 200 farmers likely suffice for 10 to 12 varieties",
    "keywords": "data quality, validity, reliability, wisdom of crowds, farmer observations, sample size, Kendall's tau, Kendall's W, Mallows-Bradley-Terry, tricot",
    "path": "papers/steinke-2017-asd.md",
-   "hash": "3f06b3cca18d",
+   "hash": "88c82ff2ca51",
    "relations": [
     {
      "relation": "isReviewedBy",
      "card": "fadda-2020-fps",
      "note": ""
     }
-   ]
+   ],
+   "not_established": "that individual farmer rankings are accurate on their own; that tricot is valid for yield, post-harvest, cooking or taste traits, which were not tested; that 150 to 200 participants is a tested minimum rather than a simulation-based order of magnitude under idealized, evenly spaced varieties; that women and men observe equally well in general, since groups were small and all participants grew beans; that disease resistance cannot be assessed by farmers, since its sample was 11 observations"
   },
   {
    "id": "hansson-2019-ejps",
@@ -210,11 +211,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "The first full description of tricot as a method, with the design rationale and lessons from the first pilots on data formats, statistical design, farmer motivation, gender and cost",
-   "keywords": "tricot origin, crowdsourcing, participatory variety selection, pilot lessons, data collection formats, gender inclusion, ClimMob, cost",
+   "curated_card": "yes",
+   "gist": "First account of tricot, whose pilots in India, East Africa and Central America found it feasible with low-literacy farmers, giving robust rankings and wide acceptance after formats were simplified.",
+   "keywords": "tricot origin, crowdsourcing, participatory variety selection, pilot lessons, data collection formats, gender inclusion, ClimMob, cost, Bradley–Terry model, citizen science, blind trials",
    "path": "papers/vanetten-2019-expagric.md",
-   "hash": "79587eebc5f7",
+   "hash": "0213dd784eea",
    "relations": [
     {
      "relation": "extends",
@@ -223,10 +224,16 @@
     },
     {
      "relation": "isDiscussedBy",
+     "card": "vanetten-2023-pnas",
+     "note": "ref. 80, tricot approach"
+    },
+    {
+     "relation": "isDiscussedBy",
      "card": "howland-2025-report",
      "note": ""
     }
-   ]
+   ],
+   "not_established": "accuracy of farmer rankings for other crops and traits (checked only on four plant traits of common bean in Honduras); absence of gender differences in preferences in other settings; effect sizes or yield gains (rankings only); cost savings in figures (no cost data reported); suitability of iButton sensors at scale (judged not yet appropriate); reception by farmers without prior PVS experience; phone or IVR data collection (not used in these pilots)"
   },
   {
    "id": "vanetten-2019-pnas",
@@ -279,6 +286,11 @@
      "relation": "isDiscussedBy",
      "card": "desousa-2023-softwarex",
      "note": "cited as a study that used the methods"
+    },
+    {
+     "relation": "isDiscussedBy",
+     "card": "vanetten-2023-pnas",
+     "note": "ref. 10, tricot GxE results and durum wheat releases"
     }
    ],
    "not_established": "effects on farmer income, food security or adoption; acceptance of tricot data in official variety release"
@@ -495,6 +507,11 @@
      "relation": "isAgreedWithBy",
      "card": "gesesse-2023-pnas",
      "note": "farmer appreciation improves prediction accuracy"
+    },
+    {
+     "relation": "isDiscussedBy",
+     "card": "vanetten-2023-pnas",
+     "note": "ref. 58, 3D breeding and genomic selection, Fig. 2"
     }
    ]
   },
@@ -549,13 +566,13 @@
    "type": "research article",
    "source": "external",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "Genomic prediction trained on unfertilized farmers' fields in Madagascar picked high-performing rice genebank accessions with accuracy similar to on-station studies, and two became breeding donors",
    "keywords": "genomic selection, genebank accessions, donor selection, 3K rice genomes, on-farm phenotyping, low-input, phosphorus deficiency, GBLUP, expected improvement, prediction accuracy, smallholder farms",
    "path": "papers/tanaka-2021-tag.md",
-   "hash": "640a8cfa68b3",
+   "hash": "e51cde969994",
    "relations": [],
-   "not_established": "that farmer-managed or participatory evaluation was used (trials were researcher-run plots on farmers' fields); that the donors have produced released varieties; that expected improvement beats predicted genotypic value (no difference found)"
+   "not_established": "that farmer-managed or participatory evaluation was used (trials were researcher-run plots on farmers' fields); that the donors have produced released varieties; that expected improvement beats predicted genotypic value (no difference found); that prediction ranks accessions well within the top group (year 3 accuracy among the selected was about 0.1); that grain yield was measured (total panicle dry weight per plant was the proxy); that the results hold outside phosphorus-deficient highland sites"
   },
   {
    "id": "teeken-2021-fsufs",
@@ -951,12 +968,13 @@
    "type": "presentation",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
-   "gist": "Conference slides on scaling cassava PVS in Nigeria with tricot (320 farmers, 30 varieties, 4 states), showing how socially inclusive feedback, especially from women processors, informs breeding",
-   "keywords": "cassava, gender, social inclusion, processors, gari, fufu, tricot in Nigeria, mother-baby trials, demand-led breeding, product profile",
+   "curated_card": "yes",
+   "gist": "Slides on 320 cassava tricot trials in Nigeria showing that gender, who processes and food security split variety preferences, and that Nigeria's release committee is trying tricot",
+   "keywords": "cassava, gender, social inclusion, processors, gari, fufu, tricot in Nigeria, mother-baby trials, demand-led breeding, product profile, variety release",
    "path": "papers/teeken-2023-slides.md",
-   "hash": "ac49aa7a0b85",
-   "relations": []
+   "hash": "8ec4a4603eef",
+   "relations": [],
+   "not_established": "that the climate split on night temperature is reliable (p = 0.24 on the slide); that the gender and food security preferences hold beyond these 4 states and seasons; that tricot has replaced standard on-farm testing in Nigerian variety release (it was accepted to try out); that women and men in each household both evaluated every moment (dyads are only planned); that the analyses shown used all 320 trials (node sizes sum to 219, 273 and 316)"
   },
   {
    "id": "vanetten-2023-pnas",
@@ -964,25 +982,43 @@
    "type": "perspective",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Perspective arguing that data-driven methods let genebanks and breeders serve heterogeneous environments and users, and setting out five investment priorities",
-   "keywords": "data-driven breeding, crop diversity management, genebanks, 3D breeding, GxExM, socioeconomic heterogeneity, gender, demand-led breeding, breeding metrics",
+   "curated_card": "yes",
+   "gist": "Perspective arguing that data-driven approaches, including tricot and 3D breeding, can help genebanks and breeders serve heterogeneous environments and users, and setting out five investment priorities",
+   "keywords": "data-driven breeding, crop diversity management, genebanks, 3D breeding, tricot, GxExM, socioeconomic heterogeneity, gender, demand-led breeding, breeding metrics",
    "path": "papers/vanetten-2023-pnas.md",
-   "hash": "a3a47a78e824",
-   "relations": []
+   "hash": "119a3ae51acf",
+   "relations": [
+    {
+     "relation": "discusses",
+     "card": "desousa-2021-commsbio",
+     "note": "ref. 58, 3D breeding and genomic selection, Fig. 2"
+    },
+    {
+     "relation": "discusses",
+     "card": "vanetten-2019-pnas",
+     "note": "ref. 10, tricot GxE results and durum wheat releases"
+    },
+    {
+     "relation": "discusses",
+     "card": "vanetten-2019-expagric",
+     "note": "ref. 80, tricot approach"
+    }
+   ],
+   "not_established": "that data-driven or 3D breeding has already raised genetic gain across breeding programmes (the genomic selection result comes from one Ethiopian durum wheat study, ref. 58); that on-farm genomic selection is feasible at programme scale (named as a next step to assess); that composite indices are the agreed breeding metric (offered as one option); that the low-cost smartphone phenotyping tool exists (it is being designed); that the placement of methods in Fig. 1 is measured (it is the authors' judgment)"
   },
   {
    "id": "voss-2023-fsoc",
    "year": "2023",
-   "type": "community case study",
+   "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Case study of how a CIMMYT maize breeding project integrated gender, including tricot trials that grew from 112 to 1,380 Kenyan farmers with over half women",
+   "curated_card": "yes",
+   "gist": "A CIMMYT maize project integrated gender by moving on-farm trials to social scientists and tricot, reaching over 50% women. Pilot data showed no major gender differences in preferences.",
    "keywords": "gender, maize breeding, women farmers, tricot, intrahousehold, participatory variety selection, SPTA, Ms44, innovation history, 1000FARMS",
    "path": "papers/voss-2023-fsoc.md",
-   "hash": "838eddf62967",
-   "relations": []
+   "hash": "327627124487",
+   "relations": [],
+   "not_established": "that women and men in Kenya prefer different maize varieties; that household end-use (post-harvest) evaluation in tricot worked at scale in this project; that tricot data were used in maize variety release decisions; that FNP hybrids had been released by 2023; that the approach has been tested in large breeding programmes; that tricot trials cost less per data point than researcher-managed trials"
   },
   {
    "id": "desousa-2024-asd",
@@ -1147,18 +1183,19 @@
    "type": "presentation",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
-   "gist": "UX review finding tricot implementers rarely run farmer feedback, mapping why along their journey, and proposing redesigned feedback sheets, diplomas and ClimMob support",
+   "curated_card": "yes",
+   "gist": "Design review finding that tricot feedback to farmers breaks down long before feedback sessions, and proposing ClimMob support, implementer prompts and a separate diploma and feedback sheet",
    "keywords": "farmer feedback, feedback sessions, user experience, implementers, ClimMob, feedback sheet, diploma, co-design, inclusive design, reciprocity",
    "path": "papers/schumann-2024-ux.md",
-   "hash": "1dbdf7cfcc6a",
+   "hash": "472ce8b97c5f",
    "relations": [
     {
      "relation": "isExtendedBy",
      "card": "muller-2025-ux",
      "note": "field validation of the feedback prototypes"
     }
-   ]
+   ],
+   "not_established": "that farmers were consulted or tested the prototypes; how often implementers skip feedback (no counts are given); how many implementers were interviewed or joined the sessions; that the proposed ClimMob features (budget planner, reminders, single feedback sheet) exist; that the figures on the mock-up sheets (100 or 137 participants, 40, 35 and 25 votes) are trial data; that the redesigned sheets improve farmer understanding or participation"
   },
   {
    "id": "1000farms-2025-report",
@@ -1368,12 +1405,13 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "tricot with 295 potato farmers in Plateau State, Nigeria, ranks two CIP clones above the check Marabel and shows market-oriented and subsistence farmers value different traits",
+   "curated_card": "yes",
+   "gist": "tricot with 295 potato farmers in Plateau State, Nigeria, ranks three CIP clones significantly above the check Marabel and shows market-oriented and subsistence farmers value different traits",
    "keywords": "potato, tricot, Nigeria, CIP clones, Marabel, market orientation, subsistence farmers, bootstrap, farmer segments, decentralized variety testing",
    "path": "papers/sharma-2025-jafr.md",
-   "hash": "68a4bb812a94",
-   "relations": []
+   "hash": "f97d15897f74",
+   "relations": [],
+   "not_established": "that tricot improved adoption or uptake of these varieties, which was not measured; that CIP398208.29 is less preferred than Marabel, since the difference was not significant; that the four cohorts describe all farmers, since they cover 189 of 295 farmers and the tree covers 132; that gender and education do not matter for potato preference in general; that the results hold outside Plateau State"
   },
   {
    "id": "ulzen-2025-agrirxiv",
@@ -1405,12 +1443,13 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "tricot trials of 14 amaranth varieties with 2,063 farmers in Benin, Mali and Tanzania identify gender- and business-based farmer segments with distinct variety preferences",
-   "keywords": "opportunity crops, NUS, amaranth, tricot, farmer segmentation, cluster analysis, gender, market segments, demand-driven breeding, seed systems, World Vegetable Center",
+   "curated_card": "yes",
+   "gist": "tricot trials of 14 amaranth varieties with 2,063 farmers in Benin, Mali and Tanzania find four farmer segments with distinct preferences, yet A2004 is acceptable to all on marketability",
+   "keywords": "opportunity crops, NUS, amaranth, tricot, farmer segmentation, cluster analysis, gender, market segments, demand-driven breeding, seed systems, World Vegetable Center, regret analysis",
    "path": "papers/voss-2025-ppp.md",
-   "hash": "186b4910d22f",
-   "relations": []
+   "hash": "3b1b8448a5fc",
+   "relations": [],
+   "not_established": "that the segments come from the tricot rankings (they come from a cluster analysis of survey data, done independently of the rankings); that the segments or variety rankings hold in other countries or opportunity crops without new trials; that segments differ in overall performance or fourth-harvest rankings (not significant); that A2004 is best for every trait (it was assessed on marketability worth and regret only); that women and men differ in a simple gender split (the paper uses intersectional segments and contrasts with a study that found no gender difference)"
   },
   {
    "id": "angudubo-2026-guide",

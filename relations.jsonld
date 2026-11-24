@@ -420,7 +420,18 @@
    "dcterms:identifier": "vanetten-2023-pnas",
    "dcterms:title": "Data-driven approaches can harness crop diversity to address heterogeneous needs for breeding products",
    "dcterms:date": "2023",
-   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/vanetten-2023-pnas.md"
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/vanetten-2023-pnas.md",
+   "cito:discusses": [
+    {
+     "@id": "https://doi.org/10.1038/s42003-021-02463-w"
+    },
+    {
+     "@id": "https://doi.org/10.1073/pnas.1813720116"
+    },
+    {
+     "@id": "https://doi.org/10.1017/S0014479716000739"
+    }
+   ]
   },
   {
    "@id": "https://doi.org/10.3389/fsoc.2023.1254595",
@@ -491,7 +502,7 @@
   {
    "@id": "https://hdl.handle.net/10568/169094",
    "dcterms:identifier": "schumann-2024-ux",
-   "dcterms:title": "Farmer feedback in tricot. 2024 review",
+   "dcterms:title": "Farmer Feedback in Tricot. 2024 review",
    "dcterms:date": "2024",
    "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/schumann-2024-ux.md"
   },
