@@ -1,5 +1,5 @@
 {
- "version": "c736f0f350c5",
+ "version": "0107fbbd6fe9",
  "updated": "2026-11-24",
  "cards": 72,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
@@ -141,9 +141,9 @@
      "note": ""
     },
     {
-     "relation": "isExtendedBy",
+     "relation": "providesDataFor",
      "card": "desousa-2021-commsbio",
-     "note": ""
+     "note": "the 41 genotypes were chosen through the farmer evaluations reported there"
     },
     {
      "relation": "isCitedAsDataSourceBy",
@@ -291,6 +291,11 @@
      "relation": "isDiscussedBy",
      "card": "vanetten-2023-pnas",
      "note": "ref. 10, tricot GxE results and durum wheat releases"
+    },
+    {
+     "relation": "isDiscussedBy",
+     "card": "cairns-2026-jxb",
+     "note": "tricot method reference"
     }
    ],
    "not_established": "effects on farmer income, food security or adoption; acceptance of tricot data in official variety release"
@@ -301,13 +306,13 @@
    "type": "perspective",
    "source": "external",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "First formal publication of the CARE Principles (Collective benefit, Authority to control, Responsibility, Ethics), which complement FAIR so that open data serve the peoples the data come from",
+   "curated_card": "yes",
+   "gist": "First formal publication of the CARE Principles (Collective benefit, Authority to control, Responsibility, Ethics), which complement FAIR so that Indigenous Peoples control and benefit from their data",
    "keywords": "CARE principles, Indigenous data sovereignty, data governance, FAIR principles, collective benefit, authority to control, responsibility, ethics, open data, traditional knowledge, benefit sharing",
    "path": "papers/carroll-2020-dsj.md",
-   "hash": "068434a37331",
+   "hash": "a59888986998",
    "relations": [],
-   "not_established": "that CARE applies directly to on-farm trial data from non-Indigenous farmers (the authors say it may extend to other collectives, but it was written for Indigenous Peoples' data); specific tools or procedures for implementation, which the authors list as further work"
+   "not_established": "that CARE applies directly to on-farm trial data from non-Indigenous farmers (the authors say it may extend to other collectives, but it was written for Indigenous Peoples' data); specific tools or procedures for implementation, which the authors list as further work; that CARE has been tested or evaluated in practice (the paper describes early adoption, with no outcome data); that CARE requires community data to be closed (it aims for data sharing on Indigenous terms, alongside FAIR)"
   },
   {
    "id": "desousa-2020-joss",
@@ -439,7 +444,7 @@
     {
      "relation": "providesMethodFor",
      "card": "angudubo-2026-guide",
-     "note": "costs the ten tricot steps described in the guide"
+     "note": "the guide links to it for the tricot steps; trial preparation is steps 1 to 3 and seed distribution step 4"
     },
     {
      "relation": "providesMethodFor",
@@ -477,16 +482,16 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Combining genomics with tricot rankings from 1,165 Ethiopian farms (3D-breeding) predicted on-farm durum wheat performance far better than station-based genomic selection",
+   "curated_card": "yes",
+   "gist": "Combining genomics, on-farm tricot data from 1,165 Ethiopian farms and climate covariates (3D-breeding) roughly doubled the accuracy of station-based genomic prediction of on-farm durum wheat performance",
    "keywords": "3D-breeding, genomic prediction, tricot, durum wheat, landraces, overall appreciation, G×E, decentralized breeding, prediction accuracy, reliability",
    "path": "papers/desousa-2021-commsbio.md",
-   "hash": "2248ed762867",
+   "hash": "e03d6e5d8d16",
    "relations": [
     {
-     "relation": "extends",
+     "relation": "usesDataFrom",
      "card": "mancini-2017-scirep",
-     "note": ""
+     "note": "the 41 genotypes were chosen through the farmer evaluations reported there"
     },
     {
      "relation": "extends",
@@ -513,7 +518,8 @@
      "card": "vanetten-2023-pnas",
      "note": "ref. 58, 3D breeding and genomic selection, Fig. 2"
     }
-   ]
+   ],
+   "not_established": "that 3D-breeding predicts on-farm yield with high accuracy (Kendall tau was 0.109 for yield and 0.251 for appreciation); that the about 20% yield gain was observed in farmers' fields (it is a model prediction over 15 simulated seasons); that 3D-breeding predicts the performance of genotypes never tested on farms (all 41 were tested); that 3D-breeding increases genetic gain (the paper measures prediction accuracy only, and the authors say accuracy is one of several factors in genetic gain); that 3D-breeding should replace centralized breeding (the authors propose it as a complement); that results hold for other crops or regions (one durum wheat proof-of-concept in the Ethiopian highlands); that farmer gender has no effect on scores (heritability of appreciation was 0.84 for men and 0.67 for women)"
   },
   {
    "id": "gotor-2021-fsufs",
@@ -619,7 +625,13 @@
    "keywords": "gender, maize breeding, gender-intentional breeding, trait preferences, seed adoption, market segmentation, intrahousehold decision-making, CGIAR Gender and Breeding Initiative, participatory plant breeding, tricot, seed systems",
    "path": "papers/voss-2021-outlook.md",
    "hash": "1ef33c27d724",
-   "relations": [],
+   "relations": [
+    {
+     "relation": "isDiscussedBy",
+     "card": "cairns-2026-jxb",
+     "note": "women in men-headed households neglected in earlier trials"
+    }
+   ],
    "not_established": "that women and men do not differ in maize preferences (the review says evidence is inconclusive, not absent); that tricot reveals gender differences in maize (cited as a promising option, not tested here); that gender-intentional breeding improves women's adoption"
   },
   {
@@ -713,13 +725,13 @@
    "type": "review",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "RTBfoods shows how SOPs, data templates and Crop Ontology food quality traits let consumer, sensory, lab and NIRS data on 12 RTB food products link to genotypes in Breedbase",
+   "curated_card": "yes",
+   "gist": "RTBfoods used SOPs, data templates and Crop Ontology food quality traits to link sensory, lab and NIRS data to genotypes in Breedbase, with anonymized survey data in a repository",
    "keywords": "RTBfoods, consumer preferences, food quality, sensory panel, Crop Ontology, Breedbase, SOPs, data templates, NIRS, gendered food product profile, target product profile, data integration",
    "path": "papers/arnaud-2023-jsfa.md",
-   "hash": "8b960870b988",
+   "hash": "dfe4db07b468",
    "relations": [],
-   "not_established": "that more quality traits in breeding databases led to more adopted varieties; that tricot data were part of this integration (the paper does not mention tricot); the percentage changes in Table 9 (see Notes)"
+   "not_established": "that more quality traits in breeding databases led to more adopted varieties; that RTBfoods caused the rise in quality traits (Table 9 is a before-and-after count with periods of different length, no comparison group, and one programme, NRCRI cassava, fell from 9 to 7); that consumer survey data or gendered food product profiles are stored in or linked to genotypes in Breedbase (they are in a separate repository); that participatory processing-trial data are in Breedbase (not yet uploaded at the time of writing); that tricot data were part of this integration (the paper does not mention tricot); the percentage changes in Table 9 (see Notes)"
   },
   {
    "id": "brown-2023-agronj",
@@ -727,11 +739,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Pools 31 Musa trials from 1990 to 2019 that scored black leaf streak with five different metrics by converting them to rankings, and finds that dry spell length separates humid from dry environments with different resistant genotypes",
-   "keywords": "data synthesis, rank aggregation, heterogeneous trials, Plackett-Luce trees, black leaf streak disease, black Sigatoka, Musa, AgERA5, dry spell, relative humidity, reliability, stability assessment, genotype by environment",
+   "curated_card": "yes",
+   "gist": "Turning five black leaf streak metrics from 31 Musa trials into rankings allows joint analysis, and dry spell length separates humid and dry environments where genotypes rank differently",
+   "keywords": "data synthesis, heterogeneous trials, Plackett-Luce trees, black leaf streak disease, black Sigatoka, Musa, AgERA5, dry spell, relative humidity, reliability, stability assessment, genotype by environment",
    "path": "papers/brown-2023-agronj.md",
-   "hash": "7634ec6d57d5",
+   "hash": "890c5af1b358",
    "relations": [
     {
      "relation": "extends",
@@ -754,7 +766,7 @@
      "note": "reliability, the probability of outperforming the reference genotype"
     }
    ],
-   "not_established": "that dry environments are disease-free; that the top genotypes in dry environments differ significantly from the reference Calcutta 4; a causal mechanism for the humidity effect; that genotypes outperforming Calcutta 4 in one environment do so in the other"
+   "not_established": "that dry environments are disease-free; that the top genotypes in dry environments differ significantly from the reference Calcutta 4; that NARITA 8 outperforms Calcutta 4 with statistical significance (Table 6 gives p = 0.065); a causal mechanism for the humidity effect, or whether it acts on the host or the pathogen; that genotypes outperforming Calcutta 4 in one environment do so in the other; that the tree predicts genotype reactions at new sites, since it was fitted to explain and not validated for prediction; that drought predisposes Musa to BLSD, which the authors raise only as a hypothesis"
   },
   {
    "id": "desousa-2023-joss",
@@ -762,18 +774,19 @@
    "type": "software paper",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "R package computing temperature, rainfall, degree-day, evapotranspiration and frost indices for trial sites, used to explain tricot rankings with climate",
+   "curated_card": "yes",
+   "gist": "R package that computes climate indices over each plot's growing period. Its tricot bean example in Nicaragua shows variety rankings splitting by summer days and night temperature",
    "keywords": "climatrends, temperature indices, precipitation indices, growing degree-days, evapotranspiration, late spring frost, crop-sensitive indices, R package, climate covariates",
    "path": "papers/desousa-2023-joss.md",
-   "hash": "101218b0c9f4",
+   "hash": "147af8026ae9",
    "relations": [
     {
      "relation": "providesMethodFor",
      "card": "brown-2023-agronj",
      "note": "climatrends indices over the evaluation period"
     }
-   ]
+   ],
+   "not_established": "the 49 summer days and 18.7 °C splits are validated heat thresholds for common bean; hot days and warm nights act together in one tree node; the case study fully reproduces van Etten et al. 2019; the package chooses which indices suit a crop; MODIS land-surface temperature can replace air temperature without checking; the indices were validated in this paper"
   },
   {
    "id": "desousa-2023-softwarex",
@@ -851,13 +864,13 @@
    "type": "review",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Review guiding plant scientists through the ontologies, metadata frameworks (ISA) and lookup services that make plant research data FAIR, including the CGIAR Crop Ontology",
-   "keywords": "ontologies, FAIR data, metadata, Crop Ontology, ISA framework, Planteome, Plant Ontology, Trait Ontology, MIAPPE, PPEO, AgroPortal, DataPLANT, Swate, research data management",
+   "curated_card": "yes",
+   "gist": "Ontology terms used within metadata frameworks such as ISA make plant data more FAIR, but overlapping ontologies leave no single right term, so portals like Planteome and AgroPortal help",
+   "keywords": "ontologies, FAIR data, metadata, Crop Ontology, ISA framework, Planteome, Plant Ontology, Trait Ontology, MIAPPE, AgroPortal, DataPLANT, research data management",
    "path": "papers/dumschott-2023-fps.md",
-   "hash": "cf6c476f2105",
+   "hash": "8e116265547e",
    "relations": [],
-   "not_established": "that using ontologies makes datasets FAIR on its own (metadata frameworks and repositories are also needed); a single correct ontology for each term (the authors say there is no one-size-fits-all); anything specific to on-farm or tricot data, which the review does not cover"
+   "not_established": "that using ontologies makes datasets FAIR on its own (metadata frameworks and repositories are also needed); a single correct ontology for each term (the authors say there is no one-size-fits-all); that the ontologies, portals or tools were tested or compared for quality (the review describes them, it does not evaluate them); that the Crop Ontology still holds exactly 37 crop ontologies (the count is from 2023); anything specific to on-farm or tricot data, which the review does not cover"
   },
   {
    "id": "gesesse-2023-pnas",
@@ -1109,6 +1122,11 @@
      "relation": "isDiscussedBy",
      "card": "cairns-2025-ppp",
      "note": "host farmers selected by weighting on gender and other factors in Uganda"
+    },
+    {
+     "relation": "isDiscussedBy",
+     "card": "cairns-2026-jxb",
+     "note": "tricot example, cassava; targets for women hosts"
     }
    ],
    "not_established": "that any of the 20 clones out-yields NAROCASS 1 on-farm; that UG130007 is drought tolerant (a hypothesis, and its advantage in the dry node was not significant at p < 0.05); that gender does not affect cassava trait preferences; that the district and rainfall splits are stable; that UG110164, UGC14170 or UG120193 have been released as varieties"
@@ -1228,19 +1246,24 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "A typology of 2,040 randomly surveyed Zimbabwean maize farms showed extension-selected trial hosts matched the population's farm types, and that women and men farmers each form several distinct types",
+   "curated_card": "yes",
+   "gist": "A typology of 2,040 surveyed Zimbabwean maize farms showed extension-selected trial hosts matched the population's farm types, and that women-headed households fall into two very different types",
    "keywords": "host farmer selection, farm typology, representativeness, gender-responsive breeding, women-headed households, intersectionality, participatory varietal selection, on-farm testing, target population of environments, social inclusion, random forest",
    "path": "papers/cairns-2025-ppp.md",
-   "hash": "bb4578c77d80",
+   "hash": "2714bfeb114b",
    "relations": [
     {
      "relation": "discusses",
      "card": "nanyonjo-2024-cropsci",
      "note": "host farmers selected by weighting on gender and other factors in Uganda"
+    },
+    {
+     "relation": "isCitedAsDataSourceBy",
+     "card": "cairns-2026-jxb",
+     "note": "Zimbabwe survey (Fig. 1), cited in the review as Cairns et al. 2026"
     }
    ],
-   "not_established": "that representative host farmers change which hybrids are advanced (not tested); the minimum survey size needed for a typology (the authors call it an open question); that the hosts were tricot farmers (this is CIMMYT's participatory variety testing network)"
+   "not_established": "that representative host farmers change which hybrids are advanced (not tested); that training extension agents caused the good representation (no control group); that farm types differ in variety preferences (preferences not measured); that these five farm types or key variables hold for other crops, regions or years (the authors expect them to change); the minimum survey size needed for a typology (the authors call it an open question); that the hosts were tricot farmers (the paper does not describe the trial design)"
   },
   {
    "id": "donovan-2025-expagric",
@@ -1318,7 +1341,13 @@
    "keywords": "potato, tricot, RHoMIS, socio-economic covariates, temperature, on-station vs on-farm, variety preference, market orientation, marketability, gender, Plackett-Luce trees, PLADMM",
    "path": "papers/kang-2025-expagric.md",
    "hash": "6c6107fac075",
-   "relations": [],
+   "relations": [
+    {
+     "relation": "isDiscussedBy",
+     "card": "cairns-2026-jxb",
+     "note": "tricot example, potato"
+    }
+   ],
    "not_established": "that new potato varieties are worse than old ones in general (several did not differ significantly from Kirundo, and the old-variety lead may partly reflect the large warm-site group); that on-station trials cannot predict farm performance in general (one on-station season, nine varieties, two imputed); that temperature itself causes the yield rank changes (the biological causes were not identified); that crop income or gender cause the preference differences (associations in a subset of households); results for all of Rwanda (two districts, two seasons)"
   },
   {
@@ -1410,7 +1439,13 @@
    "keywords": "potato, tricot, Nigeria, CIP clones, Marabel, market orientation, subsistence farmers, bootstrap, farmer segments, decentralized variety testing",
    "path": "papers/sharma-2025-jafr.md",
    "hash": "f97d15897f74",
-   "relations": [],
+   "relations": [
+    {
+     "relation": "isDiscussedBy",
+     "card": "cairns-2026-jxb",
+     "note": "tricot example, potato; training of recruiters"
+    }
+   ],
    "not_established": "that tricot improved adoption or uptake of these varieties, which was not measured; that CIP398208.29 is less preferred than Marabel, since the difference was not significant; that the four cohorts describe all farmers, since they cover 189 of 295 farmers and the tree covers 132; that gender and education do not matter for potato preference in general; that the results hold outside Plateau State"
   },
   {
@@ -1448,7 +1483,13 @@
    "keywords": "opportunity crops, NUS, amaranth, tricot, farmer segmentation, cluster analysis, gender, market segments, demand-driven breeding, seed systems, World Vegetable Center, regret analysis",
    "path": "papers/voss-2025-ppp.md",
    "hash": "3b1b8448a5fc",
-   "relations": [],
+   "relations": [
+    {
+     "relation": "isDiscussedBy",
+     "card": "cairns-2026-jxb",
+     "note": "tricot example, amaranth"
+    }
+   ],
    "not_established": "that the segments come from the tricot rankings (they come from a cluster analysis of survey data, done independently of the rankings); that the segments or variety rankings hold in other countries or opportunity crops without new trials; that segments differ in overall performance or fourth-harvest rankings (not significant); that A2004 is best for every trait (it was assessed on marketability worth and regret only); that women and men differ in a simple gender split (the paper uses intersectional segments and contrasts with a study that found no gender difference)"
   },
   {
@@ -1457,16 +1498,16 @@
    "type": "guide",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
-   "gist": "Step-by-step guide to the 1000FARMS Excel template that costs a tricot trial by activity, from seed multiplication to labour, travel and communication, with sensitivity and scenario analysis",
+   "curated_card": "yes",
+   "gist": "The 1000FARMS Excel template costs a tricot trial by activity and per farmer, using standard UN mileage and ITU phone rates across countries, and ranks cost drivers",
    "keywords": "tricot costing, cost per farmer, trial budget, costing template, activity-based costing, cost drivers, seed multiplication cost, labour cost, per diem, transport cost, sensitivity analysis, scenario analysis",
    "path": "papers/angudubo-2026-guide.md",
-   "hash": "1bcc08460db7",
+   "hash": "0abfcf3f71f8",
    "relations": [
     {
      "relation": "usesMethodIn",
      "card": "vanetten-2020-guide",
-     "note": "costs the ten tricot steps described in the guide"
+     "note": "the guide links to it for the tricot steps; trial preparation is steps 1 to 3 and seed distribution step 4"
     },
     {
      "relation": "providesMethodFor",
@@ -1479,7 +1520,7 @@
      "note": "applies the costing template and guidelines"
     }
    ],
-   "not_established": "any actual cost of a tricot trial (the numbers are worked examples, not results); that tricot is cheaper than other designs (the template costs one design and does not compare); that the UN mileage rates and ITU baskets match local prices in every country"
+   "not_established": "any actual cost of a tricot trial (the numbers are worked examples, not results); that tricot is cheaper than other designs (the template costs one design and does not compare); that the UN mileage rates and ITU baskets match local prices in every country; that a 15% rise in labour adds about USD 12,000 to any trial (an illustrative figure with no stated baseline); that 30% research visits or the planned visits per farm are an optimum (the guide sets them as protocol defaults without evidence); that the template has been checked against actual trial spending (the guide reports no test)"
   },
   {
    "id": "angudubo-2026-naro",
@@ -1512,11 +1553,11 @@
    "type": "report",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
-   "gist": "A 110-farmer maize tricot trial in Zambia cost USD 142 per farmer, driven by researcher travel and participant support; better delivery design could cut it to USD 103",
+   "curated_card": "yes",
+   "gist": "A 110-farmer maize tricot trial in Zambia had marginal costs of USD 142 per farmer, driven by researcher travel and participant support, both of which delivery changes could reduce",
    "keywords": "tricot costing, cost per farmer, maize, Zambia, ZARI, cost drivers, per diem, participant support, field agents, scenario analysis, delivery model, cluster hubs",
    "path": "papers/angudubo-2026-zari.md",
-   "hash": "0e57908f0943",
+   "hash": "2d5f3e822635",
    "relations": [
     {
      "relation": "usesMethodIn",
@@ -1529,7 +1570,7 @@
      "note": "assumes the ten tricot steps"
     }
    ],
-   "not_established": "the full cost of the trial (fixed costs such as trial preparation and central training are excluded); that the lower-cost scenarios keep data quality or participation, which is assumed, not measured; that tricot is cheaper than other designs (no comparison was made); costs for other crops or countries"
+   "not_established": "the full cost of the trial (fixed costs such as trial preparation and central training are excluded); that the lower-cost scenarios keep data quality or participation, which is assumed, not measured; that tricot is cheaper than other designs (no comparison was made); costs for other crops or countries; that combining the scenarios gives USD 103 per farmer (the report's separate scenario savings add up to about USD 111 per farmer); that researcher visits added nothing to data quality, which is asserted, not measured; trial completion or farmer retention rates, which are not reported"
   },
   {
    "id": "cairns-2026-jxb",
@@ -1537,18 +1578,64 @@
    "type": "review",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Review arguing that inclusive host-farmer sampling, sparse testing and cheaper phenotyping let maize breeding in SSA deliver breakthrough products",
+   "curated_card": "yes",
+   "gist": "Review arguing that inclusive host-farmer sampling, sparse testing and cheaper phenotyping can help scale on-farm testing so maize breeding in SSA can move toward breakthrough products",
    "keywords": "breakthrough products, TPE, on-farm testing, sparse testing, tricot, farm typology, host farmer sampling, GxExM, genomic relationship matrix, phenotyping, satellite imagery",
    "path": "papers/cairns-2026-jxb.md",
-   "hash": "ec18bda81d66",
+   "hash": "5a1fcf576c89",
    "relations": [
     {
      "relation": "citesAsDataSource",
      "card": "desousa-2024-asd",
      "note": "cites over 150,000 farmers; the source reports about 150,000 plots"
+    },
+    {
+     "relation": "citesAsDataSource",
+     "card": "cairns-2025-ppp",
+     "note": "Zimbabwe survey (Fig. 1), cited in the review as Cairns et al. 2026"
+    },
+    {
+     "relation": "discusses",
+     "card": "vanetten-2019-pnas",
+     "note": "tricot method reference"
+    },
+    {
+     "relation": "discusses",
+     "card": "voss-2021-outlook",
+     "note": "women in men-headed households neglected in earlier trials"
+    },
+    {
+     "relation": "discusses",
+     "card": "nanyonjo-2024-cropsci",
+     "note": "tricot example, cassava; targets for women hosts"
+    },
+    {
+     "relation": "discusses",
+     "card": "kadege-2026-fsufs",
+     "note": "tricot example, common bean"
+    },
+    {
+     "relation": "discusses",
+     "card": "daudi-2026-fes",
+     "note": "tricot example, groundnut"
+    },
+    {
+     "relation": "discusses",
+     "card": "voss-2025-ppp",
+     "note": "tricot example, amaranth"
+    },
+    {
+     "relation": "discusses",
+     "card": "kang-2025-expagric",
+     "note": "tricot example, potato"
+    },
+    {
+     "relation": "discusses",
+     "card": "sharma-2025-jafr",
+     "note": "tricot example, potato; training of recruiters"
     }
-   ]
+   ],
+   "not_established": "that on-farm testing, tricot or sparse testing by themselves deliver breakthrough products (the review argues they can support the transition, it reports no breakthrough product from them); that early-stage genomic on-farm sparse testing is proven (it is being piloted in maize, sorghum and common bean); that tricot has involved over 150,000 farmers (the cited source, de Sousa et al. 2024, reports about 150,000 farmer-managed plots); that a minimum variable set for farm typologies is known (the authors say it still needs to be found); that satellite phenotyping is ready for routine on-farm use (the authors list resolution, calibration and cost barriers); that the Zimbabwe survey numbers are new data from this review (they come from Cairns et al. 2026 in Plants, People, Planet, card cairns-2025-ppp)"
   },
   {
    "id": "chase-2026-book",
@@ -1612,6 +1699,11 @@
    "path": "papers/daudi-2026-fes.md",
    "hash": "33e3fa56763d",
    "relations": [
+    {
+     "relation": "isDiscussedBy",
+     "card": "cairns-2026-jxb",
+     "note": "tricot example, groundnut"
+    },
     {
      "relation": "isDiscussedBy",
      "card": "chase-2026-book",
@@ -1678,6 +1770,11 @@
    "path": "papers/kadege-2026-fsufs.md",
    "hash": "07f084d8c247",
    "relations": [
+    {
+     "relation": "isDiscussedBy",
+     "card": "cairns-2026-jxb",
+     "note": "tricot example, common bean"
+    },
     {
      "relation": "isDiscussedBy",
      "card": "chase-2026-book",
