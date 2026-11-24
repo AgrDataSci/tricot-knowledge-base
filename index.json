@@ -1,5 +1,5 @@
 {
- "version": "aeafb41209be",
+ "version": "018bad189834",
  "updated": "2026-11-24",
  "cards": 72,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
@@ -105,11 +105,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "In 426 tricot farmers in India, Ethiopia and Honduras, contributing to science or sharing information motivated most, fun least, and those wanting returns sought advice, training or seed",
    "keywords": "farmer motivation, citizen science, incentives, rewards, mobile phones, SMS, Interactive Voice Response, gamification, Seeds for Needs, participation, retention",
    "path": "papers/beza-2017-plosone.md",
-   "hash": "d96f7f7194c3",
+   "hash": "2bf0ddef8cb5",
    "relations": [
     {
      "relation": "isReviewedBy",
@@ -332,11 +332,11 @@
    "type": "software paper",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "R package chirps retrieves CHIRPS, IMERG and ESI data for chosen points and dates through the ClimateSERV API and computes rainfall indices, shown in a Brazilian Amazon example",
    "keywords": "CHIRPS, rainfall, precipitation indices, IMERG, ESI, climate covariates, API client, R package, dry spell, environmental data for trials",
    "path": "papers/desousa-2020-joss.md",
-   "hash": "60b144e1f41f",
+   "hash": "5c89f59d125b",
    "relations": [],
    "not_established": "That CHIRPS indices match rainfall measured on individual farms; that the Tapajós example shows a statistically tested drying trend; that CHIRPS or the package was validated against station data in this paper; that chirps has been used in tricot trials (the paper does not mention tricot); that repeated calls return identical data over time"
   },
@@ -666,11 +666,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "Pools 14 tricot common bean trials from four Central American countries into one Plackett-Luce analysis, finding heat the main driver and mapping variety performance by season",
    "keywords": "data synthesis, rank aggregation, meta-analysis, Plackett-Luce trees, environmental covariates, WSDI, heat, planting date, survival analysis, area of applicability, variety maps",
    "path": "papers/brown-2022-cropsci.md",
-   "hash": "81baadc41260",
+   "hash": "41f46f1f0474",
    "relations": [
     {
      "relation": "extends",
@@ -731,11 +731,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "tricot rankings by 600 Nigerian consumers favor cohesive eba from brighter, redder, less yellow gari, traits that instrumental color and texture measures can screen in cassava breeding",
    "keywords": "eba, gari, texture profile analysis, sensory panel, color, heritability, NIRS, high-throughput phenotyping, consumer preference, tricot, RTBfoods, cassava breeding",
    "path": "papers/alamu-2023-jsfa.md",
-   "hash": "d69ad877be1b",
+   "hash": "236c8bcfdd5c",
    "relations": [
     {
      "relation": "isDiscussedBy",
@@ -820,11 +820,11 @@
    "type": "software paper",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "gosset adds R functions missing from PlackettLuce and related packages to prepare, model and present ranking data, demonstrated on a common bean tricot trial in Nicaragua.",
    "keywords": "gosset, R package, ranking data, rank_tricot, Plackett-Luce, Bradley-Terry, reliability, regret, worth map, cross-validation, Kendall tau, tricot workflow",
    "path": "papers/desousa-2023-softwarex.md",
-   "hash": "b133a05302fa",
+   "hash": "494360f0eeff",
    "relations": [
     {
      "relation": "providesMethodFor",
@@ -1249,11 +1249,11 @@
    "type": "report",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "CGIAR-NARES breeding teams agreed that mainstreaming tricot needs representative sampling, harmonized SOPs, structured advancement decisions, cost control and cross-crop coordination, and set 12-month action plans",
    "keywords": "mainstreaming, 1000FARMS, CGIAR-NARES, sampling, SOPs, trial design, genetic gain on-farm, variety advancement, cost, coordination, digital ecosystem, market segments",
    "path": "papers/1000farms-2025-report.md",
-   "hash": "d16bfbea9ea6",
+   "hash": "dc83aaf7839c",
    "relations": [
     {
      "relation": "usesMethodIn",
@@ -1299,11 +1299,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "Video concept testing with 2,400 farmers in Kenya and Uganda ranked resilience, drought escape (Uganda) and intercropping (Kenya) highest among eight future maize hybrid concepts",
    "keywords": "product concept testing, VPCT, videos, hybrid maize, tricot, Plackett-Luce, product design, seed products, intercropping, drought escape, resilience, demand-led breeding",
    "path": "papers/donovan-2025-expagric.md",
-   "hash": "2a4a5c7d77a9",
+   "hash": "a3ad75551eae",
    "relations": [
     {
      "relation": "isDiscussedBy",
@@ -1364,11 +1364,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "In a 460-farmer potato tricot trial in Rwanda, old varieties ranked highest, yield ranks shifted with temperature, marketability with crop income, and on-station values predicted on-farm ranks poorly",
    "keywords": "potato, tricot, RHoMIS, socio-economic covariates, temperature, on-station vs on-farm, variety preference, market orientation, marketability, gender, Plackett-Luce trees, PLADMM",
    "path": "papers/kang-2025-expagric.md",
-   "hash": "6c6107fac075",
+   "hash": "80a29fa09e1e",
    "relations": [
     {
      "relation": "isDiscussedBy",
@@ -1723,11 +1723,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "Across 18 Tanzanian environments, ICGV-SM 16645 and 10014 were high-yielding and stable, and tricot farmers of both genders favored marketable tan small-medium kernels, with women valuing labor-saving traits more",
    "keywords": "groundnut, GEI, GGE biplot, tricot, gender, trait preferences, kernel yield, stability, target product profile, variety release, TARI",
    "path": "papers/daudi-2026-fes.md",
-   "hash": "33e3fa56763d",
+   "hash": "96e61af92924",
    "relations": [
     {
      "relation": "isDiscussedBy",
@@ -1753,11 +1753,11 @@
    "type": "research article",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
+   "curated_card": "yes",
    "gist": "Shows, with simulations and four on-farm datasets, that tricot rankings fed into a two-step mixed model give reliable genotype means and heritability, given about 30 replicates per genotype",
    "keywords": "genetic parameters, heritability, variance components, Thurstonian model, Plackett-Luce, two-step analysis, mixed models, ranking data, quasi-variances, simulation, on-farm trials",
    "path": "papers/dorado-2026-tag.md",
-   "hash": "e514070dc64e",
+   "hash": "1fa57f039819",
    "relations": [],
    "not_established": "performance for taste, colour or other non-quantitative traits (only yield was tested); estimates of genetic gain or genotype × environment effects (left for future work); that raw Plackett-Luce estimates are on the same scale as yield-based means (they needed a scaling factor of about 0.85 to 0.90); that heritability from rankings equals heritability from measured yield (it was lower in three of four datasets); that 30 replicates per genotype are always enough (more are needed when genetic variation is high relative to residual variation); that rankings should replace yield measurement where farmers can measure yield (the authors say rankings may then be complementary or unnecessary)"
   },
