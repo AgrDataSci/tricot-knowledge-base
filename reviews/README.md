@@ -23,8 +23,9 @@ Review and correction done in November 2026.
 
 Still open:
 
-- howland-2025-report, vanetten-2011-idsbull and eskridge-1992-tag: the PDFs in `papers-pdf/` are one-page link stubs, so these cards wait for the full texts.
-- chase-2026-book: not yet reviewed.
+- howland-2025-report: the PDF in `papers-pdf/` is a one-page link stub, so this card waits for the full text.
+
+Added later: chase-2026-book (reviewed in four parts), eskridge-1992-tag and vanetten-2011-idsbull were reviewed and corrected. The last two were checked against full copies supplied by the curator, which are not in the repo because neither paper has an open licence.
 - Facts that cards state differently, listed in `03-crosscard-notes.md`.
 
 ## Other files
