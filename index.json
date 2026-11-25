@@ -1,5 +1,5 @@
 {
- "version": "45bffcce6663",
+ "version": "9276d67faf48",
  "updated": "2026-11-25",
  "cards": 72,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
@@ -257,7 +257,7 @@
    "gist": "Large tricot trials (12,409 plots, 3 countries) show farmer rankings capture known climate effects on varieties and can improve variety recommendations",
    "keywords": "tricot, citizen science, Plackett-Luce trees, climate adaptation, variety recommendation, seasonal forecast, worst regret, ClimMob",
    "path": "papers/vanetten-2019-pnas.md",
-   "hash": "6f4c93fd0253",
+   "hash": "456a272ed219",
    "relations": [
     {
      "relation": "extends",
@@ -810,7 +810,7 @@
    "gist": "R package that computes climate indices over each plot's growing period. Its tricot bean example in Nicaragua shows variety rankings splitting by summer days and night temperature",
    "keywords": "climatrends, temperature indices, precipitation indices, growing degree-days, evapotranspiration, late spring frost, crop-sensitive indices, R package, climate covariates",
    "path": "papers/desousa-2023-joss.md",
-   "hash": "147af8026ae9",
+   "hash": "e91b9c009d78",
    "relations": [
     {
      "relation": "providesMethodFor",
