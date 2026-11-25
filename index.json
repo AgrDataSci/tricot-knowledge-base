@@ -1,6 +1,6 @@
 {
- "version": "018bad189834",
- "updated": "2026-11-24",
+ "version": "45bffcce6663",
+ "updated": "2026-11-25",
  "cards": 72,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
@@ -25,11 +25,11 @@
    "type": "research article",
    "source": "external",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "Defines reliability as the probability that a test cultivar outperforms a check across environments, shows how to estimate and test it, and finds it more repeatable than common stability statistics",
+   "curated_card": "yes",
+   "gist": "Defines reliability as the probability that a cultivar beats a check, gives two estimators and tests, and finds it less repeatable than mean yield but more than stability statistics",
    "keywords": "reliability, probability of outperforming a check, check variety, stability analysis, safety-first, genotype by environment interaction, pairwise comparison, repeatability, Cochran Q test, cultivar selection, risk",
    "path": "papers/eskridge-1992-tag.md",
-   "hash": "2d1de389b928",
+   "hash": "c12c84bf442a",
    "relations": [
     {
      "relation": "providesMethodFor",
@@ -42,7 +42,7 @@
      "note": "the reliability function"
     }
    ],
-   "not_established": "that reliability applies unchanged to farmer rankings or tricot data, which the paper does not cover; any threshold other than zero, such as a 25% yield gain; that reliability is as repeatable as the mean yield (it was less so); that a high reliability against one check holds against another check or outside the check's area of adaptation; any use of on-farm or farmer-managed trials (the data are researcher-run international variety trials)"
+   "not_established": "that reliability applies unchanged to farmer rankings or tricot data, which the paper does not cover; any threshold other than zero, such as a 25% yield gain; that reliability is as repeatable as the mean yield (it was less so); that a high reliability against one check holds against another check or outside the check's area of adaptation; any use of on-farm or farmer-managed trials (the data are researcher-run international variety trials); that reliability is more repeatable than the Finlay-Wilkinson slope in every trial (it was not in EVT 12)"
   },
   {
    "id": "vanetten-2011-idsbull",
@@ -50,11 +50,11 @@
    "type": "perspective",
    "source": "team",
    "peer_reviewed": "yes",
-   "curated_card": "no",
-   "gist": "The first proposal of what became tricot, arguing that farmers could evaluate small blind seed packages in triads and report by mobile phone to scale up participatory crop improvement",
+   "curated_card": "yes",
+   "gist": "Proposes crowdsourced crop improvement in which many farmers grow small blind seed packages in triads, rank them and report by mobile phone, to scale up participatory variety evaluation",
    "keywords": "tricot origin, crowdsourcing, citizen science, seed systems, farmer varieties, triadic comparisons, preference learning, mobile phones, crop diversity, food security, open source, genetic commons",
    "path": "papers/vanetten-2011-idsbull.md",
-   "hash": "a6b5a44a8539",
+   "hash": "039cea16b128",
    "relations": [
     {
      "relation": "providesMethodFor",
@@ -77,7 +77,7 @@
      "note": ""
     }
    ],
-   "not_established": "that crowdsourced variety evaluation works in practice, since the paper is a proposal with no data; that farmer rankings are accurate or reliable; any required number of farmers, varieties or seasons; any measured effect on yields, adoption or food security"
+   "not_established": "that crowdsourced variety evaluation works in practice, since the paper is a proposal with no data; that farmer rankings are accurate or reliable; any required number of farmers, varieties or seasons; any measured effect on yields, adoption or food security; that blind evaluation makes farmer reports more objective; that variety performance can be predicted for places not yet tested; that subsidising information improves food security more than subsidising physical inputs"
   },
   {
    "id": "steinke-2016-guide",
@@ -499,7 +499,13 @@
    "keywords": "trial dimensions, plot size, number of farms, gender, ethics, yield estimation, genetic gain, data standards, ontologies, R packages, cost, business models",
    "path": "papers/vanetten-2020-rtbwp.md",
    "hash": "790e3bbfb036",
-   "relations": [],
+   "relations": [
+    {
+     "relation": "isUpdatedBy",
+     "card": "chase-2026-book",
+     "note": "the Dissemination section reproduces its page 13"
+    }
+   ],
    "not_established": "a measured or audited 40% saving (it is a rough estimate with no data, method or cost unit); a 40% saving against RCBD or in a named country; a tenfold saving outside the US mail-and-smartphone model; that 100 to 200 farms suffice for any trial (the figure is for about 12 entries, comes from one bean study, and more environments need more farms); that men and women do not differ in variety preferences (no differences were detected, but analyses lacked intersectional data); that farmer volumetric yield estimates are validated beyond one common bean study in Kenya"
   },
   {
@@ -1673,16 +1679,21 @@
    "type": "book",
    "source": "team",
    "peer_reviewed": "no",
-   "curated_card": "no",
-   "gist": "The current tricot handbook, covering all ten steps from objectives, sampling, trial size and SOPs to ClimMob, statistics, farmer feedback, evaluation and African case studies",
-   "keywords": "tricot handbook, ten steps, objective setting, budgeting, costing template, target product profile, task groups, gender, sampling, trial size, sample-size calculator, seed calculator, plot size, SOPs, trial documentation, metadata, ethics, access and benefit sharing, ClimMob, ODK, field agents, observation card, Plackett-Luce, feedback workshop, evaluation indicators, case studies",
+   "curated_card": "yes",
+   "gist": "Step-by-step tricot handbook with planning defaults (8 to 12 options, at least 30 replicates per option, 100 to 200 farms), ClimMob workflows and eight African case studies",
+   "keywords": "tricot handbook, ten steps, target product profile, task groups, gender, sample size, plot size, SOPs, ClimMob, Plackett-Luce, feedback workshop, case studies",
    "path": "papers/chase-2026-book.md",
-   "hash": "59b3565bfdb6",
+   "hash": "213325c3399c",
    "relations": [
     {
      "relation": "updates",
      "card": "vanetten-2020-guide",
      "note": "several chapters reuse the 2020 guide, updated and extended"
+    },
+    {
+     "relation": "updates",
+     "card": "vanetten-2020-rtbwp",
+     "note": "the Dissemination section reproduces its page 13"
     },
     {
      "relation": "updates",
@@ -1715,7 +1726,7 @@
      "note": "common bean case study interview"
     }
    ],
-   "not_established": "a universal sample size for every tricot trial (the numbers are planning defaults); that tricot caused the variety releases described in the case studies (these are practitioner interviews, not impact evaluations); that gender differences in preferences are absent (analyses often fail to detect them, which the book attributes partly to unmeasured social variables); that tricot suits farming practices as well as varieties (one case study found practices harder to test)"
+   "not_established": "a universal sample size for every tricot trial (the numbers are planning defaults); that tricot caused the variety releases described in the case studies (these are practitioner interviews, not impact evaluations); that gender differences in preferences are absent (tricot analyses have not consistently detected them, and the book suggests unmeasured social variables as one possible reason); that tricot suits farming practices as well as varieties (one case study found practices harder to test)"
   },
   {
    "id": "daudi-2026-fes",

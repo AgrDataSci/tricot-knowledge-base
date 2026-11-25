@@ -7,7 +7,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 The team's open-access papers, reports and guides on tricot, plus external literature curated by the core team, mapped so you can answer like a colleague who knows this literature and the people behind it. Each card in `papers/` holds metadata, the questions the paper answers, a summary, methods in brief, stated limitations, key numbers with primary sources, and notes on discrepancies and related cards. `people.md` says how to credit the authors and whether they can be suggested as contacts.
 
-<!-- version:start -->Installed version `018bad189834`, updated 2026-11-24, 72 cards.<!-- version:end -->
+<!-- version:start -->Installed version `45bffcce6663`, updated 2026-11-25, 72 cards.<!-- version:end -->
 
 ## Check for updates first
 
@@ -145,11 +145,11 @@ Card ids grouped by question area and by crop, newest first. A card can appear u
 - **Product concept testing and seed choice.** mawia-2025-fsufs, donovan-2025-expagric, mbugua-2024-mib, rutsaert-2023-mib
 - **Genebanks, genomics and pre-breeding.** dorado-2026-tag, cairns-2026-jxb, selby-2025-database, vanetten-2023-pnas, gesesse-2023-pnas, alamu-2023-jsfa, woldeyohannes-2022-elife, thiele-2021-ijfst, tanaka-2021-tag, desousa-2021-commsbio, fadda-2020-fps, mancini-2017-scirep
 - **Yield measured by farmers and genetic gain.** ulzen-2025-agrirxiv, nabateregga-2025-eja, 1000farms-2025-report, vanetten-2020-rtbwp
-- **Costs and budgeting.** chase-2026-book, angudubo-2026-zari, angudubo-2026-naro, angudubo-2026-guide, 1000farms-2025-report, occelli-2024-agecon, desousa-2024-asd, vanetten-2020-rtbwp, laajaj-2020-scirep, vanetten-2019-expagric
-- **Farmer motivation, participation and feedback.** occelli-2026-ahv, jorgensen-2026-gse, goormachtigh-2026-flyer, chase-2026-book, muller-2025-ux, schumann-2024-ux, voss-2021-outlook, vandegevel-2020-asd, hansson-2019-ejps, beza-2017-plosone
+- **Costs and budgeting.** angudubo-2026-zari, angudubo-2026-naro, angudubo-2026-guide, 1000farms-2025-report, occelli-2024-agecon, desousa-2024-asd, vanetten-2020-rtbwp, laajaj-2020-scirep, vanetten-2019-expagric
+- **Farmer motivation, participation and feedback.** occelli-2026-ahv, jorgensen-2026-gse, goormachtigh-2026-flyer, muller-2025-ux, schumann-2024-ux, voss-2021-outlook, vandegevel-2020-asd, hansson-2019-ejps, beza-2017-plosone
 - **Impact, adoption, variety release and institutionalization.** occelli-2026-ahv, daudi-2026-fes, muller-2025-ux, mawia-2025-fsufs, howland-2025-report, 1000farms-2025-report, occelli-2024-agecon, nanyonjo-2024-cropsci, desousa-2024-asd, teeken-2023-slides, voss-2021-outlook, thiele-2021-ijfst, gotor-2021-fsufs, vandegevel-2020-asd, laajaj-2020-scirep
 - **AI and digital tools for data collection.** goormachtigh-2026-flyer, cairns-2026-jxb, beza-2017-plosone, vanetten-2011-idsbull
-- **Data standards, ontologies and software.** chase-2026-book, selby-2025-database, quiros-2024-compag, occelli-2024-natplants, dumschott-2023-fps, desousa-2023-softwarex, desousa-2023-joss, arnaud-2023-jsfa, vanetten-2020-rtbwp, turner-2020-compstat, desousa-2020-joss, carroll-2020-dsj
+- **Data standards, ontologies and software.** selby-2025-database, quiros-2024-compag, occelli-2024-natplants, dumschott-2023-fps, desousa-2023-softwarex, desousa-2023-joss, arnaud-2023-jsfa, vanetten-2020-rtbwp, turner-2020-compstat, desousa-2020-joss, carroll-2020-dsj
 
 ### By crop
 
