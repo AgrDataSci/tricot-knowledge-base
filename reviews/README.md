@@ -31,3 +31,10 @@ Added later: chase-2026-book (reviewed in four parts), eskridge-1992-tag and van
 ## Other files
 
 - `REVIEWER_INSTRUCTIONS.md` and `FIXER_INSTRUCTIONS.md`: the instructions given to the review and fix agents. They refer to working paths outside this repository.
+
+## Checking a new card
+
+1. Run `python scripts/check_cards.py <card-id>` for a first pass: DOI, title, authors and every number checked against the PDF. A flag is a place to look, not a verdict.
+2. Review the card claim by claim against the whole PDF, in the format of `REVIEW_TEMPLATE.md`, following `REVIEWER_INSTRUCTIONS.md`. Check the main finding again by hand.
+3. Apply the review following `FIXER_INSTRUCTIONS.md`, confirming each change in the source.
+4. Commit the card on its own, open a pull request from `claude-rchase`, and set `curated_card: yes` once the curator approves.
