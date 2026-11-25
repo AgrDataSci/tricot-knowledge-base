@@ -46,7 +46,7 @@ The paper positions tricot as a scalable, demand-led way to track climate on far
 
 ## Methods in brief
 
-- **Trials.** tricot in Nicaragua (842 plots, 5 seasons), Ethiopia (1,090, 3 seasons) and India (10,477, 4 seasons), 2012–2016 overall. Varieties allocated at random as incomplete blocks with spatial balance, three per farm (four in Ethiopia). Field agents collected rankings by farm visits, first on paper and later through ClimMob.
+- **Trials.** tricot in Nicaragua (842 plots, 5 seasons), Ethiopia (1,090, 3 seasons) and India (10,477, 4 seasons), 2012–2016 overall. By SI Appendix Table S1: Nicaragua 2015 to 2016, Ethiopia 2013 to 2015, India 2012 to 2015. Varieties allocated at random as incomplete blocks with spatial balance, three per farm (four in Ethiopia). Field agents collected rankings by farm visits, first on paper and later through ClimMob.
 - **Covariates.** Seasonal agroclimatic variables (temperature from land-surface data) and soil variables, linked by coordinates and planting date. The full list is in the SI Appendix.
 - **Model.** Plackett-Luce trees, with 10-fold cross-validated pseudo-R² to compare covariate sets.
 - **Recommendations.** Predictions over a 15-year base period, perfect-forecast scenario, probability of winning and worst regret, maps of top varieties.
@@ -65,7 +65,7 @@ The paper positions tricot as a scalable, demand-led way to track climate on far
 |---|---|---|
 | 12,409 plots | Total farmer-managed tricot plots analyzed | This paper |
 | 842 / 1,090 / 10,477 | Plots in Nicaragua (bean) / Ethiopia (durum wheat) / India (bread wheat) | This paper |
-| 2012–2016 | Overall trial window for all three countries (5 seasons Nicaragua, 3 Ethiopia, 4 India). Years per country are in SI Table S1, not in this PDF | This paper |
+| 2012–2016 | Overall trial window for all three countries. By SI Table S1: Nicaragua 2015 to 2016 (5 seasons), Ethiopia 2013 to 2015 (3), India 2012 to 2015 (4) | This paper and its SI Appendix |
 | 3 (4 in Ethiopia) | Varieties per farm | This paper |
 | 0.1978 / 0.4870 / 0.0882 | Cross-validated pseudo-R² of best (climate) model, Nicaragua / Ethiopia / India | This paper |
 | 18.7 °C | Max night temperature threshold shifting bean rankings (vs 20 °C air-temperature threshold) | This paper; Rainey and Griffiths 2005 |
@@ -79,5 +79,5 @@ The paper positions tricot as a scalable, demand-led way to track climate on far
 
 - The text names farmer varieties 8208 and 208304 as approved for release in March 2017 (p. 4197). 8208 appears nowhere else in the paper. Table 3 and Fig. 3B list 8034 instead. Check the SI or Dataverse before citing the variety name.
 - Problem in the source: the text says Table 3 confirms the "superiority" of these farmer varieties, but in Table 3 both 208304 (0.041) and 8034 (0.030) have a lower probability of winning than 208279 (0.059) and the modern variety Hitosa (0.049). They rank above Ude and 222360 only (p. 4197).
-- Trial years: the paper gives only an overall trial window (2012 to 2016) and the number of seasons per country (5 Nicaragua, 3 Ethiopia, 4 India). Years per country are in SI Appendix Table S1, which is not in our PDF. desousa-2023-joss dates the Nicaragua bean data to five seasons from 2015 to 2017, which does not fit this window. Check SI Table S1 or the Dataverse files before citing years for one country.
+- Trial years: the main text gives only an overall window (2012 to 2016). SI Appendix Table S1 (checked separately, not in papers-pdf/) gives the Nicaragua plots by season: Apante 481 and Postrera 177 in 2015, Primera 64, Apante 87 and Postrera 33 in 2016, which is 842 plots over five seasons. desousa-2023-joss dates the same data to 2015 to 2017. Table S1 lists no 2017 season.
 - Perfect-forecast gains are an upper bound. The paper does not test real forecast skill.
