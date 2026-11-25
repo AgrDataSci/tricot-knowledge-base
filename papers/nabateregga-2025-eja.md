@@ -19,6 +19,8 @@ region: Tanzania (Kilindi, Karatu)
 keywords: farmer-generated yield, yield estimation, volumetric measurement, sado tins, data accuracy, genetic gain, moisture content, tricot, absolute yield
 gist: In Tanzania, farmer tin-volume yield estimates for common bean agreed closely with technician measures (r = 0.96) and predicted weighed yield, so tricot can supply yield data
 not_established: a universal sample size for yield measurement; accuracy for smaller-seeded crops such as wheat, sorghum or millet, or for crops with repeated or piecemeal harvests; accurate yield per hectare where plot area is uncertain; representative variety yields from this sample; acceptance of farmer-measured yield by a release committee; an effect of literacy, which could not be tested
+relations:
+  - discusses: ulzen-2025-agrirxiv  # cited in this paper as Ulzen et al. (2024)
 ---
 
 ## Questions this paper answers
@@ -74,7 +76,7 @@ The authors conclude that farmer-generated yield data, collected with a standard
 
 ## Notes
 
-- Answers the yield concern raised in desousa-2024-asd, which reports farmer-led yield methods as still being tested with preliminary results. cairns-2026-jxb cites this study. ulzen-2025-agrirxiv reports similar results for tin measurement of maize and cocoa in Ghana. This paper cites Ulzen et al. (2024) as finding that location, eyesight, education and experience affected farmers' heap volume estimates, in contrast to its own tin results.
+- Answers the yield concern raised in desousa-2024-asd, which reports farmer-led yield methods as still being tested with preliminary results. cairns-2026-jxb cites this study. ulzen-2025-agrirxiv reports similar results for tin measurement of maize and cocoa in Ghana. This paper cites Ulzen et al. (2024) as finding that location, eyesight, education and experience affected farmers' heap volume estimates, in contrast to its own tin results. The curator confirms that this reference is the agriRxiv preprint carded as ulzen-2025-agrirxiv and that the citation is in error.
 - Source issue: the simulation R² values (0.98 to 0.99) are cited to Fig. 6 in the text but shown in Fig. 7.
 - Source issue: the text gives the agreement limits as mean ± 0.5 SD, but the Fig. 4 caption says ± 2 SD.
 - Source issue: units of the final model are unclear. Table 5 says t/ha, but yield was weighed in kg per 6 × 8 m plot and volume counted in tins. Treat the slope (0.884) and RMSE (0.233) as per-plot values with uncertain units.
