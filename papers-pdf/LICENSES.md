@@ -57,6 +57,7 @@ Licences were read from each PDF on 2026-10-30. The batch added on 2026-11-05 wa
 | occelli-et-al-2026.pdf | [occelli-2026-ahv](../papers/occelli-2026-ahv.md) | https://doi.org/10.1007/s10460-026-10976-5 | CC BY-NC-ND 4.0 |
 | olaosebikan-et-al-2023.pdf | [olaosebikan-2023-jsfa](../papers/olaosebikan-2023-jsfa.md) | https://doi.org/10.1002/jsfa.12867 | CC BY 4.0 |
 | quiros-et-al-2024.pdf | [quiros-2024-compag](../papers/quiros-2024-compag.md) | https://doi.org/10.1016/j.compag.2023.108539 | CC BY 4.0 |
+| rutsaert-et-al-2023-groundnut.pdf | [rutsaert-2023-cimmyt](../papers/rutsaert-2023-cimmyt.md) | https://hdl.handle.net/10883/22773 | see CGSpace record |
 | rutsaert-et-al-2023.pdf | [rutsaert-2023-mib](../papers/rutsaert-2023-mib.md) | https://hdl.handle.net/10883/22467 | none stated (grey literature) |
 | schumann-et-al-2024.pdf | [schumann-2024-ux](../papers/schumann-2024-ux.md) | https://hdl.handle.net/10568/169094 | none stated (grey literature) |
 | selby-et-al-2025.pdf | [selby-2025-database](../papers/selby-2025-database.md) | https://doi.org/10.1093/database/baaf048 | CC BY 4.0 |

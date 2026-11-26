@@ -21,13 +21,19 @@ Review and correction done in November 2026.
 - All 68 cards corrected in PR #19 to #26, with one change log per card in `changes/`. Each change was confirmed in the source before it was applied.
 - All corrected cards set to `curated_card: yes` (PR #21 to #27), as decided by the curator.
 
+Added later: chase-2026-book (reviewed in four parts), eskridge-1992-tag, vanetten-2011-idsbull and howland-2025-report were reviewed and corrected. The last three were checked against full copies supplied by the curator. These copies are not in the repo because none of the three sources is open access.
+
 Still open:
 
-- howland-2025-report: the PDF in `papers-pdf/` is a one-page link stub, so this card waits for the full text.
-
-Added later: chase-2026-book (reviewed in four parts), eskridge-1992-tag and vanetten-2011-idsbull were reviewed and corrected. The last two were checked against full copies supplied by the curator, which are not in the repo because neither paper has an open licence.
 - Facts that cards state differently, listed in `03-crosscard-notes.md`.
 
 ## Other files
 
 - `REVIEWER_INSTRUCTIONS.md` and `FIXER_INSTRUCTIONS.md`: the instructions given to the review and fix agents. They refer to working paths outside this repository.
+
+## Checking a new card
+
+1. Run `python scripts/check_cards.py <card-id>` for a first pass: DOI, title, authors and every number checked against the PDF. A flag is a place to look, not a verdict.
+2. Review the card claim by claim against the whole PDF, in the format of `REVIEW_TEMPLATE.md`, following `REVIEWER_INSTRUCTIONS.md`. Check the main finding again by hand.
+3. Apply the review following `FIXER_INSTRUCTIONS.md`, confirming each change in the source.
+4. Commit the card on its own, open a pull request from `claude-rchase`, and set `curated_card: yes` once the curator approves.
