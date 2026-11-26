@@ -610,7 +610,12 @@
    "dcterms:identifier": "nabateregga-2025-eja",
    "dcterms:title": "Accuracy of farmer-generated yield estimations of common bean in decentralised on-farm trials in sub-Saharan Africa",
    "dcterms:date": "2025",
-   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/nabateregga-2025-eja.md"
+   "fabio:hasURL": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/papers/nabateregga-2025-eja.md",
+   "cito:discusses": [
+    {
+     "@id": "https://doi.org/10.31220/agriRxiv.2025.00295"
+    }
+   ]
   },
   {
    "@id": "https://doi.org/10.1093/database/baaf048",

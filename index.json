@@ -1,6 +1,6 @@
 {
- "version": "9276d67faf48",
- "updated": "2026-11-25",
+ "version": "acc93c50d7b7",
+ "updated": "2026-11-26",
  "cards": 72,
  "raw_base": "https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/",
  "skill": {
@@ -1330,11 +1330,11 @@
    "type": "report",
    "source": "external",
    "peer_reviewed": "no",
-   "curated_card": "no",
-   "gist": "Independent evaluation of 1000FARMS (195-person survey, 21 interviews, four countries) finding tricot used for variety decisions, including in Ethiopia and Haiti, where national partners ran it with little direct 1000FARMS support",
+   "curated_card": "yes",
+   "gist": "Independent evaluation (195-person survey, 21 interviews) finds tricot data used for variety decisions in four countries, with 1000FARMS' contribution rated commingled (Ghana, Uganda) or weak (Ethiopia, Haiti)",
    "keywords": "1000FARMS, outcome study, contribution analysis, theory of change, scaling, institutionalization, variety release, ClimMob use, breeding program leadership, funding dependency, collaborative arrangements, seed systems",
    "path": "papers/howland-2025-report.md",
-   "hash": "3ea0e42ad274",
+   "hash": "f8a8d0a4f1d5",
    "relations": [
     {
      "relation": "discusses",
@@ -1362,7 +1362,7 @@
      "note": "cited as Ulzen et al. 2024 for the accuracy of farmer data"
     }
    ],
-   "not_established": "that 1000FARMS alone caused the uptake of tricot, since it acted with other programmes in Ghana and Uganda and gave little direct support in Ethiopia and Haiti; that tricot is cost-effective or yields better data than other on-farm methods, which the study reports as perceptions and partly contests; that protocols in official guidelines are confirmed, since the 42% figure is self-reported and the interviews give a less clear picture; any effect on variety adoption, yields or farmer income; that the findings hold for countries outside the four cases"
+   "not_established": "that 1000FARMS alone caused the uptake of tricot, since other programmes acted alongside it in Ghana and Uganda and the evaluators found too little evidence of its contribution in Ethiopia and Haiti; that tricot is cost-effective or yields better data than other on-farm methods, which the study reports as perceptions and partly contests; that protocols in official guidelines are confirmed, since the 42% figure is self-reported and the interviews give a less clear picture; any effect on variety adoption, yields or farmer income; that the findings hold for countries outside the four cases"
   },
   {
    "id": "kang-2025-expagric",
@@ -1428,12 +1428,17 @@
    "gist": "In Tanzania, farmer tin-volume yield estimates for common bean agreed closely with technician measures (r = 0.96) and predicted weighed yield, so tricot can supply yield data",
    "keywords": "farmer-generated yield, yield estimation, volumetric measurement, sado tins, data accuracy, genetic gain, moisture content, tricot, absolute yield",
    "path": "papers/nabateregga-2025-eja.md",
-   "hash": "83dd2b51a3ca",
+   "hash": "b5e1d63732ae",
    "relations": [
     {
      "relation": "isDiscussedBy",
      "card": "howland-2025-report",
      "note": "cited as Nabateregga et al. 2024 for the accuracy of farmer data"
+    },
+    {
+     "relation": "discusses",
+     "card": "ulzen-2025-agrirxiv",
+     "note": "cited in this paper as Ulzen et al. (2024)"
     },
     {
      "relation": "isAgreedWithBy",
@@ -1499,6 +1504,11 @@
      "relation": "isDiscussedBy",
      "card": "howland-2025-report",
      "note": "cited as Ulzen et al. 2024 for the accuracy of farmer data"
+    },
+    {
+     "relation": "isDiscussedBy",
+     "card": "nabateregga-2025-eja",
+     "note": "cited in this paper as Ulzen et al. (2024)"
     },
     {
      "relation": "agreesWith",
