@@ -21,11 +21,10 @@ Review and correction done in November 2026.
 - All 68 cards corrected in PR #19 to #26, with one change log per card in `changes/`. Each change was confirmed in the source before it was applied.
 - All corrected cards set to `curated_card: yes` (PR #21 to #27), as decided by the curator.
 
+Added later: chase-2026-book (reviewed in four parts), eskridge-1992-tag, vanetten-2011-idsbull and howland-2025-report were reviewed and corrected. These were checked against full copies supplied by the curator. The copies are not in the repo because none of these sources has an open licence.
+
 Still open:
 
-- howland-2025-report: the PDF in `papers-pdf/` is a one-page link stub, so this card waits for the full text.
-
-Added later: chase-2026-book (reviewed in four parts), eskridge-1992-tag and vanetten-2011-idsbull were reviewed and corrected. The last two were checked against full copies supplied by the curator, which are not in the repo because neither paper has an open licence.
 - Facts that cards state differently, listed in `03-crosscard-notes.md`.
 
 ## Other files
